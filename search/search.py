@@ -77,7 +77,7 @@ def genericSearch (problem, queue, flag):
     """
         implemetn a generic search for search algorithm
     """
-    visited = set()
+    visited = []
     cost = 0
     start = (problem.getStartState(), cost, [])
     supFunc(problem, queue, start, cost, flag)
@@ -86,8 +86,10 @@ def genericSearch (problem, queue, flag):
         temp = queue.pop()
         if problem.isGoalState(temp[0]):
             return temp[2]
+
         if temp[0] not in visited:
-            visited.add(temp[0])
+            visited.append(temp[0])
+
             for successor, action, stepCost in problem.getSuccessors(temp[0]): # successor, action, stepCost
                 if successor not in visited:
                     new_cost = temp[1] + stepCost
@@ -120,65 +122,66 @@ def depthFirstSearch(problem):
     """
     "*** YOUR CODE HERE ***"
     stack = util.Stack()
-    visited = set()
     initial_cost = 0
-    initial_state = (problem.getStartState(), initial_cost, [])
+    initial_state = (problem.getStartState(), [])
     stack.push(initial_state)
+    visited = []
+
 
     while not stack.isEmpty():
-        (state, cost, path) = stack.pop()
-        if problem.isGoalState(state):
-            return path
-        if state not in visited:
-            visited.add(state)
-            for successor, action, stepCost in problem.getSuccessors(state): # successor, action, stepCost
+        temp = stack.pop()
+        if problem.isGoalState(temp[0]):
+            return temp[1]
+        if temp[0] not in visited:
+            visited.append(temp[0])
+            for successor, action, stepCost in problem.getSuccessors(temp[0]): # successor, action, stepCost
                 if successor not in visited:
-                    new_cost = cost + stepCost
-                    new_path = path + [action]
-                    new_state = (successor, new_cost, new_path)
+                    new_path = temp[1] + [action]
+                    new_state = (successor, new_path)
                     stack.push(new_state)
 
 def breadthFirstSearch(problem):
     """Search the shallowest nodes in the search tree first."""
     "*** YOUR CODE HERE ***"
     queue = util.Queue()
-    visited = set()
-    initial_cost = 0
-    initial_state = (problem.getStartState(), initial_cost, [])
+    initial_state = (problem.getStartState(), [])
     queue.push(initial_state)
+    visited = []
+
 
     while not queue.isEmpty():
-        (state, cost, path) = queue.pop()
-        if problem.isGoalState(state):
-            return path
-        if state not in visited:
-            visited.add(state)
-            for successor, action, stepCost in problem.getSuccessors(state): # successor, action, stepCost
+        temp = queue.pop()
+        if problem.isGoalState(temp[0]):
+            return temp[1]
+
+        if temp[0] not in visited:
+            visited.append(temp[0])
+            for successor, action, stepCost in problem.getSuccessors(temp[0]): # successor, action, stepCost
                 if successor not in visited:
-                    new_cost = cost + stepCost
-                    new_path = path + [action]
-                    new_state = (successor, new_cost, new_path)
+                    new_path = temp[1] + [action]
+                    new_state = (successor, new_path)
                     queue.push(new_state)
 
 def uniformCostSearch(problem):
     """Search the node of least total cost first."""
     "*** YOUR CODE HERE ***"
     pqueue = util.PriorityQueue()
-    visited = set()
     initial_cost = 0
     initial_state = (problem.getStartState(), initial_cost, [])
     pqueue.push(initial_state, initial_cost)
+    visited = []
 
     while not pqueue.isEmpty():
-        (state, cost, path) = pqueue.pop()
-        if problem.isGoalState(state):
-            return path
-        if state not in visited:
-            visited.add(state)
-            for successor, action, stepCost in problem.getSuccessors(state): # successor, action, stepCost
+        temp = pqueue.pop()
+        if problem.isGoalState(temp[0]):
+            return temp[2]
+
+        if temp[0] not in visited:
+            visited.append(temp[0])
+            for successor, action, stepCost in problem.getSuccessors(temp[0]): # successor, action, stepCost
                 if successor not in visited:
-                    new_cost = cost + stepCost
-                    new_path = path + [action]
+                    new_cost = temp[1] + stepCost
+                    new_path = temp[2] + [action]
                     new_state = (successor, new_cost, new_path)
                     pqueue.push(new_state, new_cost)
 
@@ -193,21 +196,22 @@ def aStarSearch(problem, heuristic=nullHeuristic):
     """Search the node that has the lowest combined cost and heuristic first."""
     "*** YOUR CODE HERE ***"
     pqueue = util.PriorityQueue()
-    visited = set()
+    visited = []
     initial_cost = 0
     initial_state = (problem.getStartState(), initial_cost, [])
     pqueue.push(initial_state, initial_cost + heuristic(initial_state[0], problem))
 
     while not pqueue.isEmpty():
-        (state, cost, path) = pqueue.pop()
-        if problem.isGoalState(state):
-            return path
-        if state not in visited:
-            visited.add(state)
-            for successor, action, stepCost in problem.getSuccessors(state): # successor, action, stepCost
+        temp = pqueue.pop()
+        if problem.isGoalState(temp[0]):
+            return temp[2]
+        if temp[0] not in visited:
+            visited.append(temp[0])
+
+            for successor, action, stepCost in problem.getSuccessors(temp[0]): # successor, action, stepCost
                 if successor not in visited:
-                    new_cost = cost  + stepCost
-                    new_path = path + [action]
+                    new_cost = temp[1]  + stepCost
+                    new_path = temp[2] + [action]
                     new_state = (successor, new_cost, new_path)
                     pqueue.push(new_state, new_cost + heuristic(new_state[0], problem))
 
