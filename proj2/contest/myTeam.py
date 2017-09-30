@@ -16,13 +16,15 @@ from captureAgents import CaptureAgent
 import random, time, util
 from game import Directions
 import game
+from util import nearestPoint
+
 
 #################
 # Team creation #
 #################
 
 def createTeam(firstIndex, secondIndex, isRed,
-               first = 'DummyAgent', second = 'DummyAgent'):
+    first = 'DummyAgent', second = 'DummyAgent'):
   """
   This function should return a list of two agents that will form the
   team, initialized using firstIndex and secondIndex as their agent
@@ -45,7 +47,62 @@ def createTeam(firstIndex, secondIndex, isRed,
 # Agents #
 ##########
 
+class ReflexCaptureAgent(CaptureAgent):
+  """
+  A base class for reflex agents that chooses actions which maximize the score
+  """
+  def chooseAction(self, gameState):
+    """
+    pick action with the highest Q(s,a)
+    """    
+    actions = gameState.getLegalActions()
+    values = [self.evaluate(gameState, a) for a in actions]
+    maxValue = max(values)
+    bestActions = [a for a, v in zip(actions,values) if v == maxValue]
+
+    return random.choice(bestActions)
+
+
+  def getSuccessor(self, gameState, action):
+    """
+    find the next successor
+    """
+    successor = gameState.generateSuccessor(self.index, action)
+    pos = successor.getAgentState(self.index).getPosition()
+    if pos != nearestPoint(pos):
+        # only half a grid position is covered
+        return successor.generateSuccessor(self.index, action)
+    else:
+        return successor 
+
+  def evaluate(self, gameState, action):
+    """
+    compute combination of features and feature weights
+    """    
+    features = self.getFeatures(gameState, action)
+    weights = self.getWeights(gameState, action)
+    return features * weights
+
+  def getFeatures(self, gameState, action):
+    """
+    get a counter of features for the state
+    """
+    features = util.Counter()
+    successor = self.getSuccessor(gameState,action)
+    features['successorScore'] = self.getScore(successor)
+    return features
+  
+  def getWeights(self, gameState, action):
+    """
+    Normally, weights do not depend on the gamestate.  They can be either
+    a counter or a dictionary.
+    """
+    return {'successorScore': 1.0}  
+        
+        
+
 class DummyAgent(CaptureAgent):
+      
   """
   A Dummy agent to serve as an example of the necessary agent structure.
   You should look at baselineTeam.py for more details about how to
@@ -90,3 +147,8 @@ class DummyAgent(CaptureAgent):
 
     return random.choice(actions)
 
+
+
+
+class CustomDefensiveAgent(ReflexCaptureAgent):
+      def chooseAction(self, gameState):
