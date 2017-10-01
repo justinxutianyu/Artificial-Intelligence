@@ -1,0 +1,72 @@
+
+
+
+For the first problem on reflex agent I used a combination of 4 factors to evaluate the desirability or utility of a successor state. The higher the value of a succesor state the more deirable it is from the pacman's point of view. The four factors are
+
+1. The distance from the closest ghost
+
+The pacman would want to go to a state where the distance from the ghost is maximum so that its possibility of being eaten is less. So the position of each ghost was calculated and the distance from them was found out. Next the inverse was taken of that distance. This inverse value was multiplied by a negetive weight. The negetive weighted inverse tells us that the less the distance the less the score and hence less desirable the state.
+
+2. The distance from the closest food
+
+Eating food would give the pacman more points. So for each of the possible legal moves for the pacman the distance from the closest food was calculated. Then inverse of this score called foodScore in the code was taken. The inverse signifies that less the distance more desirable is the state as the next state.
+
+3. The number of food left.
+
+The motivation behind this parameter was to motivate the pacman to eat up food. So the number of food in each successor state was calculated and it was given a negetive weight, meaning the more number of foods left on the state the less desirable the state is.
+
+4. The number of capsules left
+
+The motivation behind this parameter was to motivate the pacman to eat up capsules. So the number of capsules in each successor state was calculated and it was given a negetive weight, meaning the more number of foods left on the state the less desirable the state is. Capsules earn the pacman a greater point. So we gave a greater penalty (negetive weight to the number of capsules) in this case.
+
+
+
+
+
+Minimax Strategy:
+
+The minimax pruning algorithm uses a recursuve starategy to find out the next move of the pacman. 
+
+The minimax algorithm was run for the three board configurations of openclassic,smallclassic and minimax classic. The collected stats are as follows:
+
+
+
+
+
+
+
+
+
+Analysis of the parameters for the Reflex Agent:
+
+The evaluation function for the reflex agent was tested with different combinations. It was observed that as we incrementally added the different factors to the function the scores of the autograder improved substantially. This improvement was in terms of the time needed and the percentage pf the wins. The most dominating contributing factor in the performance was the number of distance to the closest ghost and the distance to the closest food. The other two factors marginnaly increased the efficiency of the algorithm.
+
+Comparitive Study of the algorithms:
+
+From the results obtained we can conclude that on the genral the AlphaBeta Pruning algorithm gives better results in terms of running time and number of states expanded than Minimax algorithm.
+
+The reason behind this is that alpha beta algorithm actively prunes many branche that are not needed. This leads to a lesser number of nodes expanded. This is true for all the depths. It is to be noted that although the time needed to complete the game is not hugely different in AlphaBeta and Minimax strategies the number of nodes expanded and hence the memory requirement is much much more in Minimax. The space required can be the diffreence between solving the problem or not. The space requirement increases drastically as increase the lookahead depth. This is intuitive as because the further down the game tree we go the more number of moves are possible.
+
+
+Minimax:
+
+SmallClassic depth=1
+SmallClassic depth=2	35940,26.5	40159,37.2	39789,38.56
+SmallClassic depth=3	183568,44.98	289109,67.25	198745,68.45		
+SmallClassic depth=4
+
+
+
+OpenClassic depth=2	698124,302.45	708789,296,45
+
+
+AB
+
+SmallClassic depth=1
+SmallClassic depth=2	9247,14.25	11948,18.96	22409,38.2	20463,29.72	
+SmallClassic depth=3	39420,23	35027,22	43887,26.34	44889,27.65
+SmallClassic depth=4
+
+
+openclassic depth=2 73389,50.14	80796,53.45
+

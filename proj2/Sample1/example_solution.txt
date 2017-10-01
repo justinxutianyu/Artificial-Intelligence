@@ -1,0 +1,282 @@
+
+ff: parsing domain file
+domain 'PACMAN-STRIPS' defined
+ ... done.
+ff: parsing problem file
+problem 'PACMAN-PROBLEM' defined
+ ... done.
+
+
+
+Cueing down from goal distance:  133 into depth [1]
+                                 132            [1]
+                                 131            [1]
+                                 130            [1]
+                                 129            [1]
+                                 128            [1]
+                                 127            [1]
+                                 126            [1]
+                                 125            [1]
+                                 124            [1]
+                                 123            [1]
+                                 122            [1]
+                                 115            [1][2][3]
+                                 108            [1][2][3][4][5][6]
+                                  94            [1]
+                                  93            [1]
+                                  92            [1]
+                                  91            [1]
+                                  90            [1]
+                                  89            [1]
+                                  88            [1]
+                                  87            [1]
+                                  86            [1]
+                                  85            [1]
+                                  84            [1]
+                                  83            [1]
+                                  76            [1]
+                                  75            [1]
+                                  74            [1]
+                                  73            [1]
+                                  72            [1][2]
+                                  71            [1][2][3][4]
+                                  70            [1]
+                                  69            [1][2][3][4][5]
+                                  67            [1][2][3]
+                                  66            [1][2][3][4]
+                                  65            [1][2][3][4][5]
+                                  64            [1]
+                                  63            [1][2][3]
+                                  62            [1][2][3][4][5][6][7][8]
+                                  61            [1]
+                                  60            [1]
+                                  59            [1]
+                                  58            [1][2][3][4][5][6][7][8][9][10][11]
+                                  57            [1]
+                                  56            [1]
+                                  55            [1]
+                                  54            [1][2][3][4][5][6][7][8]
+                                  42            [1][2][3][4][5][6]
+                                  41            [1][2][3][4][5]
+                                  40            [1]
+                                  39            [1][2][3][4][5][6][7][8][9]
+                                  38            [1][2][3][4][5][6][7]
+                                  37            [1][2][3][4][5]
+                                  36            [1]
+                                  35            [1]
+                                  34            [1][2][3][4][5][6][7][8][9]
+                                  33            [1][2][3][4][5][6][7][8][9][10]
+                                  28            [1]
+                                  27            [1]
+                                  26            [1]
+                                  25            [1]
+                                  24            [1]
+                                  23            [1]
+                                  22            [1]
+                                  21            [1]
+                                  20            [1]
+                                  19            [1]
+                                  18            [1]
+                                  17            [1]
+                                  16            [1]
+                                  15            [1]
+                                  14            [1]
+                                  13            [1]
+                                  12            [1]
+                                  11            [1]
+                                  10            [1]
+                                   9            [1][2]
+                                   8            [1]
+                                   7            [1]
+                                   6            [1]
+                                   5            [1]
+                                   4            [1]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: MOVE-PACMAN P_1_10 P_1_11
+        1: MOVE-PACMAN P_1_11 P_1_12
+        2: MOVE-PACMAN P_1_12 P_1_13
+        3: MOVE-PACMAN P_1_13 P_1_14
+        4: MOVE-PACMAN P_1_14 P_2_14
+        5: MOVE-PACMAN P_2_14 P_3_14
+        6: MOVE-PACMAN P_3_14 P_3_13
+        7: MOVE-PACMAN P_3_13 P_3_12
+        8: MOVE-PACMAN P_3_12 P_3_11
+        9: MOVE-PACMAN P_3_11 P_3_10
+       10: MOVE-PACMAN P_3_10 P_4_10
+       11: MOVE-PACMAN P_4_10 P_4_9
+       12: MOVE-PACMAN P_4_9 P_4_10
+       13: MOVE-PACMAN P_4_10 P_5_10
+       14: MOVE-PACMAN P_5_10 P_6_10
+       15: MOVE-PACMAN P_6_10 P_5_10
+       16: MOVE-PACMAN P_5_10 P_4_10
+       17: MOVE-PACMAN P_4_10 P_4_9
+       18: MOVE-PACMAN P_4_9 P_4_8
+       19: MOVE-PACMAN P_4_8 P_4_7
+       20: MOVE-PACMAN P_4_7 P_5_7
+       21: MOVE-PACMAN P_5_7 P_5_6
+       22: MOVE-PACMAN P_5_6 P_5_5
+       23: MOVE-PACMAN P_5_5 P_6_5
+       24: MOVE-PACMAN P_6_5 P_7_5
+       25: MOVE-PACMAN P_7_5 P_7_6
+       26: MOVE-PACMAN P_7_6 P_8_6
+       27: MOVE-PACMAN P_8_6 P_9_6
+       28: MOVE-PACMAN P_9_6 P_10_6
+       29: MOVE-PACMAN P_10_6 P_11_6
+       30: MOVE-PACMAN P_11_6 P_12_6
+       31: MOVE-PACMAN P_12_6 P_13_6
+       32: MOVE-PACMAN P_13_6 P_13_7
+       33: MOVE-PACMAN P_13_7 P_14_7
+       34: MOVE-PACMAN P_14_7 P_15_7
+       35: MOVE-PACMAN P_15_7 P_16_7
+       36: MOVE-PACMAN P_16_7 P_17_7
+       37: MOVE-PACMAN P_17_7 P_18_7
+       38: MOVE-PACMAN P_18_7 P_19_7
+       39: MOVE-PACMAN P_19_7 P_19_6
+       40: MOVE-PACMAN P_19_6 P_20_6
+       41: EAT-FOOD P_20_6 P_21_6
+       42: MOVE-PACMAN P_21_6 P_20_6
+       43: MOVE-PACMAN P_20_6 P_19_6
+       44: MOVE-PACMAN P_19_6 P_19_5
+       45: MOVE-PACMAN P_19_5 P_19_4
+       46: MOVE-PACMAN P_19_4 P_19_3
+       47: MOVE-PACMAN P_19_3 P_19_2
+       48: MOVE-PACMAN P_19_2 P_20_2
+       49: MOVE-PACMAN P_20_2 P_21_2
+       50: EAT-FOOD P_21_2 P_21_1
+       51: MOVE-PACMAN P_21_1 P_21_2
+       52: MOVE-PACMAN P_21_2 P_22_2
+       53: MOVE-PACMAN P_22_2 P_23_2
+       54: EAT-FOOD P_23_2 P_23_1
+       55: MOVE-PACMAN P_23_1 P_23_2
+       56: MOVE-PACMAN P_23_2 P_24_2
+       57: MOVE-PACMAN P_24_2 P_25_2
+       58: MOVE-PACMAN P_25_2 P_25_1
+       59: MOVE-PACMAN P_25_1 P_26_1
+       60: MOVE-PACMAN P_26_1 P_25_1
+       61: MOVE-PACMAN P_25_1 P_25_2
+       62: MOVE-PACMAN P_25_2 P_25_3
+       63: EAT-FOOD P_25_3 P_26_3
+       64: MOVE-PACMAN P_26_3 P_25_3
+       65: MOVE-PACMAN P_25_3 P_25_2
+       66: MOVE-PACMAN P_25_2 P_24_2
+       67: MOVE-PACMAN P_24_2 P_23_2
+       68: MOVE-PACMAN P_23_2 P_23_3
+       69: MOVE-PACMAN P_23_3 P_23_4
+       70: EAT-FOOD P_23_4 P_22_4
+       71: EAT-FOOD P_22_4 P_21_4
+       72: MOVE-PACMAN P_21_4 P_22_4
+       73: MOVE-PACMAN P_22_4 P_23_4
+       74: MOVE-PACMAN P_23_4 P_23_3
+       75: MOVE-PACMAN P_23_3 P_23_2
+       76: MOVE-PACMAN P_23_2 P_24_2
+       77: MOVE-PACMAN P_24_2 P_25_2
+       78: MOVE-PACMAN P_25_2 P_25_3
+       79: MOVE-PACMAN P_25_3 P_25_4
+       80: MOVE-PACMAN P_25_4 P_25_5
+       81: MOVE-PACMAN P_25_5 P_25_6
+       82: EAT-FOOD P_25_6 P_24_6
+       83: EAT-FOOD P_24_6 P_23_6
+       84: MOVE-PACMAN P_23_6 P_24_6
+       85: EAT-FOOD P_24_6 P_24_7
+       86: MOVE-PACMAN P_24_7 P_24_6
+       87: MOVE-PACMAN P_24_6 P_25_6
+       88: MOVE-PACMAN P_25_6 P_25_5
+       89: MOVE-PACMAN P_25_5 P_26_5
+       90: MOVE-PACMAN P_26_5 P_27_5
+       91: MOVE-PACMAN P_27_5 P_27_6
+       92: MOVE-PACMAN P_27_6 P_27_7
+       93: MOVE-PACMAN P_27_7 P_27_8
+       94: MOVE-PACMAN P_27_8 P_27_9
+       95: MOVE-PACMAN P_27_9 P_26_9
+       96: MOVE-PACMAN P_26_9 P_26_10
+       97: MOVE-PACMAN P_26_10 P_26_11
+       98: MOVE-PACMAN P_26_11 P_26_12
+       99: MOVE-PACMAN P_26_12 P_26_13
+      100: EAT-FOOD P_26_13 P_26_14
+      101: MOVE-PACMAN P_26_14 P_26_13
+      102: MOVE-PACMAN P_26_13 P_25_13
+      103: MOVE-PACMAN P_25_13 P_24_13
+      104: MOVE-PACMAN P_24_13 P_24_12
+      105: MOVE-PACMAN P_24_12 P_23_12
+      106: MOVE-PACMAN P_23_12 P_24_12
+      107: MOVE-PACMAN P_24_12 P_24_13
+      108: MOVE-PACMAN P_24_13 P_24_14
+      109: MOVE-PACMAN P_24_14 P_23_14
+      110: MOVE-PACMAN P_23_14 P_22_14
+      111: MOVE-PACMAN P_22_14 P_21_14
+      112: MOVE-PACMAN P_21_14 P_20_14
+      113: MOVE-PACMAN P_20_14 P_20_13
+      114: MOVE-PACMAN P_20_13 P_20_12
+      115: MOVE-PACMAN P_20_12 P_21_12
+      116: MOVE-PACMAN P_21_12 P_20_12
+      117: MOVE-PACMAN P_20_12 P_20_11
+      118: MOVE-PACMAN P_20_11 P_19_11
+      119: MOVE-PACMAN P_19_11 P_18_11
+      120: MOVE-PACMAN P_18_11 P_18_10
+      121: MOVE-PACMAN P_18_10 P_18_9
+      122: MOVE-PACMAN P_18_9 P_18_8
+      123: MOVE-PACMAN P_18_8 P_19_8
+      124: MOVE-PACMAN P_19_8 P_19_7
+      125: MOVE-PACMAN P_19_7 P_18_7
+      126: MOVE-PACMAN P_18_7 P_17_7
+      127: EAT-FOOD P_17_7 P_17_6
+      128: MOVE-PACMAN P_17_6 P_17_7
+      129: MOVE-PACMAN P_17_7 P_18_7
+      130: MOVE-PACMAN P_18_7 P_19_7
+      131: MOVE-PACMAN P_19_7 P_19_8
+      132: MOVE-PACMAN P_19_8 P_19_9
+      133: MOVE-PACMAN P_19_9 P_20_9
+      134: MOVE-PACMAN P_20_9 P_21_9
+      135: EAT-FOOD P_21_9 P_21_8
+      136: MOVE-PACMAN P_21_8 P_21_9
+      137: MOVE-PACMAN P_21_9 P_22_9
+      138: EAT-FOOD P_22_9 P_22_10
+      139: MOVE-PACMAN P_22_10 P_22_9
+      140: MOVE-PACMAN P_22_9 P_21_9
+      141: MOVE-PACMAN P_21_9 P_20_9
+      142: MOVE-PACMAN P_20_9 P_19_9
+      143: MOVE-PACMAN P_19_9 P_19_8
+      144: MOVE-PACMAN P_19_8 P_19_7
+      145: MOVE-PACMAN P_19_7 P_19_6
+      146: MOVE-PACMAN P_19_6 P_19_5
+      147: MOVE-PACMAN P_19_5 P_19_4
+      148: MOVE-PACMAN P_19_4 P_19_3
+      149: MOVE-PACMAN P_19_3 P_19_2
+      150: MOVE-PACMAN P_19_2 P_20_2
+      151: MOVE-PACMAN P_20_2 P_21_2
+      152: MOVE-PACMAN P_21_2 P_22_2
+      153: MOVE-PACMAN P_22_2 P_23_2
+      154: MOVE-PACMAN P_23_2 P_24_2
+      155: MOVE-PACMAN P_24_2 P_25_2
+      156: MOVE-PACMAN P_25_2 P_25_3
+      157: MOVE-PACMAN P_25_3 P_25_4
+      158: MOVE-PACMAN P_25_4 P_25_5
+      159: MOVE-PACMAN P_25_5 P_26_5
+      160: MOVE-PACMAN P_26_5 P_27_5
+      161: MOVE-PACMAN P_27_5 P_27_6
+      162: MOVE-PACMAN P_27_6 P_27_7
+      163: MOVE-PACMAN P_27_7 P_28_7
+      164: MOVE-PACMAN P_28_7 P_27_7
+      165: MOVE-PACMAN P_27_7 P_27_8
+      166: MOVE-PACMAN P_27_8 P_27_9
+      167: MOVE-PACMAN P_27_9 P_28_9
+      168: MOVE-PACMAN P_28_9 P_28_10
+      169: MOVE-PACMAN P_28_10 P_28_11
+      170: MOVE-PACMAN P_28_11 P_28_12
+      171: EAT-FOOD P_28_12 P_28_13
+      172: MOVE-PACMAN P_28_13 P_28_14
+     
+
+time spent:    0.00 seconds instantiating 3794 easy, 0 hard action templates
+               0.01 seconds reachability analysis, yielding 764 facts and 569 actions
+               0.00 seconds creating final representation with 763 relevant facts
+               0.00 seconds building connectivity graph
+               0.07 seconds searching, evaluating 982 states, to a max depth of 11
+               0.08 seconds total time
+
