@@ -76,7 +76,7 @@ params = {
 
 def createTeam(firstIndex, secondIndex, isRed,
                # first = 'OffensiveDQNAgent', second = 'StandStillAgent', offense=True,model_file=None, numTraining=100000):
-               first = 'DefensiveDQNAgent', second = 'StandStillAgent', offense=False, model_file=None, numTraining=100000):
+               first = 'OffensiveDQNAgent', second = 'DefensiveDQNAgent', offense=False, model_file=None, numTraining=100000):
     """
     This function should return a list of two agents that will form the
     team, initialized using firstIndex and secondIndex as their agent
