@@ -1,35 +1,24 @@
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
-python capture.py -r myTeam -b myTeamDQ5 -q 
+python .\capture.py -r myTeam -b myTeam16 -q -n 10
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM10
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM11
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM12
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM13
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM14
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM15
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM16
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM17
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM18
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM19
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM20
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM21
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM22
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM23
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM24
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM25
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM26
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM27
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM28
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM29
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM30
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM31
+python .\capture.py -r myTeam -b myTeam16 -q -l RANDOM32
