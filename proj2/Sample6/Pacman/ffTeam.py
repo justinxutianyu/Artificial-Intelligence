@@ -239,7 +239,7 @@ class ffAgentCollector(CaptureAgent):
     # If we're not on Windows, assume a Unix system (the servers)
     if not platform.system() == "Windows":
       # Call the ff planner
-      out = os.popen("/home/subjects/482/local/project/ff -o pacman-domain.pddl -f problem"\
+      out = os.popen("/Users/xutianyu/Documents/project/Artificial-Intelligence/proj2/Sample6/Pacman -o pacman-domain.pddl -f problem"\
                    + str(self.index + 1) + ".pddl").read()
       # Split the output into lines
       ffPlan = out.split("\n")
@@ -502,7 +502,7 @@ class ffAgentHunter(CaptureAgent):
     # If we're not on Windows, assume a Unix system (the servers)
     if not platform.system() == "Windows":
       # Call the ff planner
-      out = os.popen("/home/subjects/482/local/project/ff -o ghost-domain.pddl -f problem"\
+      out = os.popen("/Users/xutianyu/Documents/project/Artificial-Intelligence/proj2/Sample6/Pacman -o ghost-domain.pddl -f problem"\
                    + str(self.index + 1) + ".pddl").read()
       # Split the output into lines
       ffPlan = out.split("\n")
