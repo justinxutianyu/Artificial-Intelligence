@@ -719,7 +719,6 @@ class ExpectimaxAgent(ReflexAgent):
 # State evaluation agents #
 #                         #
 ###########################
-
 class StateEvaluationAgent(ExpectimaxAgent):
     """An agent class. Evaluate the state, not the reward. You can use it directly."""
 
@@ -745,9 +744,142 @@ class StateEvaluationAgent(ExpectimaxAgent):
         foodCarrying = successor.getAgentState(self.index).numCarrying
         foodReturned = successor.getAgentState(self.index).numReturned
         stopped = action == Directions.STOP
-        reversed = action != Directions.STOP and Actions.reverseDirection(
-            successor.getAgentState(self.index).getDirection()) == gameState.getAgentState(self.index).getDirection()
-        mapsize = successor.getWalls().height * successor.getWalls.width
+        reversed = action != Directions.STOP and Actions.reverseDirection(successor.getAgentState(self.index).getDirection()) == gameState.getAgentState(self.index).getDirection()
+
+        def isPacman(state, index):
+            return state.getAgentState(index).isPacman
+        def isGhost(state, index):
+            return not isPacman(state, index)
+        def isScared(state, index):
+            return state.data.agentStates[index].scaredTimer > 0  # and isGhost(state, index)
+        def isInvader(state, index):
+            return index in opponentIndices and isPacman(state, index)
+        def isHarmfulInvader(state, index):
+            return isInvader(state, index) and isScared(state, self.index)
+        def isHarmlessInvader(state, index):
+            return isInvader(state, index) and not isScared(state, self.index)
+        def isHarmfulGhost(state, index):
+            return index in opponentIndices and isGhost(state, index) and not isScared(state, index)
+        def isHarmlessGhost(state, index):
+            return index in opponentIndices and isGhost(state, index) and isScared(state, index)
+
+        def getDistance(pos):
+            return self.getMazeDistance(position, pos)
+        def getPosition(state, index):
+            return state.getAgentPosition(index)
+        def getScaredTimer(state, index):
+            return state.getAgentState(index).scaredTimer
+        def getFoodCarrying(state, index):
+            return state.getAgentState(index).numCarrying
+        def getFoodReturned(state, index):
+            return state.getAgentState(index).numReturned
+        def getPositionFactor(distance):
+            return (float(distance) / (walls.width * walls.height))
+
+        features = util.Counter()
+
+        features["stopped"] = 1 if stopped else 0
+
+        features["reversed"] = 1 if reversed else 0
+
+        features["scared"] = 1 if isScared(successor, self.index) else 0
+
+        features["food_returned"] = foodReturned
+
+        features["food_carrying"] = foodCarrying
+
+        features["food_defend"] = len(defendFoodList)
+
+        features["nearest_food_distance_factor"] = float(getDistance(foodList[0])) / (walls.height * walls.width) if len(foodList) > 0 else 0
+
+        features["nearest_capsules_distance_factor"] = float(getDistance(capsulesList[0])) / (walls.height * walls.width) if len(capsulesList) > 0 else 0
+
+        returnFoodX = walls.width / 2 - 1 if self.red else walls.width / 2
+        nearestFoodReturnDistance = min([getDistance((returnFoodX, y)) for y in range(walls.height) if not walls[returnFoodX][y]])
+        features["return_food_factor"] = float(nearestFoodReturnDistance) / (walls.height * walls.width) * foodCarrying
+
+        features["team_distance"] = float(sum([getDistance(getPosition(successor, i)) for i in teamIndices if i != self.index])) / (walls.height * walls.width)
+
+        harmlessInvaders = [i for i in opponentIndices if isHarmlessInvader(successor, i)]
+        features["harmless_invader_distance_factor"] = max([getPositionFactor(getDistance(getPosition(successor, i))) * (getFoodCarrying(successor, i) + 5) for i in harmlessInvaders]) if len(harmlessInvaders) > 0 else 0
+
+        harmfullInvaders = [i for i in opponentIndices if isHarmfulInvader(successor, i)]
+        features["harmful_invader_distance_factor"] = max([getPositionFactor(getDistance(getPosition(successor, i))) for i in harmfullInvaders]) if len(harmfullInvaders) > 0 else 0
+
+        harmlessGhosts = [i for i in opponentIndices if isHarmlessGhost(successor, i)]
+        features["harmless_ghost_distance_factor"] = max([getPositionFactor(getDistance(getPosition(successor, i))) for i in harmlessGhosts]) if len(harmlessGhosts) > 0 else 0
+
+        return features
+
+    def getWeights(self, gameState, actionAgentIndex, action):
+        return {
+            "stopped": -2.0,
+            "reversed": -1.0,
+            "scared": -2.0,
+            "food_returned": 10.0,
+            "food_carrying": 8.0,
+            "food_defend": 5.0,
+            "nearest_food_distance_factor": -1.0,
+            "nearest_capsules_distance_factor": -0.5,
+            "return_food_factor": -0.5, # 1.5
+            "team_distance": 0.5,
+            "harmless_invader_distance_factor": -0.4,
+            "harmful_invader_distance_factor": 0.4,
+            "harmless_ghost_distance_factor": -0.2,
+        }
+
+class StateEvaluationOffensiveAgent(StateEvaluationAgent):
+    """An agent class. Optimized for offense. You can use it directly."""
+
+    ######################
+    # overload functions #
+    ######################
+
+    def getWeights(self, gameState, actionAgentIndex, action):
+        return {
+            "stopped": -2.0,
+            "reversed": -1.0,
+            "scared": -2.0,
+            "food_returned": 10.0,
+            "food_carrying": 8.0,
+            "food_defend": 0.0,
+            "nearest_food_distance_factor": -1.0,
+            "nearest_capsules_distance_factor": -1.0,
+            "return_food_factor": -0.5, # 1.5
+            # "team_distance": 0.5,
+            "harmless_invader_distance_factor": -0.1,
+            "harmful_invader_distance_factor": 0.1,
+            "harmless_ghost_distance_factor": -0.2,
+        }
+
+
+
+class StateEvaluationDefensiveAgent(ExpectimaxAgent):
+    """An agent class. Evaluate the state, not the reward. You can use it directly."""
+
+    # overload functions
+
+    def getFeatures(self, gameState, actionAgentIndex, action):
+        assert actionAgentIndex == self.index
+        successor = self.getSuccessor(gameState, actionAgentIndex, action)
+
+        walls = successor.getWalls()
+        position = successor.getAgentPosition(self.index)
+        teamIndices = self.getTeam(successor)
+        opponentIndices = self.getOpponents(successor)
+        foodList = self.getFood(successor).asList()
+        foodList.sort(key=lambda x: self.getMazeDistance(position, x))
+        defendFoodList = self.getFoodYouAreDefending(successor).asList()
+        capsulesList = self.getCapsules(successor)
+        capsulesList.sort(key=lambda x: self.getMazeDistance(position, x))
+        defendCapsulesList = self.getCapsulesYouAreDefending(successor)
+        scaredTimer = successor.getAgentState(self.index).scaredTimer
+        foodCarrying = successor.getAgentState(self.index).numCarrying
+        foodReturned = successor.getAgentState(self.index).numReturned
+        #stopped = action == Directions.STOP
+        #reversed = action != Directions.STOP and Actions.reverseDirection(
+        #    successor.getAgentState(self.index).getDirection()) == gameState.getAgentState(self.index).getDirection()
+        map_size = successor.getWalls().height * successor.getWalls().width
 
         def isPacman(state, index):
             return state.getAgentState(index).isPacman
@@ -794,13 +926,15 @@ class StateEvaluationAgent(ExpectimaxAgent):
         features = util.Counter()
 
         #features["stopped"] = 1 if stopped else 0
-        if stopped:
+        if action == Directions.STOP:
             features["stopped"] = 1
         else:
             features["stopped"] = 0
 
         #features["reversed"] = 1 if reversed else 0
-        if reversed:
+        if action != Directions.STOP and \
+                        Actions.reverseDirection(successor.getAgentState(self.index).getDirection()) \
+                        == gameState.getAgentState(self.index).getDirection():
             features["reversed"] = 1
         else:
             features["reversed"] = 0
@@ -811,25 +945,26 @@ class StateEvaluationAgent(ExpectimaxAgent):
         else:
             features["scared"] = 0
 
-        features["food_returned"] = foodReturned
+        features["food_returned"] = successor.getAgentState(self.index).numReturned
 
-        features["food_carrying"] = foodCarrying
+        features["food_carrying"] = successor.getAgentState(self.index).numCarrying
 
         features["food_defend"] = len(defendFoodList)
 
-        #features["nearest_food_distance_factor"] = float(getDistance(foodList[0])) / (
-        #walls.height * walls.width) if len(foodList) > 0 else 0
+        features["nearest_food_distance_factor"] = float(getDistance(foodList[0])) / (
+        walls.height * walls.width) if len(foodList) > 0 else 0
+        """
         if len(foodList) > 0:
             distance = self.getMazeDistance(successor.getAgentPosition(self.index), foodList[0])
-            features["nearest_food_distance_factor"] = float(distance/mapsize)
+            features["nearest_food_distance_factor"] = float(distance/map_size)
         else:
             features["nearest_food_distance_factor"] = 0
-
+        """
         #features["nearest_capsules_distance_factor"] = float(getDistance(capsulesList[0])) / (
         # walls.height * walls.width) if len(capsulesList) > 0 else 0
         if len(capsulesList) > 0:
             distance = self.getMazeDistance(successor.getAgentPosition(self.index), capsulesList[0])
-            features["nearest_capsules_distance_factor"] = float(distance/mapsize)
+            features["nearest_capsules_distance_factor"] = float(distance/map_size)
 
         #returnFoodX = walls.width / 2 - 1 if self.red else walls.width / 2
         if self.red:
@@ -837,83 +972,101 @@ class StateEvaluationAgent(ExpectimaxAgent):
         else:
             returnFoodX = walls.width/2
 
+        #nearestFoodReturnDistance = min(
+        #    [getDistance((returnFoodX, y)) for y in range(walls.height) if not walls[returnFoodX][y]])
+        #features["return_food_factor"] = float(nearestFoodReturnDistance) / (walls.height * walls.width) * foodCarrying
+        
+        closest_food = "+inf"
+        for i in range(walls.height):
+            if not walls[returnFoodX][i]:
+                temp_distance = self.getMazeDistance(successor.getAgentPosition(self.index), (returnFoodX, i))
+                if distance < closest_food:
+                    closest_food = temp_distance
+
+        features["return_food_factor"] = \
+            float(closest_food)/map_size * successor.getAgentState(self.index).numCarrying
         
 
+        #features["team_distance"] = float(
+        #    sum([getDistance(getPosition(successor, i)) for i in teamIndices if i != self.index])) / (
+        #                            walls.height * walls.width)
+        sum_distance = 0
+        for i in teamIndices:
+            if i != self.index:
+                sum_distance = sum_distance + \
+                            self.getMazeDistance(successor.getAgentPosition(self.index), successor.getAgentPosition(i))
 
-        nearestFoodReturnDistance = min(
-            [getDistance((returnFoodX, y)) for y in range(walls.height) if not walls[returnFoodX][y]])
-        features["return_food_factor"] = float(nearestFoodReturnDistance) / (walls.height * walls.width) * foodCarrying
+        features["team_distance"] = sum_distance
 
-        features["team_distance"] = float(
-            sum([getDistance(getPosition(successor, i)) for i in teamIndices if i != self.index])) / (
-                                    walls.height * walls.width)
+        #harmlessInvaders = [i for i in opponentIndices if isHarmlessInvader(successor, i)]
+        #features["harmless_invader_distance_factor"] = max(
+        #    [getPositionFactor(getDistance(getPosition(successor, i))) * (getFoodCarrying(successor, i) + 5) for i in
+        #    harmlessInvaders]) if len(harmlessInvaders) > 0 else 0
+        
+        peace_invaders = []
+        evil_invaders = []
+        ghosts = []
 
-        harmlessInvaders = [i for i in opponentIndices if isHarmlessInvader(successor, i)]
-        features["harmless_invader_distance_factor"] = max(
-            [getPositionFactor(getDistance(getPosition(successor, i))) * (getFoodCarrying(successor, i) + 5) for i in
-             harmlessInvaders]) if len(harmlessInvaders) > 0 else 0
+        for i in opponentIndices:
+            if successor.getAgentState(i).isPacman:
+                if successor.data.agentStates[i].scaredTimer > 0:
+                    evil_invaders.append(i)
+                else:
+                    peace_invaders.append(i)
+            else:
+                if successor.data.agentStates[i].scaredTimer > 0:
+                    ghosts.append(i)
 
-        harmfullInvaders = [i for i in opponentIndices if isHarmfulInvader(successor, i)]
-        features["harmful_invader_distance_factor"] = max(
-            [getPositionFactor(getDistance(getPosition(successor, i))) for i in harmfullInvaders]) if len(
-            harmfullInvaders) > 0 else 0
 
-        harmlessGhosts = [i for i in opponentIndices if isHarmlessGhost(successor, i)]
-        features["harmless_ghost_distance_factor"] = max(
-            [getPositionFactor(getDistance(getPosition(successor, i))) for i in harmlessGhosts]) if len(
-            harmlessGhosts) > 0 else 0
+        if len(peace_invaders) > 0:
+            max_factor = "-inf"
+            for invader in peace_invaders:
+                temp_distance = \
+                    self.getMazeDistance(successor.getAgentPosition(self.index), successor.getAgentPosition(invader))
+                temp_food = successor.getAgentState(i).numCarrying
+                temp_factor = temp_distance * temp_food
+                if temp_factor > max_factor:
+                    max_factor = temp_factor
 
+            features["harmless_invader_distance_factor"] = temp_factor
+        else:
+            features["harmless_invader_distance_factor"] = 0
+        
+
+        #harmfullInvaders = [i for i in opponentIndices if isHarmfulInvader(successor, i)]
+        #features["harmful_invader_distance_factor"] = max(
+        #    [getPositionFactor(getDistance(getPosition(successor, i))) for i in harmfullInvaders]) if len(
+        #    harmfullInvaders) > 0 else 0
+        
+        if len(evil_invaders) > 0:
+            max_distance = "-inf"
+            for invader in evil_invaders:
+                temp_distance = \
+                    self.getMazeDistance(successor.getAgentPosition(self.index), successor.getAgentPosition(invader))
+                if temp_distance > max_distance:
+                    max_distance = temp_distance
+            features["harmful_invader_distance_factor"] = max_distance
+        else:
+            features["harmful_invader_distance_factor"] = 0
+        
+
+        #harmlessGhosts = [i for i in opponentIndices if isHarmlessGhost(successor, i)]
+        #features["harmless_ghost_distance_factor"] = max(
+        #    [getPositionFactor(getDistance(getPosition(successor, i))) for i in harmlessGhosts]) if len(
+        #    harmlessGhosts) > 0 else 0
+        
+        if len(ghosts) > 0:
+            max_distance = "-inf"
+            for ghost in ghosts:
+                temp_distance = \
+                    self.getMazeDistance(successor.getAgentPosition(self.index), successor.getAgentPosition(ghost))
+                if temp_distance > max_distance:
+                    max_distance = temp_distance
+            features["harmless_ghost_distance_factor"] = max_distance
+        else:
+            features["harmless_ghost_distance_factor"] = 0
+        
         return features
-
-    def getWeights(self, gameState, actionAgentIndex, action):
-        return {
-            "stopped": -2.0,
-            "reversed": -1.0,
-            "scared": -2.0,
-            "food_returned": 10.0,
-            "food_carrying": 8.0,
-            "food_defend": 5.0,
-            "nearest_food_distance_factor": -1.0,
-            "nearest_capsules_distance_factor": -0.5,
-            "return_food_factor": -0.5,  # 1.5
-            "team_distance": 0.5,
-            "harmless_invader_distance_factor": -0.4,
-            "harmful_invader_distance_factor": 0.4,
-            "harmless_ghost_distance_factor": -0.2,
-        }
-
-
-class StateEvaluationOffensiveAgent(StateEvaluationAgent):
-    """An agent class. Optimized for offense. You can use it directly."""
-
-    ######################
-    # overload functions #
-    ######################
-
-    def getWeights(self, gameState, actionAgentIndex, action):
-        return {
-            "stopped": -2.0,
-            "reversed": -1.0,
-            "scared": -2.0,
-            "food_returned": 10.0,
-            "food_carrying": 8.0,
-            "food_defend": 0.0,
-            "nearest_food_distance_factor": -1.0,
-            "nearest_capsules_distance_factor": -1.0,
-            "return_food_factor": -0.5,  # 1.5
-            # "team_distance": 0.5,
-            "harmless_invader_distance_factor": -0.1,
-            "harmful_invader_distance_factor": 0.1,
-            "harmless_ghost_distance_factor": -0.2,
-        }
-
-
-class StateEvaluationDefensiveAgent(StateEvaluationAgent):
-    """An agent class. Optimized for defence. You can use it directly."""
-
-    ######################
-    # overload functions #
-    ######################
 
     def getWeights(self, gameState, actionAgentIndex, action):
         return {
@@ -933,19 +1086,3 @@ class StateEvaluationDefensiveAgent(StateEvaluationAgent):
         }
 
 
-#####################################
-#                                   #
-# Test approximate q-learning agent #
-#                                   #
-#####################################
-
-### TestApproximateQLearningAgent
-
-
-################################################
-#                                              #
-# Test optimized monte carlo tree search agent #
-#                                              #
-################################################
-
-### TestOptimizedMonteCarloTreeSearchAgent
