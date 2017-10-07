@@ -26,7 +26,7 @@ from DQN import *
 
 params = {
     # Model backups
-    'load_file': ./saves,
+    'load_file': None,
     'save_file': None,
     'save_interval' : 10000, 
 

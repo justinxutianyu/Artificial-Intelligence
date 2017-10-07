@@ -1,0 +1,251 @@
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+Red team starts
+The Red team has returned at least 18 of the opponents' dots.
+Red team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+1
+Blue team starts
+Time is up.
+The Red team wins by 21 points.
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+1
+Red team starts
+The Red team has returned at least 28 of the opponents' dots.
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+1
+Blue team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+2
+Blue team starts
+Time is up.
+The Red team wins by 4 points.
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+3
+Blue team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+1
+Blue team starts
+Time is up.
+The Red team wins by 11 points.
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+1
+Red team starts
+Time is up.
+The Red team wins by 25 points.
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+1
+Blue team starts
+The Blue team has returned at least 28 of the opponents' dots.
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+1
+Red team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+0
+Red team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+3
+Blue team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+1
+Blue team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+3
+Red team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+1
+Red team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+3
+Blue team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+1
+Red team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+0
+Blue team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+1
+Red team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+1
+Blue team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+1
+Red team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+0
+Blue team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+0
+Red team starts
+
+Red team myTeam with {}:
+Loading Team: myTeam.py
+Arguments: {}
+
+Blue team myTeam16 with {}:
+Loading Team: myTeam16.py
+Arguments: {}
+3
+Blue team starts

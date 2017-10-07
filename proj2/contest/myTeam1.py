@@ -1434,11 +1434,13 @@ class MCTSDefendAgent(CaptureAgent):
       # choose the target defender should guard      
       enemies = [gameState.getAgentState(i) for i in self.getOpponents(gameState)]
       invaders = [a for a in enemies if a.isPacman and a.getPosition() != None]
+      #actions = gameState.getLegalActions(self.index)
+
       # update goal
       if gameState.getAgentState(self.index).getPosition == self.goal:
           self.goal = None
       
-      #Observe invaders go after him
+      #Observe invaders chase it
       if len(invaders) > 0:
             positions = [enemy.getPosition for enemy in enemies]
             self.goal = positions
@@ -1467,14 +1469,43 @@ class MCTSDefendAgent(CaptureAgent):
               for i in self.route.keys():                     
                   self.route[i] = float(self.route[i])/float(sum)
 
-      if self.goal == None:
-          if len(self.prevObserved) == len(self.getCapsulesYouAreDefending(gameState).asList())
-      
-
       # No invaders and there exists target, go patrolling
-
+      if self.goal == None:
+          if len(self.prevObserved) == len(self.getCapsulesYouAreDefending(gameState).asList()) <= 4:
+              self.goal = random.choice(self.getCapsulesYouAreDefending + self.getFoodYouAreDefending)
+          else:
+              temp = random.random
+              temp2 = 0
+              for pos in self.guardPositions.keys():
+                  temp2 = temp2 + temp
+                  if temp < temp2:
+                      self.goal = pos
+                      break
+                    
       # No invaders and there no exists target, random choose target from central positions
-      
       # Update the food positions
       self.prevObserved = self.getFoodYouAreDefending(gameState).asList()
+      actions = getAction(gameState)
+
+      return random.choice(actions)
+
+  def getAction(self, gameState):
+      actions = gameState.getLegalActions(self.index)
+      #minValue = "+inf"
+      minDistance = "+inf"
+      bestActions = []
+      for action in actions:
+          newState = gameState.getSuccessor(self.index, action)
+          if not action == Directions.STOP and not newState.getAgentState(self.index).isPacman:
+              newPosition = gameState.getSuccessor(self.index, action)
+              newDistance = self.getMazeDistance(newPosition, self.target)
+              if newDistance < minDistance:
+                  minDistance = newDistance
+                  bestActions.append(action)
+              elif newDistance == minDistance:
+                  bestActions.append(action)
+    
+      return bestActions               
+                        
+        
 
