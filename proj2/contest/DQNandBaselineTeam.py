@@ -77,7 +77,7 @@ params = {
 #################
 
 def createTeam(firstIndex, secondIndex, isRed,
-               first = 'OffensiveDQNAgent', second = 'DefensiveReflexAgent'):
+               first = 'OffensiveDQNAgent', second = 'MCTSDefendAgent'):
     """
     This function should return a list of two agents that will form the
     team, initialized using firstIndex and secondIndex as their agent
@@ -784,6 +784,147 @@ class DefensiveReflexAgent(ReflexCaptureAgent):
 #
 #     def chooseAction(self,gameState):
 #         return Directions.STOP
+
+
+class MCTSDefendAgent(CaptureAgent):
+  def __init__(self, index):
+    CaptureAgent.__init__(self, index)
+    self.target = None
+    self.lastObservedFood = None
+    # This variable will store our patrol points and
+    # the agent probability to select a point as target.
+    self.patrolDict = {}
+
+  def distFoodToPatrol(self, gameState):
+    """
+    This method calculates the minimum distance from our patrol
+    points to our pacdots. The inverse of this distance will
+    be used as the probability to select the patrol point as
+    target.
+    """
+    food = self.getFoodYouAreDefending(gameState).asList()
+    total = 0
+
+    # Get the minimum distance from the food to our
+    # patrol points.
+    for position in self.noWallSpots:
+      closestFoodDist = "+inf"
+      for foodPos in food:
+        dist = self.getMazeDistance(position, foodPos)
+        if dist < closestFoodDist:
+          closestFoodDist = dist
+      # We can't divide by 0!
+      if closestFoodDist == 0:
+        closestFoodDist = 1
+      self.patrolDict[position] = 1.0/float(closestFoodDist)
+      total += self.patrolDict[position]
+    # Normalize the value used as probability.
+    if total == 0:
+      total = 1
+    for x in self.patrolDict.keys():
+      self.patrolDict[x] = float(self.patrolDict[x])/float(total)
+
+  def selectPatrolTarget(self):
+    """
+    Select some patrol point to use as target.
+    """
+    rand = random.random()
+    sum = 0.0
+    for x in self.patrolDict.keys():
+      sum += self.patrolDict[x]
+      if rand < sum:
+        return x
+
+  # Implemente este metodo para pre-processamento (15s max).
+  def registerInitialState(self, gameState):
+    CaptureAgent.registerInitialState(self, gameState)
+    self.distancer.getMazeDistances()
+
+    # Compute central positions without walls from map layout.
+    # The defender will walk among these positions to defend
+    # its territory.
+    if self.red:
+      centralX = (gameState.data.layout.width - 2)/2
+    else:
+      centralX = ((gameState.data.layout.width - 2)/2) + 1
+    self.noWallSpots = []
+    for i in range(1, gameState.data.layout.height - 1):
+      if not gameState.hasWall(centralX, i):
+        self.noWallSpots.append((centralX, i))
+    # Remove some positions. The agent do not need to patrol
+    # all positions in the central area.
+    while len(self.noWallSpots) > (gameState.data.layout.height -2)/2:
+      self.noWallSpots.pop(0)
+      self.noWallSpots.pop(len(self.noWallSpots)-1)
+    # Update probabilities to each patrol point.
+    self.distFoodToPatrol(gameState)
+
+
+  # Implemente este metodo para controlar o agente (1s max).
+  def chooseAction(self, gameState):
+    # You can profile your evaluation time by uncommenting these lines
+    #start = time.time()
+
+    # If some of our food was eaten, we need to update
+    # our patrol points probabilities.
+    if self.lastObservedFood and len(self.lastObservedFood) != len(self.getFoodYouAreDefending(gameState).asList()):
+      self.distFoodToPatrol(gameState)
+
+    mypos = gameState.getAgentPosition(self.index)
+    if mypos == self.target:
+      self.target = None
+
+    # If we can see an invader, we go after him.
+    x = self.getOpponents(gameState)
+    enemies  = [gameState.getAgentState(i) for i in self.getOpponents(gameState)]
+    invaders = filter(lambda x: x.isPacman and x.getPosition() != None, enemies)
+    if len(invaders) > 0:
+      positions = [agent.getPosition() for agent in invaders]
+      self.target = min(positions, key = lambda x: self.getMazeDistance(mypos, x))
+    # If we can't see an invader, but our pacdots were eaten,
+    # we will check the position where the pacdot disappeared.
+    elif self.lastObservedFood != None:
+      eaten = set(self.lastObservedFood) - set(self.getFoodYouAreDefending(gameState).asList())
+      if len(eaten) > 0:
+        self.target = eaten.pop()
+
+    # Update the agent memory about our pacdots.
+    self.lastObservedFood = self.getFoodYouAreDefending(gameState).asList()
+
+    # No enemy in sight, and our pacdots are not disappearing.
+    # If we have only a few pacdots, let's walk among them.
+    if self.target == None and len(self.getFoodYouAreDefending(gameState).asList()) <= 4:
+      food = self.getFoodYouAreDefending(gameState).asList() \
+           + self.getCapsulesYouAreDefending(gameState)
+      self.target = random.choice(food)
+    # If we have many pacdots, let's patrol the map central area.
+    elif self.target == None:
+      self.target = self.selectPatrolTarget()
+
+    # Choose action. We will take the action that brings us
+    # closer to the target. However, we will never stay put
+    # and we will never invade the enemy side.
+    actions = gameState.getLegalActions(self.index)
+    goodActions = []
+    fvalues = []
+    for a in actions:
+      new_state = gameState.generateSuccessor(self.index, a)
+      if not new_state.getAgentState(self.index).isPacman and not a == Directions.STOP:
+        newpos = new_state.getAgentPosition(self.index)
+        goodActions.append(a)
+        fvalues.append(self.getMazeDistance(newpos, self.target))
+
+    # Randomly chooses between ties.
+    best = min(fvalues)
+    ties = filter(lambda x: x[0] == best, zip(fvalues, goodActions))
+
+    #print 'eval time for defender agent %d: %.4f' % (self.index, time.time() - start)
+    return random.choice(ties)[1]  
+
+
+
+
+
 
 
 

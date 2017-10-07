@@ -1,3 +1,9 @@
+# MySearchTeam.py
+# ---------------
+# by Zongjian Li
+# partner Weijia Chen
+# for AI course final project
+
 from captureAgents import CaptureAgent
 import distanceCalculator
 import random, time, util, sys
@@ -18,7 +24,7 @@ default_params = {
     "consideration_distance_factor": 1.5,  # agents far than (search_distance * factor) will be considered stay still
     "expand_factor": 1.0,  # factor to balance searial and parallel work load, now 1.0 is okay
     "truncate_remain_time_percent": 0.1,  #
-    "eval_total_reward": False,  # otherwise eval state. It controls whether add up values.
+    "eval_total_reward": True,  # otherwise eval state. It controls whether add up values.
 
     "enable_stay_inference_optimization": True,  # used in position inference
     "enable_stop_action": False,  # used in many agents, whether enable STOP action.
@@ -40,8 +46,8 @@ default_params = {
 #################
 
 def createTeam(firstIndex, secondIndex, isRed,
-                first='StateEvaluationOffensiveAgent',
-                second='StateEvaluationDefensiveAgent',
+                first= 'ActionEvaluationOffensiveAgent',
+                second= 'StateEvaluationDefensiveAgent',
                 particleSum = None,
                 maxDepth = None,
                 maxPosition = None,
@@ -65,7 +71,20 @@ def createTeam(firstIndex, secondIndex, isRed,
                 exploration = None,
                 maxSample = None,
                ):
-
+    """
+    This function should return a list of two agents that will form the
+    team, initialized using firstIndex and secondIndex as their agent
+    index numbers.  isRed is True if the red team is being created, and
+    will be False if the blue team is being created.
+    
+    As a potentially helpful development aid, this function can take
+    additional string-valued keyword arguments ("first" and "second" are
+    such arguments in the case of this function), which will come from
+    the --redOpts and --blueOpts command-line arguments to capture.py.
+    For the nightly contest, however, your team will be created without
+    any extra arguments, so you should make sure that the default
+    behavior is what you want for the nightly contest.
+    """
     if particleSum is not None: default_params["particle_sum"] = int(particleSum)
     if maxDepth is not None: default_params["max_depth"] = int(maxDepth)
     if maxPosition is not None: default_params["max_position"] = int(maxPosition)
