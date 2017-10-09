@@ -1,23 +1,23 @@
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM10
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM11
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM12
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM13
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM14
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM15
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOm11
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM17
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM18
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM19
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM20
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM21
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM22
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM23
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM24
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM25
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM26
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM27
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM28
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM29
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM30
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM31
-python capture.py -r MySearchTeam -b baselineTeam -q -l RANDOM32
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM10
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM11
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM12
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM13
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM14
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM15
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOm11
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM17
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM18
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM19
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM20
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM21
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM22
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM23
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM24
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM25
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM26
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM27
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM28
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM29
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM30
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM31
+python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM32
