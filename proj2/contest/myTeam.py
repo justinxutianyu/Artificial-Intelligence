@@ -1,6 +1,9 @@
 from captureAgents import CaptureAgent
 import distanceCalculator
-import random, time, util, sys
+import random
+import time
+import util
+import sys
 from game import Directions, Actions
 import game
 from util import nearestPoint
@@ -25,7 +28,7 @@ default_params = {
     "enable_stay_inference_optimization": True,  # used in position inference
     "enable_stop_action": False,  # used in many agents, whether enable STOP action.
     "enable_stop_transition": False,  # used in position inference, enable this to allow STOP transition
-    "enable_print_log": False,  # print or not
+    "enable_print_log": True,  # print or not
     "enable_coarse_partition": True,  # used in parallel agents, coarse partition or fine partition.
 
     "discount": 0.9,  # used in q-learning agent
@@ -197,18 +200,26 @@ class UtilAgent(CaptureAgent):
 # inference agent positions using particle filtering #
 #                                                    #
 ######################################################
+"""
+ It inherits the class CaptureAgent and uses particle filtering algorithm to inference the positions of opponents.
+"""
 
-class PositionInferenceAgent(UtilAgent):
-    """A virtual agent class. Inherite this class to get position inference ability. It uses particle filtering algorithm."""
+class PositionInferenceAgent(CaptureAgent):
 
-    ######################
-    # overload functions #
-    ######################
+    # overloading functions
 
     isFullyObserved = None  # not implemented yet
+    width = None
+    height = None
+    particleSum = None
+    particleDicts = None
+    walls = None
 
     def registerInitialState(self, gameState):
-        UtilAgent.registerInitialState(self, gameState)
+        #UtilAgent.registerInitialState(self, gameState)
+        CaptureAgent.registerInitialState(self, gameState)
+        self.actionTimeLimit = default_params["action_time_limit"]
+
         PositionInferenceAgent.isFullyObserved = default_params["fully_observed"]  # TODO:
         self.initPositionInference(gameState)
 
@@ -226,13 +237,69 @@ class PositionInferenceAgent(UtilAgent):
 
     def final(self, gameState):
         PositionInferenceAgent.particleSum = None
-        UtilAgent.final(self, gameState)
+        PositionInferenceAgent.final(self, gameState)
+
+    def chooseAction(self, gameState):
+        self.log("Agent %d:" % (self.index,))
+        self.time = {"START": time.time()}
+
+        #action = self.takeAction(gameState)
+        self.time["BEFORE_POSITION_INFERENCE"] = time.time()
+        self.updatePositionInference(gameState)
+        self.checkPositionInference(gameState)
+        self.updateBeliefDistribution()
+        self.displayDistributionsOverPositions(self.bliefDistributions)
+        self.getCurrentAgentPostions(self.getTeam(gameState)[0])
+        self.time["AFTER_POISITION_INFERENCE"] = time.time()
+        bestAction = self.selectAction(gameState)
+        self.time["END"] = time.time()
+        self.printTimes()
+        return bestAction
+
+    # Picks among the actions with the highest Q(s,a).
+    def selectAction(self, gameState):
+        actions = gameState.getLegalActions(self.index)
+        foodLeft = len(self.getFood(gameState).asList())
+        if foodLeft <= 2:
+            bestDist = 9999
+            for action in actions:
+                successor = self.getSuccessor(gameState, self.index, action)
+                pos2 = successor.getAgentPosition(self.index)
+                #dist = self.getMazeDistance(self.start, pos2)
+                dist = self.getMazeDistance(gameState.getAgentPosition(self.index), pos2)
+                if dist < bestDist:
+                    bestAction = action
+                    bestDist = dist
+            return bestAction
+
+        self.time["BEFORE_REFLEX"] = time.time()
+        bestAction = self.pickAction(gameState)
+        self.time["AFTER_REFLEX"] = time.time()
+
+        return bestAction
+
+
+    def pickAction(self, gameState):
+        bestValue = float("-inf")
+        bestAction = None
+        for action in gameState.getLegalActions(self.index):
+            value = self.evaluate(gameState.getAgentPosition(self.index), self.index, action)
+            if value > bestValue:
+                bestValue = value
+                bestAction = action
+        return bestAction
 
     #####################
     # virtual functions #
     #####################
 
-    def selectAction(self, gameState):
+    #def selectAction(self, gameState):
+    #    util.raiseNotDefined()
+
+    def getFeatures(self, gameState, actionAgentIndex, action):
+        util.raiseNotDefined()
+
+    def getWeights(self, gameState, actionAgentIndex, action):
         util.raiseNotDefined()
 
     ##############
@@ -258,15 +325,7 @@ class PositionInferenceAgent(UtilAgent):
     def getCurrentMostLikelyPosition(self, agentIndex):
         return self.getCurrentAgentPostions(agentIndex)[0]
 
-    #############
-    # inference #
-    #############
-
-    width = None
-    height = None
-    particleSum = None
-    particleDicts = None
-    walls = None
+    # inference
 
     def initPositionInference(self, gameState):
         if PositionInferenceAgent.particleSum is None:
@@ -354,6 +413,53 @@ class PositionInferenceAgent(UtilAgent):
                                    PositionInferenceAgent.particleDicts]
         for dict in self.bliefDistributions: dict.normalize() if dict is not None else None
 
+    # Supporting Function
+
+    def log(self, content, classification=LogClassification.INFOMATION):
+        if default_params["enable_print_log"]:
+            print(str(content))
+        pass
+
+    def timePast(self):
+        return time.time() - self.time["START"]
+
+    def timePastPercent(self):
+        return self.timePast() / self.actionTimeLimit
+
+    def timeRemain(self):
+        return self.actionTimeLimit - self.timePast()
+
+    def timeRemainPercent(self):
+        return self.timeRemain() / self.actionTimeLimit
+
+    def printTimes(self):
+        timeList = list(self.time.items())
+        timeList.sort(key=lambda x: x[1])
+        relativeTimeList = []
+        startTime = self.time["START"]
+        totalTime = timeList[len(timeList) - 1][1] - startTime
+        reachActionTimeLimit = totalTime >= self.actionTimeLimit
+        for i in range(1, len(timeList)):
+            j = i - 1
+            k, v = timeList[i]
+            _, lastV = timeList[j]
+            time = v - lastV
+            if time >= 0.0001:
+                relativeTimeList.append("%s:%.4f" % (k, time))
+        prefix = "O " if not reachActionTimeLimit else "X "
+        prefix += "Total %.4f " % (totalTime,)
+        self.log(prefix + str(relativeTimeList))
+
+    def getSuccessor(self, gameState, actionAgentIndex, action):
+        """Finds the next successor which is a grid position (location tuple)."""
+        successor = gameState.generateSuccessor(actionAgentIndex, action)
+        pos = successor.getAgentState(actionAgentIndex).getPosition()
+        if pos != nearestPoint(pos):
+            # Only half a grid position was covered
+            return successor.generateSuccessor(actionAgentIndex, action)
+        else:
+            return successor
+
     #########
     # utils #
     #########
@@ -416,106 +522,31 @@ class PositionInferenceAgent(UtilAgent):
                 return elems[chosenIndex]
         raise Exception('Should not reach here')
 
-
-##############################################
-#                                            #
-# a virtual class                            #
-# linear combination of features and weights #
-#                                            #
-##############################################
-
-class ReflexAgent(PositionInferenceAgent):
-    """A virtual agent class. Basiclly same with ReflexAgent in baselineTeam.py, but inherited from PositionInferenceAgent."""
-
-    ######################
-    # overload functions #
-    ######################
-
-    def registerInitialState(self, gameState):
-        PositionInferenceAgent.registerInitialState(self, gameState)
-        self.start = gameState.getAgentPosition(self.index)
-
-    def selectAction(self, gameState):
-        """
-        Picks among the actions with the highest Q(s,a).
-        """
-        actions = gameState.getLegalActions(self.index)
-        foodLeft = len(self.getFood(gameState).asList())
-        if foodLeft <= 2:
-            bestDist = 9999
-            for action in actions:
-                successor = self.getSuccessor(gameState, self.index, action)
-                pos2 = successor.getAgentPosition(self.index)
-                dist = self.getMazeDistance(self.start, pos2)
-                if dist < bestDist:
-                    bestAction = action
-                    bestDist = dist
-            return bestAction
-
-        self.time["BEFORE_REFLEX"] = time.time()
-        bestAction = self.pickAction(gameState)
-        self.time["AFTER_REFLEX"] = time.time()
-
-        return bestAction
-
-    #####################
-    # virtual functions #
-    #####################
-
-    def getFeatures(self, gameState, actionAgentIndex, action):
-        util.raiseNotDefined()
-
-    def getWeights(self, gameState, actionAgentIndex, action):
-        util.raiseNotDefined()
-
-    ######################
-    # linear combination #
-    ######################
-
-    def pickAction(self, gameState):
-        bestValue = float("-inf")
-        bestAction = None
-        for action in gameState.getLegalActions(self.index):
-            value = self.evaluate(gameState, self.index, action)
-            if value > bestValue:
-                bestValue = value
-                bestAction = action
-        return bestAction
-
-    #########
-    # utils #
-    #########
-
     def evaluate(self, gameState, actionAgentIndex, action):
         """
         Computes a linear combination of features and feature weights
         """
         features = self.getFeatures(gameState, actionAgentIndex, action)
         weights = self.getWeights(gameState, actionAgentIndex, action)
+        print(features)
+        print(weights)
         return features * weights
 
+# linear combination of features and weights #
 
-###############################
-#                             #
-# a virtual class             #
-# search expectimax in serial #
-#                             #
-###############################
 
 class TimeoutException(Exception):
     """A custom exception for truncating search."""
     pass
 
 
-class ExpectimaxAgent(ReflexAgent):
+class ExpectimaxAgent(PositionInferenceAgent):
     """A virtual agent class. It uses depth first search to find the best action. It can stop before time limit."""
 
-    ######################
-    # overload functions #
-    ######################
+    #initialize the parameters
 
     def registerInitialState(self, gameState):
-        ReflexAgent.registerInitialState(self, gameState)
+        PositionInferenceAgent.registerInitialState(self, gameState)
         self.start = gameState.getAgentPosition(self.index)
         self.maxDepth = default_params["max_depth"]
         self.maxInferencePositionCount = default_params["max_position"]
@@ -559,6 +590,7 @@ class ExpectimaxAgent(ReflexAgent):
         # get index and depth of next agent which can be searched
         #nextAgentIndex, nextDepth = self.getNextSearchableAgentIndexAndDepth(gameState, searchAgentIndices, agentIndex,
         #                                                                     depth)
+
         nextAgentIndex = agentIndex
         nextDepth = depth
         while True:
@@ -575,11 +607,12 @@ class ExpectimaxAgent(ReflexAgent):
             if nextAgentIndex in searchAgentIndices:
                 break
 
+
         bestValue = float("-inf")
         bestAction = None
         # if agentIndex in self.getTeam(gameState):  # team work
         if agentIndex == self.index:  # no team work, is better
-            #bestValue = float("-inf")
+            bestValue = float("-inf")
             legalActions = gameState.getLegalActions(agentIndex)
             if not default_params["enable_stop_action"]:
                 legalActions.remove(Directions.STOP)  # STOP is not allowed
@@ -596,7 +629,7 @@ class ExpectimaxAgent(ReflexAgent):
                 if newAlpha > alpha: alpha = newAlpha
                 if alpha >= beta: break
         else:
-            #bestValue = float("inf")
+            bestValue = float("inf")
             for action in gameState.getLegalActions(agentIndex):
                 successorState = gameState.generateSuccessor(agentIndex, action)
                 newBeta, _ = self.searchRecursive(successorState, nextAgentIndex, searchAgentIndices, nextDepth, alpha,
@@ -715,14 +748,13 @@ class ExpectimaxAgent(ReflexAgent):
     def ifTimeoutRaiseTimeoutException(self):
         if self.timeRemainPercent() < default_params["truncate_remain_time_percent"]:
             raise TimeoutException()
-"""
+
     def getNextAgentIndex(self, gameState, currentAgentIndex):
         nextAgentIndex = currentAgentIndex + 1
         nextAgentIndex = 0 if nextAgentIndex >= gameState.getNumAgents() else nextAgentIndex
         return nextAgentIndex
-"""
 
-"""
+
     def getNextSearchableAgentIndexAndDepth(self, gameState, searchAgentIndices, currentAgentIndex, currentDepth):
         nextAgentIndex = currentAgentIndex
         nextDepth = currentDepth
@@ -731,13 +763,10 @@ class ExpectimaxAgent(ReflexAgent):
             nextDepth = nextDepth - 1 if nextAgentIndex == self.index else nextDepth
             if nextAgentIndex in searchAgentIndices: break
         return nextAgentIndex, nextDepth
-"""
 
-###########################
-#                         #
+
 # State evaluation agents #
-#                         #
-###########################
+
 class StateEvaluationAgent(ExpectimaxAgent):
     """An agent class. Evaluate the state, not the reward. You can use it directly."""
 
@@ -847,7 +876,6 @@ class StateEvaluationAgent(ExpectimaxAgent):
             "harmless_ghost_distance_factor": -0.2,
         }
 
-
 class StateEvaluationOffensiveAgent(StateEvaluationAgent):
     """An agent class. Optimized for offense. You can use it directly."""
 
@@ -871,6 +899,7 @@ class StateEvaluationOffensiveAgent(StateEvaluationAgent):
             "harmful_invader_distance_factor": 0.1,
             "harmless_ghost_distance_factor": -0.2,
         }
+
 
 
 class StateEvaluationDefensiveAgent(ExpectimaxAgent):
@@ -1019,7 +1048,7 @@ class StateEvaluationDefensiveAgent(ExpectimaxAgent):
                     self.getMazeDistance(successor.getAgentPosition(self.index), successor.getAgentPosition(invader))
                 if temp_distance > max_distance:
                     max_distance = temp_distance
-            features["harmful_invader_distance_factor"] = max_distance
+            features["harmful_invader_distance_factor"] = float(max_distance)/map_size
         else:
             features["harmful_invader_distance_factor"] = 0
         
