@@ -15,7 +15,7 @@ default_params = {
     "max_depth": 50,  # used in expectimax agents, it can be very large, but will be limited by actionTimeLimit
     "max_position": 1,
     # used in expectimax agents. How many inferenced positions for each agent are used to evaluate state/reward.
-    "action_time_limit": 1.0,  # higher if you want to search deeper
+    "action_time_limit": 0.95,  # higher if you want to search deeper
     "fully_observed": False,  # not ready yet
     "consideration_distance_factor": 1.5,  # agents far than (search_distance * factor) will be considered stay still
     "expand_factor": 1.0,  # factor to balance searial and parallel work load, now 1.0 is okay
@@ -25,7 +25,7 @@ default_params = {
     "enable_stay_inference_optimization": True,  # used in position inference
     "enable_stop_action": False,  # used in many agents, whether enable STOP action.
     "enable_stop_transition": False,  # used in position inference, enable this to allow STOP transition
-    "enable_print_log": False,  # print or not
+    "enable_print_log": True,  # print or not
     "enable_coarse_partition": True,  # used in parallel agents, coarse partition or fine partition.
 
     "discount": 0.9,  # used in q-learning agent

@@ -1,8 +1,3 @@
-# MySearchTeam.py
-# ---------------
-# by Zongjian Li
-# partner Weijia Chen
-# for AI course final project
 
 from captureAgents import CaptureAgent
 import distanceCalculator
@@ -19,7 +14,7 @@ default_params = {
     "particle_sum": 3000,   # used in position inference
     "max_depth": 50,  # used in expectimax agents, it can be very large, but will be limited by actionTimeLimit
     "max_position": 1,  # used in expectimax agents. How many inferenced positions for each agent are used to evaluate state/reward.
-    "action_time_limit": 1.0,  # higher if you want to search deeper
+    "action_time_limit": 0.95,  # higher if you want to search deeper
     "fully_observed": False,  # not ready yet
     "consideration_distance_factor": 1.5,  # agents far than (search_distance * factor) will be considered stay still
     "expand_factor": 1.0,  # factor to balance searial and parallel work load, now 1.0 is okay
