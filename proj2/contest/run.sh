@@ -1,23 +1,11 @@
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM10
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM11
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM12
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM13
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM14
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM15
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOm11
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM17
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM18
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM19
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM20
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM21
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM22
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM23
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM24
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM25
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM26
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM27
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM28
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM29
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM30
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM31
-python capture.py -r MySearchTeam -b baselineTeam  -l RANDOM32
+python capture.py -r myTeam0  -b MySearchTeam  -l RANDOM1115 -q --record > log_RANDOM1115
+python capture.py -r myTeam0  -b MySearchTeam  -l RANDOM1216 -q --record > log_RANDOM1216
+python capture.py -r myTeam0  -b MySearchTeam  -l RANDOM1317 -q --record > log_RANDOM1317
+python capture.py -r myTeam0  -b MySearchTeam  -l RANDOM1418 -q --record > log_RANDOM1418
+python capture.py -r myTeam0  -b MySearchTeam  -l RANDOM1519 -q --record > log_RANDOM1519
+python capture.py -r myTeam0  -b MySearchTeam  -l RANDOM1620 -q --record > log_RANDOM1620
+python capture.py -r myTeam0  -b MySearchTeam  -l RANDOM1721 -q --record > log_RANDOM1721
+python capture.py -r myTeam0  -b MySearchTeam  -l RANDOM1822 -q --record > log_RANDOM1822
+python capture.py -r myTeam0  -b MySearchTeam  -l RANDOM1923 -q --record > log_RANDOM1923
+python capture.py -r myTeam0  -b MySearchTeam  -l RANDOM1199 -q --record > log_RANDOM1999
+
