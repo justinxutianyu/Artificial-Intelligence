@@ -29,7 +29,7 @@ default_params = {
     "enable_stay_inference_optimization": True,  # used in position inference
     "enable_stop_action": False,  # used in many agents, whether enable STOP action.
     "enable_stop_transition": False,  # used in position inference, enable this to allow STOP transition
-    "enable_print_log": True,  # print or not
+    "enable_print_log": False,  # print or not
     "enable_coarse_partition": True,  # used in parallel agents, coarse partition or fine partition.
 
     "discount": 0.9,  # used in q-learning agent
@@ -46,7 +46,7 @@ default_params = {
 #################
 
 def createTeam(firstIndex, secondIndex, isRed,
-                first= 'ActionEvaluationOffensiveAgent',
+                first= 'StateEvaluationOffensiveAgent',
                 second= 'StateEvaluationDefensiveAgent',
                 particleSum = None,
                 maxDepth = None,
@@ -1544,7 +1544,7 @@ class ActionEvaluationOffensiveAgent(ActionEvaluationAgent):
 #                         #
 ###########################
 
-class StateEvaluationAgent(ExpectimaxAgent):
+class StateEvaluationAgent(ApproximateQLearningAgent):
     """An agent class. Evaluate the state, not the reward. You can use it directly."""
 
     ######################

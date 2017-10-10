@@ -16,7 +16,7 @@ import game
 #################
 
 def createTeam(firstIndex, secondIndex, isRed,
-               first = 'SecretAgent', second = 'MCTSDefendAgent'):
+               first = 'SecretAgent', second = 'SecretAgent'):
   """
   This function should return a list of two agents that will form the
   team, initialized using firstIndex and secondIndex as their agent
