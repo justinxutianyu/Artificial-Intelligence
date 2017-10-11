@@ -223,7 +223,11 @@ class PositionInferenceAgent(UtilAgent):
 
     def takeAction(self, gameState):
         self.time["BEFORE_POSITION_INFERENCE"] = time.time()
+        #print("Before")
+        #print(PositionInferenceAgent.particleDicts)
         self.updatePositionInference(gameState)
+        #print("After")
+        #print(PositionInferenceAgent.particleDicts)
         self.checkPositionInference(gameState)
         self.updateBeliefDistribution()
         self.displayDistributionsOverPositions(self.bliefDistributions)
@@ -287,6 +291,7 @@ class PositionInferenceAgent(UtilAgent):
 
             for agentIndex in self.getOpponents(gameState):
                 self.initParticleDict(agentIndex)
+            print self.particleDicts
 
     def updatePositionInference(self, gameState):
         def update(particleDict, sonarDistance, isStay):
@@ -318,6 +323,7 @@ class PositionInferenceAgent(UtilAgent):
                     candidateParticleDict[tile] += newProbability
             if len(candidateParticleDict) > 0:
                 newPariticleDict = util.Counter()
+                print(PositionInferenceAgent.particleSum)
                 for _ in range(PositionInferenceAgent.particleSum):
                     tile = self.weightedRandomChoice(candidateParticleDict)
                     newPariticleDict[tile] += 1
@@ -334,6 +340,7 @@ class PositionInferenceAgent(UtilAgent):
                 sonarDistance = gameState.agentDistances[agentIndex]
                 isStay = not (agentIndex == self.index - 1 or agentIndex == self.index + gameState.getNumAgents() - 1)
                 # self.log("Opponent Agent %d is %s" % (agentIndex, "STAY" if isStay else "MOVE"))
+                #print(PositionInferenceAgent.particleDicts)
                 PositionInferenceAgent.particleDicts[agentIndex] = update(particleDict, sonarDistance, isStay)
 
     def checkPositionInference(self, gameState):

@@ -118,8 +118,347 @@ class LogClassification:
     WARNING = "Warning"
     ERROR = "Error"
 
+class InferenceModule(CaptureAgent):
+    """
+    An inference module tracks a belief distribution over a ghost's location.
+    This is an abstract class, which you should not modify.
+    """
 
-# inference agent positions using particle filtering
+    def registerInitialState(self, gameState):
+        "Sets the ghost agent for later access"
+        CaptureAgent.registerInitialState(self, gameState)
+        #self.index = self.agent.index
+
+        self.num_particles = None
+        self.particles = []  # most recent observation position
+        self.width = gameState.data.layout.width
+        self.height = gameState.data.layout.height
+        self.walls = gameState.getWalls()
+        InferenceModule.walls = gameState.getWalls()
+        #self.initializeInference(gameState)
+        self.setNumParticles(default_params["particle_sum"])
+        self.particles = [None for _ in range(gameState.getNumAgents())]
+        for index in self.getOpponents(gameState):
+            self.initializeParticles(index)
+            #print("initial success")
+        #print(self.particles)
+
+
+    width = None
+    height = None
+    particleSum = None
+    particles = None
+    walls = None
+
+
+    def getJailPosition(self):
+        return (2 * self.ghostAgent.index - 1, 1)
+
+    def getPositionDistribution(self, gameState):
+        """
+        Returns a distribution over successor positions of the ghost from the
+        given gameState.
+
+        You must first place the ghost in the gameState, using setGhostPosition
+        below.
+        """
+        ghostPosition = gameState.getGhostPosition(self.index)  # The position you set
+        actionDist = self.ghostAgent.getDistribution(gameState)
+        dist = util.Counter()
+        for action, prob in actionDist.items():
+            successorPosition = game.Actions.getSuccessor(ghostPosition, action)
+            dist[successorPosition] = prob
+        return dist
+
+    def setGhostPosition(self, gameState, ghostPosition):
+        """
+        Sets the position of the ghost for this inference module to the
+        specified position in the supplied gameState.
+
+        Note that calling setGhostPosition does not change the position of the
+        ghost in the GameState object used for tracking the true progression of
+        the game.  The code in inference.py only ever receives a deep copy of
+        the GameState object which is responsible for maintaining game state,
+        not a reference to the original object.  Note also that the ghost
+        distance observations are stored at the time the GameState object is
+        created, so changing the position of the ghost will not affect the
+        functioning of observeState.
+        """
+        conf = game.Configuration(ghostPosition, game.Directions.STOP)
+        gameState.data.agentStates[self.index] = game.AgentState(conf, False)
+        return gameState
+
+    def observeState(self, gameState):
+        "Collects the relevant noisy distance observation and pass it along."
+        distances = gameState.getNoisyGhostDistances()
+        if len(distances) >= self.index:  # Check for missing observations
+            obs = distances[self.index - 1]
+            self.obs = obs
+            self.observe(obs, gameState)
+
+
+    """
+    def initialize(self, gameState):
+        "Initializes beliefs to a uniform distribution over all positions."
+        # The legal positions do not include the ghost prison cells in the bottom left.
+        self.legalPositions = [p for p in gameState.getWalls().asList(False) if p[1] > 1]
+        self.initializeUniformly(gameState)
+    """
+
+    def initializeInference(self, gameState):
+        if self.num_particles is None:
+            self.width = gameState.data.layout.width
+            self.height = gameState.data.layout.height
+            self.setNumParticles(default_params["particle_sum"])
+            self.particles = [None for _ in range(gameState.getNumAgents())]
+            self.walls = gameState.getWalls()
+
+            for index in self.getOpponents(gameState):
+                self.initializeParticles(index)
+
+
+    ############################################
+    # Useful methods for all inference modules #
+    ############################################
+
+    def setNumParticles(self, numParticles):
+        self.num_particles = numParticles
+
+    def checkPositionInference(self, gameState):
+        for agentIndex in range(gameState.getNumAgents()):
+            if agentIndex in self.getOpponents(gameState):  # postion of teammates are always available
+            # when eat pacman (not for sure)
+                def eatPacmanJudge():
+                    previous = self.getPreviousObservation()
+                    if previous is not None:
+                        previousOppoPos = previous.getAgentPosition(agentIndex)
+                        if previousOppoPos is not None:
+                            if previousOppoPos == gameState.getAgentPosition(self.index):
+                                return True
+                    return False
+
+                if eatPacmanJudge():
+                    self.particles(agentIndex)
+
+                    # when observed
+                agentPosition = gameState.getAgentPosition(agentIndex)
+                if agentPosition is not None:
+                    self.particles[agentIndex] = util.Counter()
+                    self.particles[agentIndex][
+                    agentPosition] = self.num_particles
+
+     # Initialize the particles
+
+    def getFullParticleDict(self):
+        result = util.Counter()
+        xStart = 1
+        xEnd = self.width - 1
+        yStart = 1
+        yEnd = self.height - 1
+        total = 0
+        for x in range(xStart, xEnd):
+            for y in range(yStart, yEnd):
+                if not self.walls[x][y]:
+                    total += 1
+        for x in range(xStart, xEnd):
+            for y in range(yStart, yEnd):
+                if not self.walls[x][y]:
+                    result[(x, y)] = self.num_particles / total
+        return result
+
+    def getParticles(self):
+        particles = util.Counter()
+
+        sum = 0
+        for x in range(1, self.width - 1):
+            for y in range(1, self.height - 1):
+                if not self.walls[x][y]:
+                    sum = sum + 1
+        for x in range(1, self.width - 1):
+            for y in range(1, self.height - 1):
+                if not self.walls[x][y]:
+                    particles[(x, y)] = self.num_particles/sum
+
+        return particles
+
+    # Set Particles For Each Opponent
+    def initializeParticles(self, index):
+
+        if self.red:
+            count = 0
+
+            for x in range(self.width - 2, self.width - 1):
+                for y in range(self.height/2, self.height - 1):
+                    if not self.walls[x][y]:
+                        count = count + 1
+
+            self.particles[index] = util.Counter()
+            for x in range(self.width - 2, self.width - 1):
+                for y in range(self.height/2, self.height - 1):
+                    if not self.walls[x][y]:
+                        self.particles[index][(x, y)] = self.num_particles/count
+        else:
+            count = 0
+
+            for x in range(1, 2):
+                for y in range(1 / 2, self.height/2):
+                    if not self.walls[x][y]:
+                        count = count + 1
+
+            self.particles[index] = util.Counter()
+            for x in range(self.width - 2, self.width - 1):
+                 for y in range(self.height / 2, self.height - 1):
+                    if not self.walls[x][y]:
+                        self.particles[index][(x, y)] = self.num_particles / count
+
+    def weightedRandomChoice(self, weightDict):
+        weights = []
+        elems = []
+        for elem in weightDict:
+            weights.append(weightDict[elem])
+            elems.append(elem)
+            total = sum(weights)
+            key = random.uniform(0, total)
+            runningTotal = 0.0
+            chosenIndex = None
+            for i in range(len(weights)):
+                weight = weights[i]
+                runningTotal += weight
+                if runningTotal >= key:
+                    chosenIndex = i
+                    return elems[chosenIndex]
+            raise Exception('Should not reach here')
+
+
+    # Update Inference from the noisy distance
+    def updateParticles(self, state):
+        def update(particleDict, sonarDistance, isStay):
+            if isStay and default_params["enable_stay_inference_optimization"]:
+                transferedParticleDict = particleDict
+            else:
+                transferedParticleDict = util.Counter()
+                #print(particleDict)
+                for tile, sum in particleDict.items():
+                    x, y = tile
+                    available = [tile] if default_params["enable_stop_transition"] else []
+                    if not self.walls[x][y + 1]: available.append((x, y + 1))
+                    if not self.walls[x][y - 1]: available.append((x, y - 1))
+                    if not self.walls[x - 1][y]: available.append((x - 1, y))
+                    if not self.walls[x + 1][y]: available.append((x + 1, y))
+                    # assume equal trans prob
+                    for newTile in available:
+                        transferedParticleDict[newTile] += sum / len(available)
+                    remainSum = sum % len(available)
+                    #print sum, len(available)
+                    #print(remainSum)
+                    for _ in range(remainSum):
+                        newTile = random.choice(available)
+                        transferedParticleDict[newTile] += 1
+            agentX, agentY = agentPosition
+            candidateParticleDict = util.Counter()
+            for tile, sum in transferedParticleDict.items():
+                x, y = tile
+                distance = abs(agentX - x) + abs(agentY - y)
+                newProbability = state.getDistanceProb(distance, sonarDistance) * sum
+                if newProbability > 0:
+                    candidateParticleDict[tile] += newProbability
+            if len(candidateParticleDict) > 0:
+                newPariticleDict = util.Counter()
+                for _ in range(self.num_particles):
+                    tile = self.weightedRandomChoice(candidateParticleDict)
+                    newPariticleDict[tile] += 1
+                return newPariticleDict
+            else:
+                #self.log("Lost target", classification=LogClassification.WARNING)
+                #return self.getFullParticleDict()
+                return self.getParticles()
+
+        agentPosition = state.getAgentPosition(self.index)
+        #position = state.getAgentPosition(self.index)
+        enemies = self.getOpponents(state)
+
+        for index in range(state.getNumAgents()):
+            if index in enemies:
+                noise_distance = state.agentDistances[index]
+                temp_particles = self.particles[index]
+
+                #flag = True
+                #isStay = not (index == self.index - 1 or index == self.index + state.getNumAgents() - 1)
+                if index == self.index - 1 or (index == (self.index + state.getNumAgents() - 1)):
+                    flag = False
+                else:
+                    flag = True
+                # self.log("Opponent Agent %d is %s" % (agentIndex, "STAY" if isStay else "MOVE"))
+
+                self.particles[index] = update(temp_particles, noise_distance, flag)
+
+        """"
+        agentPosition = state.getAgentPosition(self.index)
+
+        for agentIndex in range(state.getNumAgents()):
+            if agentIndex in self.getOpponents(state):
+                particleDict = self.particles[agentIndex]
+                sonarDistance = state.agentDistances[agentIndex]
+                isStay = not (agentIndex == self.index - 1 or agentIndex == self.index + state.getNumAgents() - 1)
+                # self.log("Opponent Agent %d is %s" % (agentIndex, "STAY" if isStay else "MOVE"))
+                PositionInferenceAgent.particleDicts[agentIndex] = update(particleDict, sonarDistance, isStay)
+        """
+
+    def updatePositionInference(self, gameState):
+        def update(particleDict, sonarDistance, isStay):
+            if isStay and default_params["enable_stay_inference_optimization"]:
+                transferedParticleDict = particleDict
+            else:
+                transferedParticleDict = util.Counter()
+                for tile, sum in particleDict.items():
+                    x, y = tile
+                    available = [tile] if default_params["enable_stop_transition"] else []
+                    if not self.walls[x][y + 1]: available.append((x, y + 1))
+                    if not self.walls[x][y - 1]: available.append((x, y - 1))
+                    if not self.walls[x - 1][y]: available.append((x - 1, y))
+                    if not self.walls[x + 1][y]: available.append((x + 1, y))
+                    # assume equal trans prob
+                    for newTile in available:
+                        transferedParticleDict[newTile] += sum / len(available)
+                    remainSum = sum % len(available)
+                    for _ in range(remainSum):
+                        newTile = random.choice(available)
+                        transferedParticleDict[newTile] += 1
+            agentX, agentY = agentPosition
+            candidateParticleDict = util.Counter()
+            for tile, sum in transferedParticleDict.items():
+                x, y = tile
+                distance = abs(agentX - x) + abs(agentY - y)
+                newProbability = gameState.getDistanceProb(distance, sonarDistance) * sum
+                if newProbability > 0:
+                    candidateParticleDict[tile] += newProbability
+            if len(candidateParticleDict) > 0:
+                newPariticleDict = util.Counter()
+                for _ in range(self.num_particles):
+                    tile = self.weightedRandomChoice(candidateParticleDict)
+                    newPariticleDict[tile] += 1
+                print(newPariticleDict)
+                return newPariticleDict
+            else:
+                #self.log("Lost target", classification=LogClassification.WARNING)
+                return self.getParticles()
+
+        agentPosition = gameState.getAgentPosition(self.index)
+
+        for agentIndex in range(gameState.getNumAgents()):
+            if agentIndex in self.getOpponents(gameState):
+                particleDict = self.particles[agentIndex]
+                sonarDistance = gameState.agentDistances[agentIndex]
+                isStay = not (agentIndex == self.index - 1 or agentIndex == self.index + gameState.getNumAgents() - 1)
+                # self.log("Opponent Agent %d is %s" % (agentIndex, "STAY" if isStay else "MOVE"))
+                #print(PositionInferenceAgent.particleDicts)
+                self.particles[agentIndex] = update(particleDict, sonarDistance, isStay)
+
+
+
+
+
+# Inference agent positions using Particle Filter Algorithm
 
 class PositionInferenceAgent(CaptureAgent):
 
@@ -144,7 +483,8 @@ class PositionInferenceAgent(CaptureAgent):
         self.updatePositionInference(gameState)
         self.checkPositionInference(gameState)
         self.updateBeliefDistribution()
-        self.displayDistributionsOverPositions(self.beliefDistributions)
+        self.displayDistributionsOverPositions(self.beliefDistributions
+                                               )
         self.getCurrentAgentPostions(self.getTeam(gameState)[0])
         self.record["AFTER_POISITION_INFERENCE"] = time.time()
         # for index in range(gameState.getNumAgents()): self.log("AGENT", index, "STATE", gameState.data.agentStates[index], "CONF", gameState.data.agentStates[index].configuration)
@@ -175,6 +515,7 @@ class PositionInferenceAgent(CaptureAgent):
         foodLeft = len(self.getFood(gameState).asList())
         if foodLeft <= 2:
             bestDist = 9999
+            bestAction = None
             for action in actions:
                 successor = self.getSuccessor(gameState, self.index, action)
                 #pos2 = successor.getAgentPosition(self.index)
@@ -457,7 +798,6 @@ class PositionInferenceAgent(CaptureAgent):
         raise Exception('Should not reach here')
 
 
-
 class ReflexAgent(PositionInferenceAgent):
     """A virtual agent class. Basiclly same with ReflexAgent in baselineTeam.py, but inherited from PositionInferenceAgent."""
 
@@ -534,7 +874,7 @@ class TimeoutException(Exception):
     pass
 
 
-class ExpectimaxAgent(CaptureAgent):
+class ExpectimaxAgent(InferenceModule):
     """A virtual agent class. It uses depth first search to find the best action. It can stop before time limit."""
 
     ######################
@@ -554,10 +894,20 @@ class ExpectimaxAgent(CaptureAgent):
     """
     def registerInitialState(self, gameState):
         #PositionInferenceAgent.registerInitialState(self, gameState)
-        CaptureAgent.registerInitialState(self, gameState)
+
+        InferenceModule.registerInitialState(self, gameState)
         self.actionTimeLimit = default_params["action_time_limit"]
         #PositionInferenceAgent.isFullyObserved = default_params["fully_observed"]
-        self.initPositionInference(gameState)
+        #self.initPositionInference(gameState)
+
+        #self.width = gameState.data.layout.width
+        #self.height = gameState.data.layout.height
+        #self.walls = gameState.getWalls()
+
+
+        #self.model = InferenceModule(self, gameState)
+        #self.model.__init__(self, gameState)
+        #self.model.__init__(self, gameState)
         self.beliefDistributions = []
         #self.starting_point = gameState.getAgentPosition(self.index)
 
@@ -580,9 +930,64 @@ class ExpectimaxAgent(CaptureAgent):
 
         # choose the best action
         self.record["BEFORE_POSITION_INFERENCE"] = time.time()
-        self.updatePositionInference(gameState)
-        self.checkPositionInference(gameState)
-        self.updateBeliefDistribution()
+        #self.updatePositionInference(gameState)
+        print("Before")
+        print(self.particles)
+        #self.updateParticles(gameState)
+        self.updateParticles(gameState)
+        print ("After")
+        print(self.particles)
+
+        #self.checkPositionInference(gameState)
+
+        for i in range(gameState.getNumAgents()):
+            if i in self.getOpponents(gameState) :
+                """"
+                def eatPacmanJudge():
+                    previous = self.getPreviousObservation()
+                    if previous is not None:
+                        previousOppoPos = previous.getAgentPosition(agentIndex)
+                        if previousOppoPos is not None:
+                            if previousOppoPos == gameState.getAgentPosition(self.index):
+                                return True
+                    return False
+                """
+                #if eatPacmanJudge():
+                if self.getPreviousObservation() is not None:
+                    if self.getPreviousObservation().getAgentPosition(i) is not None:
+                        if self.getPreviousObservation().getAgentPosition(i) == gameState.getAgentPosition(self.index):
+                            #self.initParticleDict(agentIndex)
+                            print("particles have been set")
+                            self.initializeParticles(i)
+
+                """"
+                agentPosition = gameState.getAgentPosition(agentIndex)
+                if agentPosition is not None:
+                    PositionInferenceAgent.particleDicts[agentIndex] = util.Counter()
+                    PositionInferenceAgent.particleDicts[agentIndex][agentPosition] = PositionInferenceAgent.particleSum
+                """
+                # Opponents are in sight
+                position = gameState.getAgentPosition(i)
+                if position is not None:
+                    self.particles[i] = util.Counter()
+                    self.particles[i][position] = self.num_particles
+        
+
+
+        #self.updateBeliefDistribution()
+        #self.beliefDistributions = [dict.copy() if dict is not None else None for dict in
+        #                           PositionInferenceAgent.particleDicts]
+        """"
+        for particle in self.particles:
+            if particle is not None:
+                self.beliefDistributions.append(particle.copy())
+
+        for dict in self.beliefDistributions: dict.normalize() if dict is not None else None
+        """
+        self.beliefDistributions = [dict.copy() if dict is not None else None for dict in self.particles]
+        for dict in self.particles: dict.normalize() if dict is not None else None
+
+
         self.displayDistributionsOverPositions(self.beliefDistributions)
         self.getCurrentAgentPostions(self.getTeam(gameState)[0])
         self.record["AFTER_POISITION_INFERENCE"] = time.time()
@@ -642,7 +1047,7 @@ class ExpectimaxAgent(CaptureAgent):
 
     def final(self, gameState):
         ExpectimaxAgent.particleSum = None
-        CaptureAgent.final(self, gameState)
+        InferenceModule.final(self, gameState)
 
     def getQValue(self, gameState, agent_index, action):
         """
@@ -660,23 +1065,6 @@ class ExpectimaxAgent(CaptureAgent):
 
     # recursive simulate the game process and use alpha-beta pruning
 
-    def searchWhenGameOver(self, gameState):
-        return self.getQValue(gameState, self.index, Directions.STOP), Directions.STOP
-
-    def searchWhenZeroDepth(self, gameState, agentIndex):
-        isTeam = agentIndex in self.getTeam(gameState)
-        bestValue = float("-inf") if isTeam else float("inf")
-        bestAction = None
-        assert agentIndex == self.index
-        legalActions = gameState.getLegalActions(agentIndex)
-        legalActions.remove(
-            Directions.STOP)  # STOP is not allowed, to avoid the problem of discontinuous evaluation function
-        for action in legalActions:
-            value = self.getQValue(gameState, agentIndex, action)
-            if (isTeam and value > bestValue) or (not isTeam and value < bestValue):
-                bestValue = value
-                bestAction = action
-        return bestValue, bestAction
 
     def searchWhenNonTerminated(self, gameState, agentIndex, searchAgentIndices, depth, alpha=float("-inf"),
                                 beta=float("inf")):
@@ -691,11 +1079,10 @@ class ExpectimaxAgent(CaptureAgent):
                 legalActions.remove(Directions.STOP)  # STOP is not allowed
             for action in legalActions:
                 successorState = gameState.generateSuccessor(agentIndex, action)
-                newAlpha, _ = self.searchRecursive(successorState, nextAgentIndex, searchAgentIndices, nextDepth, alpha,
+                newAlpha, _ = self.getValue(successorState, nextAgentIndex, searchAgentIndices, nextDepth, alpha,
                                                    beta)
-                currentReward = self.getQValue(gameState, agentIndex, action) if default_params[
-                    "eval_total_reward"] else 0
-                newAlpha += currentReward
+                #currentReward = self.getQValue(gameState, agentIndex, action) if default_params["eval_total_reward"] else 0
+                #newAlpha += currentReward
                 if newAlpha > bestValue:
                     bestValue = newAlpha
                     bestAction = action
@@ -705,7 +1092,7 @@ class ExpectimaxAgent(CaptureAgent):
             bestValue = float("inf")
             for action in gameState.getLegalActions(agentIndex):
                 successorState = gameState.generateSuccessor(agentIndex, action)
-                newBeta, _ = self.searchRecursive(successorState, nextAgentIndex, searchAgentIndices, nextDepth, alpha,
+                newBeta, _ = self.getValue(successorState, nextAgentIndex, searchAgentIndices, nextDepth, alpha,
                                                   beta)
                 if newBeta < bestValue:
                     bestValue = newBeta
@@ -714,51 +1101,84 @@ class ExpectimaxAgent(CaptureAgent):
                 if alpha >= beta: break
         return bestValue, bestAction
 
-    def searchRecursive(self, gameState, agentIndex, searchAgentIndices, depth, alpha=float("-inf"), beta=float("inf")):
+
+    # minimax with Alpha-Beta pruning
+    def getValue(self, gameState, agentIndex, searchAgentIndices, depth, alpha=float("-inf"), beta=float("inf")):
         actions = gameState.getLegalActions(agentIndex)
-        q_value = None
+        best_score = None
         best_action = None
 
         if agentIndex in self.getTeam(gameState):
-            q_value = float("-inf")
+            best_score = float("-inf")
         else:
-            q_value = float("inf")
+            best_score = float("inf")
+
         if gameState.isOver():
             #result = self.searchWhenGameOver(gameState)
-            q_value = self.getQValue(gameState, self.index, Directions.STOP)
+            best_score = self.getQValue(gameState, self.index, Directions.STOP)
             best_action = Directions.STOP
-            result = (q_value, best_action)
+            result = (best_score, best_action)
         elif depth == 0:
             #result = self.searchWhenZeroDepth(gameState, agentIndex)
-            assert  agentIndex == self.index
+            assert  agentIndex == self.index # can be deleted
             #legalActions = gameState.getLegalActions(agentIndex)
             actions.remove(
                 Directions.STOP)  # STOP is not allowed, to avoid the problem of discontinuous evaluation function
             for action in actions:
                 value = self.getQValue(gameState, agentIndex, action)
-                if (agentIndex in self.getTeam(gameState) and value > q_value) \
-                        or (not agentIndex in self.getTeam(gameState) and value < q_value):
-                    q_value = value
+                if (agentIndex in self.getTeam(gameState) and value > best_score) \
+                        or (not agentIndex in self.getTeam(gameState) and value < best_score):
+                    best_score = value
                     best_action = action
-            result = (q_value, best_action)
+            result = (best_score, best_action)
         else:
             self.ifTimeoutRaiseTimeoutException()
-            result = self.searchWhenNonTerminated(gameState, agentIndex, searchAgentIndices, depth, alpha, beta)
-        return result
+
+            nextAgentIndex, nextDepth = self.getNextSearchableAgentIndexAndDepth(gameState, searchAgentIndices,
+                                                                                 agentIndex,
+                                                                                 depth)
+            best_action = None
+            if agentIndex == self.index:  # no team work, is better
+                best_score = float("-inf")
+                possible_actions = gameState.getLegalActions(agentIndex)
+                if not default_params["enable_stop_action"]:
+                    possible_actions.remove(Directions.STOP)  # STOP is not allowed
+                for action in possible_actions:
+                    successor = gameState.generateSuccessor(agentIndex, action)
+                    newAlpha, _ = self.getValue(successor, nextAgentIndex, searchAgentIndices, nextDepth, alpha,
+                                                beta)
+                    # currentReward = self.getQValue(gameState, agentIndex, action) if default_params["eval_total_reward"] else 0
+                    # newAlpha += currentReward
+                    if newAlpha > best_score:
+                        best_score = newAlpha
+                        best_action = action
+                    if newAlpha > alpha: alpha = newAlpha
+                    if alpha >= beta: break
+            else:
+                best_score = float("inf")
+                for action in gameState.getLegalActions(agentIndex):
+                    successor = gameState.generateSuccessor(agentIndex, action)
+                    newBeta, _ = self.getValue(successor, nextAgentIndex, searchAgentIndices, nextDepth, alpha,
+                                               beta)
+                    if newBeta < best_score:
+                        best_score = newBeta
+                        best_action = action
+                    if newBeta < beta: beta = newBeta
+                    if alpha >= beta: break
+            #best_score,best_action = self.searchWhenNonTerminated(gameState, agentIndex, searchAgentIndices, depth, alpha, beta)
+
+        return best_score, best_action
+
 
     def searchTop(self, gameState):
         inferenceState = gameState.deepCopy()
         legalActions = gameState.getLegalActions(self.index)
-        agentInferencePositionsAndPosibilities = [self.getCurrentAgentPositionsAndPosibilities(agentIndex) for
-                                                  agentIndex in range(gameState.getNumAgents())]
-        agentInferencePositions = [self.getCurrentAgentPostions(agentIndex) for agentIndex in
-                                   range(gameState.getNumAgents())]
+        agentInferencePositionsAndPosibilities = [self.getCurrentAgentPositionsAndPosibilities(agentIndex) for agentIndex in range(gameState.getNumAgents())]
+        agentInferencePositions = [self.getCurrentAgentPostions(agentIndex) for agentIndex in range(gameState.getNumAgents())]
         initPointers = [0 for _ in range(gameState.getNumAgents())]
         pointers = None
-        upLimits = [min(self.maxInferencePositionCount, len(agentInferencePositionsAndPosibilities[agentIndex])) for
-                    agentIndex in range(gameState.getNumAgents())]
+        upLimits = [min(self.maxInferencePositionCount, len(agentInferencePositionsAndPosibilities[agentIndex])) for agentIndex in range(gameState.getNumAgents())]
         myPosition = inferenceState.getAgentPosition(self.index)
-
         def changePointer():
             changeAgentIndex = None
             minPointer = 9999
@@ -771,28 +1191,23 @@ class ExpectimaxAgent(CaptureAgent):
                 return True
             else:
                 return False
-
         def setConfigurations(origionState, inferenceState):
             totalPosibility = 1.0
             for agentIndex in range(origionState.getNumAgents()):
                 if origionState.getAgentState(agentIndex).configuration is None:
                     position, posibility = agentInferencePositionsAndPosibilities[agentIndex][pointers[agentIndex]]
-                    inferenceState.data.agentStates[agentIndex].configuration = game.Configuration(position,
-                                                                                                   Directions.STOP)
+                    inferenceState.data.agentStates[agentIndex].configuration = game.Configuration(position, Directions.STOP)
                 else:
                     posibility = 1.0
                 totalPosibility *= posibility
             return totalPosibility
-
         def getSearchAgentIndices(gameState, myPosition, searchMaxDistance):
             searchAgentIndices = []
             for agentIndex in range(gameState.getNumAgents()):
                 agentPosition = gameState.getAgentPosition(agentIndex)
-                if agentPosition is not None and self.getMazeDistance(agentPosition,
-                                                                      myPosition) <= searchMaxDistance:  # the origion is mahattan distance
+                if agentPosition is not None and self.getMazeDistance(agentPosition, myPosition) <= searchMaxDistance:  # the origion is mahattan distance
                     searchAgentIndices.append(agentIndex)
             return searchAgentIndices
-
         bestAction = None
         bestValue = float("-inf")
         for searchDepth in range(self.maxDepth + 1):
@@ -810,7 +1225,7 @@ class ExpectimaxAgent(CaptureAgent):
                     posibility = setConfigurations(gameState, inferenceState)
                     searchAgentIndices = getSearchAgentIndices(inferenceState, myPosition, considerationDistance)
                     self.log("Take agents %s in to consideration" % searchAgentIndices)
-                    value, action = self.searchRecursive(inferenceState, self.index, searchAgentIndices, searchDepth)
+                    value, action = self.getValue(inferenceState, self.index, searchAgentIndices, searchDepth)
                     localResults.append([value, action])
                     totalPosibility *= posibility
                     localAverageBestValue += posibility * value
@@ -870,9 +1285,6 @@ class ExpectimaxAgent(CaptureAgent):
     def timePast(self):
         return time.time() - self.record["START"]
 
-    def timePastPercent(self):
-        return self.timePast() / self.actionTimeLimit
-
     def timeRemain(self):
         return self.actionTimeLimit - self.timePast()
 
@@ -919,6 +1331,8 @@ class ExpectimaxAgent(CaptureAgent):
         if agentIndex in self.getTeam(gameState):
             result = [(gameState.getAgentPosition(agentIndex), 1.0)]
         else:
+            #print("distributoins")
+            #print self.beliefDistributions
             result = self.beliefDistributions[agentIndex].items()
             result.sort(key=lambda x: x[1], reverse=True)
         return result
@@ -942,6 +1356,7 @@ class ExpectimaxAgent(CaptureAgent):
     particleDicts = None
     walls = None
 
+    """"
     def initPositionInference(self, gameState):
         if PositionInferenceAgent.particleSum is None:
             PositionInferenceAgent.width = gameState.data.layout.width
@@ -952,7 +1367,9 @@ class ExpectimaxAgent(CaptureAgent):
 
             for agentIndex in self.getOpponents(gameState):
                 self.initParticleDict(agentIndex)
+    """
 
+    """"
     def updatePositionInference(self, gameState):
         def update(particleDict, sonarDistance, isStay):
             if isStay and default_params["enable_stay_inference_optimization"]:
@@ -1000,7 +1417,9 @@ class ExpectimaxAgent(CaptureAgent):
                 isStay = not (agentIndex == self.index - 1 or agentIndex == self.index + gameState.getNumAgents() - 1)
                 # self.log("Opponent Agent %d is %s" % (agentIndex, "STAY" if isStay else "MOVE"))
                 PositionInferenceAgent.particleDicts[agentIndex] = update(particleDict, sonarDistance, isStay)
+    """
 
+    """"
     def checkPositionInference(self, gameState):
         for agentIndex in range(gameState.getNumAgents()):
             if agentIndex in self.getOpponents(gameState):  # postion of teammates are always available
@@ -1022,16 +1441,19 @@ class ExpectimaxAgent(CaptureAgent):
                 if agentPosition is not None:
                     PositionInferenceAgent.particleDicts[agentIndex] = util.Counter()
                     PositionInferenceAgent.particleDicts[agentIndex][agentPosition] = PositionInferenceAgent.particleSum
+    """
 
+    """"
     def updateBeliefDistribution(self):
         self.beliefDistributions = [dict.copy() if dict is not None else None for dict in
                                    PositionInferenceAgent.particleDicts]
         for dict in self.beliefDistributions: dict.normalize() if dict is not None else None
-
+    """
     #########
     # utils #
     #########
 
+    """"
     def getFullParticleDict(self):
         result = util.Counter()
         xStart = 1
@@ -1090,7 +1512,7 @@ class ExpectimaxAgent(CaptureAgent):
                 return elems[chosenIndex]
         raise Exception('Should not reach here')
 
-
+    """
 
 class RandomOffensiveAgent(ExpectimaxAgent):
     """An agent class. Optimized for offense. You can use it directly."""
