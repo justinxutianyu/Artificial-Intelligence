@@ -46,7 +46,7 @@ default_params = {
 #################
 
 def createTeam(firstIndex, secondIndex, isRed,
-                first= 'ActionEvaluationOffensiveAgent',
+                first= 'StateEvaluationOffensiveAgent',
                 second= 'StateEvaluationDefensiveAgent',
                 particleSum = None,
                 maxDepth = None,

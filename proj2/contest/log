@@ -9,3 +9,2725 @@ Arguments: {}
 3
 Blue team starts
 Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [6]
+Take action [North] with evaluation [149.824346]
+O Total 0.8741 ['AFTER_POISITION_INFERENCE:0.0442', 'BEFORE_SEARCH:0.0004', 'END:0.8295']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [6]
+Take action [North] with evaluation [-0.232026]
+O Total 0.8763 ['AFTER_POISITION_INFERENCE:0.0376', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8383']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.824346]
+O Total 0.8702 ['AFTER_POISITION_INFERENCE:0.0324', 'BEFORE_SEARCH:0.0004', 'END:0.8374']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.232026]
+O Total 0.8728 ['AFTER_POISITION_INFERENCE:0.0190', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8534']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.826797]
+O Total 0.8741 ['AFTER_POISITION_INFERENCE:0.0427', 'BEFORE_SEARCH:0.0008', 'END:0.8305']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.228758]
+O Total 0.8701 ['AFTER_POISITION_INFERENCE:0.0246', 'BEFORE_SEARCH:0.0004', 'END:0.8451']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.829248]
+O Total 0.8744 ['AFTER_POISITION_INFERENCE:0.0251', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8488']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.225490]
+O Total 0.8730 ['AFTER_POISITION_INFERENCE:0.0228', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8497']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.831699]
+O Total 0.8713 ['AFTER_POISITION_INFERENCE:0.0255', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8453']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.222222]
+O Total 0.8730 ['AFTER_POISITION_INFERENCE:0.0234', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8492']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.834150]
+O Total 0.8730 ['AFTER_POISITION_INFERENCE:0.0256', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8470']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.218954]
+O Total 0.8762 ['AFTER_POISITION_INFERENCE:0.0212', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8545']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.836601]
+O Total 0.8712 ['AFTER_POISITION_INFERENCE:0.0252', 'BEFORE_SEARCH:0.0004', 'END:0.8457']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.215686]
+O Total 0.8739 ['AFTER_POISITION_INFERENCE:0.0276', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8459']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.839052]
+O Total 0.8742 ['AFTER_POISITION_INFERENCE:0.0317', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8421']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.212418]
+O Total 0.8708 ['AFTER_POISITION_INFERENCE:0.0309', 'BEFORE_SEARCH:0.0005', 'END:0.8394']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.841503]
+O Total 0.8761 ['AFTER_POISITION_INFERENCE:0.0314', 'BEFORE_SEARCH:0.0004', 'END:0.8443']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.209150]
+O Total 0.8741 ['AFTER_POISITION_INFERENCE:0.0279', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8458']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.843954]
+O Total 0.8733 ['AFTER_POISITION_INFERENCE:0.0323', 'BEFORE_SEARCH:0.0004', 'END:0.8406']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.205882]
+O Total 0.8731 ['AFTER_POISITION_INFERENCE:0.0273', 'BEFORE_SEARCH:0.0006', 'AFTER_SEARCH:0.8452']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.846405]
+O Total 0.8757 ['AFTER_POISITION_INFERENCE:0.0387', 'BEFORE_SEARCH:0.0006', 'END:0.8364']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.202614]
+O Total 0.8720 ['AFTER_POISITION_INFERENCE:0.0301', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8415']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.848856]
+O Total 0.8768 ['AFTER_POISITION_INFERENCE:0.0326', 'BEFORE_SEARCH:0.0004', 'END:0.8438']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.199346]
+O Total 0.8744 ['AFTER_POISITION_INFERENCE:0.0404', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8336']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.851307]
+O Total 0.8731 ['AFTER_POISITION_INFERENCE:0.0253', 'BEFORE_SEARCH:0.0007', 'END:0.8471']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.196078]
+O Total 0.8750 ['AFTER_POISITION_INFERENCE:0.0170', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8576']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.853758]
+O Total 0.8705 ['AFTER_POISITION_INFERENCE:0.0188', 'BEFORE_SEARCH:0.0004', 'END:0.8513']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.192810]
+O Total 0.8752 ['AFTER_POISITION_INFERENCE:0.0255', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8493']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.856209]
+O Total 0.8719 ['AFTER_POISITION_INFERENCE:0.0251', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8463']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [-0.192810]
+O Total 0.8750 ['AFTER_POISITION_INFERENCE:0.0251', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8495']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [149.856209]
+O Total 0.8731 ['AFTER_POISITION_INFERENCE:0.0254', 'BEFORE_SEARCH:0.0004', 'END:0.8473']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [-0.189542]
+O Total 0.8726 ['AFTER_POISITION_INFERENCE:0.0294', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8428']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [149.858660]
+O Total 0.8703 ['AFTER_POISITION_INFERENCE:0.0253', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8446']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.186275]
+O Total 0.8764 ['AFTER_POISITION_INFERENCE:0.0284', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8476']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.861111]
+O Total 0.8730 ['AFTER_POISITION_INFERENCE:0.0237', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8489']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.183007]
+O Total 0.8721 ['AFTER_POISITION_INFERENCE:0.0314', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8403']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.863562]
+O Total 0.8752 ['AFTER_POISITION_INFERENCE:0.0350', 'BEFORE_SEARCH:0.0006', 'AFTER_SEARCH:0.8396']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.179739]
+O Total 0.8710 ['AFTER_POISITION_INFERENCE:0.0288', 'BEFORE_SEARCH:0.0004', 'END:0.8418']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.866013]
+O Total 0.8755 ['AFTER_POISITION_INFERENCE:0.0354', 'BEFORE_SEARCH:0.0004', 'END:0.8397']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.176471]
+O Total 0.8717 ['AFTER_POISITION_INFERENCE:0.0341', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8372']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.868464]
+O Total 0.8746 ['AFTER_POISITION_INFERENCE:0.0394', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8349']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.173203]
+O Total 0.8713 ['AFTER_POISITION_INFERENCE:0.0353', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8356']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.870915]
+O Total 0.8715 ['AFTER_POISITION_INFERENCE:0.0375', 'BEFORE_SEARCH:0.0004', 'END:0.8336']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.169935]
+O Total 0.8761 ['AFTER_POISITION_INFERENCE:0.0404', 'BEFORE_SEARCH:0.0005', 'AFTER_SEARCH:0.8352']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.873366]
+O Total 0.8727 ['AFTER_POISITION_INFERENCE:0.0538', 'BEFORE_SEARCH:0.0004', 'END:0.8186']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.166667]
+O Total 0.8730 ['AFTER_POISITION_INFERENCE:0.0329', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8398']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.875817]
+O Total 0.8720 ['AFTER_POISITION_INFERENCE:0.0370', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8346']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.163399]
+O Total 0.8722 ['AFTER_POISITION_INFERENCE:0.0232', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8486']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.878268]
+O Total 0.8722 ['AFTER_POISITION_INFERENCE:0.0307', 'BEFORE_SEARCH:0.0004', 'END:0.8411']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.160131]
+O Total 0.8747 ['AFTER_POISITION_INFERENCE:0.0412', 'BEFORE_SEARCH:0.0004', 'END:0.8331']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.880719]
+O Total 0.8718 ['AFTER_POISITION_INFERENCE:0.0369', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8345']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.156863]
+O Total 0.8740 ['AFTER_POISITION_INFERENCE:0.0377', 'BEFORE_SEARCH:0.0004', 'END:0.8359']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.883170]
+O Total 0.8722 ['AFTER_POISITION_INFERENCE:0.0540', 'BEFORE_SEARCH:0.0004', 'END:0.8178']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.153595]
+O Total 0.8724 ['AFTER_POISITION_INFERENCE:0.0397', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8323']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.885621]
+O Total 0.8723 ['AFTER_POISITION_INFERENCE:0.0494', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8225']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.150327]
+O Total 0.8758 ['AFTER_POISITION_INFERENCE:0.0466', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8288']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.888072]
+O Total 0.8730 ['AFTER_POISITION_INFERENCE:0.0428', 'BEFORE_SEARCH:0.0007', 'AFTER_SEARCH:0.8296']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.147059]
+O Total 0.8745 ['AFTER_POISITION_INFERENCE:0.0356', 'BEFORE_SEARCH:0.0004', 'END:0.8385']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.890523]
+O Total 0.8735 ['AFTER_POISITION_INFERENCE:0.0416', 'BEFORE_SEARCH:0.0004', 'END:0.8315']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.143791]
+O Total 0.8708 ['AFTER_POISITION_INFERENCE:0.0542', 'BEFORE_SEARCH:0.0012', 'END:0.8153']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.892974]
+O Total 0.8754 ['AFTER_POISITION_INFERENCE:0.0314', 'BEFORE_SEARCH:0.0005', 'AFTER_SEARCH:0.8435']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.140523]
+O Total 0.8730 ['AFTER_POISITION_INFERENCE:0.0230', 'BEFORE_SEARCH:0.0004', 'END:0.8495']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.895425]
+O Total 0.8706 ['AFTER_POISITION_INFERENCE:0.0339', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8363']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [-0.133987]
+O Total 0.8710 ['AFTER_POISITION_INFERENCE:0.0273', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8433']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [149.897876]
+O Total 0.8752 ['AFTER_POISITION_INFERENCE:0.0341', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8407']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [-0.133987]
+O Total 0.8722 ['AFTER_POISITION_INFERENCE:0.0309', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8409']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [149.900327]
+O Total 0.8707 ['AFTER_POISITION_INFERENCE:0.0279', 'BEFORE_SEARCH:0.0004', 'END:0.8424']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [North] with evaluation [-0.130719]
+O Total 0.8709 ['AFTER_POISITION_INFERENCE:0.0253', 'BEFORE_SEARCH:0.0004', 'END:0.8453']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [North] with evaluation [149.902778]
+O Total 0.8757 ['AFTER_POISITION_INFERENCE:0.0325', 'BEFORE_SEARCH:0.0004', 'END:0.8428']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.124183]
+O Total 0.8751 ['AFTER_POISITION_INFERENCE:0.0362', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8384']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.907680]
+O Total 0.8743 ['AFTER_POISITION_INFERENCE:0.0276', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8463']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.120915]
+O Total 0.8707 ['AFTER_POISITION_INFERENCE:0.0275', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8428']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.910131]
+O Total 0.8760 ['AFTER_POISITION_INFERENCE:0.0279', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8478']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.117647]
+O Total 0.8745 ['AFTER_POISITION_INFERENCE:0.0349', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8393']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.912582]
+O Total 0.8756 ['AFTER_POISITION_INFERENCE:0.0440', 'BEFORE_SEARCH:0.0004', 'END:0.8312']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.114379]
+O Total 0.8768 ['AFTER_POISITION_INFERENCE:0.0529', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8235']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.915033]
+O Total 0.8724 ['AFTER_POISITION_INFERENCE:0.0514', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8207']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.111111]
+O Total 0.8752 ['AFTER_POISITION_INFERENCE:0.0502', 'BEFORE_SEARCH:0.0004', 'END:0.8247']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.917484]
+O Total 0.8757 ['AFTER_POISITION_INFERENCE:0.0304', 'BEFORE_SEARCH:0.0004', 'END:0.8449']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.107843]
+O Total 0.8711 ['AFTER_POISITION_INFERENCE:0.0412', 'BEFORE_SEARCH:0.0004', 'END:0.8295']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.919935]
+O Total 0.8701 ['AFTER_POISITION_INFERENCE:0.0498', 'BEFORE_SEARCH:0.0009', 'AFTER_SEARCH:0.8195']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.104575]
+O Total 0.8752 ['AFTER_POISITION_INFERENCE:0.0441', 'BEFORE_SEARCH:0.0004', 'END:0.8307']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.922386]
+O Total 0.8717 ['AFTER_POISITION_INFERENCE:0.0543', 'BEFORE_SEARCH:0.0004', 'END:0.8169']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.101307]
+O Total 0.8738 ['AFTER_POISITION_INFERENCE:0.0401', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8333']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.924837]
+O Total 0.8738 ['AFTER_POISITION_INFERENCE:0.0300', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8434']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.098039]
+O Total 0.8759 ['AFTER_POISITION_INFERENCE:0.0337', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8418']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.927288]
+O Total 0.8715 ['AFTER_POISITION_INFERENCE:0.0393', 'BEFORE_SEARCH:0.0004', 'END:0.8318']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.094771]
+O Total 0.8763 ['AFTER_POISITION_INFERENCE:0.0301', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8459']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.929739]
+O Total 0.8752 ['AFTER_POISITION_INFERENCE:0.0303', 'BEFORE_SEARCH:0.0004', 'END:0.8445']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.091503]
+O Total 0.8745 ['AFTER_POISITION_INFERENCE:0.0341', 'BEFORE_SEARCH:0.0004', 'END:0.8400']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.932190]
+O Total 0.8739 ['AFTER_POISITION_INFERENCE:0.0353', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8383']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.088235]
+O Total 0.8757 ['AFTER_POISITION_INFERENCE:0.0339', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8415']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.934641]
+O Total 0.8703 ['AFTER_POISITION_INFERENCE:0.0455', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8244']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.084967]
+O Total 0.8711 ['AFTER_POISITION_INFERENCE:0.0259', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8448']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.937092]
+O Total 0.8717 ['AFTER_POISITION_INFERENCE:0.0290', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8423']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.081699]
+O Total 0.8731 ['AFTER_POISITION_INFERENCE:0.0319', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8408']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.939542]
+O Total 0.8800 ['AFTER_POISITION_INFERENCE:0.0248', 'BEFORE_SEARCH:0.0004', 'END:0.8548']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [-0.081699]
+O Total 0.8750 ['AFTER_POISITION_INFERENCE:0.0235', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8512']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [149.939542]
+O Total 0.8792 ['AFTER_POISITION_INFERENCE:0.0297', 'BEFORE_SEARCH:0.0006', 'AFTER_SEARCH:0.8490']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [-0.078431]
+O Total 0.8760 ['AFTER_POISITION_INFERENCE:0.0239', 'BEFORE_SEARCH:0.0004', 'END:0.8517']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [149.941993]
+O Total 0.8708 ['AFTER_POISITION_INFERENCE:0.0268', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8436']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [-0.075163]
+O Total 0.8716 ['AFTER_POISITION_INFERENCE:0.0362', 'BEFORE_SEARCH:0.0006', 'AFTER_SEARCH:0.8348']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [149.944444]
+O Total 0.8759 ['AFTER_POISITION_INFERENCE:0.0352', 'BEFORE_SEARCH:0.0005', 'END:0.8402']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [-0.075163]
+O Total 0.8719 ['AFTER_POISITION_INFERENCE:0.0376', 'BEFORE_SEARCH:0.0004', 'END:0.8340']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [149.944444]
+O Total 0.8717 ['AFTER_POISITION_INFERENCE:0.0468', 'BEFORE_SEARCH:0.0004', 'END:0.8245']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [-0.071895]
+O Total 0.8759 ['AFTER_POISITION_INFERENCE:0.0312', 'BEFORE_SEARCH:0.0004', 'END:0.8444']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [149.946895]
+O Total 0.8734 ['AFTER_POISITION_INFERENCE:0.0363', 'BEFORE_SEARCH:0.0004', 'END:0.8367']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [-0.068627]
+O Total 0.8839 ['AFTER_POISITION_INFERENCE:0.0380', 'BEFORE_SEARCH:0.0005', 'END:0.8454']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [149.949346]
+O Total 0.8819 ['AFTER_POISITION_INFERENCE:0.0396', 'BEFORE_SEARCH:0.0004', 'END:0.8420']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [-0.065359]
+O Total 0.8814 ['AFTER_POISITION_INFERENCE:0.0384', 'BEFORE_SEARCH:0.0004', 'END:0.8426']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [149.951797]
+O Total 0.8709 ['AFTER_POISITION_INFERENCE:0.0485', 'BEFORE_SEARCH:0.0004', 'END:0.8221']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [-0.062092]
+O Total 0.8732 ['AFTER_POISITION_INFERENCE:0.0421', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8307']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [149.954248]
+O Total 0.8735 ['AFTER_POISITION_INFERENCE:0.0522', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8209']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [North] with evaluation [-0.058824]
+O Total 0.8742 ['AFTER_POISITION_INFERENCE:0.0437', 'BEFORE_SEARCH:0.0006', 'AFTER_SEARCH:0.8298']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [North] with evaluation [149.959150]
+O Total 0.8747 ['AFTER_POISITION_INFERENCE:0.0416', 'BEFORE_SEARCH:0.0004', 'END:0.8328']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [North] with evaluation [-0.052288]
+O Total 0.8719 ['AFTER_POISITION_INFERENCE:0.0574', 'BEFORE_SEARCH:0.0006', 'AFTER_SEARCH:0.8140']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.964052]
+O Total 0.8722 ['AFTER_POISITION_INFERENCE:0.0420', 'BEFORE_SEARCH:0.0004', 'END:0.8298']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [-0.045752]
+O Total 0.8701 ['AFTER_POISITION_INFERENCE:0.0469', 'BEFORE_SEARCH:0.0004', 'END:0.8228']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [149.966503]
+O Total 0.8717 ['AFTER_POISITION_INFERENCE:0.0555', 'BEFORE_SEARCH:0.0004', 'END:0.8159']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [-0.045752]
+O Total 0.8724 ['AFTER_POISITION_INFERENCE:0.0386', 'BEFORE_SEARCH:0.0008', 'AFTER_SEARCH:0.8329']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [149.966503]
+O Total 0.8705 ['AFTER_POISITION_INFERENCE:0.0447', 'BEFORE_SEARCH:0.0004', 'END:0.8255']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [-0.042484]
+O Total 0.8772 ['AFTER_POISITION_INFERENCE:0.0605', 'BEFORE_SEARCH:0.0004', 'END:0.8162']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [149.968954]
+O Total 0.8793 ['AFTER_POISITION_INFERENCE:0.0491', 'BEFORE_SEARCH:0.0005', 'AFTER_SEARCH:0.8297']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [-0.039216]
+O Total 0.8744 ['AFTER_POISITION_INFERENCE:0.0468', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8272']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [149.968954]
+O Total 0.8876 ['AFTER_POISITION_INFERENCE:0.0438', 'BEFORE_SEARCH:0.0004', 'END:0.8435']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [-0.039216]
+O Total 0.8775 ['AFTER_POISITION_INFERENCE:0.0524', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8248']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [149.973856]
+O Total 0.8723 ['AFTER_POISITION_INFERENCE:0.0375', 'BEFORE_SEARCH:0.0004', 'END:0.8345']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [-0.035948]
+O Total 0.8720 ['AFTER_POISITION_INFERENCE:0.0619', 'BEFORE_SEARCH:0.0004', 'END:0.8096']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [149.973856]
+O Total 0.8767 ['AFTER_POISITION_INFERENCE:0.0466', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8297']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [-0.032680]
+O Total 0.8786 ['AFTER_POISITION_INFERENCE:0.0330', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8453']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [149.976307]
+O Total 0.8767 ['AFTER_POISITION_INFERENCE:0.0358', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8406']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [-0.029412]
+O Total 0.8714 ['AFTER_POISITION_INFERENCE:0.0622', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8088']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [149.562092]
+O Total 0.8843 ['AFTER_POISITION_INFERENCE:0.0665', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8174']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [-0.066993]
+O Total 0.8874 ['AFTER_POISITION_INFERENCE:0.0670', 'BEFORE_SEARCH:0.0004', 'END:0.8200']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [149.564542]
+O Total 0.8716 ['AFTER_POISITION_INFERENCE:0.0615', 'BEFORE_SEARCH:0.0004', 'END:0.8097']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [-0.063725]
+O Total 0.8701 ['AFTER_POISITION_INFERENCE:0.0825', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.7873']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [149.583333]
+O Total 0.8824 ['AFTER_POISITION_INFERENCE:0.0751', 'BEFORE_SEARCH:0.0004', 'END:0.8069']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [-0.058824]
+O Total 0.8833 ['AFTER_POISITION_INFERENCE:0.0489', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8340']
+Agent 2:
+Lost Target
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.833333]
+O Total 0.8724 ['AFTER_POISITION_INFERENCE:0.0223', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8498']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [-0.027778]
+O Total 0.8815 ['AFTER_POISITION_INFERENCE:0.4014', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.4797']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [149.860294]
+O Total 0.8772 ['AFTER_POISITION_INFERENCE:0.4216', 'BEFORE_SEARCH:0.0004', 'END:0.4553']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [-0.021242]
+O Total 0.8701 ['AFTER_POISITION_INFERENCE:0.3936', 'BEFORE_SEARCH:0.0004', 'END:0.4761']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [149.879085]
+O Total 0.8758 ['AFTER_POISITION_INFERENCE:0.1608', 'BEFORE_SEARCH:0.0004', 'END:0.7146']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [-0.022059]
+O Total 0.8703 ['AFTER_POISITION_INFERENCE:0.1745', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.6953']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [149.870915]
+O Total 0.8705 ['AFTER_POISITION_INFERENCE:0.2250', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.6451']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [-0.017157]
+O Total 0.8736 ['AFTER_POISITION_INFERENCE:0.1404', 'BEFORE_SEARCH:0.0004', 'END:0.7328']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [149.889706]
+O Total 0.8835 ['AFTER_POISITION_INFERENCE:0.1500', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.7331']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [7.977941]
+O Total 0.8703 ['AFTER_POISITION_INFERENCE:0.1445', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.7254']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [149.888889]
+O Total 0.8804 ['AFTER_POISITION_INFERENCE:0.1619', 'BEFORE_SEARCH:0.0008', 'AFTER_SEARCH:0.7177']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [15.968137]
+O Total 0.8742 ['AFTER_POISITION_INFERENCE:0.1408', 'BEFORE_SEARCH:0.0004', 'END:0.7330']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [145.374183]
+O Total 0.8710 ['AFTER_POISITION_INFERENCE:0.1449', 'BEFORE_SEARCH:0.0004', 'END:0.7257']
+Agent 0:
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [23.948366]
+O Total 0.8800 ['AFTER_POISITION_INFERENCE:0.1790', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.7007']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [North] with evaluation [145.896242]
+O Total 0.8712 ['AFTER_POISITION_INFERENCE:0.1505', 'BEFORE_SEARCH:0.0004', 'END:0.7202']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [East] with evaluation [22.957026]
+O Total 0.8755 ['AFTER_POISITION_INFERENCE:0.1548', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.7203']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [North] with evaluation [146.397876]
+O Total 0.8823 ['AFTER_POISITION_INFERENCE:0.1273', 'BEFORE_SEARCH:0.0004', 'END:0.7546']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [23.966993]
+O Total 0.8767 ['AFTER_POISITION_INFERENCE:0.0869', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.7894']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [141.398693]
+O Total 0.8702 ['AFTER_POISITION_INFERENCE:0.0918', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.7780']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [23.956699]
+O Total 0.8754 ['AFTER_POISITION_INFERENCE:0.0649', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8102']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [West] with evaluation [134.656046]
+O Total 0.8787 ['AFTER_POISITION_INFERENCE:0.0914', 'BEFORE_SEARCH:0.0004', 'END:0.7869']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [West] with evaluation [21.982843]
+O Total 0.8784 ['AFTER_POISITION_INFERENCE:0.1029', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.7750']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [North] with evaluation [129.665850]
+O Total 0.8797 ['AFTER_POISITION_INFERENCE:0.1456', 'BEFORE_SEARCH:0.0004', 'END:0.7338']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [29.964542]
+O Total 0.8750 ['AFTER_POISITION_INFERENCE:0.1878', 'BEFORE_SEARCH:0.0006', 'END:0.6866']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [East] with evaluation [129.675654]
+O Total 0.8770 ['AFTER_POISITION_INFERENCE:0.1359', 'BEFORE_SEARCH:0.0004', 'END:0.7408']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [29.964216]
+O Total 0.8710 ['AFTER_POISITION_INFERENCE:0.0724', 'BEFORE_SEARCH:0.0004', 'END:0.7983']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [125.235294]
+O Total 0.8718 ['AFTER_POISITION_INFERENCE:0.0656', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8058']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [6]
+Take action [West] with evaluation [37.967484]
+O Total 0.8809 ['AFTER_POISITION_INFERENCE:0.0650', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8155']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [120.246732]
+O Total 0.8713 ['AFTER_POISITION_INFERENCE:0.0953', 'BEFORE_SEARCH:0.0005', 'END:0.7754']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [6]
+Take action [South] with evaluation [45.942647]
+O Total 0.8746 ['AFTER_POISITION_INFERENCE:0.1186', 'BEFORE_SEARCH:0.0004', 'END:0.7556']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [120.800654]
+O Total 0.8716 ['AFTER_POISITION_INFERENCE:0.0901', 'BEFORE_SEARCH:0.0004', 'END:0.7811']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [6]
+Take action [South] with evaluation [45.944118]
+O Total 0.8764 ['AFTER_POISITION_INFERENCE:0.0728', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8032']
+Agent 2:
+Lost Target
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [120.817810]
+O Total 0.8751 ['AFTER_POISITION_INFERENCE:0.0810', 'BEFORE_SEARCH:0.0006', 'AFTER_SEARCH:0.7935']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [45.977288]
+O Total 0.8786 ['AFTER_POISITION_INFERENCE:0.5459', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.3322']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [6]
+Take action [East] with evaluation [121.928922]
+O Total 0.8748 ['AFTER_POISITION_INFERENCE:0.1630', 'BEFORE_SEARCH:0.0004', 'END:0.7114']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [6]
+Take action [South] with evaluation [53.984477]
+O Total 0.8798 ['AFTER_POISITION_INFERENCE:0.1455', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.7340']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [6]
+Take action [East] with evaluation [122.486928]
+O Total 0.8712 ['AFTER_POISITION_INFERENCE:0.1341', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.7367']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [6]
+Take action [South] with evaluation [61.972222]
+O Total 0.8746 ['AFTER_POISITION_INFERENCE:0.1290', 'BEFORE_SEARCH:0.0005', 'AFTER_SEARCH:0.7451']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [122.496732]
+O Total 0.8704 ['AFTER_POISITION_INFERENCE:0.1260', 'BEFORE_SEARCH:0.0004', 'END:0.7440']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [61.971895]
+O Total 0.8734 ['AFTER_POISITION_INFERENCE:0.0990', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.7741']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [South] with evaluation [112.503268]
+O Total 0.8760 ['AFTER_POISITION_INFERENCE:0.0502', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8255']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [South] with evaluation [61.976961]
+O Total 0.8718 ['AFTER_POISITION_INFERENCE:0.0483', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8231']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [South] with evaluation [113.050654]
+O Total 0.8746 ['AFTER_POISITION_INFERENCE:0.0613', 'BEFORE_SEARCH:0.0006', 'END:0.8127']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [South] with evaluation [67.996569]
+O Total 0.8730 ['AFTER_POISITION_INFERENCE:0.0813', 'BEFORE_SEARCH:0.0004', 'END:0.7914']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [108.058824]
+O Total 0.8773 ['AFTER_POISITION_INFERENCE:0.0728', 'BEFORE_SEARCH:0.0005', 'AFTER_SEARCH:0.8039']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [69.944771]
+O Total 0.8766 ['AFTER_POISITION_INFERENCE:0.0609', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8154']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [108.057190]
+O Total 0.8746 ['AFTER_POISITION_INFERENCE:0.0771', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.7971']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [South] with evaluation [77.991667]
+O Total 0.8702 ['AFTER_POISITION_INFERENCE:0.0685', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8014']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [103.058824]
+O Total 0.8717 ['AFTER_POISITION_INFERENCE:0.0811', 'BEFORE_SEARCH:0.0004', 'END:0.7902']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [77.990033]
+O Total 0.8774 ['AFTER_POISITION_INFERENCE:0.0815', 'BEFORE_SEARCH:0.0004', 'END:0.7955']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [93.050654]
+O Total 0.8766 ['AFTER_POISITION_INFERENCE:0.0625', 'BEFORE_SEARCH:0.0004', 'END:0.8137']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [77.995261]
+O Total 0.8766 ['AFTER_POISITION_INFERENCE:0.0499', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8263']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [83.058824]
+O Total 0.8709 ['AFTER_POISITION_INFERENCE:0.0726', 'BEFORE_SEARCH:0.0004', 'END:0.7979']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [77.997549]
+O Total 0.8791 ['AFTER_POISITION_INFERENCE:0.0327', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8461']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [78.063725]
+O Total 0.8823 ['AFTER_POISITION_INFERENCE:0.0500', 'BEFORE_SEARCH:0.0004', 'END:0.8319']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [77.999183]
+O Total 0.8737 ['AFTER_POISITION_INFERENCE:0.0525', 'BEFORE_SEARCH:0.0004', 'END:0.8208']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [73.065359]
+O Total 0.8729 ['AFTER_POISITION_INFERENCE:0.0540', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8185']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [78.001144]
+O Total 0.8723 ['AFTER_POISITION_INFERENCE:0.0593', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8125']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [68.063725]
+O Total 0.8734 ['AFTER_POISITION_INFERENCE:0.0657', 'BEFORE_SEARCH:0.0004', 'END:0.8073']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [78.002778]
+O Total 0.8759 ['AFTER_POISITION_INFERENCE:0.0623', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8133']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [68.065359]
+O Total 0.8747 ['AFTER_POISITION_INFERENCE:0.0532', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8211']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [85.990850]
+O Total 0.8737 ['AFTER_POISITION_INFERENCE:0.0588', 'BEFORE_SEARCH:0.0004', 'END:0.8145']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [58.070261]
+O Total 0.8720 ['AFTER_POISITION_INFERENCE:0.0390', 'BEFORE_SEARCH:0.0004', 'END:0.8326']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [85.992320]
+O Total 0.8718 ['AFTER_POISITION_INFERENCE:0.0711', 'BEFORE_SEARCH:0.0004', 'END:0.8004']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [58.071895]
+O Total 0.8734 ['AFTER_POISITION_INFERENCE:0.0569', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8161']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [South] with evaluation [85.993137]
+O Total 0.8752 ['AFTER_POISITION_INFERENCE:0.0305', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8442']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [58.070261]
+O Total 0.8784 ['AFTER_POISITION_INFERENCE:0.0363', 'BEFORE_SEARCH:0.0004', 'END:0.8417']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [85.994281]
+O Total 0.8713 ['AFTER_POISITION_INFERENCE:0.0423', 'BEFORE_SEARCH:0.0006', 'END:0.8284']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [48.078431]
+O Total 0.8744 ['AFTER_POISITION_INFERENCE:0.0579', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8162']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [6]
+Take action [East] with evaluation [93.984641]
+O Total 0.8742 ['AFTER_POISITION_INFERENCE:0.0390', 'BEFORE_SEARCH:0.0007', 'END:0.8346']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [48.070261]
+O Total 0.8768 ['AFTER_POISITION_INFERENCE:0.0266', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8498']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [7]
+Take action [East] with evaluation [109.958987]
+O Total 0.8819 ['AFTER_POISITION_INFERENCE:0.0370', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8445']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [48.071895]
+O Total 0.8754 ['AFTER_POISITION_INFERENCE:0.0382', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8369']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [7]
+Take action [North] with evaluation [117.933987]
+O Total 0.8713 ['AFTER_POISITION_INFERENCE:0.0480', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8229']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [48.070261]
+O Total 0.8774 ['AFTER_POISITION_INFERENCE:0.0345', 'BEFORE_SEARCH:0.0005', 'END:0.8425']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [7]
+Take action [North] with evaluation [116.939379]
+O Total 0.8731 ['AFTER_POISITION_INFERENCE:0.0449', 'BEFORE_SEARCH:0.0005', 'AFTER_SEARCH:0.8277']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [48.071895]
+O Total 0.8776 ['AFTER_POISITION_INFERENCE:0.0474', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8298']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [6]
+Take action [North] with evaluation [116.939216]
+O Total 0.8753 ['AFTER_POISITION_INFERENCE:0.0382', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8366']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [43.070261]
+O Total 0.8771 ['AFTER_POISITION_INFERENCE:0.0392', 'BEFORE_SEARCH:0.0004', 'END:0.8375']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [116.939052]
+O Total 0.8719 ['AFTER_POISITION_INFERENCE:0.0462', 'BEFORE_SEARCH:0.0006', 'AFTER_SEARCH:0.8250']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [38.071895]
+O Total 0.8740 ['AFTER_POISITION_INFERENCE:0.0337', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8399']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [117.945261]
+O Total 0.8727 ['AFTER_POISITION_INFERENCE:0.0243', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8480']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [33.070261]
+O Total 0.8748 ['AFTER_POISITION_INFERENCE:0.0247', 'BEFORE_SEARCH:0.0004', 'END:0.8497']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [6]
+Take action [North] with evaluation [117.956209]
+O Total 0.8767 ['AFTER_POISITION_INFERENCE:0.0382', 'BEFORE_SEARCH:0.0005', 'END:0.8380']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [28.071895]
+O Total 0.8782 ['AFTER_POISITION_INFERENCE:0.0349', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8430']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [7]
+Take action [North] with evaluation [117.960948]
+O Total 0.8732 ['AFTER_POISITION_INFERENCE:0.0345', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8383']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [28.070261]
+O Total 0.8764 ['AFTER_POISITION_INFERENCE:0.0340', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8420']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [8]
+Take action [South] with evaluation [125.930229]
+O Total 0.8828 ['AFTER_POISITION_INFERENCE:0.0397', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8428']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [28.071895]
+O Total 0.8731 ['AFTER_POISITION_INFERENCE:0.0438', 'BEFORE_SEARCH:0.0004', 'END:0.8289']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [7]
+Take action [South] with evaluation [125.930065]
+O Total 0.8701 ['AFTER_POISITION_INFERENCE:0.0433', 'BEFORE_SEARCH:0.0004', 'END:0.8265']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [28.070261]
+O Total 0.8749 ['AFTER_POISITION_INFERENCE:0.0380', 'BEFORE_SEARCH:0.0007', 'AFTER_SEARCH:0.8361']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [6]
+Take action [South] with evaluation [125.930229]
+O Total 0.8744 ['AFTER_POISITION_INFERENCE:0.0402', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8339']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [28.071895]
+O Total 0.8775 ['AFTER_POISITION_INFERENCE:0.0372', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8399']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [125.930065]
+O Total 0.8717 ['AFTER_POISITION_INFERENCE:0.0408', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8305']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [28.063725]
+O Total 0.8713 ['AFTER_POISITION_INFERENCE:0.0499', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8210']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [125.939216]
+O Total 0.8753 ['AFTER_POISITION_INFERENCE:0.0482', 'BEFORE_SEARCH:0.0004', 'END:0.8268']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [28.071895]
+O Total 0.8741 ['AFTER_POISITION_INFERENCE:0.0548', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8189']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [South] with evaluation [133.900163]
+O Total 0.8708 ['AFTER_POISITION_INFERENCE:0.0571', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8134']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [23.063725]
+O Total 0.8779 ['AFTER_POISITION_INFERENCE:0.0667', 'BEFORE_SEARCH:0.0004', 'END:0.8109']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [South] with evaluation [133.907190]
+O Total 0.8769 ['AFTER_POISITION_INFERENCE:0.0701', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8064']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [23.071895]
+O Total 0.8745 ['AFTER_POISITION_INFERENCE:0.0657', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8084']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [133.914542]
+O Total 0.8783 ['AFTER_POISITION_INFERENCE:0.0582', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8197']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [23.063725]
+O Total 0.8714 ['AFTER_POISITION_INFERENCE:0.0520', 'BEFORE_SEARCH:0.0004', 'END:0.8190']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [South] with evaluation [133.921895]
+O Total 0.8775 ['AFTER_POISITION_INFERENCE:0.0560', 'BEFORE_SEARCH:0.0004', 'END:0.8211']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [18.071895]
+O Total 0.8774 ['AFTER_POISITION_INFERENCE:0.0643', 'BEFORE_SEARCH:0.0005', 'END:0.8127']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [South] with evaluation [133.925980]
+O Total 0.8722 ['AFTER_POISITION_INFERENCE:0.0368', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8350']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [East] with evaluation [18.070261]
+O Total 0.8724 ['AFTER_POISITION_INFERENCE:0.0398', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8322']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [6]
+Take action [North] with evaluation [143.736438]
+O Total 0.8707 ['AFTER_POISITION_INFERENCE:0.0555', 'BEFORE_SEARCH:0.0005', 'END:0.8147']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [South] with evaluation [18.667484]
+O Total 0.8745 ['AFTER_POISITION_INFERENCE:0.0475', 'BEFORE_SEARCH:0.0004', 'END:0.8266']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [143.739869]
+O Total 0.8776 ['AFTER_POISITION_INFERENCE:0.0491', 'BEFORE_SEARCH:0.0004', 'END:0.8280']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [South] with evaluation [18.714052]
+O Total 0.8752 ['AFTER_POISITION_INFERENCE:0.0558', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8190']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [143.754902]
+O Total 0.8733 ['AFTER_POISITION_INFERENCE:0.0491', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8238']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [19.098039]
+O Total 0.8797 ['AFTER_POISITION_INFERENCE:0.0574', 'BEFORE_SEARCH:0.0004', 'END:0.8220']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [143.752941]
+O Total 0.8727 ['AFTER_POISITION_INFERENCE:0.0494', 'BEFORE_SEARCH:0.0004', 'END:0.8229']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [South] with evaluation [19.230392]
+O Total 0.8825 ['AFTER_POISITION_INFERENCE:0.0531', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8290']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [North] with evaluation [143.756373]
+O Total 0.8723 ['AFTER_POISITION_INFERENCE:0.0671', 'BEFORE_SEARCH:0.0004', 'END:0.8049']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [19.196078]
+O Total 0.8729 ['AFTER_POISITION_INFERENCE:0.0660', 'BEFORE_SEARCH:0.0004', 'END:0.8065']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [North] with evaluation [143.754902]
+O Total 0.8769 ['AFTER_POISITION_INFERENCE:0.0300', 'BEFORE_SEARCH:0.0008', 'AFTER_SEARCH:0.8462']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [North] with evaluation [19.230392]
+O Total 0.8708 ['AFTER_POISITION_INFERENCE:0.0421', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8283']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [West] with evaluation [143.759804]
+O Total 0.8758 ['AFTER_POISITION_INFERENCE:0.0549', 'BEFORE_SEARCH:0.0004', 'END:0.8206']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [North] with evaluation [19.276144]
+O Total 0.8728 ['AFTER_POISITION_INFERENCE:0.0683', 'BEFORE_SEARCH:0.0007', 'END:0.8038']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [3]
+Take action [South] with evaluation [143.764706]
+O Total 0.8746 ['AFTER_POISITION_INFERENCE:0.0427', 'BEFORE_SEARCH:0.0004', 'END:0.8315']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [North] with evaluation [19.264706]
+O Total 0.8764 ['AFTER_POISITION_INFERENCE:0.0502', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8258']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [4]
+Take action [South] with evaluation [143.775000]
+O Total 0.8739 ['AFTER_POISITION_INFERENCE:0.0606', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8130']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [0, 2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [19.321895]
+O Total 0.8712 ['AFTER_POISITION_INFERENCE:0.0642', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8066']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [143.794771]
+O Total 0.8772 ['AFTER_POISITION_INFERENCE:0.0584', 'BEFORE_SEARCH:0.0004', 'END:0.8184']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [19.671569]
+O Total 0.8719 ['AFTER_POISITION_INFERENCE:0.0658', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8056']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [143.816667]
+O Total 0.8750 ['AFTER_POISITION_INFERENCE:0.0454', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8292']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [North] with evaluation [19.633170]
+O Total 0.8737 ['AFTER_POISITION_INFERENCE:0.0484', 'BEFORE_SEARCH:0.0004', 'END:0.8249']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [South] with evaluation [143.824837]
+O Total 0.8705 ['AFTER_POISITION_INFERENCE:0.0520', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8181']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [5]
+Take action [West] with evaluation [20.194444]
+O Total 0.8739 ['AFTER_POISITION_INFERENCE:0.0404', 'BEFORE_SEARCH:0.0007', 'END:0.8328']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [5]
+Take action [South] with evaluation [143.846732]
+O Total 0.8737 ['AFTER_POISITION_INFERENCE:0.0249', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8484']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [6]
+Take action [West] with evaluation [20.816993]
+O Total 0.8757 ['AFTER_POISITION_INFERENCE:0.0225', 'BEFORE_SEARCH:0.0004', 'END:0.8528']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [6]
+Take action [South] with evaluation [143.873366]
+O Total 0.8868 ['AFTER_POISITION_INFERENCE:0.0401', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8463']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [6]
+Take action [South] with evaluation [20.351307]
+O Total 0.8713 ['AFTER_POISITION_INFERENCE:0.0381', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8329']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [7]
+Take action [South] with evaluation [143.896732]
+O Total 0.8729 ['AFTER_POISITION_INFERENCE:0.0348', 'BEFORE_SEARCH:0.0004', 'END:0.8377']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [6]
+Take action [South] with evaluation [20.893791]
+O Total 0.8744 ['AFTER_POISITION_INFERENCE:0.0391', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8350']
+Agent 0:
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Take agents [0] in to consideration
+Failed when search max depth [7]
+Take action [West] with evaluation [143.908497]
+O Total 0.8823 ['AFTER_POISITION_INFERENCE:0.0593', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8226']
+Agent 2:
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Take agents [2] in to consideration
+Failed when search max depth [7]
+Take action [South] with evaluation [20.867647]
+O Total 0.8734 ['AFTER_POISITION_INFERENCE:0.0428', 'BEFORE_SEARCH:0.0004', 'AFTER_SEARCH:0.8302']
+Agent 0:
+O Total 0.0375 ['AFTER_POISITION_INFERENCE:0.0368', 'END:0.0007']
+Agent 2:
+O Total 0.0360 ['AFTER_POISITION_INFERENCE:0.0354', 'END:0.0006']
+Agent 0:
+O Total 0.0344 ['AFTER_POISITION_INFERENCE:0.0337', 'END:0.0007']
+Agent 2:
+O Total 0.0312 ['AFTER_POISITION_INFERENCE:0.0305', 'END:0.0007']
+Agent 0:
+O Total 0.0310 ['AFTER_POISITION_INFERENCE:0.0302', 'END:0.0008']
+Agent 2:
+O Total 0.0374 ['AFTER_POISITION_INFERENCE:0.0366', 'END:0.0008']
+Agent 0:
+O Total 0.0311 ['AFTER_POISITION_INFERENCE:0.0304', 'END:0.0007']
+Agent 2:
+O Total 0.0240 ['AFTER_POISITION_INFERENCE:0.0230', 'END:0.0010']
+Agent 0:
+O Total 0.0271 ['AFTER_POISITION_INFERENCE:0.0262', 'END:0.0009']
+Agent 2:
+O Total 0.0324 ['AFTER_POISITION_INFERENCE:0.0317', 'END:0.0007']
+Agent 0:
+O Total 0.0188 ['AFTER_POISITION_INFERENCE:0.0182', 'END:0.0007']
+Agent 2:
+O Total 0.0234 ['AFTER_POISITION_INFERENCE:0.0225', 'END:0.0009']
+Agent 0:
+O Total 0.0282 ['AFTER_POISITION_INFERENCE:0.0273', 'END:0.0009']
+Agent 2:
+O Total 0.0233 ['AFTER_POISITION_INFERENCE:0.0225', 'END:0.0008']
+Agent 0:
+O Total 0.0236 ['AFTER_POISITION_INFERENCE:0.0228', 'END:0.0008']
+Agent 2:
+O Total 0.0232 ['AFTER_POISITION_INFERENCE:0.0224', 'END:0.0008']
+Agent 0:
+O Total 0.0238 ['AFTER_POISITION_INFERENCE:0.0229', 'END:0.0008']
+Agent 2:
+O Total 0.0218 ['AFTER_POISITION_INFERENCE:0.0201', 'END:0.0017']
+Agent 0:
+O Total 0.0234 ['AFTER_POISITION_INFERENCE:0.0227', 'END:0.0007']
+Agent 2:
+O Total 0.0208 ['AFTER_POISITION_INFERENCE:0.0200', 'END:0.0008']
+Agent 0:
+O Total 0.0228 ['AFTER_POISITION_INFERENCE:0.0221', 'END:0.0008']
+Agent 2:
+O Total 0.0188 ['AFTER_POISITION_INFERENCE:0.0181', 'END:0.0007']
+Agent 0:
+O Total 0.0239 ['AFTER_POISITION_INFERENCE:0.0224', 'END:0.0015']
+Agent 2:
+O Total 0.0214 ['AFTER_POISITION_INFERENCE:0.0206', 'END:0.0008']
+Agent 0:
+O Total 0.0258 ['AFTER_POISITION_INFERENCE:0.0245', 'END:0.0013']
+Agent 2:
+O Total 0.0237 ['AFTER_POISITION_INFERENCE:0.0229', 'END:0.0008']
+Agent 0:
+O Total 0.0226 ['AFTER_POISITION_INFERENCE:0.0211', 'END:0.0016']
+Agent 2:
+O Total 0.0214 ['AFTER_POISITION_INFERENCE:0.0206', 'END:0.0008']
+Agent 0:
+O Total 0.0248 ['AFTER_POISITION_INFERENCE:0.0239', 'END:0.0010']
+Agent 2:
+O Total 0.0230 ['AFTER_POISITION_INFERENCE:0.0222', 'END:0.0008']
+Agent 0:
+O Total 0.0238 ['AFTER_POISITION_INFERENCE:0.0230', 'END:0.0009']
+Agent 2:
+O Total 0.0237 ['AFTER_POISITION_INFERENCE:0.0227', 'END:0.0010']
+The Red team has returned at least 28 of the opponents' dots.
