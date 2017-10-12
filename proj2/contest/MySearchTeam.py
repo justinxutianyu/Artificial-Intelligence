@@ -291,7 +291,7 @@ class PositionInferenceAgent(UtilAgent):
 
             for agentIndex in self.getOpponents(gameState):
                 self.initParticleDict(agentIndex)
-            print self.particleDicts
+            #print self.particleDicts
 
     def updatePositionInference(self, gameState):
         def update(particleDict, sonarDistance, isStay):
@@ -323,7 +323,7 @@ class PositionInferenceAgent(UtilAgent):
                     candidateParticleDict[tile] += newProbability
             if len(candidateParticleDict) > 0:
                 newPariticleDict = util.Counter()
-                print(PositionInferenceAgent.particleSum)
+                #print(PositionInferenceAgent.particleSum)
                 for _ in range(PositionInferenceAgent.particleSum):
                     tile = self.weightedRandomChoice(candidateParticleDict)
                     newPariticleDict[tile] += 1
