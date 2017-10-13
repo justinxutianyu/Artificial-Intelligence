@@ -17,7 +17,7 @@ from util import nearestPoint
 
 default_params = {
     "particle_sum": 3000,   # used in position inference
-    "max_depth": 50,  # used in expectimax agents, it can be very large, but will be limited by actionTimeLimit
+    "max_depth": 4,  # used in expectimax agents, it can be very large, but will be limited by actionTimeLimit
     "max_position": 1,  # used in expectimax agents. How many inferenced positions for each agent are used to evaluate state/reward.
     "action_time_limit": 0.97,  # higher if you want to search deeper
     "fully_observed": False,  # not ready yet
@@ -46,7 +46,7 @@ default_params = {
 #################
 
 def createTeam(firstIndex, secondIndex, isRed,
-                first= 'ActionEvaluationOffensiveAgent',
+                first= 'StateEvaluationOffensiveAgent',
                 second= 'StateEvaluationDefensiveAgent',
                 particleSum = None,
                 maxDepth = None,
