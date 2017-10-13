@@ -31,7 +31,7 @@ default_params = {
     "max_depth": 50,  # used in expectimax agents, it can be very large, but will be limited by actionTimeLimit
     "max_position": 1,
     # used in expectimax agents. How many inferenced positions for each agent are used to evaluate state/reward.
-    "action_time_limit": 0.9,  # higher if you want to search deeper
+    "action_time_limit": 0.97,  # higher if you want to search deeper
     "fully_observed": False,  # not ready yet
     "consideration_distance_factor": 1.5,  # agents far than (search_distance * factor) will be considered stay still
     "expand_factor": 1.0,  # factor to balance searial and parallel work load, now 1.0 is okay
@@ -47,7 +47,7 @@ default_params = {
 # Team creation #
 #################
 
-def createTeam(firstIndex, secondIndex, isRed, first='RandomOffensiveAgent', second='OffensiveReflexAgent',
+def createTeam(firstIndex, secondIndex, isRed, first='RandomOffensiveAgent', second='RandomDefensiveAgent',
             maxDepth=None,
             maxPosition=None,
             actionTimeLimit=None,
@@ -410,7 +410,7 @@ class ExpectimaxAgent(InferenceModule):
             #self.record["AFTER_REFLEX"] = time.time()
 
         self.record["END"] = time.time()
-        self.#printTimes()
+        #self.#printTimes()
         return best_action
 
     def selectAction(self, gameState):
@@ -541,16 +541,55 @@ class ExpectimaxAgent(InferenceModule):
 
         return best_score, best_action
 
+    def backwardTrace():
+        new_index = None
+        minimum = 9999
+        for index in range(gameState.getNumAgents()):
+            if pointers[index] + 1 < upLimits[index] and pointers[index] < minimum:
+                minPointer = pointers[index]
+                new_index = index
+        if new_index is not None:
+            pointers[new_index] += 1
+            return True
+        else:
+            return False
+
+    def getNearAgents(self, gameState, position, max_distance):
+        near_agents = []
+
+        for index in range(gameState.getNumAgents()):
+            agentPosition = gameState.getAgentPosition(index)
+            #if gameState.getAgentPosition(index) is not None and self.manhattanDistance(agentPosition, position) <= max_distance:           
+            if gameState.getAgentPosition(index) is not None and self.getMazeDistance(agentPosition, position) <= max_distance:
+                near_agents.append(index)
+
+        return near_agents
+
+
+    def getAgentPossibility(self, origin, inference, possibility_distributions, pointers):
+        agent_possibility = 1.0
+
+        for index in range(origin.getNumAgents()):
+            if origin.getAgentState(index).configuration is None:
+                temp = possibility_distributions[index][pointers[index]]
+                prob = temp[1]
+                inference.data.agentStates[index].configuration = game.Configuration(temp[0], Directions.STOP)
+            else:
+                prob = 1.0
+            agent_possibility = agent_possibility * prob
+        return agent_possibility
+
 
     def searchTop(self, gameState):
         inferenceState = gameState.deepCopy()
         legalActions = gameState.getLegalActions(self.index)
-        agentInferencePositionsAndPosibilities = [self.getCurrentAgentPositionsAndPosibilities(agentIndex) for agentIndex in range(gameState.getNumAgents())]
+        possibility_distributions = [self.getPositionBeliefs(agentIndex) for agentIndex in range(gameState.getNumAgents())]
         agentInferencePositions = [self.getCurrentAgentPostions(agentIndex) for agentIndex in range(gameState.getNumAgents())]
         initPointers = [0 for _ in range(gameState.getNumAgents())]
         pointers = None
-        upLimits = [min(self.maxInferencePositionCount, len(agentInferencePositionsAndPosibilities[agentIndex])) for agentIndex in range(gameState.getNumAgents())]
+        upLimits = [min(self.maxInferencePositionCount, len(possibility_distributions[agentIndex])) for agentIndex in range(gameState.getNumAgents())]
         myPosition = inferenceState.getAgentPosition(self.index)
+        
         def changePointer():
             changeAgentIndex = None
             minPointer = 9999
@@ -567,7 +606,7 @@ class ExpectimaxAgent(InferenceModule):
             totalPosibility = 1.0
             for agentIndex in range(origionState.getNumAgents()):
                 if origionState.getAgentState(agentIndex).configuration is None:
-                    position, posibility = agentInferencePositionsAndPosibilities[agentIndex][pointers[agentIndex]]
+                    position, posibility = possibility_distributions[agentIndex][pointers[agentIndex]]
                     inferenceState.data.agentStates[agentIndex].configuration = game.Configuration(position, Directions.STOP)
                 else:
                     posibility = 1.0
@@ -580,6 +619,7 @@ class ExpectimaxAgent(InferenceModule):
                 if agentPosition is not None and self.getMazeDistance(agentPosition, myPosition) <= searchMaxDistance:  # the origion is mahattan distance
                     searchAgentIndices.append(agentIndex)
             return searchAgentIndices
+
         bestAction = None
         bestValue = float("-inf")
         for searchDepth in range(self.maxDepth + 1):
@@ -594,9 +634,11 @@ class ExpectimaxAgent(InferenceModule):
                 # self.log("Search depth [%d], consideration distance is [%d]" % (searchDepth, considerationDistance))
                 pointers = initPointers
                 while True:
-                    posibility = setConfigurations(gameState, inferenceState)
-                    searchAgentIndices = getSearchAgentIndices(inferenceState, myPosition, considerationDistance)
+                    # get possibility and get newar agents
+                    posibility = self.getAgentPossibility(gameState, inferenceState, possibility_distributions, pointers)
+                    searchAgentIndices = self.getNearAgents(inferenceState, myPosition, considerationDistance)
                     #print("Take agents %s in to consideration" % searchAgentIndices)
+
                     value, action = self.getValue(inferenceState, self.index, searchAgentIndices, searchDepth)
                     localResults.append([value, action])
                     totalPosibility *= posibility
@@ -705,7 +747,7 @@ class ExpectimaxAgent(InferenceModule):
         else:
             return successor
 
-    def getCurrentAgentPositionsAndPosibilities(self, agentIndex):
+    def getPositionBeliefs(self, agentIndex):
         '''get inference positions and posibilities'''
         gameState = self.getCurrentObservation()
         if agentIndex in self.getTeam(gameState):
@@ -719,7 +761,7 @@ class ExpectimaxAgent(InferenceModule):
 
     def getCurrentAgentPostions(self, agentIndex):
         '''get inference positions'''
-        result = self.getCurrentAgentPositionsAndPosibilities(agentIndex)
+        result = self.getPositionBeliefs(agentIndex)
         result = [i[0] for i in result]
         return result
 
@@ -928,7 +970,7 @@ class RandomOffensiveAgent(ExpectimaxAgent):
             "nearest_food_distance_factor": -1.0,
             "nearest_capsules_distance_factor": -1.0,
             "return_food_factor": -0.5,  # 1.5
-             "team_distance": 0.5,
+            "team_distance": 0.5,
             "harmless_invader_distance_factor": -0.1,
             "harmful_invader_distance_factor": 0.1,
             "harmless_ghost_distance_factor": -0.2,
