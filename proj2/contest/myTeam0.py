@@ -35,8 +35,8 @@ default_params = {
     "consideration_distance_factor": 2.0,  # agents far than (search_distance * factor) will be considered stay still
     "expand_factor": 1.0,  # factor to balance searial and parallel work load, now 1.0 is okay
 
-    "enable_stop_action": False,  # used in many agents, whether enable STOP action.
-    "enable_stop_transition": False,  # used in position inference, enable this to allow STOP transition
+    #"enable_stop_action": False,  # used in many agents, whether enable STOP action.
+    #"enable_stop_transition": False,  # used in position inference, enable this to allow STOP transition
 }
 
 
@@ -519,8 +519,9 @@ class ExpectimaxAgent(InferenceModule):
             if index == self.index:  # no team work, is better
                 best_score = float("-inf")
                 possible_actions = gameState.getLegalActions(index)
-                if not default_params["enable_stop_action"]:
-                    possible_actions.remove(Directions.STOP)  # STOP is not allowed
+                #if not default_params["enable_stop_action"]:
+                # Here we remove the stop action
+                possible_actions.remove(Directions.STOP)  # STOP is not allowed
                 for action in possible_actions:
                     successor = gameState.generateSuccessor(index, action)
                     new_alpha = self.simulateGame(successor, next_agent, searchAgentIndices, next_depth, alpha,
@@ -861,6 +862,7 @@ class RandomOffensiveAgent(ExpectimaxAgent):
         peace_invaders = []
         evil_invaders = []
         ghosts = []
+        harmful_ghost = []
         for opponent in opponentIndices:
             if isHarmlessInvader(successor, opponent):
                 peace_invaders.append(opponent)
@@ -868,6 +870,8 @@ class RandomOffensiveAgent(ExpectimaxAgent):
                 evil_invaders.append(opponent)
             if isHarmlessGhost(successor, opponent):
                 ghosts.append(opponent)
+            if isHarmfulGhost(successor, opponent):
+                harmful_ghost.append(opponent)
 
 
 
@@ -921,10 +925,15 @@ class RandomOffensiveAgent(ExpectimaxAgent):
         else:
             features["harmless_ghost_distance_factor"] = 0
 
+        # add new features
+        features["harmful_ghost_distance_factor"] = min(
+            [getPositionFactor(getDistance(getPosition(successor, i))) for i in harmful_ghost]) if len(
+            harmful_ghost) > 0 else 0
+
 
 
         return features
-
+    """
     def getWeights(self, gameState, actionAgentIndex, action):
         return {
             "stopped": -2.0,
@@ -936,9 +945,27 @@ class RandomOffensiveAgent(ExpectimaxAgent):
             "nearest_food_distance_factor": -1.0,
             "nearest_capsules_distance_factor": -1.0,
             "return_food_factor": -0.5, # 1.5
-            # "team_distance": 0.5,
+            #"team_distance": 0.5,
             "harmless_invader_distance_factor": -0.1,
             "harmful_invader_distance_factor": 0.1,
+            "harmless_ghost_distance_factor": -2.0, #-0.2,
+            "harmful_ghost_distance_factor": 2.0,
+        }
+    """
+    def getWeights(self, gameState, actionAgentIndex, action):
+        return {
+            "stopped": -2.0,
+            "reversed": -1.0,
+            "scared": -2.0,
+            "food_returned": 10.0,
+            "food_carrying": 8.0,
+            "food_defend": 5.0,
+            "nearest_food_distance_factor": -1.0,
+            "nearest_capsules_distance_factor": -0.5,
+            "return_food_factor": -0.5, # 1.5
+            "team_distance": 0.5,
+            "harmless_invader_distance_factor": -0.4,
+            "harmful_invader_distance_factor": 0.4,
             "harmless_ghost_distance_factor": -0.2,
         }
 
