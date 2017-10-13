@@ -28,15 +28,12 @@ from util import nearestPoint
 
 default_params = {
     "particle_sum": 3000,  # used in position inference
-    "max_depth": 50,  # used in expectimax agents, it can be very large, but will be limited by actionTimeLimit
+    "max_depth": 4,  # used in expectimax agents, it can be very large, but will be limited by actionTimeLimit
     "max_position": 1,
     # used in expectimax agents. How many inferenced positions for each agent are used to evaluate state/reward.
-    "action_time_limit": 0.97,  # higher if you want to search deeper
-    "fully_observed": False,  # not ready yet
-    "consideration_distance_factor": 1.5,  # agents far than (search_distance * factor) will be considered stay still
+    "action_time_limit": 0.8,  # higher if you want to search deeper
+    "consideration_distance_factor": 2.0,  # agents far than (search_distance * factor) will be considered stay still
     "expand_factor": 1.0,  # factor to balance searial and parallel work load, now 1.0 is okay
-    "truncate_remain_time_percent": 0.1,  #
-    #"eval_total_reward": False,  # otherwise eval state. It controls whether add up values.
 
     "enable_stop_action": False,  # used in many agents, whether enable STOP action.
     "enable_stop_transition": False,  # used in position inference, enable this to allow STOP transition
@@ -52,7 +49,6 @@ def createTeam(firstIndex, secondIndex, isRed, first='RandomOffensiveAgent', sec
             maxPosition=None,
             actionTimeLimit=None,
             considerationDistanceFactor=None,
-
             ):
     """
     This function should return a list of two agents that will form the
@@ -75,9 +71,6 @@ def createTeam(firstIndex, secondIndex, isRed, first='RandomOffensiveAgent', sec
     #if fullyObserved is not None: default_params["fully_observed"] = bool(fullyObserved)
     if considerationDistanceFactor is not None: default_params["consideration_distance_factor"] = int(
         considerationDistanceFactor)
-
-
-
 
     # The following line is an example only; feel free to change it.
     return [eval(first)(firstIndex), eval(second)(secondIndex)]
@@ -230,7 +223,7 @@ class InferenceModule(CaptureAgent):
     def update(self, gameState, particle, sonar_distance, index):
         if index == self.index - 1 or (index == (self.index + gameState.getNumAgents() - 1)):
             temp_particles = util.Counter()
-            #print(result)
+            #(result)
             for position, value in particle.items():
                 x, y = position
                 candidates = [] # not enable stop
@@ -245,7 +238,7 @@ class InferenceModule(CaptureAgent):
                 for i in candidates:
                     temp_particles[i] = temp_particles[i] + value/len(candidates)
                 remaining = value % len(candidates)
-                #print(value, remaining)
+                ##print(value, remaining)
                 #print(remaining)
                 for i in range(remaining):
                     # random choose a candidate
@@ -310,9 +303,53 @@ class InferenceModule(CaptureAgent):
                 # self.log("Opponent Agent %d is %s" % (agentIndex, "STAY" if isStay else "MOVE"))
                 #InferenceModule.particles[index] = update(temp_particles, sonar_distance, flag)
                 InferenceModule.particles[index] = self.update(gameState, temp_particles, sonar_distance, index)
+    
+    # Utility Function
+    """
+    def isPacman(self, state, index):
+        return state.getAgentState(index).isPacman
 
+    def isGhost(self, state, index):
+        #return not self.isPacman(state, index)
+        return not state.getAgentState(index).isPacman
 
+    def isScared(self, state, index):
+        return state.data.agentStates[index].scaredTimer > 0  # and isGhost(state, index)
 
+    def isInvader(self, state, index, opponentIndices):
+        return index in opponentIndices and self.isPacman(state, index)
+
+    def isHarmfulInvader(self, state, index):
+        return self.isInvader(state, index) and self.isScared(state, self.index)
+
+    def isHarmlessInvader(self, state, index):
+        return self.isInvader(state, index) and not self.isScared(state, self.index)
+
+    def isHarmfulGhost(self, state, index, opponentIndices):
+        return index in opponentIndices and self.isGhost(state, index) and not self.isScared(state, index)
+
+    def isHarmlessGhost(self, state, index, opponentIndices):
+        return index in opponentIndices and self.isGhost(state, index) and self.isScared(state, index)
+
+    def getDistance(self, pos):
+        return self.getMazeDistance(position, pos)
+
+    def getPosition(self, state, index):
+        return state.getAgentPosition(index)
+
+    def getScaredTimer(self, state, index):
+        return state.getAgentState(index).scaredTimer
+
+    def getFoodCarrying(self, state, index):
+        return state.getAgentState(index).numCarrying
+
+    def getFoodReturned(self, state, index):
+        return state.getAgentState(index).numReturned
+
+    def getPositionFactor(self, distance):
+        return (float(distance) / (InferenceModule.width * InferenceModule.height))
+    """
+    
 class TimeoutException(Exception):
     """A custom exception for truncating search."""
     pass
@@ -381,7 +418,7 @@ class ExpectimaxAgent(InferenceModule):
         # Update global belief distributions
         self.updateBeliefDistribution()
 
-        # #print distributions
+        # print distributions
         self.displayDistributionsOverPositions(self.beliefDistributions)
         self.getCurrentAgentPostions(self.getTeam(gameState)[0])
         self.record["AFTER_POISITION_INFERENCE"] = time.time()
@@ -403,61 +440,31 @@ class ExpectimaxAgent(InferenceModule):
         else:
             #self.record["BEFORE_REFLEX"] = time.time()
             #bestAction = self.pickAction(gameState)
-            self.record["BEFORE_SEARCH"] = time.time()
-            best_score, best_action = self.searchTop(gameState)
-            self.record["AFTER_SEARCH"] = time.time()
+            self.record["BEFORE_Traverse"] = time.time()
+            best_action = self.traverse(gameState)
+            self.record["AFTER_Traverse"] = time.time()
 
             #self.record["AFTER_REFLEX"] = time.time()
 
         self.record["END"] = time.time()
-        #self.#printTimes()
-        return best_action
-
-    def selectAction(self, gameState):
-        """
-        Returns the expectimax action using self.depth and self.evaluationFunction
-
-        All ghosts should be modeled as choosing uniformly at random from their
-        legal moves.
-        """
-        foodLeft = len(self.getFood(gameState).asList())
-        best_action = None
-        if foodLeft <= 2:
-            best_distance = 9999
-            for action in gameState.getLegalActions(self.index):
-                successor = self.getSuccessor(gameState, self.index, action)
-                #pos2 = successor.getAgentPosition(self.index)
-                temp_distance = self.getMazeDistance(self.start, successor.getAgentPosition(self.index))
-                if temp_distance < best_distance:
-                    best_action = action
-                    best_distance = temp_distance
-        else:
-            #bestAction = self.pickAction(gameState)
-            self.record["BEFORE_SEARCH"] = time.time()
-            best_score, best_action = self.searchTop(gameState)
-            self.record["AFTER_SEARCH"] = time.time()
-
+        #self.printTimes()
         return best_action
 
 
 
-    def evaluate(self, gameState, agent_index, action):
+    def evaluate(self, gameState, index, action):
         """
           Should return heuristic(state,action) = w * featureVector
-          where * is the dotProduct operator
         """
-        features = self.getFeatures(gameState, agent_index, action)
-        weights  = self.getWeights(gameState, agent_index, action)
-
-        sum = 0.0
-        for feature, value in features.iteritems():
-            sum += weights[feature] * value
-        return sum
+        features = self.getFeatures(gameState, index, action)
+        weights  = self.getWeights(gameState, index, action)
+ 
+        return features * weights
 
  
     # recursive simulate the game process and use alpha-beta pruning
     # Expectimax with Alpha-Beta Pruning
-    def getValue(self, gameState, index, searchAgentIndices, depth, alpha=float("-inf"), beta=float("inf")):
+    def simulateGame(self, gameState, index, searchAgentIndices, depth, alpha=float("-inf"), beta=float("inf")):
         actions = gameState.getLegalActions(index)
         best_score = None
         best_action = None
@@ -492,17 +499,21 @@ class ExpectimaxAgent(InferenceModule):
             # Check time left
             self.checkTime()
 
-            next_agent, next_depth = self.getNextSearchableAgentIndexAndDepth(gameState, searchAgentIndices,index,depth)
-            """
+            #next_agent, next_depth = self.getNextSearchableAgentIndexAndDepth(gameState, searchAgentIndices,index,depth)
+            
             next_agent = index
             next_depth = depth
             while True:
-                next_agent = self.getNextAgentIndex(gameState, next_agent)
+                #next_agent = self.getNextAgentIndex(gameState, next_agent)
+                next_agent = next_agent + 1
+                if next_agent >= gameState.getNumAgents():
+                    next_agent = 0 
+
                 if next_agent == self.index:
                     next_depth = next_depth - 1 
                 if next_agent in searchAgentIndices: 
                     break
-            """
+            
 
             best_action = None
             if index == self.index:  # no team work, is better
@@ -512,7 +523,7 @@ class ExpectimaxAgent(InferenceModule):
                     possible_actions.remove(Directions.STOP)  # STOP is not allowed
                 for action in possible_actions:
                     successor = gameState.generateSuccessor(index, action)
-                    new_alpha = self.getValue(successor, next_agent, searchAgentIndices, next_depth, alpha,
+                    new_alpha = self.simulateGame(successor, next_agent, searchAgentIndices, next_depth, alpha,
                                                 beta)[0]
                     # currentReward = self.getQValue(gameState, index, action) if default_params["eval_total_reward"] else 0
                     # newAlpha += currentReward
@@ -528,7 +539,7 @@ class ExpectimaxAgent(InferenceModule):
                 best_score = float("inf")
                 for action in gameState.getLegalActions(index):
                     successor = gameState.generateSuccessor(index, action)
-                    new_beta = self.getValue(successor, next_agent, searchAgentIndices, next_depth, alpha, beta)[0]
+                    new_beta = self.simulateGame(successor, next_agent, searchAgentIndices, next_depth, alpha, beta)[0]
                     if new_beta < best_score:
                         best_score = new_beta
                         best_action = action
@@ -580,112 +591,78 @@ class ExpectimaxAgent(InferenceModule):
         return agent_possibility
 
 
-    def searchTop(self, gameState):
+    def traverse(self, gameState):
         inferenceState = gameState.deepCopy()
         legalActions = gameState.getLegalActions(self.index)
         possibility_distributions = [self.getPositionBeliefs(agentIndex) for agentIndex in range(gameState.getNumAgents())]
         agentInferencePositions = [self.getCurrentAgentPostions(agentIndex) for agentIndex in range(gameState.getNumAgents())]
-        initPointers = [0 for _ in range(gameState.getNumAgents())]
-        pointers = None
+        init_tree = [0 for _ in range(gameState.getNumAgents())]
+        search_tree = None
         upLimits = [min(self.maxInferencePositionCount, len(possibility_distributions[agentIndex])) for agentIndex in range(gameState.getNumAgents())]
         myPosition = inferenceState.getAgentPosition(self.index)
         
-        def changePointer():
-            changeAgentIndex = None
-            minPointer = 9999
-            for agentIndex in range(gameState.getNumAgents()):
-                if pointers[agentIndex] + 1 < upLimits[agentIndex] and pointers[agentIndex] < minPointer:
-                    minPointer = pointers[agentIndex]
-                    changeAgentIndex = agentIndex
-            if changeAgentIndex is not None:
-                pointers[changeAgentIndex] += 1
-                return True
-            else:
-                return False
-        def setConfigurations(origionState, inferenceState):
-            totalPosibility = 1.0
-            for agentIndex in range(origionState.getNumAgents()):
-                if origionState.getAgentState(agentIndex).configuration is None:
-                    position, posibility = possibility_distributions[agentIndex][pointers[agentIndex]]
-                    inferenceState.data.agentStates[agentIndex].configuration = game.Configuration(position, Directions.STOP)
-                else:
-                    posibility = 1.0
-                totalPosibility *= posibility
-            return totalPosibility
-        def getSearchAgentIndices(gameState, myPosition, searchMaxDistance):
-            searchAgentIndices = []
-            for agentIndex in range(gameState.getNumAgents()):
-                agentPosition = gameState.getAgentPosition(agentIndex)
-                if agentPosition is not None and self.getMazeDistance(agentPosition, myPosition) <= searchMaxDistance:  # the origion is mahattan distance
-                    searchAgentIndices.append(agentIndex)
-            return searchAgentIndices
-
-        bestAction = None
-        bestValue = float("-inf")
+        best_action = None
+        best_score = float("-inf")
         for searchDepth in range(self.maxDepth + 1):
-            searchSuccess = False
-            localBestValue = None
-            localBestAction = None
+            flag = False
+            temp_score = None
+            temp_action = None
             try:
-                localAverageBestValue = 0.0
-                totalPosibility = 1.0
-                localResults = []
-                considerationDistance = int(searchDepth * default_params["consideration_distance_factor"])
-                # self.log("Search depth [%d], consideration distance is [%d]" % (searchDepth, considerationDistance))
-                pointers = initPointers
+                expected_value = 0.0
+                possibility = 1.0
+                candidates = []
+                # Consider the distance effect
+                traverse_distance = int(searchDepth * default_params["consideration_distance_factor"])
+                # print(traverse_distance)
+                search_tree = init_tree
                 while True:
                     # get possibility and get newar agents
-                    posibility = self.getAgentPossibility(gameState, inferenceState, possibility_distributions, pointers)
-                    searchAgentIndices = self.getNearAgents(inferenceState, myPosition, considerationDistance)
+                    prob = self.getAgentPossibility(gameState, inferenceState, possibility_distributions, search_tree)
+                    searchAgentIndices = self.getNearAgents(inferenceState, myPosition, traverse_distance)
                     #print("Take agents %s in to consideration" % searchAgentIndices)
+                    
+                    # update the current best value
+                    temp_result = self.simulateGame(inferenceState, self.index, searchAgentIndices, searchDepth)
+                    #candidates.append([value, action])
+                    candidates.append(temp_result)
+                    possibility = possibility * prob
+                    expected_value = expected_value +  prob * temp_result[0]
+                    
+                    # update the index list
+                    #if not changePointer(): 
+                    min_index = None
+                    min_value = 9999
+                    for index in range(gameState.getNumAgents()):
+                        if search_tree[index] + 1 < upLimits[index] and search_tree[index] < min_value:
+                            min_value = search_tree[index]
+                            min_index = index
+                    if min_index is not None:
+                        search_tree[min_index] += 1
+                    else:
+                        break
 
-                    value, action = self.getValue(inferenceState, self.index, searchAgentIndices, searchDepth)
-                    localResults.append([value, action])
-                    totalPosibility *= posibility
-                    localAverageBestValue += posibility * value
-                    if not changePointer(): break
-                localAverageBestValue /= totalPosibility
-                minDifference = float("inf")
-                for value, action in localResults:
-                    difference = abs(value - localAverageBestValue)
-                    if difference < minDifference:
-                        minDifference = difference
-                        localBestAction = action
-                        localBestValue = value
-                searchSuccess = True
+                expected_value = expected_value / possibility
+                min_regret = float("inf")
+                for value, action in candidates:
+                    temp = abs(value - expected_value)
+                    if temp < min_regret:
+                        min_regret = temp
+                        temp_action = action
+                        temp_score = value
+                flag = True
             except TimeoutException:
                 pass
             # except multiprocessing.TimeoutError: pass  # Coment this line if you want to use keyboard interrupt
-            if searchSuccess:
-                bestValue = localBestValue
-                bestAction = localBestAction
+            # if complete the search 
+            if flag:
+                best_score = temp_score
+                best_action = temp_action
             else:
                 #print("Failed when search max depth [%d]" % (searchDepth,))
                 break
-        #print("Take action [%s] with evaluation [%.6f]" % (bestAction, bestValue))
-        return bestValue, bestAction
+        #print("Take action [%s] with evaluation [%.6f]" % (best_action, best_score))
+        return best_action
 
-    #########
-    # utils #
-    #########
-
-    def checkTime(self):
-        if self.timeLeft() < 0.1:
-            raise TimeoutException()
-
-    def getNextAgentIndex(self, gameState, currentAgentIndex):
-        nextAgentIndex = currentAgentIndex + 1
-        nextAgentIndex = 0 if nextAgentIndex >= gameState.getNumAgents() else nextAgentIndex
-        return nextAgentIndex
-
-    def getNextSearchableAgentIndexAndDepth(self, gameState, searchAgentIndices, currentAgentIndex, currentDepth):
-        nextAgentIndex = currentAgentIndex
-        nextDepth = currentDepth
-        while True:
-            nextAgentIndex = self.getNextAgentIndex(gameState, nextAgentIndex)
-            nextDepth = nextDepth - 1 if nextAgentIndex == self.index else nextDepth
-            if nextAgentIndex in searchAgentIndices: break
-        return nextAgentIndex, nextDepth
 
     ##############
     # interfaces #
@@ -697,21 +674,10 @@ class ExpectimaxAgent(InferenceModule):
     def timeLeft(self):
         return self.actionTimeLimit - self.timeConsumed()
 
-    def timePast(self):
-        return time.time() - self.record["START"]
-
-    def timePastPercent(self):
-        return self.timePast() / self.actionTimeLimit
-
-    def timeRemain(self):
-        return self.actionTimeLimit - self.timePast()
-
-    def timeRemainPercent(self):
-        return self.timeRemain() / self.actionTimeLimit
-    
-    def ifTimeoutRaiseTimeoutException(self):
-        if self.timeRemainPercent() < default_params["truncate_remain_time_percent"]:
+    def checkTime(self):
+        if self.timeLeft() < 0.1:
             raise TimeoutException()
+    
 
     def printTimes(self):
         timeList = list(self.record.items())
@@ -729,12 +695,12 @@ class ExpectimaxAgent(InferenceModule):
                 relativeTimeList.append("%s:%.4f" % (k, records))
         prefix = "O " if not reachActionTimeLimit else "X "
         prefix += "Total %.4f " % (totalTime,)
-        #print(prefix + str(relativeTimeList))
+        print(prefix + str(relativeTimeList))
 
-    def getFeatures(self, gameState, actionAgentIndex, action):
+    def getFeatures(self, gameState, index, action):
         util.raiseNotDefined()
 
-    def getWeights(self, gameState, actionAgentIndex, action):
+    def getWeights(self, gameState, index, action):
         util.raiseNotDefined()
 
     def getSuccessor(self, gameState, actionAgentIndex, action):
@@ -959,6 +925,8 @@ class RandomOffensiveAgent(ExpectimaxAgent):
 
         return features
 
+
+
     def getWeights(self, gameState, actionAgentIndex, action):
         return {
             "stopped": -2.0,
@@ -969,12 +937,14 @@ class RandomOffensiveAgent(ExpectimaxAgent):
             "food_defend": 0.0,
             "nearest_food_distance_factor": -1.0,
             "nearest_capsules_distance_factor": -1.0,
-            "return_food_factor": -0.5,  # 1.5
-            "team_distance": 0.5,
+            "return_food_factor": -0.5, # 1.5
+            # "team_distance": 0.5,
             "harmless_invader_distance_factor": -0.1,
             "harmful_invader_distance_factor": 0.1,
             "harmless_ghost_distance_factor": -0.2,
         }
+
+
 
 
 class RandomDefensiveAgent(ExpectimaxAgent):
@@ -1102,6 +1072,7 @@ class RandomDefensiveAgent(ExpectimaxAgent):
         peace_invaders = []
         evil_invaders = []
         ghosts = []
+        harmful_ghost = []
         for opponent in opponentIndices:
             if isHarmlessInvader(successor, opponent):
                 peace_invaders.append(opponent)
@@ -1109,6 +1080,9 @@ class RandomDefensiveAgent(ExpectimaxAgent):
                 evil_invaders.append(opponent)
             if isHarmlessGhost(successor, opponent):
                 ghosts.append(opponent)
+            if isHarmfulGhost(successor, opponent):
+                harmful_ghost.append(opponent)
+                
 
 
 
@@ -1161,6 +1135,9 @@ class RandomDefensiveAgent(ExpectimaxAgent):
             features["harmless_ghost_distance_factor"] = ghosts_factor
         else:
             features["harmless_ghost_distance_factor"] = 0
+        
+        #harmlessGhosts = [i for i in opponentIndices if isHarmfulGhost(successor, i)]
+            
 
 
 
@@ -1176,8 +1153,8 @@ class RandomDefensiveAgent(ExpectimaxAgent):
             "food_defend": 5.0,
             "nearest_food_distance_factor": -1.0,
             "nearest_capsules_distance_factor": -0.5,
-            "return_food_factor": 1.5,
-            "team_distance": 0.5,
+            "return_food_factor":  1.5,
+            # "team_distance": 0.5,
             "harmless_invader_distance_factor": -1.0,
             "harmful_invader_distance_factor": 2.0,
             "harmless_ghost_distance_factor": -0.1,
@@ -1328,4 +1305,139 @@ class OffensiveReflexAgent(ReflexCaptureAgent):
         toPlay = random.choice(ties)[1]
 
         return toPlay
+
+class MCTSDefendAgent(CaptureAgent):
+  def __init__(self, index):
+    CaptureAgent.__init__(self, index)
+    self.target = None
+    self.lastObservedFood = None
+    # This variable will store our patrol points and
+    # the agent probability to select a point as target.
+    self.patrolDict = {}
+
+  def distFoodToPatrol(self, gameState):
+    """
+    This method calculates the minimum distance from our patrol
+    points to our pacdots. The inverse of this distance will
+    be used as the probability to select the patrol point as
+    target.
+    """
+    food = self.getFoodYouAreDefending(gameState).asList()
+    total = 0
+
+    # Get the minimum distance from the food to our
+    # patrol points.
+    for position in self.noWallSpots:
+      closestFoodDist = "+inf"
+      for foodPos in food:
+        dist = self.getMazeDistance(position, foodPos)
+        if dist < closestFoodDist:
+          closestFoodDist = dist
+      # We can't divide by 0!
+      if closestFoodDist == 0:
+        closestFoodDist = 1
+      self.patrolDict[position] = 1.0/float(closestFoodDist)
+      total += self.patrolDict[position]
+    # Normalize the value used as probability.
+    if total == 0:
+      total = 1
+    for x in self.patrolDict.keys():
+      self.patrolDict[x] = float(self.patrolDict[x])/float(total)
+
+  def selectPatrolTarget(self):
+    """
+    Select some patrol point to use as target.
+    """
+    rand = random.random()
+    sum = 0.0
+    for x in self.patrolDict.keys():
+      sum += self.patrolDict[x]
+      if rand < sum:
+        return x
+
+  # Implemente este metodo para pre-processamento (15s max).
+  def registerInitialState(self, gameState):
+    CaptureAgent.registerInitialState(self, gameState)
+    self.distancer.getMazeDistances()
+
+    # Compute central positions without walls from map layout.
+    # The defender will walk among these positions to defend
+    # its territory.
+    if self.red:
+      centralX = (gameState.data.layout.width - 2)/2
+    else:
+      centralX = ((gameState.data.layout.width - 2)/2) + 1
+    self.noWallSpots = []
+    for i in range(1, gameState.data.layout.height - 1):
+      if not gameState.hasWall(centralX, i):
+        self.noWallSpots.append((centralX, i))
+    # Remove some positions. The agent do not need to patrol
+    # all positions in the central area.
+    while len(self.noWallSpots) > (gameState.data.layout.height -2)/2:
+      self.noWallSpots.pop(0)
+      self.noWallSpots.pop(len(self.noWallSpots)-1)
+    # Update probabilities to each patrol point.
+    self.distFoodToPatrol(gameState)
+
+
+  # Implemente este metodo para controlar o agente (1s max).
+  def chooseAction(self, gameState):
+    # You can profile your evaluation time by uncommenting these lines
+    #start = time.time()
+
+    # If some of our food was eaten, we need to update
+    # our patrol points probabilities.
+    if self.lastObservedFood and len(self.lastObservedFood) != len(self.getFoodYouAreDefending(gameState).asList()):
+      self.distFoodToPatrol(gameState)
+
+    mypos = gameState.getAgentPosition(self.index)
+    if mypos == self.target:
+      self.target = None
+
+    # If we can see an invader, we go after him.
+    x = self.getOpponents(gameState)
+    enemies  = [gameState.getAgentState(i) for i in self.getOpponents(gameState)]
+    invaders = filter(lambda x: x.isPacman and x.getPosition() != None, enemies)
+    if len(invaders) > 0:
+      positions = [agent.getPosition() for agent in invaders]
+      self.target = min(positions, key = lambda x: self.getMazeDistance(mypos, x))
+    # If we can't see an invader, but our pacdots were eaten,
+    # we will check the position where the pacdot disappeared.
+    elif self.lastObservedFood != None:
+      eaten = set(self.lastObservedFood) - set(self.getFoodYouAreDefending(gameState).asList())
+      if len(eaten) > 0:
+        self.target = eaten.pop()
+
+    # Update the agent memory about our pacdots.
+    self.lastObservedFood = self.getFoodYouAreDefending(gameState).asList()
+
+    # No enemy in sight, and our pacdots are not disappearing.
+    # If we have only a few pacdots, let's walk among them.
+    if self.target == None and len(self.getFoodYouAreDefending(gameState).asList()) <= 4:
+      food = self.getFoodYouAreDefending(gameState).asList() \
+           + self.getCapsulesYouAreDefending(gameState)
+      self.target = random.choice(food)
+    # If we have many pacdots, let's patrol the map central area.
+    elif self.target == None:
+      self.target = self.selectPatrolTarget()
+
+    # Choose action. We will take the action that brings us
+    # closer to the target. However, we will never stay put
+    # and we will never invade the enemy side.
+    actions = gameState.getLegalActions(self.index)
+    goodActions = []
+    fvalues = []
+    for a in actions:
+      new_state = gameState.generateSuccessor(self.index, a)
+      if not new_state.getAgentState(self.index).isPacman and not a == Directions.STOP:
+        newpos = new_state.getAgentPosition(self.index)
+        goodActions.append(a)
+        fvalues.append(self.getMazeDistance(newpos, self.target))
+
+    # Randomly chooses between ties.
+    best = min(fvalues)
+    ties = filter(lambda x: x[0] == best, zip(fvalues, goodActions))
+
+    #print 'eval time for defender agent %d: %.4f' % (self.index, time.time() - start)
+    return random.choice(ties)[1]  
 
