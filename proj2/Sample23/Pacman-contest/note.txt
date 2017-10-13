@@ -1,0 +1,56 @@
+agent junkumar  https://github.com/junkumar/pactureflag/commits/master/
+
+python capture.py -r ShuaiTeam -l contest01Capture.lay
+
+
+  -r RED, -b BLUE [Default: baselineTeam]
+  --redOpts=REDOPTS, --blueOpts=BLUEOPTS     agent in team (e.g. first=keys) [Default: ]
+     
+  --keys0,1,2,3               Make agent 0 (first red player) a keyboard agent
+  
+  -l LAYOUT_FILE
+  -t, --textgraphics    Display output as text only
+  -q, --quiet           Display minimal output and no graphics
+  -Q, --super-quiet     Same as -q but agent output is also suppressed
+  -i time 			    TIME limit of a game in moves [Default: 1200]
+  -n NUMGAMES           Number of games to play [Default: 1]
+  -f, --fixRandomSeed   Fixes the random seed to always play the same game
+  --record              Writes game histories to a file (named by the time
+                        they were played)
+  --replay=REPLAY       Replays a recorded game file.
+
+
+-----------------overall structure-------------------------
+Each strategy (next section) will give a value
+Use GA on every weight of strategy, each individual is a list 
+of weight. 
+
+-----------------strategy--------------------------------
+
+full defend when time isn't enough
+run home if time isn't enough or being chased
+cooperate between two agent
+
+
+--------------------difference with original pacman------
+need to control ghost
+control two agent -> can cooperate
+run home
+map => get stuck more easily 
+rule difference -> run home after getting dots, 
+
+
+--------------------------------------
+
+Algorithm to keep track of opponents
+Rike:  communication between agents 
+
+for thesis:
+    the fundamental problems you are trying to solve
+    how you modeled these problems
+    your representations of the problems
+    the computational strategy used to solve each problem
+    algorithmic choices you made in your implementation
+    any obstacles you encountered while solving the problem
+    evaluation of your agent
+    lessons learned during the project

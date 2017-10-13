@@ -1,0 +1,1 @@
+perl /home/kai/uni/research_project/code/asm-re/src/main/scripts/subgraph-match.pl /home/kai/uni/research_project/code/asm-re/src/main/scripts /home/kai/uni/research_project/seedev_corpus/train /home/kai/uni/research_project/seedev_corpus/train /home/kai/uni/research_project/seedev_corpus/dev seedev

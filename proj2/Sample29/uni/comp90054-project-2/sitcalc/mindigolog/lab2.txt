@@ -1,0 +1,33 @@
+MIndiGolog workshop (II)
+-------------------
+
+The cook, the thief, the programmer and the situation calculus (continued)
+
+
+Task 1:
+
+Based on the code from workshop (I):
+
+(i) Try increasing parallelism by making salad, cake and the tomato
+omellette in parallel (or alternatively make two of the same dish).
+
+Task 2:
+
+(i) Try introducing more chefs.
+
+(ii) Try limiting the number of ingredients/utensils or requiring more
+ingredients for baking and see what happens.
+
+For example
+
+- reduce number of eggs available (assume somebody has stolen some) or
+require more eggs, such as include an egg in making cake or more eggs
+for omelette.
+
+- try stealing (removing) one of the knives or cutting boards used for
+chopping ingredients.
+
+- Experiment by trying to non-deterministically select "pi" , and
+non-deterministically "ensureHas"  board and knife in parallel: does
+this work? if so why? if not, why not?
+

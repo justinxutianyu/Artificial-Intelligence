@@ -1,0 +1,55 @@
+MIndiGolog workshop
+-------------------
+
+The cook, the thief, the programmer and the situation calculus
+
+Task 1:
+
+Install SWI Prolog (if not alteady installed) and run the MIndiGolog interpreter.
+
+MIndiConGolog for SWI and the cooking domain has been written by Ryan Kelly.
+
+There are five files:
+
+sitcalc.pl is some basic sitcalc predicates 
+midigolog.pl is the MIndiGolog semantics 
+domain.pl is the axiomatisation of the cooking
+domain program.pl is some example program definitions 
+main.pl is the main entry point.
+
+To run it,  start SWI Prolog and load main.pl - by double clicking on
+the 'main.pl' file from windows explorer (if using Windows) - or by
+issuing the following command (if using console version)
+
+?-consult(main).
+
+Note: main.pl loads in all of the files sitcalc.pl, mindigolog.pl,
+domain.pl and program.pl.
+
+Then execute the main/0 predicate 
+
+?-main(X).
+
+It will give you a printout of the actions performed by the agent, and
+the resulting dishes produced for dinner.
+
+Task 2:
+
+(i) Have a look at the output, taking particular notice of the
+concurrent execution.
+
+(ii) Read through the code and try to understand as much of the
+programming as you can.
+
+main.pl  is the main entry point for the cooking program, program.pl is
+a collection of useful cooking procedures and domain.pl is the
+axiomatisation of the cooking agents domain.
+
+(iii) have a look at the use (and definition of) natural actions
+
+Task 3:
+
+(i) Modify the program (by editing main.pl, program.pl and domain.pl as
+required) to cook a tomato omelette instead of a cake (still make the
+salad as well).
+

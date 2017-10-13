@@ -1,0 +1,57 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+\title{Advanced Theoretical Computer Science - Project 3}
+\date{6th October 2015}
+\author{Kai Hirsinger}
+
+\begin{document}
+  \pagenumbering{gobble}  
+  \maketitle
+  
+  \newpage
+  \pagenumbering{arabic}
+  
+  \section{}
+    
+    \paragraph{}
+      Define the sets $S$ and $R$\\
+      \begin{align*}
+        S &= \{ x \mid x \in \mathbb{R} and 0 < x < 1 \}\\
+        R &= \{ x \mid x \in \mathbb{R} and x > 0 \}\\  
+      \end{align*}
+      Let $f$ be a function  $f: S \to R$. The sets $S$ and $R$ have
+      the same cardinality if $f$ is a mapping from $S$ to $R$. For $f$ 
+      to be a mapping from $S$ and $R$, it must be the case that 
+      every $r \in R$ has exactly one $s \in S$ where $f(s) = r$.\\
+    
+    \paragraph{Proof}
+    The function $f(x) = \left(\frac{1}{x}\right) - 1$ is a mapping from
+    $S \to R$. 
+	
+	\paragraph{}    
+    Suppose this function is not a mapping from $S$ to $R$. If this
+    were the case, there must exist some $s \in S$ where either:
+    \begin{itemize}
+      \item $f(s) \neq r$ for any $r \in R$
+      \item There exists more than a single value $r \in R$ where $f(s) = r$
+    \end{itemize}
+    Observe that if there is some value $s \in S$ where $f(s) = 0$ the first
+    item can be satisfied. To identify such a value, we set $f(s) = 0$ and 
+    solve for $s$.
+    \begin{align*}
+      0 &= \left(\frac{1}{s}\right) - 1\\
+      s &= 1 - 1\\
+      s &= 0
+    \end{align*}
+    Substituting back into $f(s)$ gives:
+    \begin{align*}
+      f(0) &= \left(\frac{1}{0}\right) - 1
+    \end{align*}
+    Which is clearly invalid, indicating that no such value $s$ exists.
+    TODO: Prove the second point.  
+
+\end{document}

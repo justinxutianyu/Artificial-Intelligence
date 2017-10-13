@@ -1,0 +1,10 @@
+<configuration>
+	<language>en</language>
+	<dictionary>model/dictionary-1.2.0.zip</dictionary>
+	<pos_model>model/craft-en-pos-1.1.0g.jar</pos_model>
+	<reader type="pos">
+		<column index="1" field="form" />
+		<column index="2" field="pos" />
+	</reader>
+</configuration>
+

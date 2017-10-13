@@ -1,0 +1,94 @@
+Playtest
+The play test is generated using common map "defaultCapture" to ensure test integrity.
+
+1.Team-A (Adreanalin and Utility) Vs Team-B (baselineTeam i.e Offensive Reflex and Defensive Reflex)
+* Match 1: Team-A wins  
+* Match 2: Team-A wins
+* Match 3: Team-B wins
+* Match 4: Team-B wins  
+* Match 5: Team-B wins
+* Match 6: Team-A wins
+* Match 7: Team-A wins
+Result: Team-A dominates Team-B => 4:3
+
+2.Team-A (Adreanalin and Adreanalin Vs Team-B (baselineTeam i.e Offensive Reflex and Defensive Reflex)
+* Match 1: Team-A wins  
+* Match 2: Team-A wins
+* Match 3: Team-B wins
+* Match 4: Team-A wins  
+* Match 5: Team-B wins
+* Match 6: Team-A wins
+* Match 7: Team-A wins
+Result: Team-A dominates Team-B => 5:2
+
+3.Team-A (Utility and Utility Vs Team-B (baselineTeam i.e Offensive Reflex and Defensive Reflex)
+* Match 1: Team-A wins  
+* Match 2: Team-A wins
+* Match 3: Team-A wins
+* Match 4: Team-A wins  
+* Match 5: Team-A wins
+* Match 6: Team-A wins
+* Match 7: Team-B wins
+Result: Team-A dominates Team-B => 6:1
+
+
+4.Team-A (Adreanalin and Adrenalin)  Vs Team-B (Utility and Utility)
+* Match 1: Team-A wins  
+* Match 2: Team-A wins
+* Match 3: Team-A wins
+* Match 4: Team-B wins  
+* Match 5: Team-A wins
+* Match 6: Team-A wins
+* Match 7: Team-A wins
+Result: Team-A dominates Team-B => 6:1
+
+5.Team-A (Adreanalin and KeyBoardAgenti.e Human Player)  Vs Team-B (Utility and Utility)
+* Match 1: Team-A wins  
+* Match 2: Team-B wins
+* Match 3: Team-A wins
+* Match 4: Team-A wins  
+* Match 5: Team-B wins
+* Match 6: Team-A wins
+* Match 7: Team-B wins
+Result: Team-A dominates Team-B => 4:3
+
+
+6.Team-A (Adreanalin and KeyBoardAgenti.e Human Player)  Vs Team-B (Adreanalin and Adrenalin)
+* Match 1: Team-A wins  
+* Match 2: Team-A wins
+* Match 3: Team-B wins
+* Match 4: Team-A wins  
+* Match 5: Team-B wins
+* Match 6: Team-A wins
+* Match 7: Team-A wins
+Result: Team-A dominates Team-B => 5:2
+
+7.Team-A (Utility and KeyBoardAgenti.e Human Player)  Vs Team-B (Adreanalin and Adrenalin)
+* Match 1: Team-A wins  
+* Match 2: Team-A wins
+* Match 3: Team-A wins
+* Match 4: Team-A wins  
+* Match 5: Team-B wins
+* Match 6: Team-A wins
+* Match 7: Team-A wins
+Result: Team-B dominates Team-A => 6:1
+
+8.Team-A (Utility and KeyBoardAgenti.e Human Player)  Vs Team-B (Utility and Utility)
+* Match 1: Team-A wins  
+* Match 2: Team-B wins
+* Match 3: Team-A wins
+* Match 4: Team-A wins  
+* Match 5: Team-B wins
+* Match 6: Team-B wins
+* Match 7: Team-B wins
+Result: Team-B dominates Team-A => 4:3
+
+9.Team-A (Utility and KeyBoardAgenti.e Human Player)  Vs Team-B (Utility and Utility)
+* Match 1: Team-A wins  
+* Match 2: Team-B wins
+* Match 3: Team-A wins
+* Match 4: Team-A wins  
+* Match 5: Team-B wins
+* Match 6: Team-B wins
+* Match 7: Team-B wins
+Result: Team-B dominates Team-A => 4:3
