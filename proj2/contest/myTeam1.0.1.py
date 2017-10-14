@@ -195,8 +195,8 @@ class MixedAgent(CaptureAgent):
 		stateIndex = random.choice(range(len(self.simulationResult)))
 	  else:
 		stateIndex = self.chooseBestStateIndex()
-	  if stateIndex >= len(self.simulationResult):
-	    print stateIndex, len(self.simulationResult)
+	#   if stateIndex >= len(self.simulationResult):
+		# print stateIndex, len(self.simulationResult)
 	  nextState, currentVal, num = self.simulationResult[stateIndex]
 	  simulationPath = self.randomSimulation(nextState, self.depth)
 	  updatedVal = self.evaluatePath(simulationPath)
@@ -489,7 +489,18 @@ class MixedAgent(CaptureAgent):
 	elif self.lastObservedFood != None:
 	  eaten = set(self.lastObservedFood) - set(self.getFoodYouAreDefending(gameState).asList())
 	  if len(eaten) > 0:
-		self.target = eaten.pop()
+		# self.target = eaten.pop()
+		# maybe we want to move to next closest food
+		eatenFood = eaten.pop()
+		defendingFoodList = self.getFoodYouAreDefending(gameState).asList()
+		nextTarget = defendingFoodList[0]
+		minDist = self.getMazeDistance(nextTarget, eatenFood)
+		for foodRemain in defendingFoodList:
+		  dist = self.getMazeDistance(foodRemain, eatenFood)
+		  if dist < minDist:
+			minDist = dist
+			nextTarget = foodRemain
+		self.target = nextTarget
 
 	# Update the agent memory about our pacdots.
 	self.lastObservedFood = self.getFoodYouAreDefending(gameState).asList()
@@ -535,6 +546,7 @@ class DefensiveAgent(MixedAgent):
 
 class OffensiveAgent(MixedAgent):
   def chooseAction(self, gameState):
+	# startTime = time.time()
 	team = None
 	actionTaken = None
 	for teammate in self.team:
@@ -550,13 +562,14 @@ class OffensiveAgent(MixedAgent):
 	  teammatePos = gameState.getAgentPosition(team)
 	  teammateState = gameState.getAgentState(team)
 	  if self.getMazeDistance(myPos, oppnentPosition) < 4 and opponentState.isPacman:
-		print 'opponent pacman is nearby, attacker defends'
+		# print 'opponent pacman is nearby, attacker defends'
 		actionTaken = self.chooseDefensiveAction(gameState)
 	  if not gameState.getAgentState(self.index).isPacman and self.getMazeDistance(myPos, oppnentPosition) < self.getMazeDistance(myPos, teammatePos) and opponentState.isPacman and not teammateState.isPacman:
-		print self.getMazeDistance(myPos, oppnentPosition),self.getMazeDistance(myPos, teammatePos),opponentState.isPacman,teammateState.isPacman
+		# print self.getMazeDistance(myPos, oppnentPosition),self.getMazeDistance(myPos, teammatePos),opponentState.isPacman,teammateState.isPacman
 		actionTaken = self.chooseDefensiveAction(gameState)
 	actionTaken = self.chooseOffensiveAction(gameState)
 	self.lastAction = actionTaken
+	# print time.time() - startTime
 	return actionTaken
 
 

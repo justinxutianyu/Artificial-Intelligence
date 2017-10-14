@@ -22,20 +22,6 @@ from game import Directions, Actions
 import game
 from util import nearestPoint
 
-#################
-#     Params    #
-#################
-
-default_params = {
-    "particle_sum": 3000,  # used in position inference
-    "max_depth": 4,  # used in expectimax agents, it can be very large, but will be limited by actionTimeLimit
-    "max_position": 1,
-    # used in expectimax agents. How many inferenced positions for each agent are used to evaluate state/reward.
-    "action_time_limit": 0.8,  # higher if you want to search deeper
-    "consideration_distance_factor": 2.0,  # agents far than (search_distance * factor) will be considered stay still
-    "expand_factor": 1.0,  # factor to balance searial and parallel work load, now 1.0 is okay
-
-}
 
 
 #################
@@ -60,14 +46,6 @@ def createTeam(firstIndex, secondIndex, isRed, first='RandomOffensiveAgent', sec
     any extra arguments, so you should make sure that the default
     behavior is what you want for the nightly contest.
     """
-    # initialize parameters
-    #if maxDepth is not None: default_params["max_depth"] = int(maxDepth)
-    #if maxPosition is not None: default_params["max_position"] = int(maxPosition)
-    if actionTimeLimit is not None: default_params["action_time_limit"] = float(actionTimeLimit)
-    #if fullyObserved is not None: default_params["fully_observed"] = bool(fullyObserved)
-    if considerationDistanceFactor is not None: default_params["consideration_distance_factor"] = int(
-        considerationDistanceFactor)
-
     # The following line is an example only; feel free to change it.
     return [eval(first)(firstIndex), eval(second)(secondIndex)]
 
@@ -260,7 +238,7 @@ class InferenceModule(CaptureAgent):
                 result[temp_pos] += 1
             return result
         else:
-            print("Lost Target")
+            #print("Lost Target")
             return self.getParticlesDistributions()    
 
     def explore(self, particles):
@@ -363,7 +341,7 @@ class ExpectimaxAgent(InferenceModule):
 
     # choose the best action and update global variables
     def chooseAction(self, gameState):
-        print ("Agent %d:" % (self.index,))
+        #print ("Agent %d:" % (self.index,))
         self.record = {"START": time.time()}
         #action = self.takeAction(gameState)
     
@@ -417,7 +395,7 @@ class ExpectimaxAgent(InferenceModule):
             #self.record["AFTER_REFLEX"] = time.time()
 
         self.record["END"] = time.time()
-        self.printTimes()
+        #self.printTimes()
         return best_action
 
 
@@ -489,14 +467,13 @@ class ExpectimaxAgent(InferenceModule):
             if index == self.index:  # no team work, is better
                 best_score = float("-inf")
                 possible_actions = gameState.getLegalActions(index)
-                #if not default_params["enable_stop_action"]:
                 # Here we remove the stop action
                 possible_actions.remove(Directions.STOP)  # STOP is not allowed
                 for action in possible_actions:
                     successor = gameState.generateSuccessor(index, action)
                     new_alpha = self.simulateGame(successor, next_agent, searchAgentIndices, next_depth, alpha,
                                                 beta)[0]
-                    # currentReward = self.getQValue(gameState, index, action) if default_params["eval_total_reward"] else 0
+
                     # newAlpha += currentReward
                     if new_alpha > best_score:
                         best_score = new_alpha
@@ -583,14 +560,14 @@ class ExpectimaxAgent(InferenceModule):
                 possibility = 1.0
                 candidates = []
                 # Consider the distance effect
-                traverse_distance = int(searchDepth * default_params["consideration_distance_factor"])
+                traverse_distance = int(searchDepth *2.0) # set the distance factor 2.0
                 # print(traverse_distance)
                 search_tree = init_tree
                 while True:
                     # get possibility and get newar agents
                     prob = self.getAgentPossibility(gameState, inferenceState, possibility_distributions, search_tree)
                     searchAgentIndices = self.getNearAgents(inferenceState, myPosition, traverse_distance)
-                    print("Take agents %s in to consideration" % searchAgentIndices)
+                    #print("Take agents %s in to consideration" % searchAgentIndices)
                     
                     # update the current best value
                     temp_result = self.simulateGame(inferenceState, self.index, searchAgentIndices, searchDepth)
@@ -629,9 +606,9 @@ class ExpectimaxAgent(InferenceModule):
                 best_score = temp_score
                 best_action = temp_action
             else:
-                print("Failed when search max depth [%d]" % (searchDepth,))
+                #print("Failed when search max depth [%d]" % (searchDepth,))
                 break
-        print("Take action [%s] with evaluation [%.6f]" % (best_action, best_score))
+        #print("Take action [%s] with evaluation [%.6f]" % (best_action, best_score))
         return best_action
 
 
@@ -666,7 +643,7 @@ class ExpectimaxAgent(InferenceModule):
                 relativeTimeList.append("%s:%.4f" % (k, records))
         prefix = "O " if not reachActionTimeLimit else "X "
         prefix += "Total %.4f " % (totalTime,)
-        print(prefix + str(relativeTimeList))
+        #print(prefix + str(relativeTimeList))
 
     def getFeatures(self, gameState, index, action):
         util.raiseNotDefined()
@@ -1043,7 +1020,7 @@ class RandomDefensiveAgent(ExpectimaxAgent):
 
 
         return features
-            
+
 
     def getWeights(self, gameState, actionAgentIndex, action):
         return {

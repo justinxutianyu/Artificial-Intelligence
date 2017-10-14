@@ -3,16 +3,16 @@
     (:types location)
 
     ;; define facts in the problem 
-    (:predicates  (pacmanAt ?posPacman - location)
-                  (ghostAt ?posGhost - location)
-                  (connected ?posFrom ?posTo - location) 
+    (:predicates  (pacmanAt ?locPacman - location)
+                  (ghostAt ?locGhost - location)
+                  (connected ?locFrom ?locTo - location) 
                   (eatCapsule) ;; if the pacman has eaten the capsule
-                  (foodAt ?posFood - location)
-                  (capsuleAt ?posCapsule - location)
+                  (foodAt ?locFood - location)
+                  (capsuleAt ?locCapsule - location)
                 )
     ;; define the actions
 
-    (:action move_noCapsule ;; pacman normally move with not eaten capsule
+    (:action move ;; pacman normally move with not eaten capsule
                :parameters (?from ?to - location)
                :precondition (and (pacmanAt ?from)
                                    (connected ?from ?to)
@@ -58,6 +58,7 @@
                :effect (and (pacmanAt ?to)
                              (not (pacmanAt ?from))
                              (not (ghostAt ?to)) ;;eaten the ghost
+                             (not (eatCapsule))
                         )  
 
     )

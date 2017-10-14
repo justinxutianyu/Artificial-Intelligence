@@ -809,12 +809,12 @@ class RandomOffensiveAgent(ExpectimaxAgent):
 
 
         if len(peace_invaders) > 0:
-            peace_invaders_factor = -9999
+            peace_invaders_factor = 9999
             for invader in peace_invaders:
                 temp_distance = self.getMazeDistance(position, successor.getAgentPosition(invader))
                 temp_food = successor.getAgentState(invader).numCarrying + 5
                 temp_factor = float(temp_distance)/map_size * temp_food
-                if temp_factor > peace_invaders_factor:
+                if temp_factor < peace_invaders_factor:
                     peace_invaders_factor = temp_factor
 
             features["harmless_invader_distance_factor"] = peace_invaders_factor
@@ -823,10 +823,10 @@ class RandomOffensiveAgent(ExpectimaxAgent):
 
 
         if len(evil_invaders) > 0:
-            evil_invaders_factor = -9999
+            evil_invaders_factor = 9999
             for invader in evil_invaders:
                 temp_distance = float(self.getMazeDistance(position, successor.getAgentPosition(invader)))/map_size
-                if temp_distance > evil_invaders_factor:
+                if temp_distance < evil_invaders_factor:
                     evil_invaders_factor = temp_distance
             features["harmful_invader_distance_factor"] = evil_invaders_factor
         else:
@@ -834,10 +834,10 @@ class RandomOffensiveAgent(ExpectimaxAgent):
 
 
         if len(peace_ghosts) > 0:
-            ghosts_factor = -9999
+            ghosts_factor = 9999
             for ghost in peace_ghosts:
                 temp_distance = float(self.getMazeDistance(position, successor.getAgentPosition(ghost)))/map_size
-                if temp_distance > ghosts_factor:
+                if temp_distance < ghosts_factor:
                     ghosts_factor = temp_distance
             features["harmless_ghost_distance_factor"] = ghosts_factor
         else:
@@ -879,6 +879,7 @@ class RandomOffensiveAgent(ExpectimaxAgent):
             "harmful_ghost_distance_factor": 2.0,
         }
     """
+
     def getWeights(self, gameState, actionAgentIndex, action):
         return {
             "stopped": -2.0,
@@ -886,14 +887,15 @@ class RandomOffensiveAgent(ExpectimaxAgent):
             "scared": -2.0,
             "food_returned": 10.0,
             "food_carrying": 8.0,
-            "food_defend": 5.0,
+            "food_defend": 0.0,
             "nearest_food_distance_factor": -1.0,
-            "nearest_capsules_distance_factor": -0.5,
+            "nearest_capsules_distance_factor": -1.0,
             "return_food_factor": -0.5, # 1.5
-            "team_distance": 0.5,
-            "harmless_invader_distance_factor": -0.4,
-            "harmful_invader_distance_factor": 0.4,
+            # "team_distance": 0.5,
+            "harmless_invader_distance_factor": -0.1,
+            "harmful_invader_distance_factor": 0.1,
             "harmless_ghost_distance_factor": -0.2,
+            "harmful_ghost_distance_factor": 1.5, # harmful ghost
         }
 
 class RandomDefensiveAgent(ExpectimaxAgent):
@@ -969,6 +971,9 @@ class RandomDefensiveAgent(ExpectimaxAgent):
         else:
             central_position = InferenceModule.width/2
 
+        #features["team_distance"] = float([self.getMazeDistance(position, successor.getAgentPosition(i)) 
+        #for i in teamIndices if i != self.index]) / map_size
+
 
         closest_return_distance = 9999
         for i in range(InferenceModule.height):
@@ -996,12 +1001,12 @@ class RandomDefensiveAgent(ExpectimaxAgent):
 
 
         if len(peace_invaders) > 0:
-            peace_invaders_factor = -9999
+            peace_invaders_factor = 9999
             for invader in peace_invaders:
                 temp_distance = self.getMazeDistance(position, successor.getAgentPosition(invader))
                 temp_food = successor.getAgentState(invader).numCarrying + 5
                 temp_factor = float(temp_distance)/map_size * temp_food
-                if temp_factor > peace_invaders_factor:
+                if temp_factor < peace_invaders_factor:
                     peace_invaders_factor = temp_factor
 
             features["harmless_invader_distance_factor"] = peace_invaders_factor
@@ -1010,10 +1015,10 @@ class RandomDefensiveAgent(ExpectimaxAgent):
 
 
         if len(evil_invaders) > 0:
-            evil_invaders_factor = -9999
+            evil_invaders_factor = 9999
             for invader in evil_invaders:
                 temp_distance = float(self.getMazeDistance(position, successor.getAgentPosition(invader)))/map_size
-                if temp_distance > evil_invaders_factor:
+                if temp_distance < evil_invaders_factor:
                     evil_invaders_factor = temp_distance
             features["harmful_invader_distance_factor"] = evil_invaders_factor
         else:
@@ -1021,10 +1026,10 @@ class RandomDefensiveAgent(ExpectimaxAgent):
 
 
         if len(peace_ghosts) > 0:
-            ghosts_factor = -9999
+            ghosts_factor = 9999
             for ghost in peace_ghosts:
                 temp_distance = float(self.getMazeDistance(position, successor.getAgentPosition(ghost)))/map_size
-                if temp_distance > ghosts_factor:
+                if temp_distance < ghosts_factor:
                     ghosts_factor = temp_distance
             features["harmless_ghost_distance_factor"] = ghosts_factor
         else:
@@ -1056,7 +1061,7 @@ class RandomDefensiveAgent(ExpectimaxAgent):
             "nearest_food_distance_factor": -1.0,
             "nearest_capsules_distance_factor": -0.5,
             "return_food_factor": 1.5,
-            "team_distance": 0.5,
+            "team_distance": 0.1,
             "harmless_invader_distance_factor": -3.0, # -1.0
             "harmful_invader_distance_factor": 4.0,
             "harmless_ghost_distance_factor": -2.0,
