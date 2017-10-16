@@ -1,0 +1,3964 @@
+Archive:  contest_and_teams.zip
+   creating: contest-tmp/bin/
+   creating: contest-tmp/layouts/
+   creating: contest-tmp/teams/
+  inflating: contest-tmp/game.py     
+  inflating: contest-tmp/contest.html  
+  inflating: contest-tmp/textDisplay.py  
+  inflating: contest-tmp/mazeGenerator.py  
+  inflating: contest-tmp/VERSION     
+  inflating: contest-tmp/myTeam.py   
+  inflating: contest-tmp/keyboardAgents.py  
+  inflating: contest-tmp/autograder.py  
+  inflating: contest-tmp/generateTournamentLayouts.py  
+  inflating: contest-tmp/baselineTeam.py  
+  inflating: contest-tmp/graphicsDisplay.py  
+  inflating: contest-tmp/graphicsUtils.py  
+  inflating: contest-tmp/pacman.py   
+  inflating: contest-tmp/capture_the_flag.png  
+  inflating: contest-tmp/contestLayout.png  
+  inflating: contest-tmp/unpack.py   
+  inflating: contest-tmp/testParser.py  
+  inflating: contest-tmp/capture.py  
+  inflating: contest-tmp/testClasses.py  
+  inflating: contest-tmp/projects.css  
+  inflating: contest-tmp/captureAgents.py  
+  inflating: contest-tmp/pacmanAgents.py  
+  inflating: contest-tmp/distanceCalculator.py  
+  inflating: contest-tmp/layout.py   
+  inflating: contest-tmp/captureGraphicsDisplay.py  
+  inflating: contest-tmp/bracket.png  
+  inflating: contest-tmp/ghostAgents.py  
+  inflating: contest-tmp/util.py     
+  inflating: contest-tmp/capture_the_flag2.png  
+   creating: contest-tmp/layouts/layouts/
+  inflating: contest-tmp/layouts/contest17Capture.lay  
+  inflating: contest-tmp/layouts/testCapture.lay  
+  inflating: contest-tmp/layouts/contest03Capture.lay  
+  inflating: contest-tmp/layouts/contest14Capture.lay  
+  inflating: contest-tmp/layouts/contest20Capture.lay  
+  inflating: contest-tmp/layouts/contest15cCapture.lay  
+  inflating: contest-tmp/layouts/contest13Capture.lay  
+  inflating: contest-tmp/layouts/contest04cCapture.lay  
+  inflating: contest-tmp/layouts/contest17cCapture.lay  
+  inflating: contest-tmp/layouts/contest18cCapture.lay  
+  inflating: contest-tmp/layouts/contest03cCapture.lay  
+  inflating: contest-tmp/layouts/contest11Capture.lay  
+  inflating: contest-tmp/layouts/contest19cCapture.lay  
+  inflating: contest-tmp/layouts/contest16Capture.lay  
+  inflating: contest-tmp/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/layouts/alleyCapture.lay  
+  inflating: contest-tmp/layouts/contest07Capture.lay  
+  inflating: contest-tmp/layouts/contest15Capture.lay  
+  inflating: contest-tmp/layouts/mediumCapture.lay  
+  inflating: contest-tmp/layouts/contest16cCapture.lay  
+  inflating: contest-tmp/layouts/contest04Capture.lay  
+  inflating: contest-tmp/layouts/bloxCapture.lay  
+  inflating: contest-tmp/layouts/contest01cCapture.lay  
+  inflating: contest-tmp/layouts/contest06Capture.lay  
+  inflating: contest-tmp/layouts/contest05Capture.lay  
+  inflating: contest-tmp/layouts/defaultCapture.lay  
+  inflating: contest-tmp/layouts/contest18Capture.lay  
+  inflating: contest-tmp/layouts/contest02cCapture.lay  
+  inflating: contest-tmp/layouts/strategicCapture.lay  
+  inflating: contest-tmp/layouts/contest20cCapture.lay  
+  inflating: contest-tmp/layouts/contest12Capture.lay  
+  inflating: contest-tmp/layouts/jumboCapture.lay  
+  inflating: contest-tmp/layouts/contest19Capture.lay  
+  inflating: contest-tmp/layouts/fastCapture.lay  
+  inflating: contest-tmp/layouts/contest07cCapture.lay  
+  inflating: contest-tmp/layouts/tinyCapture.lay  
+  inflating: contest-tmp/layouts/contest09Capture.lay  
+  inflating: contest-tmp/layouts/contest08Capture.lay  
+  inflating: contest-tmp/layouts/contest02Capture.lay  
+  inflating: contest-tmp/layouts/contest06cCapture.lay  
+  inflating: contest-tmp/layouts/contest10Capture.lay  
+  inflating: contest-tmp/layouts/distantCapture.lay  
+  inflating: contest-tmp/layouts/contest01Capture.lay  
+  inflating: contest-tmp/layouts/officeCapture.lay  
+  inflating: contest-tmp/layouts/contest05cCapture.lay  
+   creating: contest-tmp/teams/123/
+   creating: contest-tmp/teams/2Defence/
+   creating: contest-tmp/teams/404/
+   creating: contest-tmp/teams/404TeamNamenotfound/
+   creating: contest-tmp/teams/AIFighter/
+   creating: contest-tmp/teams/AI_Rookie/
+   creating: contest-tmp/teams/ARP/
+   creating: contest-tmp/teams/AliEn/
+   creating: contest-tmp/teams/Alive/
+   creating: contest-tmp/teams/Allogator/
+   creating: contest-tmp/teams/Artificialidiot/
+   creating: contest-tmp/teams/Avatar/
+   creating: contest-tmp/teams/BetaPacMc3/
+   creating: contest-tmp/teams/BetterThanBaselineTeam/
+   creating: contest-tmp/teams/Chicken-Dinner/
+   creating: contest-tmp/teams/Coder/
+   creating: contest-tmp/teams/DEVGRU/
+   creating: contest-tmp/teams/DSS/
+   creating: contest-tmp/teams/Dark-Flame-Master/
+   creating: contest-tmp/teams/Deox/
+   creating: contest-tmp/teams/ERC/
+   creating: contest-tmp/teams/ES/
+   creating: contest-tmp/teams/EvilGeniuses/
+   creating: contest-tmp/teams/EvilPacman/
+   creating: contest-tmp/teams/FGO/
+   creating: contest-tmp/teams/FatHeadFish/
+   creating: contest-tmp/teams/FatMan/
+   creating: contest-tmp/teams/GrantWard/
+   creating: contest-tmp/teams/H2O2/
+   creating: contest-tmp/teams/HelloKitty/
+   creating: contest-tmp/teams/HelloPacman/
+   creating: contest-tmp/teams/HelloTeam1213/
+   creating: contest-tmp/teams/HelloWorld/
+   creating: contest-tmp/teams/Higher_Brothers/
+   creating: contest-tmp/teams/HouseofPac/
+   creating: contest-tmp/teams/IHateCapsule/
+   creating: contest-tmp/teams/IPhoneX/
+   creating: contest-tmp/teams/ITCrowd/
+   creating: contest-tmp/teams/InfiniteLoop/
+   creating: contest-tmp/teams/Inky_Blinky_and_Clyde/
+   creating: contest-tmp/teams/InvictusGaming/
+   creating: contest-tmp/teams/InvincibleGhosts/
+   creating: contest-tmp/teams/MMM/
+   creating: contest-tmp/teams/MrTuring/
+   creating: contest-tmp/teams/New_continue/
+   creating: contest-tmp/teams/OffDef/
+   creating: contest-tmp/teams/PACMAN/
+   creating: contest-tmp/teams/PacKid/
+   creating: contest-tmp/teams/PacMan/
+   creating: contest-tmp/teams/PacMaster/
+   creating: contest-tmp/teams/PacMax/
+   creating: contest-tmp/teams/PaceMin/
+   creating: contest-tmp/teams/PacmanNotNull/
+   creating: contest-tmp/teams/Pacmon-Sun-and-Moon/
+   creating: contest-tmp/teams/Pacsain_Bolt/
+   creating: contest-tmp/teams/PandaTV/
+   creating: contest-tmp/teams/Patman/
+   creating: contest-tmp/teams/Pokeman/
+   creating: contest-tmp/teams/QCR/
+   creating: contest-tmp/teams/R2D2/
+   creating: contest-tmp/teams/RMY/
+   creating: contest-tmp/teams/RNG/
+   creating: contest-tmp/teams/RandomTeamVI/
+   creating: contest-tmp/teams/RealDaddy/
+   creating: contest-tmp/teams/Reaper/
+   creating: contest-tmp/teams/RoguePi/
+   creating: contest-tmp/teams/SBAI_PURE/
+   creating: contest-tmp/teams/ShallowMind/
+   creating: contest-tmp/teams/SunMicrosystemsInc/
+   creating: contest-tmp/teams/TLH/
+   creating: contest-tmp/teams/TeamLads_Q_H/
+   creating: contest-tmp/teams/WaterMelon/
+   creating: contest-tmp/teams/Werewolf/
+   creating: contest-tmp/teams/WindyDay/
+   creating: contest-tmp/teams/Y.Z.S/
+   creating: contest-tmp/teams/ZZZTeam/
+   creating: contest-tmp/teams/ai-pddl/
+   creating: contest-tmp/teams/betaGo/
+   creating: contest-tmp/teams/bias/
+   creating: contest-tmp/teams/chickendinner/
+   creating: contest-tmp/teams/coffee/
+   creating: contest-tmp/teams/contestrndmnm/
+   creating: contest-tmp/teams/deltaforce/
+   creating: contest-tmp/teams/disabledPacman4/
+   creating: contest-tmp/teams/farseer/
+   creating: contest-tmp/teams/friedOreo/
+   creating: contest-tmp/teams/go_home_safe/
+   creating: contest-tmp/teams/iceice/
+   creating: contest-tmp/teams/lexus/
+   creating: contest-tmp/teams/loserswishes/
+   creating: contest-tmp/teams/marshmallow/
+   creating: contest-tmp/teams/montecarlo2/
+   creating: contest-tmp/teams/myADmilk/
+   creating: contest-tmp/teams/oEtFKY/
+   creating: contest-tmp/teams/omega-go/
+   creating: contest-tmp/teams/pacsain_bolt/
+   creating: contest-tmp/teams/pass/
+   creating: contest-tmp/teams/press_any_key/
+   creating: contest-tmp/teams/song2/
+   creating: contest-tmp/teams/staff_team_basic/
+   creating: contest-tmp/teams/staff_team_medium/
+   creating: contest-tmp/teams/staff_team_top/
+   creating: contest-tmp/teams/super_scaper/
+   creating: contest-tmp/teams/superpacman/
+   creating: contest-tmp/teams/testrunning/
+   creating: contest-tmp/teams/tryingAIMen/
+   creating: contest-tmp/teams/trytrytrytry/
+   creating: contest-tmp/teams/umr1/
+   creating: contest-tmp/teams/victoriasSecret/
+   creating: contest-tmp/teams/wings/
+   creating: contest-tmp/teams/worstPacman/
+   creating: contest-tmp/teams/PacMan/__MACOSX/
+  inflating: contest-tmp/teams/PacMan/myTeam.py  
+  inflating: contest-tmp/teams/PacMan/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/HelloKitty/__MACOSX/
+  inflating: contest-tmp/teams/HelloKitty/myTeam.py  
+  inflating: contest-tmp/teams/HelloKitty/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/chickendinner/layouts/
+  inflating: contest-tmp/teams/chickendinner/game.py  
+  inflating: contest-tmp/teams/chickendinner/contest.html  
+  inflating: contest-tmp/teams/chickendinner/textDisplay.py  
+  inflating: contest-tmp/teams/chickendinner/score  
+  inflating: contest-tmp/teams/chickendinner/mazeGenerator.py  
+  inflating: contest-tmp/teams/chickendinner/group.txt  
+  inflating: contest-tmp/teams/chickendinner/ffTeam.py  
+  inflating: contest-tmp/teams/chickendinner/myTeam.py  
+  inflating: contest-tmp/teams/chickendinner/mazeGenerator.pyc  
+  inflating: contest-tmp/teams/chickendinner/keyboardAgents.py  
+  inflating: contest-tmp/teams/chickendinner/autograder.py  
+  inflating: contest-tmp/teams/chickendinner/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/chickendinner/dummyAgents.py  
+  inflating: contest-tmp/teams/chickendinner/baselineTeam.py  
+  inflating: contest-tmp/teams/chickendinner/pacman-domain.pddl~  
+  inflating: contest-tmp/teams/chickendinner/graphicsDisplay.py  
+  inflating: contest-tmp/teams/chickendinner/graphicsUtils.py  
+  inflating: contest-tmp/teams/chickendinner/pacman.py  
+  inflating: contest-tmp/teams/chickendinner/capture_the_flag.png  
+  inflating: contest-tmp/teams/chickendinner/contestLayout.png  
+  inflating: contest-tmp/teams/chickendinner/unpack.py  
+  inflating: contest-tmp/teams/chickendinner/problem2.pddl  
+  inflating: contest-tmp/teams/chickendinner/dummyTeam.py  
+  inflating: contest-tmp/teams/chickendinner/testParser.py  
+  inflating: contest-tmp/teams/chickendinner/problem3.pddl  
+  inflating: contest-tmp/teams/chickendinner/capture.py  
+  inflating: contest-tmp/teams/chickendinner/testClasses.py  
+  inflating: contest-tmp/teams/chickendinner/projects.css  
+  inflating: contest-tmp/teams/chickendinner/captureAgents.py  
+  inflating: contest-tmp/teams/chickendinner/pacmanAgents.py  
+  inflating: contest-tmp/teams/chickendinner/distanceCalculator.py  
+  inflating: contest-tmp/teams/chickendinner/.gitignore  
+  inflating: contest-tmp/teams/chickendinner/problem1.pddl  
+  inflating: contest-tmp/teams/chickendinner/ghost-domain.pddl  
+  inflating: contest-tmp/teams/chickendinner/layout.py  
+  inflating: contest-tmp/teams/chickendinner/runFromPacmanProblem.pddl  
+  inflating: contest-tmp/teams/chickendinner/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/chickendinner/bracket.png  
+  inflating: contest-tmp/teams/chickendinner/pacman-domain.pddl  
+  inflating: contest-tmp/teams/chickendinner/ghostAgents.py  
+  inflating: contest-tmp/teams/chickendinner/util.py  
+  inflating: contest-tmp/teams/chickendinner/results.txt  
+  inflating: contest-tmp/teams/chickendinner/capture_the_flag2.png  
+  inflating: contest-tmp/teams/chickendinner/README.txt  
+  inflating: contest-tmp/teams/chickendinner/problem4.pddl  
+  inflating: contest-tmp/teams/chickendinner/killGhostProblem.pddl  
+  inflating: contest-tmp/teams/chickendinner/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/simpleCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/simpleCapture.lay~  
+  inflating: contest-tmp/teams/chickendinner/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/404TeamNamenotfound/404TeamNamenotfound/
+   creating: contest-tmp/teams/404TeamNamenotfound/__MACOSX/
+  inflating: contest-tmp/teams/404TeamNamenotfound/404TeamNamenotfound/myTeam.py  
+   creating: contest-tmp/teams/404TeamNamenotfound/__MACOSX/404TeamNamenotfound/
+  inflating: contest-tmp/teams/404TeamNamenotfound/__MACOSX/404TeamNamenotfound/._myTeam.py  
+  inflating: contest-tmp/teams/pacsain_bolt/myTeam.py  
+  inflating: contest-tmp/teams/2Defence/myTeam.py  
+   creating: contest-tmp/teams/123/__MACOSX/
+  inflating: contest-tmp/teams/123/myTeam.py  
+  inflating: contest-tmp/teams/123/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/superpacman/myTeam.py  
+  inflating: contest-tmp/teams/TeamLads_Q_H/myTeam.py  
+  inflating: contest-tmp/teams/TeamLads_Q_H/weights.p  
+   creating: contest-tmp/teams/PACMAN/PDDL/
+  inflating: contest-tmp/teams/PACMAN/qLearning.py  
+  inflating: contest-tmp/teams/PACMAN/group.txt  
+  inflating: contest-tmp/teams/PACMAN/myTeam.py  
+  inflating: contest-tmp/teams/PACMAN/README.txt  
+  inflating: contest-tmp/teams/MrTuring/myTeam.py  
+  inflating: contest-tmp/teams/MrTuring/README.txt  
+   creating: contest-tmp/teams/coffee/Project1/
+   creating: contest-tmp/teams/coffee/__MACOSX/
+   creating: contest-tmp/teams/coffee/contest/
+   creating: contest-tmp/teams/coffee/search/
+   creating: contest-tmp/teams/coffee/__MACOSX/contest/
+  inflating: contest-tmp/teams/coffee/__MACOSX/._contest  
+   creating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._capture_the_flag2.png  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._contestLayout.png  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._game.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._capture_the_flag.png  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._textDisplay.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._contest.html  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._projects.css  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._pacmanAgents.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._keyboardAgents.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._VERSION  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._mazeGenerator.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._unpack.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._capture.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._autograder.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._captureAgents.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._graphicsUtils.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._testClasses.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._pacman.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._graphicsDisplay.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._util.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._layout.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._.DS_Store  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._baselineTeam.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._bracket.png  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._testParser.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._layouts  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._ghostAgents.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._distanceCalculator.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._strategicCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._alleyCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._officeCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._mediumCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._defaultCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._fastCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._distantCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._tinyCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._jumboCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._testCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._crowdedCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._bloxCapture.lay  
+  inflating: contest-tmp/teams/coffee/Project1/project1.zip  
+   creating: contest-tmp/teams/coffee/contest/.idea/
+   creating: contest-tmp/teams/coffee/contest/layouts/
+  inflating: contest-tmp/teams/coffee/contest/game.py  
+  inflating: contest-tmp/teams/coffee/contest/contest.html  
+  inflating: contest-tmp/teams/coffee/contest/textDisplay.py  
+  inflating: contest-tmp/teams/coffee/contest/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/coffee/contest/score  
+  inflating: contest-tmp/teams/coffee/contest/mazeGenerator.py  
+  inflating: contest-tmp/teams/coffee/contest/VERSION  
+  inflating: contest-tmp/teams/coffee/contest/myTeam.py  
+  inflating: contest-tmp/teams/coffee/contest/anotherTeam.pyc  
+  inflating: contest-tmp/teams/coffee/contest/keyboardAgents.py  
+  inflating: contest-tmp/teams/coffee/contest/autograder.py  
+  inflating: contest-tmp/teams/coffee/contest/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/coffee/contest/baselineTeam.py  
+  inflating: contest-tmp/teams/coffee/contest/myTeam.pyc  
+  inflating: contest-tmp/teams/coffee/contest/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/coffee/contest/graphicsDisplay.py  
+  inflating: contest-tmp/teams/coffee/contest/graphicsUtils.py  
+  inflating: contest-tmp/teams/coffee/contest/layout.pyc  
+  inflating: contest-tmp/teams/coffee/contest/pacman.py  
+  inflating: contest-tmp/teams/coffee/contest/capture_the_flag.png  
+  inflating: contest-tmp/teams/coffee/contest/contestLayout.png  
+  inflating: contest-tmp/teams/coffee/contest/unpack.py  
+  inflating: contest-tmp/teams/coffee/contest/testParser.py  
+  inflating: contest-tmp/teams/coffee/contest/anotherTeam.py  
+  inflating: contest-tmp/teams/coffee/contest/capture.py  
+  inflating: contest-tmp/teams/coffee/contest/.DS_Store  
+  inflating: contest-tmp/teams/coffee/contest/baselineTeam.pyc  
+  inflating: contest-tmp/teams/coffee/contest/captureAgents.pyc  
+  inflating: contest-tmp/teams/coffee/contest/testClasses.py  
+  inflating: contest-tmp/teams/coffee/contest/projects.css  
+  inflating: contest-tmp/teams/coffee/contest/captureAgents.py  
+  inflating: contest-tmp/teams/coffee/contest/pacmanAgents.py  
+  inflating: contest-tmp/teams/coffee/contest/distanceCalculator.py  
+  inflating: contest-tmp/teams/coffee/contest/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/coffee/contest/util.pyc  
+  inflating: contest-tmp/teams/coffee/contest/layout.py  
+  inflating: contest-tmp/teams/coffee/contest/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/coffee/contest/bracket.png  
+  inflating: contest-tmp/teams/coffee/contest/ghostAgents.py  
+  inflating: contest-tmp/teams/coffee/contest/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/coffee/contest/util.py  
+  inflating: contest-tmp/teams/coffee/contest/capture_the_flag2.png  
+  inflating: contest-tmp/teams/coffee/contest/game.pyc  
+  inflating: contest-tmp/teams/coffee/contest/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/coffee/contest/.idea/inspectionProfiles/
+  inflating: contest-tmp/teams/coffee/contest/.idea/workspace.xml  
+  inflating: contest-tmp/teams/coffee/contest/.idea/misc.xml  
+  inflating: contest-tmp/teams/coffee/contest/.idea/modules.xml  
+  inflating: contest-tmp/teams/coffee/contest/.idea/contest.iml  
+  inflating: contest-tmp/teams/coffee/contest/.idea/inspectionProfiles/Project_Default.xml  
+   creating: contest-tmp/teams/coffee/search/layouts/
+   creating: contest-tmp/teams/coffee/search/test_cases/
+  inflating: contest-tmp/teams/coffee/search/game.py  
+  inflating: contest-tmp/teams/coffee/search/textDisplay.py  
+  inflating: contest-tmp/teams/coffee/search/textDisplay.pyc  
+  inflating: contest-tmp/teams/coffee/search/grading.py  
+  inflating: contest-tmp/teams/coffee/search/VERSION  
+  inflating: contest-tmp/teams/coffee/search/keyboardAgents.py  
+  inflating: contest-tmp/teams/coffee/search/autograder.py  
+  inflating: contest-tmp/teams/coffee/search/searchTestClasses.py  
+  inflating: contest-tmp/teams/coffee/search/ghostAgents.pyc  
+  inflating: contest-tmp/teams/coffee/search/searchAgents.py  
+  inflating: contest-tmp/teams/coffee/search/testParser.pyc  
+  inflating: contest-tmp/teams/coffee/search/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/coffee/search/pacmanAgents.pyc  
+  inflating: contest-tmp/teams/coffee/search/graphicsDisplay.py  
+  inflating: contest-tmp/teams/coffee/search/searchAgents.pyc  
+  inflating: contest-tmp/teams/coffee/search/graphicsUtils.py  
+  inflating: contest-tmp/teams/coffee/search/layout.pyc  
+  inflating: contest-tmp/teams/coffee/search/pacman.py  
+  inflating: contest-tmp/teams/coffee/search/commands.txt  
+  inflating: contest-tmp/teams/coffee/search/pacman.pyc  
+  inflating: contest-tmp/teams/coffee/search/testParser.py  
+  inflating: contest-tmp/teams/coffee/search/submission_autograder.py  
+  inflating: contest-tmp/teams/coffee/search/grading.pyc  
+  inflating: contest-tmp/teams/coffee/search/testClasses.py  
+  inflating: contest-tmp/teams/coffee/search/pacmanAgents.py  
+  inflating: contest-tmp/teams/coffee/search/graphicsDisplay.pyc  
+  inflating: contest-tmp/teams/coffee/search/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/coffee/search/util.pyc  
+  inflating: contest-tmp/teams/coffee/search/search.py  
+  inflating: contest-tmp/teams/coffee/search/projectParams.pyc  
+  inflating: contest-tmp/teams/coffee/search/searchTestClasses.pyc  
+  inflating: contest-tmp/teams/coffee/search/layout.py  
+  inflating: contest-tmp/teams/coffee/search/eightpuzzle.py  
+  inflating: contest-tmp/teams/coffee/search/ghostAgents.py  
+  inflating: contest-tmp/teams/coffee/search/util.py  
+  inflating: contest-tmp/teams/coffee/search/testClasses.pyc  
+  inflating: contest-tmp/teams/coffee/search/search.pyc  
+  inflating: contest-tmp/teams/coffee/search/game.pyc  
+  inflating: contest-tmp/teams/coffee/search/projectParams.py  
+  inflating: contest-tmp/teams/coffee/search/layouts/testMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/openClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/smallMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/tinySafeSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/smallClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/mediumScaryMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/smallSafeSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/tinyMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/tinyCorners.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/openMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/mediumCorners.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/contoursMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/originalClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/openSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/mediumMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/mediumSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/minimaxClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/bigMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/mediumDottedMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/trappedClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/oddSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/testSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/trickySearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/smallSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/mediumClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/testClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/mediumSafeSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/greedySearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/powerClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/contestClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/tinySearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/bigSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/trickyClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/bigSafeSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/capsuleClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/boxSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/bigCorners.lay  
+   creating: contest-tmp/teams/coffee/search/test_cases/q1/
+   creating: contest-tmp/teams/coffee/search/test_cases/q2/
+   creating: contest-tmp/teams/coffee/search/test_cases/q3/
+   creating: contest-tmp/teams/coffee/search/test_cases/q4/
+   creating: contest-tmp/teams/coffee/search/test_cases/q5/
+   creating: contest-tmp/teams/coffee/search/test_cases/q6/
+   creating: contest-tmp/teams/coffee/search/test_cases/q7/
+   creating: contest-tmp/teams/coffee/search/test_cases/q8/
+  inflating: contest-tmp/teams/coffee/search/test_cases/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q5/corner_tiny_corner.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q5/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q5/corner_tiny_corner.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_infinite.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/pacman_1.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_bfs_vs_dfs.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_infinite.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_backtrack.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_backtrack.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_manypaths.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_manypaths.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_bfs_vs_dfs.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/pacman_1.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_1_graph_heuristic.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_0.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_1_graph_heuristic.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/graph_backtrack.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/graph_backtrack.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/graph_manypaths.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/graph_manypaths.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_2_manhattan.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_3_goalAtDequeue.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_0.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_2_manhattan.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_3_goalAtDequeue.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_1_problemC.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_infinite.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_3_problemW.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_bfs_vs_dfs.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_2_problemE.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_2_problemE.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_4_testSearch.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_infinite.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_4_testSearch.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_0_graph.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_backtrack.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_5_goalAtDequeue.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_5_goalAtDequeue.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_3_problemW.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_backtrack.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_manypaths.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_0_graph.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_manypaths.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_1_problemC.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_bfs_vs_dfs.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_5.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_4.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_grade_tricky.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_5.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_1.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_grade_tricky.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_13.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_2.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_11.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_12.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_8.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_1.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_14.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_12.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_10.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_11.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_17.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_14.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_15.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_7.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_16.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_3.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_9.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_16.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_2.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_6.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_9.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_13.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_6.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_15.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_3.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_17.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_4.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_10.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_8.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_7.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_1.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_8.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_7.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_10.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_1.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_13.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_4.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_5.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_3.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_11.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_5.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_9.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_10.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_3.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_12.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_2.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_12.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_2.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_4.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_7.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_13.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_9.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_6.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_11.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_8.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_6.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_infinite.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/pacman_1.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_bfs_vs_dfs.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_infinite.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_backtrack.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_backtrack.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_manypaths.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_manypaths.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_bfs_vs_dfs.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/pacman_1.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/corner_sanity_2.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/medium_corners.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/corner_sanity_2.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/corner_sanity_3.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/medium_corners.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/corner_sanity_3.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/corner_sanity_1.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/corner_sanity_1.solution  
+   creating: contest-tmp/teams/FGO/__MACOSX/
+   creating: contest-tmp/teams/FGO/bin/
+   creating: contest-tmp/teams/FGO/layouts/
+  inflating: contest-tmp/teams/FGO/game.py  
+  inflating: contest-tmp/teams/FGO/contest.html  
+  inflating: contest-tmp/teams/FGO/textDisplay.py  
+  inflating: contest-tmp/teams/FGO/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/FGO/score  
+  inflating: contest-tmp/teams/FGO/mazeGenerator.py  
+  inflating: contest-tmp/teams/FGO/VERSION  
+  inflating: contest-tmp/teams/FGO/myTeam.py  
+  inflating: contest-tmp/teams/FGO/keyboardAgents.py  
+  inflating: contest-tmp/teams/FGO/autograder.py  
+  inflating: contest-tmp/teams/FGO/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/FGO/qlearning.py  
+  inflating: contest-tmp/teams/FGO/myTeamtest.pyc  
+  inflating: contest-tmp/teams/FGO/baselineTeam.py  
+  inflating: contest-tmp/teams/FGO/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/FGO/graphicsDisplay.py  
+  inflating: contest-tmp/teams/FGO/graphicsUtils.py  
+  inflating: contest-tmp/teams/FGO/layout.pyc  
+  inflating: contest-tmp/teams/FGO/pacman.py  
+  inflating: contest-tmp/teams/FGO/capture.pyc  
+  inflating: contest-tmp/teams/FGO/capture_the_flag.png  
+  inflating: contest-tmp/teams/FGO/contestLayout.png  
+  inflating: contest-tmp/teams/FGO/unpack.py  
+  inflating: contest-tmp/teams/FGO/testParser.py  
+  inflating: contest-tmp/teams/FGO/capture.py  
+  inflating: contest-tmp/teams/FGO/captureAgents.pyc  
+  inflating: contest-tmp/teams/FGO/testClasses.py  
+  inflating: contest-tmp/teams/FGO/projects.css  
+  inflating: contest-tmp/teams/FGO/captureAgents.py  
+  inflating: contest-tmp/teams/FGO/pacmanAgents.py  
+  inflating: contest-tmp/teams/FGO/distanceCalculator.py  
+  inflating: contest-tmp/teams/FGO/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/FGO/qlearning.pyc  
+  inflating: contest-tmp/teams/FGO/util.pyc  
+  inflating: contest-tmp/teams/FGO/layout.py  
+  inflating: contest-tmp/teams/FGO/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/FGO/bracket.png  
+  inflating: contest-tmp/teams/FGO/ghostAgents.py  
+  inflating: contest-tmp/teams/FGO/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/FGO/util.py  
+  inflating: contest-tmp/teams/FGO/capture_the_flag2.png  
+  inflating: contest-tmp/teams/FGO/game.pyc  
+   creating: contest-tmp/teams/FGO/layouts/layouts/
+  inflating: contest-tmp/teams/FGO/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/FGO/bin/bin/
+  inflating: contest-tmp/teams/FGO/bin/ff  
+   creating: contest-tmp/teams/FGO/__MACOSX/bin/
+   creating: contest-tmp/teams/FGO/__MACOSX/layouts/
+  inflating: contest-tmp/teams/FGO/__MACOSX/._capture_the_flag2.png  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._contestLayout.png  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._game.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._capture_the_flag.png  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._textDisplay.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._contest.html  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._projects.css  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._pacmanAgents.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._keyboardAgents.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._VERSION  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._mazeGenerator.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._unpack.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._capture.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._autograder.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._bin  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._captureAgents.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._graphicsUtils.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._testClasses.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._pacman.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._graphicsDisplay.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._util.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._qlearning.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._layout.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._baselineTeam.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._bracket.png  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._testParser.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._layouts  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._ghostAgents.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._distanceCalculator.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._strategicCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._alleyCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._officeCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._mediumCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._defaultCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._fastCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._distantCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._tinyCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._jumboCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._testCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._layouts  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._crowdedCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._bloxCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/bin/._bin  
+  inflating: contest-tmp/teams/FGO/__MACOSX/bin/._ff  
+  inflating: contest-tmp/teams/Coder/group.txt  
+  inflating: contest-tmp/teams/Coder/myTeam.py  
+  inflating: contest-tmp/teams/Coder/ghost_problem.pddl  
+  inflating: contest-tmp/teams/Coder/ghost v2.pddl  
+  inflating: contest-tmp/teams/Coder/pacman_problem.pddl  
+  inflating: contest-tmp/teams/Coder/readme.txt  
+  inflating: contest-tmp/teams/Coder/pacman v2.pddl  
+  inflating: contest-tmp/teams/PacmanNotNull/group.txt  
+  inflating: contest-tmp/teams/PacmanNotNull/myTeam.py  
+  inflating: contest-tmp/teams/PacmanNotNull/ghost_problem.pddl  
+  inflating: contest-tmp/teams/PacmanNotNull/ghost_domain.pddl  
+  inflating: contest-tmp/teams/PacmanNotNull/pacman_problem.pddl  
+  inflating: contest-tmp/teams/PacmanNotNull/pacman_domain.pddl  
+  inflating: contest-tmp/teams/PacmanNotNull/README.txt  
+   creating: contest-tmp/teams/Dark-Flame-Master/layouts/
+  inflating: contest-tmp/teams/Dark-Flame-Master/game.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/contest.html  
+  inflating: contest-tmp/teams/Dark-Flame-Master/textDisplay.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/mazeGenerator.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/VERSION  
+  inflating: contest-tmp/teams/Dark-Flame-Master/myTeam.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/keyboardAgents.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/autograder.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/baselineTeam.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/graphicsDisplay.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/graphicsUtils.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/pacman.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/capture_the_flag.png  
+  inflating: contest-tmp/teams/Dark-Flame-Master/contestLayout.png  
+  inflating: contest-tmp/teams/Dark-Flame-Master/unpack.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/testParser.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/capture.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/testClasses.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/projects.css  
+  inflating: contest-tmp/teams/Dark-Flame-Master/captureAgents.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/pacmanAgents.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/distanceCalculator.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layout.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/bracket.png  
+  inflating: contest-tmp/teams/Dark-Flame-Master/ghostAgents.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/util.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/capture_the_flag2.png  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/officeCapture.lay  
+  inflating: contest-tmp/teams/H2O2/myTeam.py  
+  inflating: contest-tmp/teams/H2O2/README.txt  
+  inflating: contest-tmp/teams/HelloTeam1213/myTeam.py  
+  inflating: contest-tmp/teams/testrunning/myTeam.py  
+  inflating: contest-tmp/teams/GrantWard/myTeam.py  
+  inflating: contest-tmp/teams/Deox/myTeam.py  
+  inflating: contest-tmp/teams/pass/myTeam.py  
+   creating: contest-tmp/teams/deltaforce/layouts/
+  inflating: contest-tmp/teams/deltaforce/game.py  
+  inflating: contest-tmp/teams/deltaforce/contest.html  
+  inflating: contest-tmp/teams/deltaforce/textDisplay.py  
+  inflating: contest-tmp/teams/deltaforce/mazeGenerator.py  
+  inflating: contest-tmp/teams/deltaforce/VERSION  
+  inflating: contest-tmp/teams/deltaforce/myTeam.py  
+  inflating: contest-tmp/teams/deltaforce/keyboardAgents.py  
+  inflating: contest-tmp/teams/deltaforce/autograder.py  
+  inflating: contest-tmp/teams/deltaforce/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/deltaforce/baselineTeam.py  
+  inflating: contest-tmp/teams/deltaforce/graphicsDisplay.py  
+  inflating: contest-tmp/teams/deltaforce/graphicsUtils.py  
+  inflating: contest-tmp/teams/deltaforce/pacman.py  
+  inflating: contest-tmp/teams/deltaforce/capture_the_flag.png  
+  inflating: contest-tmp/teams/deltaforce/contestLayout.png  
+  inflating: contest-tmp/teams/deltaforce/unpack.py  
+  inflating: contest-tmp/teams/deltaforce/testParser.py  
+  inflating: contest-tmp/teams/deltaforce/capture.py  
+  inflating: contest-tmp/teams/deltaforce/testClasses.py  
+  inflating: contest-tmp/teams/deltaforce/projects.css  
+  inflating: contest-tmp/teams/deltaforce/captureAgents.py  
+  inflating: contest-tmp/teams/deltaforce/pacmanAgents.py  
+  inflating: contest-tmp/teams/deltaforce/distanceCalculator.py  
+  inflating: contest-tmp/teams/deltaforce/layout.py  
+  inflating: contest-tmp/teams/deltaforce/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/deltaforce/bracket.png  
+  inflating: contest-tmp/teams/deltaforce/ghostAgents.py  
+  inflating: contest-tmp/teams/deltaforce/util.py  
+  inflating: contest-tmp/teams/deltaforce/capture_the_flag2.png  
+  inflating: contest-tmp/teams/deltaforce/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/marshmallow/__MACOSX/
+  inflating: contest-tmp/teams/marshmallow/myTeam.py  
+  inflating: contest-tmp/teams/marshmallow/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/SunMicrosystemsInc/__MACOSX/
+   creating: contest-tmp/teams/SunMicrosystemsInc/pddl/
+  inflating: contest-tmp/teams/SunMicrosystemsInc/myTeam.py  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/README.txt  
+   creating: contest-tmp/teams/SunMicrosystemsInc/__MACOSX/pddl/
+  inflating: contest-tmp/teams/SunMicrosystemsInc/__MACOSX/._README.txt  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/__MACOSX/pddl/._README.txt  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/__MACOSX/pddl/._.DS_Store  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/pddl/pacman-problem.pddl  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/pddl/pacman-layout.txt  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/pddl/.DS_Store  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/pddl/pacman-domain.pddl  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/pddl/README.txt  
+   creating: contest-tmp/teams/DSS/__MACOSX/
+  inflating: contest-tmp/teams/DSS/myTeam.py  
+  inflating: contest-tmp/teams/DSS/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/New_continue/myteam.py  
+   creating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/
+   creating: contest-tmp/teams/Inky_Blinky_and_Clyde/pddl/
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/group.txt  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/myTeam.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/readme.txt  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/q_learning.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/state_repackage.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/__init__.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/classical_search.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/value_iteration.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/generic_implementation.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/approximate_q_learning.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/deep_q_learning.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/monte_carlo_tree_search.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/recognition.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/pddl/pacman-problem2.pddl  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/pddl/ghost-domain-decomposed.pddl  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/pddl/ghost-problem1.pddl  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/pddl/pacman-domain-decomposed.pddl  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/pddl/pacman-problem3.pddl  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/pddl/pacman-problem1.pddl  
+   creating: contest-tmp/teams/farseer/__MACOSX/
+   creating: contest-tmp/teams/farseer/farseer/
+   creating: contest-tmp/teams/farseer/__MACOSX/farseer/
+  inflating: contest-tmp/teams/farseer/__MACOSX/farseer/._qfile_0  
+  inflating: contest-tmp/teams/farseer/__MACOSX/farseer/._qfile_red  
+  inflating: contest-tmp/teams/farseer/__MACOSX/farseer/._qfile_3  
+  inflating: contest-tmp/teams/farseer/__MACOSX/farseer/._qfile_1  
+  inflating: contest-tmp/teams/farseer/__MACOSX/farseer/._myTeam.py  
+  inflating: contest-tmp/teams/farseer/__MACOSX/farseer/._qfile_blue  
+  inflating: contest-tmp/teams/farseer/__MACOSX/farseer/._qfile_2  
+  inflating: contest-tmp/teams/farseer/farseer/qfile_0  
+  inflating: contest-tmp/teams/farseer/farseer/myTeam.py  
+  inflating: contest-tmp/teams/farseer/farseer/qfile_blue  
+  inflating: contest-tmp/teams/farseer/farseer/qfile_3  
+  inflating: contest-tmp/teams/farseer/farseer/qfile_1  
+  inflating: contest-tmp/teams/farseer/farseer/qfile_2  
+  inflating: contest-tmp/teams/farseer/farseer/qfile_red  
+   creating: contest-tmp/teams/montecarlo2/.idea/
+   creating: contest-tmp/teams/montecarlo2/bin/
+   creating: contest-tmp/teams/montecarlo2/layouts/
+  inflating: contest-tmp/teams/montecarlo2/game.py  
+  inflating: contest-tmp/teams/montecarlo2/contest.html  
+  inflating: contest-tmp/teams/montecarlo2/textDisplay.py  
+  inflating: contest-tmp/teams/montecarlo2/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/montecarlo2/score  
+  inflating: contest-tmp/teams/montecarlo2/mazeGenerator.py  
+  inflating: contest-tmp/teams/montecarlo2/VERSION  
+  inflating: contest-tmp/teams/montecarlo2/myTeam.py  
+  inflating: contest-tmp/teams/montecarlo2/BetaPac_ModeSelHard_vs_montecarlo_contest18Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/mazeGenerator.pyc  
+  inflating: contest-tmp/teams/montecarlo2/randteamname_vs_staff_team_top_RANDOM577.replay  
+  inflating: contest-tmp/teams/montecarlo2/keyboardAgents.py  
+  inflating: contest-tmp/teams/montecarlo2/autograder.py  
+  inflating: contest-tmp/teams/montecarlo2/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/montecarlo2/baselineTeam.py  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo_vs_staff_team_basic_contest17Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/montecarlo2/myteam.pyc  
+  inflating: contest-tmp/teams/montecarlo2/montecarloTeam.py  
+  inflating: contest-tmp/teams/montecarlo2/graphicsDisplay.py  
+  inflating: contest-tmp/teams/montecarlo2/ERC_vs_staff_team_top_contest20Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/betaGo.py  
+  inflating: contest-tmp/teams/montecarlo2/graphicsUtils.py  
+  inflating: contest-tmp/teams/montecarlo2/layout.pyc  
+  inflating: contest-tmp/teams/montecarlo2/ERC_vs_staff_team_top_RANDOM577.replay  
+  inflating: contest-tmp/teams/montecarlo2/pacman.py  
+  inflating: contest-tmp/teams/montecarlo2/capture.pyc  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo3.py  
+  inflating: contest-tmp/teams/montecarlo2/betaGo_vs_RoguePi_contest20Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/COMPAI.pyc  
+  inflating: contest-tmp/teams/montecarlo2/capture_the_flag.png  
+  inflating: contest-tmp/teams/montecarlo2/contestLayout.png  
+  inflating: contest-tmp/teams/montecarlo2/betaGo_vs_staff_team_top_RANDOM577.replay  
+  inflating: contest-tmp/teams/montecarlo2/unpack.py  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo.py  
+  inflating: contest-tmp/teams/montecarlo2/hahaTeam.py  
+  inflating: contest-tmp/teams/montecarlo2/testParser.py  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo_vs_betaGo_contest17Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/RoguePi_vs_staff_team_top_contest20Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/capture.py  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo_vs_staff_team_top_contest03cCapture.replay  
+  inflating: contest-tmp/teams/montecarlo2/randteamname_vs_staff_team_basic_RANDOM577.replay  
+  inflating: contest-tmp/teams/montecarlo2/baselineTeam.pyc  
+  inflating: contest-tmp/teams/montecarlo2/randteamname_vs_staff_team_basic_contest20Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/captureAgents.pyc  
+  inflating: contest-tmp/teams/montecarlo2/testClasses.py  
+  inflating: contest-tmp/teams/montecarlo2/randteamname_vs_staff_team_top_contest20Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/betago.pyc  
+  inflating: contest-tmp/teams/montecarlo2/projects.css  
+  inflating: contest-tmp/teams/montecarlo2/captureAgents.py  
+  inflating: contest-tmp/teams/montecarlo2/pacmanAgents.py  
+  inflating: contest-tmp/teams/montecarlo2/distanceCalculator.py  
+  inflating: contest-tmp/teams/montecarlo2/RoguePi_vs_staff_team_top_RANDOM577.replay  
+  inflating: contest-tmp/teams/montecarlo2/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/montecarlo2/util.pyc  
+  inflating: contest-tmp/teams/montecarlo2/montecarloTeam.pyc  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo_vs_staff_team_top_RANDOM921.replay  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo.pyc  
+  inflating: contest-tmp/teams/montecarlo2/layout.py  
+  inflating: contest-tmp/teams/montecarlo2/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/montecarlo2/bracket.png  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo3.pyc  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo2.py  
+  inflating: contest-tmp/teams/montecarlo2/COMPAI.py  
+  inflating: contest-tmp/teams/montecarlo2/ghostAgents.py  
+  inflating: contest-tmp/teams/montecarlo2/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/montecarlo2/util.py  
+  inflating: contest-tmp/teams/montecarlo2/WaterMelon_vs_staff_team_top_RANDOM577.replay  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo_vs_staff_team_top_contest17Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/python  
+  inflating: contest-tmp/teams/montecarlo2/capture_the_flag2.png  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo2.pyc  
+  inflating: contest-tmp/teams/montecarlo2/game.pyc  
+  inflating: contest-tmp/teams/montecarlo2/beTaGo_vs_staff_team_top_contest20Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/montercarlo4.py  
+   creating: contest-tmp/teams/montecarlo2/layouts/layouts/
+  inflating: contest-tmp/teams/montecarlo2/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/montecarlo2/bin/bin/
+  inflating: contest-tmp/teams/montecarlo2/bin/ff  
+  inflating: contest-tmp/teams/montecarlo2/.idea/workspace.xml  
+  inflating: contest-tmp/teams/montecarlo2/.idea/misc.xml  
+  inflating: contest-tmp/teams/montecarlo2/.idea/modules.xml  
+  inflating: contest-tmp/teams/montecarlo2/.idea/contest.iml  
+  inflating: contest-tmp/teams/ES/myTeam.py  
+  inflating: contest-tmp/teams/super_scaper/myTeam.py  
+   creating: contest-tmp/teams/R2D2/R2D2/
+   creating: contest-tmp/teams/R2D2/__MACOSX/
+   creating: contest-tmp/teams/R2D2/__MACOSX/R2D2/
+  inflating: contest-tmp/teams/R2D2/__MACOSX/R2D2/._myTeam.py  
+  inflating: contest-tmp/teams/R2D2/R2D2/myTeam.py  
+  inflating: contest-tmp/teams/RoguePi/myTeam.py  
+  inflating: contest-tmp/teams/OffDef/myTeam.py  
+  inflating: contest-tmp/teams/wings/myTeam.py  
+  inflating: contest-tmp/teams/HouseofPac/myTeam.py  
+  inflating: contest-tmp/teams/myADmilk/myADmilk.py  
+   creating: contest-tmp/teams/PaceMin/PaceMin/
+  inflating: contest-tmp/teams/PaceMin/PaceMin/myTeam.py  
+  inflating: contest-tmp/teams/PacMaster/myTeam.py  
+   creating: contest-tmp/teams/betaGo/__MACOSX/
+  inflating: contest-tmp/teams/betaGo/myTeam.py  
+  inflating: contest-tmp/teams/betaGo/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/song2/myTeam.py  
+  inflating: contest-tmp/teams/omega-go/myTeam.py  
+  inflating: contest-tmp/teams/omega-go/name.txt  
+  inflating: contest-tmp/teams/omega-go/omega.py  
+  inflating: contest-tmp/teams/omega-go/omegaDefensive.py  
+  inflating: contest-tmp/teams/omega-go/omegaOffensive.py  
+  inflating: contest-tmp/teams/HelloPacman/myTeam.py  
+  inflating: contest-tmp/teams/RealDaddy/myTeam.py  
+  inflating: contest-tmp/teams/Y.Z.S/myTeam.py  
+   creating: contest-tmp/teams/oEtFKY/__MACOSX/
+  inflating: contest-tmp/teams/oEtFKY/myTeam.py  
+  inflating: contest-tmp/teams/oEtFKY/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/Pokeman/__MACOSX/
+  inflating: contest-tmp/teams/Pokeman/myTeam.py  
+  inflating: contest-tmp/teams/Pokeman/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/lexus/myTeam.py  
+   creating: contest-tmp/teams/ai-pddl/__MACOSX/
+   creating: contest-tmp/teams/ai-pddl/ai-pddl/
+   creating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/
+  inflating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/._ai-README.txt  
+  inflating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/._ghost_problem.pddl  
+  inflating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/._test.txt  
+  inflating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/._problem_pacman_01.pddl  
+  inflating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/._.DS_Store  
+  inflating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/._pacman.pddl  
+  inflating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/._ghost.pddl  
+  inflating: contest-tmp/teams/ai-pddl/ai-pddl/test.txt  
+  inflating: contest-tmp/teams/ai-pddl/ai-pddl/ghost_problem.pddl  
+  inflating: contest-tmp/teams/ai-pddl/ai-pddl/ghost.pddl  
+  inflating: contest-tmp/teams/ai-pddl/ai-pddl/pacman.pddl  
+  inflating: contest-tmp/teams/ai-pddl/ai-pddl/ai-README.txt  
+  inflating: contest-tmp/teams/ai-pddl/ai-pddl/.DS_Store  
+  inflating: contest-tmp/teams/ai-pddl/ai-pddl/problem_pacman_01.pddl  
+  inflating: contest-tmp/teams/WaterMelon/myTeam.py  
+  inflating: contest-tmp/teams/PacMax/myTeam.py  
+  inflating: contest-tmp/teams/PacMax/offensiveWeightsDefault.json  
+  inflating: contest-tmp/teams/PacMax/defensiveWeightsDefault.json  
+  inflating: contest-tmp/teams/go_home_safe/myTeam.py  
+   creating: contest-tmp/teams/404/__MACOSX/
+  inflating: contest-tmp/teams/404/myTeam.py  
+  inflating: contest-tmp/teams/404/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/FatHeadFish/__MACOSX/
+  inflating: contest-tmp/teams/FatHeadFish/myTeam.py  
+  inflating: contest-tmp/teams/FatHeadFish/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/DEVGRU/__MACOSX/
+   creating: contest-tmp/teams/DEVGRU/layouts/
+  inflating: contest-tmp/teams/DEVGRU/game.py  
+  inflating: contest-tmp/teams/DEVGRU/DQN.pyc  
+  inflating: contest-tmp/teams/DEVGRU/contest.html  
+  inflating: contest-tmp/teams/DEVGRU/textDisplay.py  
+  inflating: contest-tmp/teams/DEVGRU/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/DEVGRU/score  
+  inflating: contest-tmp/teams/DEVGRU/mazeGenerator.py  
+  inflating: contest-tmp/teams/DEVGRU/VERSION  
+  inflating: contest-tmp/teams/DEVGRU/myTeam.py  
+  inflating: contest-tmp/teams/DEVGRU/keyboardAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/autograder.py  
+  inflating: contest-tmp/teams/DEVGRU/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/DEVGRU/baselineTeam.py  
+  inflating: contest-tmp/teams/DEVGRU/myTeam.pyc  
+  inflating: contest-tmp/teams/DEVGRU/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/DEVGRU/graphicsDisplay.py  
+  inflating: contest-tmp/teams/DEVGRU/graphicsUtils.py  
+  inflating: contest-tmp/teams/DEVGRU/layout.pyc  
+  inflating: contest-tmp/teams/DEVGRU/pacman.py  
+  inflating: contest-tmp/teams/DEVGRU/capture.pyc  
+  inflating: contest-tmp/teams/DEVGRU/capture_the_flag.png  
+  inflating: contest-tmp/teams/DEVGRU/contestLayout.png  
+  inflating: contest-tmp/teams/DEVGRU/unpack.py  
+  inflating: contest-tmp/teams/DEVGRU/pacman.pyc  
+  inflating: contest-tmp/teams/DEVGRU/testParser.py  
+  inflating: contest-tmp/teams/DEVGRU/capture.py  
+  inflating: contest-tmp/teams/DEVGRU/baselineTeam.pyc  
+  inflating: contest-tmp/teams/DEVGRU/captureAgents.pyc  
+  inflating: contest-tmp/teams/DEVGRU/testClasses.py  
+  inflating: contest-tmp/teams/DEVGRU/projects.css  
+  inflating: contest-tmp/teams/DEVGRU/captureAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/pacmanAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/distanceCalculator.py  
+  inflating: contest-tmp/teams/DEVGRU/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/DEVGRU/util.pyc  
+  inflating: contest-tmp/teams/DEVGRU/layout.py  
+  inflating: contest-tmp/teams/DEVGRU/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/DEVGRU/bracket.png  
+  inflating: contest-tmp/teams/DEVGRU/ghostAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/DEVGRU/util.py  
+  inflating: contest-tmp/teams/DEVGRU/capture_the_flag2.png  
+  inflating: contest-tmp/teams/DEVGRU/game.pyc  
+  inflating: contest-tmp/teams/DEVGRU/PacmanDQNTeam.pyc  
+  inflating: contest-tmp/teams/DEVGRU/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._capture_the_flag2.png  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._contestLayout.png  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._game.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._capture_the_flag.png  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._textDisplay.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._contest.html  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._projects.css  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._pacmanAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._keyboardAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._VERSION  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._mazeGenerator.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._unpack.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._autograder.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._captureAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._graphicsUtils.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._testClasses.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._pacman.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._graphicsDisplay.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._util.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._layout.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._baselineTeam.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._bracket.png  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._testParser.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._layouts  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._ghostAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._distanceCalculator.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._strategicCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._alleyCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._officeCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._mediumCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._defaultCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._fastCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._distantCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._tinyCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._jumboCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._testCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._crowdedCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._bloxCapture.lay  
+  inflating: contest-tmp/teams/worstPacman/tournament.py  
+  inflating: contest-tmp/teams/InvincibleGhosts/group.txt  
+  inflating: contest-tmp/teams/InvincibleGhosts/myTeam.py  
+  inflating: contest-tmp/teams/InvincibleGhosts/ghost-domain.pddl  
+  inflating: contest-tmp/teams/InvincibleGhosts/pacman-domain.pddl  
+  inflating: contest-tmp/teams/InvincibleGhosts/readme.txt  
+  inflating: contest-tmp/teams/SBAI_PURE/myTeam.py  
+  inflating: contest-tmp/teams/SBAI_PURE/ghost-domain.pddl  
+  inflating: contest-tmp/teams/SBAI_PURE/pacman-domain.pddl  
+  inflating: contest-tmp/teams/tryingAIMen/myTeam.py  
+  inflating: contest-tmp/teams/Pacsain_Bolt/myTeam.py  
+  inflating: contest-tmp/teams/umr1/myTeam.py  
+  inflating: contest-tmp/teams/WindyDay/myTeam.py  
+  inflating: contest-tmp/teams/BetaPacMc3/myTeam.py  
+  inflating: contest-tmp/teams/BetaPacMc3/MCT.py  
+  inflating: contest-tmp/teams/BetaPacMc3/featuresTool.py  
+  inflating: contest-tmp/teams/FatMan/myTeam.py  
+  inflating: contest-tmp/teams/press_any_key/myTeam.py  
+  inflating: contest-tmp/teams/press_any_key/offensive.train  
+  inflating: contest-tmp/teams/press_any_key/deffensive.train  
+   creating: contest-tmp/teams/Avatar/__MACOSX/
+   creating: contest-tmp/teams/Avatar/layouts/
+  inflating: contest-tmp/teams/Avatar/game.py  
+  inflating: contest-tmp/teams/Avatar/contest.html  
+  inflating: contest-tmp/teams/Avatar/textDisplay.py  
+  inflating: contest-tmp/teams/Avatar/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/Avatar/score  
+  inflating: contest-tmp/teams/Avatar/mazeGenerator.py  
+  inflating: contest-tmp/teams/Avatar/VERSION  
+  inflating: contest-tmp/teams/Avatar/myTeam.py  
+  inflating: contest-tmp/teams/Avatar/keyboardAgents.py  
+  inflating: contest-tmp/teams/Avatar/autograder.py  
+  inflating: contest-tmp/teams/Avatar/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/Avatar/baselineTeam.py  
+  inflating: contest-tmp/teams/Avatar/myTeam.pyc  
+  inflating: contest-tmp/teams/Avatar/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/Avatar/graphicsDisplay.py  
+  inflating: contest-tmp/teams/Avatar/graphicsUtils.py  
+  inflating: contest-tmp/teams/Avatar/layout.pyc  
+  inflating: contest-tmp/teams/Avatar/pacman.py  
+  inflating: contest-tmp/teams/Avatar/capture.pyc  
+  inflating: contest-tmp/teams/Avatar/learningAgents  
+  inflating: contest-tmp/teams/Avatar/capture_the_flag.png  
+  inflating: contest-tmp/teams/Avatar/contestLayout.png  
+  inflating: contest-tmp/teams/Avatar/unpack.py  
+  inflating: contest-tmp/teams/Avatar/testParser.py  
+  inflating: contest-tmp/teams/Avatar/capture.py  
+  inflating: contest-tmp/teams/Avatar/baselineTeam.pyc  
+  inflating: contest-tmp/teams/Avatar/captureAgents.pyc  
+  inflating: contest-tmp/teams/Avatar/testClasses.py  
+  inflating: contest-tmp/teams/Avatar/projects.css  
+  inflating: contest-tmp/teams/Avatar/captureAgents.py  
+  inflating: contest-tmp/teams/Avatar/pacmanAgents.py  
+  inflating: contest-tmp/teams/Avatar/distanceCalculator.py  
+  inflating: contest-tmp/teams/Avatar/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/Avatar/util.pyc  
+  inflating: contest-tmp/teams/Avatar/agents.pyc  
+  inflating: contest-tmp/teams/Avatar/layout.py  
+  inflating: contest-tmp/teams/Avatar/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/Avatar/bracket.png  
+  inflating: contest-tmp/teams/Avatar/ghostAgents.py  
+  inflating: contest-tmp/teams/Avatar/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/Avatar/util.py  
+  inflating: contest-tmp/teams/Avatar/agents.py  
+  inflating: contest-tmp/teams/Avatar/capture_the_flag2.png  
+  inflating: contest-tmp/teams/Avatar/game.pyc  
+  inflating: contest-tmp/teams/Avatar/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/Avatar/__MACOSX/layouts/
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._capture_the_flag2.png  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._contestLayout.png  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._game.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._capture_the_flag.png  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._textDisplay.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._contest.html  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._projects.css  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._pacmanAgents.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._keyboardAgents.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._VERSION  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._mazeGenerator.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._unpack.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._capture.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._autograder.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._captureAgents.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._graphicsUtils.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._testClasses.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._pacman.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._graphicsDisplay.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._util.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._layout.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._baselineTeam.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._bracket.png  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._testParser.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._layouts  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._ghostAgents.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._distanceCalculator.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._strategicCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._alleyCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._officeCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._mediumCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._defaultCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._fastCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._distantCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._tinyCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._jumboCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._testCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._crowdedCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._bloxCapture.lay  
+   creating: contest-tmp/teams/HelloWorld/__MACOSX/
+   creating: contest-tmp/teams/HelloWorld/layouts/
+  inflating: contest-tmp/teams/HelloWorld/game.py  
+  inflating: contest-tmp/teams/HelloWorld/contest.html  
+  inflating: contest-tmp/teams/HelloWorld/textDisplay.py  
+  inflating: contest-tmp/teams/HelloWorld/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/HelloWorld/score  
+  inflating: contest-tmp/teams/HelloWorld/mazeGenerator.py  
+  inflating: contest-tmp/teams/HelloWorld/VERSION  
+  inflating: contest-tmp/teams/HelloWorld/myTeam.py  
+  inflating: contest-tmp/teams/HelloWorld/test_MonteCarlo.py  
+  inflating: contest-tmp/teams/HelloWorld/keyboardAgents.py  
+  inflating: contest-tmp/teams/HelloWorld/autograder.py  
+  inflating: contest-tmp/teams/HelloWorld/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/HelloWorld/baselineTeam.py  
+  inflating: contest-tmp/teams/HelloWorld/myTeam.pyc  
+  inflating: contest-tmp/teams/HelloWorld/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/HelloWorld/graphicsDisplay.py  
+  inflating: contest-tmp/teams/HelloWorld/graphicsUtils.py  
+  inflating: contest-tmp/teams/HelloWorld/layout.pyc  
+  inflating: contest-tmp/teams/HelloWorld/pacman.py  
+  inflating: contest-tmp/teams/HelloWorld/randomTeam.pyc  
+  inflating: contest-tmp/teams/HelloWorld/mergeTeam.pyc  
+  inflating: contest-tmp/teams/HelloWorld/capture_the_flag.png  
+  inflating: contest-tmp/teams/HelloWorld/randomTeam.py  
+  inflating: contest-tmp/teams/HelloWorld/contestLayout.png  
+  inflating: contest-tmp/teams/HelloWorld/unpack.py  
+  inflating: contest-tmp/teams/HelloWorld/testParser.py  
+  inflating: contest-tmp/teams/HelloWorld/planner_team.py  
+  inflating: contest-tmp/teams/HelloWorld/capture.py  
+  inflating: contest-tmp/teams/HelloWorld/baselineTeam.pyc  
+  inflating: contest-tmp/teams/HelloWorld/captureAgents.pyc  
+  inflating: contest-tmp/teams/HelloWorld/testClasses.py  
+  inflating: contest-tmp/teams/HelloWorld/projects.css  
+  inflating: contest-tmp/teams/HelloWorld/captureAgents.py  
+  inflating: contest-tmp/teams/HelloWorld/pacmanAgents.py  
+  inflating: contest-tmp/teams/HelloWorld/distanceCalculator.py  
+  inflating: contest-tmp/teams/HelloWorld/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/HelloWorld/util.pyc  
+  inflating: contest-tmp/teams/HelloWorld/layout.py  
+  inflating: contest-tmp/teams/HelloWorld/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/HelloWorld/bracket.png  
+  inflating: contest-tmp/teams/HelloWorld/ghostAgents.py  
+  inflating: contest-tmp/teams/HelloWorld/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/HelloWorld/util.py  
+  inflating: contest-tmp/teams/HelloWorld/uctTeam.py  
+  inflating: contest-tmp/teams/HelloWorld/testOffensive.py  
+  inflating: contest-tmp/teams/HelloWorld/capture_the_flag2.png  
+  inflating: contest-tmp/teams/HelloWorld/tempTeam.py  
+  inflating: contest-tmp/teams/HelloWorld/game.pyc  
+  inflating: contest-tmp/teams/HelloWorld/testOriginal.py  
+  inflating: contest-tmp/teams/HelloWorld/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._capture_the_flag2.png  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._contestLayout.png  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._game.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._capture_the_flag.png  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._textDisplay.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._contest.html  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._projects.css  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._pacmanAgents.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._keyboardAgents.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._VERSION  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._mazeGenerator.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._unpack.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._capture.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._autograder.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._graphicsUtils.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._testClasses.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._pacman.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._graphicsDisplay.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._util.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._planner_team.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._layout.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._bracket.png  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._testParser.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._layouts  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._ghostAgents.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._distanceCalculator.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._strategicCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._alleyCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._officeCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._mediumCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._defaultCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._fastCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._distantCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._tinyCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._jumboCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._testCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._crowdedCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._bloxCapture.lay  
+  inflating: contest-tmp/teams/bias/myTeam.py  
+  inflating: contest-tmp/teams/ZZZTeam/myTeam.py  
+  inflating: contest-tmp/teams/TLH/myTeam.py  
+  inflating: contest-tmp/teams/TLH/weights.p  
+   creating: contest-tmp/teams/PacKid/teams/
+  inflating: contest-tmp/teams/PacKid/group.txt  
+  inflating: contest-tmp/teams/PacKid/myTeam.py  
+  inflating: contest-tmp/teams/PacKid/plan_for_pacman  
+  inflating: contest-tmp/teams/PacKid/ghost_domain.pddl  
+  inflating: contest-tmp/teams/PacKid/Problem_image.PNG  
+  inflating: contest-tmp/teams/PacKid/pacman_domain.pddl  
+  inflating: contest-tmp/teams/PacKid/readme.txt  
+  inflating: contest-tmp/teams/PacKid/probelm.pddl  
+   creating: contest-tmp/teams/PacKid/teams/Terminators/
+  inflating: contest-tmp/teams/PacKid/teams/Terminators/team.py  
+  inflating: contest-tmp/teams/EvilGeniuses/myTeam.py  
+  inflating: contest-tmp/teams/iceice/myTeam.py  
+   creating: contest-tmp/teams/loserswishes/__MACOSX/
+  inflating: contest-tmp/teams/loserswishes/group.txt  
+  inflating: contest-tmp/teams/loserswishes/myTeam.py  
+  inflating: contest-tmp/teams/loserswishes/README.txt  
+  inflating: contest-tmp/teams/loserswishes/__MACOSX/._README.txt  
+  inflating: contest-tmp/teams/loserswishes/__MACOSX/._group.txt  
+   creating: contest-tmp/teams/contestrndmnm/contestrndmnm/
+   creating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/game.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/contest.html  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/textDisplay.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/score  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/mazeGenerator.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/VERSION  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/myTeam.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/mazeGenerator.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/keyboardAgents.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/autograder.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/baselineTeam.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/myTeam.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/graphicsDisplay.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/graphicsUtils.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layout.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/pacman.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/capture_the_flag.png  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/contestLayout.png  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/unpack.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/testParser.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/capture.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/baselineTeam.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/captureAgents.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/testClasses.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/projects.css  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/captureAgents.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/pacmanAgents.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/distanceCalculator.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/util.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layout.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/bracket.png  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/ghostAgents.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/util.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/capture_the_flag2.png  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/game.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/officeCapture.lay  
+  inflating: contest-tmp/teams/InfiniteLoop/myTeam.py  
+  inflating: contest-tmp/teams/friedOreo/myTeam.py  
+  inflating: contest-tmp/teams/Reaper/group.txt  
+  inflating: contest-tmp/teams/Reaper/myTeam.py  
+  inflating: contest-tmp/teams/Reaper/README.TXT  
+  inflating: contest-tmp/teams/AliEn/myTeam.py  
+   creating: contest-tmp/teams/IPhoneX/__MACOSX/
+  inflating: contest-tmp/teams/IPhoneX/myTeam.py  
+  inflating: contest-tmp/teams/IPhoneX/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/victoriasSecret/myTeam.py  
+  inflating: contest-tmp/teams/Allogator/myTeam.py  
+   creating: contest-tmp/teams/MMM/layouts/
+  inflating: contest-tmp/teams/MMM/game.py  
+  inflating: contest-tmp/teams/MMM/contest.html  
+  inflating: contest-tmp/teams/MMM/textDisplay.py  
+  inflating: contest-tmp/teams/MMM/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/MMM/score  
+  inflating: contest-tmp/teams/MMM/mazeGenerator.py  
+  inflating: contest-tmp/teams/MMM/VERSION  
+  inflating: contest-tmp/teams/MMM/myTeam.py  
+  inflating: contest-tmp/teams/MMM/anotherTeam.pyc  
+  inflating: contest-tmp/teams/MMM/keyboardAgents.py  
+  inflating: contest-tmp/teams/MMM/autograder.py  
+  inflating: contest-tmp/teams/MMM/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/MMM/baselineTeam.py  
+  inflating: contest-tmp/teams/MMM/myTeam_2.py  
+  inflating: contest-tmp/teams/MMM/myTeam.pyc  
+  inflating: contest-tmp/teams/MMM/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/MMM/graphicsDisplay.py  
+  inflating: contest-tmp/teams/MMM/myTeam_top.py  
+  inflating: contest-tmp/teams/MMM/graphicsUtils.py  
+  inflating: contest-tmp/teams/MMM/layout.pyc  
+  inflating: contest-tmp/teams/MMM/pacman.py  
+  inflating: contest-tmp/teams/MMM/ERC.zip  
+  inflating: contest-tmp/teams/MMM/capture_the_flag.png  
+  inflating: contest-tmp/teams/MMM/contestLayout.png  
+  inflating: contest-tmp/teams/MMM/unpack.py  
+  inflating: contest-tmp/teams/MMM/testParser.py  
+  inflating: contest-tmp/teams/MMM/anotherTeam.py  
+  inflating: contest-tmp/teams/MMM/capture.py  
+  inflating: contest-tmp/teams/MMM/c3Team.py  
+  inflating: contest-tmp/teams/MMM/baselineTeam.pyc  
+  inflating: contest-tmp/teams/MMM/captureAgents.pyc  
+  inflating: contest-tmp/teams/MMM/testClasses.py  
+  inflating: contest-tmp/teams/MMM/projects.css  
+  inflating: contest-tmp/teams/MMM/cTeam.pyc  
+  inflating: contest-tmp/teams/MMM/captureAgents.py  
+  inflating: contest-tmp/teams/MMM/pacmanAgents.py  
+  inflating: contest-tmp/teams/MMM/distanceCalculator.py  
+  inflating: contest-tmp/teams/MMM/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/MMM/myTeam_1.py  
+  inflating: contest-tmp/teams/MMM/util.pyc  
+  inflating: contest-tmp/teams/MMM/layout.py  
+  inflating: contest-tmp/teams/MMM/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/MMM/bracket.png  
+  inflating: contest-tmp/teams/MMM/ghostAgents.py  
+  inflating: contest-tmp/teams/MMM/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/MMM/util.py  
+  inflating: contest-tmp/teams/MMM/capture_the_flag2.png  
+  inflating: contest-tmp/teams/MMM/game.pyc  
+  inflating: contest-tmp/teams/MMM/cTeam.py  
+  inflating: contest-tmp/teams/MMM/monteCarloTeam.py  
+  inflating: contest-tmp/teams/QCR/myTeam.py  
+  inflating: contest-tmp/teams/PandaTV/myTeam.py  
+   creating: contest-tmp/teams/AIFighter/__MACOSX/
+  inflating: contest-tmp/teams/AIFighter/myTeam.py  
+  inflating: contest-tmp/teams/AIFighter/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/staff_team_medium/myTeam.py  
+  inflating: contest-tmp/teams/staff_team_medium/ghost-domain-kilpacman-problem.pddl  
+  inflating: contest-tmp/teams/staff_team_medium/pacman-domain-eatfood-problem.pddl  
+  inflating: contest-tmp/teams/staff_team_medium/pacman-domain-killghostproblem.pddl  
+  inflating: contest-tmp/teams/staff_team_medium/ghost-domain.pddl  
+  inflating: contest-tmp/teams/staff_team_medium/pacman-domain.pddl  
+  inflating: contest-tmp/teams/staff_team_medium/README.txt  
+  inflating: contest-tmp/teams/staff_team_medium/ff  
+   creating: contest-tmp/teams/RandomTeamVI/__MACOSX/
+  inflating: contest-tmp/teams/RandomTeamVI/myTeam.py  
+  inflating: contest-tmp/teams/RandomTeamVI/ghost_problem.pddl  
+  inflating: contest-tmp/teams/RandomTeamVI/ghost.pddl  
+  inflating: contest-tmp/teams/RandomTeamVI/pacman.pddl  
+  inflating: contest-tmp/teams/RandomTeamVI/problem_pacman_01.pddl  
+  inflating: contest-tmp/teams/RandomTeamVI/__MACOSX/._ghost_problem.pddl  
+  inflating: contest-tmp/teams/RandomTeamVI/__MACOSX/._problem_pacman_01.pddl  
+  inflating: contest-tmp/teams/RandomTeamVI/__MACOSX/._pacman.pddl  
+  inflating: contest-tmp/teams/RandomTeamVI/__MACOSX/._ghost.pddl  
+  inflating: contest-tmp/teams/staff_team_basic/myTeam.py  
+  inflating: contest-tmp/teams/staff_team_basic/problem.pddl  
+  inflating: contest-tmp/teams/staff_team_basic/__init__.py  
+  inflating: contest-tmp/teams/staff_team_basic/domain.pddl  
+  inflating: contest-tmp/teams/staff_team_basic/gmon.out  
+  inflating: contest-tmp/teams/disabledPacman4/disabledPacman3.py  
+  inflating: contest-tmp/teams/Patman/myTeam.py  
+  inflating: contest-tmp/teams/RNG/PacMax.zip  
+  inflating: contest-tmp/teams/RNG/myTeam.py  
+  inflating: contest-tmp/teams/RNG/offensiveWeightsDefault.json  
+  inflating: contest-tmp/teams/RNG/myTeam.pyc  
+  inflating: contest-tmp/teams/RNG/defensiveWeightsDefault.json  
+  inflating: contest-tmp/teams/RNG/defensiveWeights.json  
+  inflating: contest-tmp/teams/RNG/logger.log  
+  inflating: contest-tmp/teams/RNG/agents.py  
+  inflating: contest-tmp/teams/RNG/offensiveWeights.json  
+   creating: contest-tmp/teams/Alive/__MACOSX/
+  inflating: contest-tmp/teams/Alive/myTeam.py  
+  inflating: contest-tmp/teams/Alive/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/Artificialidiot/__MACOSX/
+  inflating: contest-tmp/teams/Artificialidiot/myTeam.py  
+  inflating: contest-tmp/teams/Artificialidiot/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/staff_team_top/group.txt  
+  inflating: contest-tmp/teams/staff_team_top/myTeam.py  
+  inflating: contest-tmp/teams/staff_team_top/domain_pacman_contestpacman.pddl  
+  inflating: contest-tmp/teams/staff_team_top/problem_ghost_eatpacman.pddl  
+  inflating: contest-tmp/teams/staff_team_top/problem_pacman_eatdot.pddl  
+  inflating: contest-tmp/teams/staff_team_top/domain_ghost_contestghost.pddl  
+  inflating: contest-tmp/teams/staff_team_top/problem_pacman_eatghost.pddl  
+  inflating: contest-tmp/teams/staff_team_top/readme.txt  
+  inflating: contest-tmp/teams/staff_team_top/ff  
+  inflating: contest-tmp/teams/ShallowMind/myTeam.py  
+  inflating: contest-tmp/teams/ShallowMind/offense.json  
+  inflating: contest-tmp/teams/AI_Rookie/myTeam.py  
+   creating: contest-tmp/teams/InvictusGaming/__MACOSX/
+  inflating: contest-tmp/teams/InvictusGaming/myTeam.py  
+  inflating: contest-tmp/teams/InvictusGaming/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/Higher_Brothers/__MACOSX/
+  inflating: contest-tmp/teams/Higher_Brothers/myTeam.py  
+  inflating: contest-tmp/teams/Higher_Brothers/ghost_domain.pddl  
+  inflating: contest-tmp/teams/Higher_Brothers/pacman_domain.pddl  
+  inflating: contest-tmp/teams/Higher_Brothers/ff  
+  inflating: contest-tmp/teams/Higher_Brothers/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/Pacmon-Sun-and-Moon/myTeam.py  
+   creating: contest-tmp/teams/ERC/layouts/
+  inflating: contest-tmp/teams/ERC/game.py  
+  inflating: contest-tmp/teams/ERC/contest.html  
+  inflating: contest-tmp/teams/ERC/textDisplay.py  
+  inflating: contest-tmp/teams/ERC/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/ERC/score  
+  inflating: contest-tmp/teams/ERC/mazeGenerator.py  
+  inflating: contest-tmp/teams/ERC/VERSION  
+  inflating: contest-tmp/teams/ERC/myTeam.py  
+  inflating: contest-tmp/teams/ERC/anotherTeam.pyc  
+  inflating: contest-tmp/teams/ERC/keyboardAgents.py  
+  inflating: contest-tmp/teams/ERC/autograder.py  
+  inflating: contest-tmp/teams/ERC/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/ERC/baselineTeam.py  
+  inflating: contest-tmp/teams/ERC/myTeam_2.py  
+  inflating: contest-tmp/teams/ERC/myTeam.pyc  
+  inflating: contest-tmp/teams/ERC/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/ERC/graphicsDisplay.py  
+  inflating: contest-tmp/teams/ERC/myTeam_top.py  
+  inflating: contest-tmp/teams/ERC/graphicsUtils.py  
+  inflating: contest-tmp/teams/ERC/layout.pyc  
+  inflating: contest-tmp/teams/ERC/pacman.py  
+  inflating: contest-tmp/teams/ERC/capture_the_flag.png  
+  inflating: contest-tmp/teams/ERC/contestLayout.png  
+  inflating: contest-tmp/teams/ERC/unpack.py  
+  inflating: contest-tmp/teams/ERC/testParser.py  
+  inflating: contest-tmp/teams/ERC/anotherTeam.py  
+  inflating: contest-tmp/teams/ERC/capture.py  
+  inflating: contest-tmp/teams/ERC/c3Team.py  
+  inflating: contest-tmp/teams/ERC/baselineTeam.pyc  
+  inflating: contest-tmp/teams/ERC/captureAgents.pyc  
+  inflating: contest-tmp/teams/ERC/mmmD.py  
+  inflating: contest-tmp/teams/ERC/testClasses.py  
+  inflating: contest-tmp/teams/ERC/projects.css  
+  inflating: contest-tmp/teams/ERC/cTeam.pyc  
+  inflating: contest-tmp/teams/ERC/captureAgents.py  
+  inflating: contest-tmp/teams/ERC/pacmanAgents.py  
+  inflating: contest-tmp/teams/ERC/distanceCalculator.py  
+  inflating: contest-tmp/teams/ERC/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/ERC/myTeam_1.py  
+  inflating: contest-tmp/teams/ERC/util.pyc  
+  inflating: contest-tmp/teams/ERC/layout.py  
+  inflating: contest-tmp/teams/ERC/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/ERC/bracket.png  
+  inflating: contest-tmp/teams/ERC/ghostAgents.py  
+  inflating: contest-tmp/teams/ERC/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/ERC/util.py  
+  inflating: contest-tmp/teams/ERC/capture_the_flag2.png  
+  inflating: contest-tmp/teams/ERC/game.pyc  
+  inflating: contest-tmp/teams/ERC/cTeam.py  
+  inflating: contest-tmp/teams/ERC/monteCarloTeam.py  
+   creating: contest-tmp/teams/RMY/RMY/
+   creating: contest-tmp/teams/RMY/__MACOSX/
+   creating: contest-tmp/teams/RMY/__MACOSX/RMY/
+  inflating: contest-tmp/teams/RMY/__MACOSX/RMY/._.DS_Store  
+  inflating: contest-tmp/teams/RMY/RMY/myTeam.py  
+  inflating: contest-tmp/teams/RMY/RMY/.DS_Store  
+  inflating: contest-tmp/teams/RMY/RMY/README.txt  
+  inflating: contest-tmp/teams/Chicken-Dinner/myTeam.py  
+  inflating: contest-tmp/teams/ARP/myTeam.py  
+   creating: contest-tmp/teams/ITCrowd/__MACOSX/
+   creating: contest-tmp/teams/ITCrowd/layouts/
+  inflating: contest-tmp/teams/ITCrowd/game.py  
+  inflating: contest-tmp/teams/ITCrowd/contest.html  
+  inflating: contest-tmp/teams/ITCrowd/textDisplay.py  
+  inflating: contest-tmp/teams/ITCrowd/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/ITCrowd/score  
+  inflating: contest-tmp/teams/ITCrowd/mazeGenerator.py  
+  inflating: contest-tmp/teams/ITCrowd/VERSION  
+  inflating: contest-tmp/teams/ITCrowd/myTeam.py  
+  inflating: contest-tmp/teams/ITCrowd/keyboardAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/autograder.py  
+  inflating: contest-tmp/teams/ITCrowd/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/ITCrowd/baselineTeam.py  
+  inflating: contest-tmp/teams/ITCrowd/myTeam.pyc  
+  inflating: contest-tmp/teams/ITCrowd/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/ITCrowd/graphicsDisplay.py  
+  inflating: contest-tmp/teams/ITCrowd/graphicsUtils.py  
+  inflating: contest-tmp/teams/ITCrowd/layout.pyc  
+  inflating: contest-tmp/teams/ITCrowd/pacman.py  
+  inflating: contest-tmp/teams/ITCrowd/capture_the_flag.png  
+  inflating: contest-tmp/teams/ITCrowd/contestLayout.png  
+  inflating: contest-tmp/teams/ITCrowd/unpack.py  
+  inflating: contest-tmp/teams/ITCrowd/testParser.py  
+  inflating: contest-tmp/teams/ITCrowd/capture.py  
+  inflating: contest-tmp/teams/ITCrowd/baselineTeam.pyc  
+  inflating: contest-tmp/teams/ITCrowd/captureAgents.pyc  
+  inflating: contest-tmp/teams/ITCrowd/testClasses.py  
+  inflating: contest-tmp/teams/ITCrowd/projects.css  
+  inflating: contest-tmp/teams/ITCrowd/captureAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/pacmanAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/distanceCalculator.py  
+  inflating: contest-tmp/teams/ITCrowd/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/ITCrowd/util.pyc  
+  inflating: contest-tmp/teams/ITCrowd/layout.py  
+  inflating: contest-tmp/teams/ITCrowd/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/ITCrowd/bracket.png  
+  inflating: contest-tmp/teams/ITCrowd/ghostAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/ITCrowd/util.py  
+  inflating: contest-tmp/teams/ITCrowd/capture_the_flag2.png  
+  inflating: contest-tmp/teams/ITCrowd/game.pyc  
+  inflating: contest-tmp/teams/ITCrowd/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._capture_the_flag2.png  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._contestLayout.png  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._game.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._capture_the_flag.png  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._textDisplay.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._contest.html  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._projects.css  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._pacmanAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._keyboardAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._VERSION  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._mazeGenerator.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._unpack.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._capture.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._autograder.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._captureAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._graphicsUtils.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._testClasses.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._pacman.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._graphicsDisplay.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._util.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._layout.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._baselineTeam.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._score  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._bracket.png  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._testParser.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._layouts  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._ghostAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._distanceCalculator.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._strategicCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._alleyCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._officeCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._mediumCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._defaultCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._fastCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._distantCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._tinyCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._jumboCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._testCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._crowdedCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._bloxCapture.lay  
+  inflating: contest-tmp/teams/BetterThanBaselineTeam/myTeam.py  
+  inflating: contest-tmp/teams/BetterThanBaselineTeam/README.txt  
+   creating: contest-tmp/teams/EvilPacman/__MACOSX/
+  inflating: contest-tmp/teams/EvilPacman/myTeam.py  
+  inflating: contest-tmp/teams/EvilPacman/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/Werewolf/__MACOSX/
+  inflating: contest-tmp/teams/Werewolf/myTeam.py  
+  inflating: contest-tmp/teams/Werewolf/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/trytrytrytry/__MACOSX/
+  inflating: contest-tmp/teams/trytrytrytry/myTeam.py  
+  inflating: contest-tmp/teams/trytrytrytry/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/IHateCapsule/__MACOSX/
+  inflating: contest-tmp/teams/IHateCapsule/myTeam.py  
+  inflating: contest-tmp/teams/IHateCapsule/__MACOSX/._myTeam.py  
+   creating: contest-tmp/bin/bin/
+  inflating: contest-tmp/bin/metric-ff  
+  inflating: contest-tmp/bin/ff      
+
+Red team teams/RandomTeamVI/myTeam.py with {}:
+teams/RandomTeamVI/myTeam.py
+Loading Team: teams/RandomTeamVI/myTeam.py
+Arguments: {}
+
+Blue team teams/QCR/myTeam.py with {}:
+teams/QCR/myTeam.py
+Loading Team: teams/QCR/myTeam.py
+Arguments: {}
+Blue team starts
+end
+end
+(1, 'stt')
+(0, (32, 15), 612)
+('1ba',)
+('mf', ['South'], 29)
+('01', 'South', 0.08699893951416016)
+(1, 'stt')
+('11', 'South', 0.06878209114074707)
+(2, 'stt')
+(0, (32, 14), 612)
+('1ba',)
+('mf', ['South'], 28)
+('01', 'South', 0.07269597053527832)
+(2, 'stt')
+('11', 'South', 0.0854959487915039)
+(3, 'stt')
+(0, (32, 13), 612)
+('1ba',)
+('mf', ['South'], 27)
+('01', 'South', 0.08176803588867188)
+(3, 'stt')
+('11', 'South', 0.07537603378295898)
+(4, 'stt')
+(0, (32, 12), 612)
+('1ba',)
+('mf', ['South'], 26)
+('01', 'South', 0.07977294921875)
+(4, 'stt')
+('11', 'South', 0.07308816909790039)
+(5, 'stt')
+(0, (32, 11), 612)
+('1ba',)
+('mf', ['West'], 25)
+('01', 'West', 0.06442403793334961)
+(5, 'stt')
+('11', 'South', 0.0590817928314209)
+(6, 'stt')
+(0, (31, 11), 612)
+('1ba',)
+('mf', ['West'], 24)
+('01', 'West', 0.061241865158081055)
+(6, 'stt')
+('11', 'West', 0.06476998329162598)
+(7, 'stt')
+(0, (30, 11), 612)
+('1ba',)
+('mf', ['North', 'West'], 23)
+('01', 'West', 0.06012892723083496)
+(7, 'stt')
+('11', 'West', 0.05424189567565918)
+(8, 'stt')
+(0, (29, 11), 612)
+('1ba',)
+('mf', ['South', 'West'], 22)
+('01', 'West', 0.07719206809997559)
+(8, 'stt')
+('11', 'North', 0.061502933502197266)
+(9, 'stt')
+(0, (28, 11), 612)
+('1ba',)
+('mf', ['North'], 21)
+('01', 'North', 0.05810117721557617)
+(9, 'stt')
+('11', 'North', 0.05907106399536133)
+(10, 'stt')
+(0, (28, 12), 612)
+('1ba',)
+('mf', ['North'], 20)
+('01', 'North', 0.05191802978515625)
+(10, 'stt')
+('11', 'West', 0.05928397178649902)
+(11, 'stt')
+(0, (28, 13), 612)
+('1ba',)
+('mf', ['West'], 19)
+('01', 'West', 0.04801487922668457)
+(11, 'stt')
+('11', 'West', 0.04867887496948242)
+(12, 'stt')
+(0, (27, 13), 612)
+('1ba',)
+('mf', ['North'], 18)
+('01', 'North', 0.043576955795288086)
+(12, 'stt')
+('11', 'West', 0.06449294090270996)
+(13, 'stt')
+(0, (27, 14), 612)
+('1ba',)
+('mf', ['North'], 17)
+('01', 'North', 0.037172794342041016)
+(13, 'stt')
+('11', 'North', 0.041152000427246094)
+(14, 'stt')
+(0, (27, 15), 612)
+('1ba',)
+('mf', ['West'], 16)
+('01', 'West', 0.03297996520996094)
+(14, 'stt')
+('11', 'North', 0.047302961349487305)
+(15, 'stt')
+(0, (26, 15), 612)
+('1ba',)
+('mf', ['West'], 15)
+('01', 'West', 0.023440122604370117)
+(15, 'stt')
+('11', 'West', 0.040850162506103516)
+(16, 'stt')
+(0, (25, 15), 612)
+('1ba',)
+('mf', ['North'], 14)
+('01', 'North', 0.02063298225402832)
+(16, 'stt')
+('11', 'West', 0.035642147064208984)
+(17, 'stt')
+(0, (25, 16), 612)
+('1ba',)
+('mf', ['West'], 13)
+('01', 'West', 0.015747785568237305)
+(17, 'stt')
+('11', 'North', 0.033915042877197266)
+(18, 'stt')
+(0, (24, 16), 612)
+('1ba',)
+('mf', ['West'], 12)
+('01', 'West', 0.014756917953491211)
+(18, 'stt')
+('11', 'West', 0.030905961990356445)
+(19, 'stt')
+(0, (23, 16), 612)
+('1ba',)
+('mf', ['West'], 11)
+('01', 'West', 0.012975931167602539)
+(19, 'stt')
+('11', 'West', 0.03214693069458008)
+(20, 'stt')
+(0, (22, 16), 612)
+('1ba',)
+('mf', ['West'], 10)
+('01', 'West', 0.013530969619750977)
+(20, 'stt')
+('11', 'West', 0.023479938507080078)
+(21, 'stt')
+(0, (21, 16), 612)
+('1ba',)
+('mf', ['West'], 9)
+('01', 'West', 0.009835004806518555)
+(21, 'stt')
+('11', 'West', 0.018851041793823242)
+(22, 'stt')
+(0, (20, 16), 612)
+('1ba',)
+('mf', ['West'], 8)
+('01', 'West', 0.006719112396240234)
+(22, 'stt')
+('11', 'West', 0.020651817321777344)
+(23, 'stt')
+(0, (19, 16), 612)
+('1ba',)
+('mf', ['West'], 7)
+('01', 'West', 0.005387067794799805)
+(23, 'stt')
+('11', 'West', 0.016431808471679688)
+(24, 'stt')
+(0, (18, 16), 612)
+('1ba',)
+('mf', ['West'], 6)
+('01', 'West', 0.004341840744018555)
+(24, 'stt')
+('11', 'West', 0.011732101440429688)
+(25, 'stt')
+(0, (17, 16), 612)
+('1ba',)
+('mf', ['West'], 5)
+('01', 'West', 0.0041790008544921875)
+(25, 'stt')
+('11', 'West', 0.010230064392089844)
+(26, 'stt')
+(0, (16, 16), 612)
+('1ba',)
+('mf', ['West'], 7)
+('01', 'West', 0.0064849853515625)
+(26, 'stt')
+('11', 'South', 0.010712146759033203)
+(27, 'stt')
+(0, (15, 16), 612)
+('1ba',)
+('mf', ['West'], 3)
+('01', 'West', 0.0018000602722167969)
+(27, 'stt')
+('11', 'South', 0.00945901870727539)
+(28, 'stt')
+(0, (14, 16), 612)
+('1ba',)
+('mf', ['West'], 2)
+('01', 'West', 0.001425027847290039)
+(28, 'stt')
+('11', 'South', 0.008367061614990234)
+(29, 'stt')
+(0, (13, 16), 612)
+('1ba',)
+('mf', ['West'], 1)
+('01', 'West', 0.0015997886657714844)
+(29, 'stt')
+('11', 'South', 0.0074689388275146484)
+(30, 'stt')
+(0, (12, 16), 612)
+('1ba',)
+('mf', ['West'], 0)
+('01', 'West', 0.0011730194091796875)
+(30, 'stt')
+('11', 'South', 0.005244016647338867)
+(31, 'stt')
+(0, (11, 16), 612)
+('1ba',)
+('mf', ['West'], 8)
+('01', 'West', 0.006322145462036133)
+(31, 'stt')
+('11', 'South', 0.004362821578979492)
+(32, 'stt')
+(0, (10, 16), 612)
+('1ba',)
+('mf', ['West'], 7)
+('01', 'West', 0.003740072250366211)
+(32, 'stt')
+('11', 'South', 0.002930879592895508)
+(33, 'stt')
+(0, (9, 16), 612)
+('1ba',)
+('mf', ['West'], 6)
+('01', 'West', 0.0034139156341552734)
+(33, 'stt')
+('11', 'North', 0.0025589466094970703)
+(34, 'stt')
+(0, (8, 16), 612)
+('1ba',)
+('mf', ['West'], 5)
+('01', 'West', 0.00327301025390625)
+(34, 'stt')
+('11', 'South', 0.0032660961151123047)
+(35, 'stt')
+(0, (7, 16), 612)
+('1ba',)
+('mf', ['West'], 4)
+('01', 'West', 0.003587007522583008)
+(35, 'stt')
+('11', 'South', 0.008378028869628906)
+(36, 'stt')
+(0, (6, 16), 612)
+('1ba',)
+('mf', ['West'], 3)
+('01', 'West', 0.0015571117401123047)
+(36, 'stt')
+('11', 'South', 0.005882978439331055)
+(37, 'stt')
+(0, (5, 16), 612)
+('1ba',)
+('mf', ['West'], 2)
+('01', 'West', 0.0016901493072509766)
+(37, 'stt')
+('11', 'East', 0.0039920806884765625)
+(38, 'stt')
+(0, (4, 16), 612)
+('1ba',)
+('mf', ['South'], 1)
+('01', 'South', 0.0010311603546142578)
+(38, 'stt')
+('11', 'East', 0.004253864288330078)
+(39, 'stt')
+(0, (4, 15), 612)
+('1ba',)
+('mf', ['South'], 0)
+('01', 'South', 0.0011930465698242188)
+(39, 'stt')
+('11', 'South', 0.07619404792785645)
+(40, 'stt')
+(0, (4, 14), 612)
+('1ba',)
+('mf', ['East'], 3)
+('01', 'East', 0.0019550323486328125)
+(40, 'stt')
+('11', 'South', 0.07342195510864258)
+(41, 'stt')
+(-1, (5, 14), 612)
+('1ba',)
+('mf', ['East'], 2)
+('01', 'East', 0.001909017562866211)
+(41, 'stt')
+('11', 'South', 0.0714108943939209)
+(42, 'stt')
+(-3, (6, 14), 612)
+('1ba',)
+('mf', ['South'], 1)
+('01', 'South', 0.0014660358428955078)
+(42, 'stt')
+('11', 'South', 0.06614303588867188)
+(43, 'stt')
+(-3, (6, 13), 612)
+('1ba',)
+('mf', ['South'], 0)
+('01', 'South', 0.001260995864868164)
+(43, 'stt')
+('11', 'South', 0.06721901893615723)
+(44, 'stt')
+(-3, (6, 12), 612)
+('1ba',)
+('8ba',)
+('mf', ['North'], 16)
+('01', 'North', 0.06741595268249512)
+(44, 'stt')
+('11', 'West', 0.06481814384460449)
+(45, 'stt')
+(-3, (6, 13), 612)
+('1ba',)
+('mf', ['South'], 2)
+('01', 'South', 0.0021140575408935547)
+(45, 'stt')
+('11', 'West', 0.06279397010803223)
+(46, 'stt')
+(-3, (6, 12), 612)
+('1ba',)
+('mf', ['South'], 0)
+('01', 'South', 0.0012850761413574219)
+(46, 'stt')
+('11', 'North', 0.05905485153198242)
+(47, 'stt')
+(-3, (6, 11), 612)
+('1ba',)
+('mf', ['West'], 0)
+('01', 'West', 0.0009119510650634766)
+(47, 'stt')
+('11', 'North', 0.03710198402404785)
+(48, 'stt')
+(-3, (5, 11), 612)
+('1ba',)
+('mf', ['North'], 4)
+('01', 'North', 0.003979921340942383)
+(48, 'stt')
+('11', 'West', 0.04539608955383301)
+(49, 'stt')
+(-4, (5, 12), 612)
+('1ba',)
+('mf', ['West'], 3)
+('01', 'West', 0.002084970474243164)
+(49, 'stt')
+('11', 'West', 0.03823208808898926)
+(50, 'stt')
+(-4, (4, 12), 612)
+('1ba',)
+('mf', ['West'], 2)
+('01', 'West', 0.0016169548034667969)
+(50, 'stt')
+('11', 'West', 0.030770063400268555)
+(51, 'stt')
+(-4, (3, 12), 612)
+('1ba',)
+('mf', ['South'], 6)
+('01', 'South', 0.0046269893646240234)
+(51, 'stt')
+('11', 'North', 0.034156084060668945)
+(52, 'stt')
+(-4, (3, 11), 612)
+('1ba',)
+('mf', ['East'], 5)
+('01', 'East', 0.00531005859375)
+(52, 'stt')
+('11', 'North', 0.03208494186401367)
+(53, 'stt')
+(-4, (4, 11), 612)
+('1ba',)
+('mf', ['South'], 4)
+('01', 'South', 0.0033669471740722656)
+(53, 'stt')
+('11', 'West', 0.03098607063293457)
+(54, 'stt')
+(-4, (4, 10), 612)
+('1ba',)
+('mf', ['South'], 3)
+('01', 'South', 0.0021848678588867188)
+(54, 'stt')
+('11', 'West', 0.0310819149017334)
+(55, 'stt')
+(-4, (4, 9), 612)
+('1ba',)
+('mf', ['West', 'East'], 2)
+('01', 'West', 0.0017931461334228516)
+(55, 'stt')
+('11', 'North', 0.024716854095458984)
+(56, 'stt')
+(-4, (3, 9), 612)
+('1ba',)
+('mf', ['South'], 3)
+('01', 'South', 0.0022339820861816406)
+(56, 'stt')
+('11', 'West', 0.020863056182861328)
+(57, 'stt')
+(-4, (3, 8), 612)
+('1ba',)
+('mf', ['East'], 2)
+('01', 'East', 0.0016949176788330078)
+(57, 'stt')
+('11', 'West', 0.02384805679321289)
+(58, 'stt')
+(-4, (4, 8), 612)
+('1ba',)
+('mf', ['South'], 1)
+('01', 'South', 0.0012829303741455078)
+(58, 'stt')
+('11', 'West', 0.023066043853759766)
+(59, 'stt')
+(-4, (4, 7), 612)
+('1ba',)
+('mf', ['South'], 0)
+('01', 'South', 0.0012021064758300781)
+(59, 'stt')
+('11', 'West', 0.01539301872253418)
+(60, 'stt')
+(-4, (4, 6), 612)
+('1ba',)
+('mf', ['East'], 3)
+('01', 'East', 0.0032198429107666016)
+(60, 'stt')
+('11', 'West', 0.015609025955200195)
+(61, 'stt')
+(-4, (5, 6), 612)
+('1ba',)
+('mf', ['East'], 2)
+('01', 'East', 0.0016281604766845703)
+(61, 'stt')
+('11', 'West', 0.013303995132446289)
+(62, 'stt')
+(-4, (6, 6), 612)
+('1ba',)
+('mf', ['West'], 11)
+('01', 'West', 0.011934995651245117)
+(62, 'stt')
+('11', 'West', 0.009202003479003906)
+(63, 'stt')
+(-4, (5, 6), 612)
+('1ba',)
+('mf', ['West'], 9)
+('01', 'West', 0.010490894317626953)
+(63, 'stt')
+('11', 'West', 0.00952291488647461)
+(64, 'stt')
+(-4, (4, 6), 612)
+('1ba',)
+('mf', ['North'], 7)
+('01', 'North', 0.0055887699127197266)
+(64, 'stt')
+('11', 'South', 0.007248878479003906)
+(65, 'stt')
+(-4, (4, 7), 5)
+('1ba',)
+('mf', ['North'], 18)
+('01', 'North', 0.02750110626220703)
+(65, 'stt')
+('11', 'South', 0.0074880123138427734)
+(66, 'stt')
+(-4, (4, 8), 3)
+('1ba',)
+('mf', ['South'], 119)
+('01', 'South', 0.01761317253112793)
+(66, 'stt')
+('11', 'South', 0.005391120910644531)
+(67, 'stt')
+(-4, (4, 7), 3)
+('1ba',)
+('mf', ['South'], 66)
+('01', 'South', 0.013365030288696289)
+(67, 'stt')
+('11', 'South', 0.004827976226806641)
+(68, 'stt')
+(-4, (4, 6), 3)
+('1ba',)
+('mf', ['West'], 13)
+('01', 'West', 0.012074947357177734)
+(68, 'stt')
+('11', 'South', 0.004858970642089844)
+(69, 'stt')
+(-4, (3, 6), 3)
+('1ba',)
+('mf', ['South'], 12)
+('01', 'South', 0.01340794563293457)
+(69, 'stt')
+('11', 'South', 0.0037689208984375)
+(70, 'stt')
+(-4, (3, 5), 3)
+('1ba',)
+('mf', ['South'], 11)
+('01', 'South', 0.010154008865356445)
+(70, 'stt')
+('11', 'South', 0.0028960704803466797)
+(71, 'stt')
+(-4, (3, 4), 3)
+('1ba',)
+('mf', ['East'], 10)
+('01', 'East', 0.010998010635375977)
+(71, 'stt')
+('11', 'South', 0.003699779510498047)
+(72, 'stt')
+(-4, (4, 4), 3)
+('1ba',)
+('mf', ['East'], 9)
+('01', 'East', 0.009196043014526367)
+(72, 'stt')
+('11', 'North', 0.003113985061645508)
+(73, 'stt')
+(-4, (5, 4), 3)
+('1ba',)
+('mf', ['East'], 8)
+('01', 'East', 0.008476018905639648)
+(73, 'stt')
+('11', 'South', 0.0076100826263427734)
+(74, 'stt')
+(-4, (6, 4), 3)
+('1ba',)
+('mf', ['South'], 7)
+('01', 'South', 0.007537126541137695)
+(74, 'stt')
+('11', 'North', 0.003203868865966797)
+(75, 'stt')
+(-4, (6, 3), 3)
+('1ba',)
+('mf', ['South'], 6)
+('01', 'South', 0.00987100601196289)
+(75, 'stt')
+('11', 'South', 0.002424001693725586)
+(76, 'stt')
+(-4, (6, 2), 3)
+('1ba',)
+('mf', ['East'], 5)
+('01', 'East', 0.004666805267333984)
+(76, 'stt')
+('11', 'North', 0.0025551319122314453)
+(77, 'stt')
+(-4, (7, 2), 3)
+('1ba',)
+('mf', ['East'], 4)
+('01', 'East', 0.003756999969482422)
+(77, 'stt')
+('11', 'North', 0.0026471614837646484)
+(78, 'stt')
+(-4, (8, 2), 3)
+('1ba',)
+('mf', ['North', 'South'], 3)
+('01', 'North', 0.003398895263671875)
+(78, 'stt')
+('11', 'South', 0.003348827362060547)
+(79, 'stt')
+(-4, (8, 3), 3)
+('1ba',)
+('mf', ['North'], 2)
+('01', 'North', 0.002546072006225586)
+(79, 'stt')
+('11', 'South', 0.0023992061614990234)
+(80, 'stt')
+(-4, (8, 4), 3)
+('1ba',)
+('mf', ['North'], 1)
+('01', 'North', 0.001753091812133789)
+(80, 'stt')
+('11', 'North', 0.003237009048461914)
+(81, 'stt')
+(-4, (8, 5), 3)
+('1ba',)
+('mf', ['East'], 0)
+('01', 'East', 0.0017151832580566406)
+(81, 'stt')
+('11', 'North', 0.0037610530853271484)
+(82, 'stt')
+(-4, (9, 5), 3)
+('1ba',)
+('mf', ['East'], 3)
+('01', 'East', 0.003453969955444336)
+(82, 'stt')
+('11', 'South', 0.0036079883575439453)
+(83, 'stt')
+(-4, (10, 5), 3)
+('1ba',)
+('mf', ['South'], 2)
+('01', 'South', 0.0028378963470458984)
+(83, 'stt')
+('11', 'South', 0.0025010108947753906)
+(84, 'stt')
+(-4, (10, 4), 3)
+('1ba',)
+('mf', ['South'], 1)
+('01', 'South', 0.0017468929290771484)
+(84, 'stt')
+('11', 'North', 0.003253936767578125)
+(85, 'stt')
+(-4, (10, 3), 3)
+('1ba',)
+('mf', ['South'], 0)
+('01', 'South', 0.0016491413116455078)
+(85, 'stt')
+('11', 'South', 0.002460002899169922)
+(86, 'stt')
+(-4, (10, 2), 2)
+('1ba',)
+('7ba',)
+('mf', ['North'], 613)
+('cd',)
+('mg', ['South'], 8)
+('01', 'South', 0.00571894645690918)
+(86, 'stt')
+('11', 'North', 0.003144979476928711)
+(87, 'stt')
+(-4, (32, 15), 612)
+('1ba',)
+('7ba',)
+('mf', ['South'], 29)
+('01', 'South', 0.08102107048034668)
+(87, 'stt')
+('11', 'South', 0.002466917037963867)
+(88, 'stt')
+(-4, (32, 14), 612)
+('1ba',)
+('7ba',)
+('mf', ['South'], 28)
+('01', 'South', 0.0877220630645752)
+(88, 'stt')
+('11', 'North', 0.002971172332763672)
+(89, 'stt')
+(-4, (32, 13), 612)
+('1ba',)
+('7ba',)
+('mf', ['South'], 27)
+('01', 'South', 0.07192492485046387)
+(89, 'stt')
+('11', 'North', 0.002586841583251953)
+(90, 'stt')
+(-4, (32, 12), 612)
+('1ba',)
+('7ba',)
+('mf', ['South'], 26)
+('01', 'South', 0.0671231746673584)
+(90, 'stt')
+('11', 'South', 0.0028841495513916016)
+(91, 'stt')
+(-4, (32, 11), 612)
+('1ba',)
+('mf', ['West'], 25)
+('01', 'West', 0.05574989318847656)
+(91, 'stt')
+('11', 'South', 0.0025649070739746094)
+(92, 'stt')
+(-4, (31, 11), 612)
+('1ba',)
+('mf', ['West'], 24)
+('01', 'West', 0.06423401832580566)
+(92, 'stt')
+('11', 'North', 0.0032341480255126953)
+(93, 'stt')
+(-4, (30, 11), 612)
+('1ba',)
+('mf', ['West'], 23)
+('01', 'West', 0.060111045837402344)
+(93, 'stt')
+('11', 'South', 0.0026121139526367188)
+(94, 'stt')
+(-4, (29, 11), 612)
+('1ba',)
+('mf', ['South'], 22)
+('01', 'South', 0.04835200309753418)
+(94, 'stt')
+('11', 'North', 0.003059864044189453)
+(95, 'stt')
+(-4, (29, 10), 612)
+('1ba',)
+('mf', ['South'], 21)
+('01', 'South', 0.04949688911437988)
+(95, 'stt')
+('11', 'North', 0.002482175827026367)
+(96, 'stt')
+(-4, (29, 9), 612)
+('1ba',)
+('mf', ['South'], 20)
+('01', 'South', 0.0440821647644043)
+(96, 'stt')
+('11', 'South', 0.003353118896484375)
+(97, 'stt')
+(-4, (29, 8), 612)
+('1ba',)
+('mf', ['South'], 19)
+('01', 'South', 0.03862190246582031)
+(97, 'stt')
+('11', 'South', 0.0021657943725585938)
+(98, 'stt')
+(-4, (29, 7), 612)
+('1ba',)
+('mf', ['South'], 18)
+('01', 'South', 0.03462791442871094)
+(98, 'stt')
+('11', 'North', 0.0030930042266845703)
+(99, 'stt')
+(-4, (29, 6), 612)
+('1ba',)
+('mf', ['South'], 17)
+('01', 'South', 0.029541015625)
+(99, 'stt')
+('11', 'North', 0.0024678707122802734)
+(100, 'stt')
+(-4, (29, 5), 25)
+('1ba',)
+('mf', ['West'], 16)
+('01', 'West', 0.04582500457763672)
+(100, 'stt')
+('11', 'South', 0.0034050941467285156)
+(101, 'stt')
+(-4, (28, 5), 23)
+('1ba',)
+('mf', ['West'], 15)
+('01', 'West', 0.03470897674560547)
+(101, 'stt')
+('11', 'South', 0.0018758773803710938)
+(102, 'stt')
+(-4, (27, 5), 21)
+('1ba',)
+('mf', ['South'], 14)
+('01', 'South', 0.03808403015136719)
+(102, 'stt')
+('11', 'North', 0.003192901611328125)
+(103, 'stt')
+(-4, (27, 4), 19)
+('1ba',)
+('mf', ['South'], 13)
+('01', 'South', 0.036192893981933594)
+(103, 'stt')
+('11', 'South', 0.002629995346069336)
+(104, 'stt')
+(-4, (27, 3), 19)
+('1ba',)
+('mf', ['West'], 12)
+('01', 'West', 0.029755115509033203)
+(104, 'stt')
+('11', 'South', 0.008621931076049805)
+(105, 'stt')
+(-4, (26, 3), 17)
+('1ba',)
+('mf', ['West'], 11)
+('01', 'West', 0.023802995681762695)
+(105, 'stt')
+('11', 'North', 0.004338979721069336)
+(106, 'stt')
+(-4, (25, 3), 612)
+('1ba',)
+('mf', ['West'], 10)
+('01', 'West', 0.01596212387084961)
+(106, 'stt')
+('11', 'South', 0.0078051090240478516)
+(107, 'stt')
+(-4, (24, 3), 15)
+('1ba',)
+('mf', ['West'], 9)
+('01', 'West', 0.01475214958190918)
+(107, 'stt')
+('11', 'North', 0.0038909912109375)
+(108, 'stt')
+(-4, (23, 3), 612)
+('1ba',)
+('mf', ['West'], 8)
+('01', 'West', 0.006325960159301758)
+(108, 'stt')
+('11', 'South', 0.006515026092529297)
+(109, 'stt')
+(-4, (22, 3), 13)
+('1ba',)
+('mf', ['West'], 7)
+('01', 'West', 0.010046958923339844)
+(109, 'stt')
+('11', 'North', 0.004080057144165039)
+(110, 'stt')
+(-4, (21, 3), 11)
+('1ba',)
+('mf', ['North'], 6)
+('01', 'North', 0.009129047393798828)
+(110, 'stt')
+('11', 'North', 0.004652976989746094)
+(111, 'stt')
+(-4, (21, 4), 11)
+('1ba',)
+('mf', ['North'], 5)
+('01', 'North', 0.006110191345214844)
+(111, 'stt')
+('11', 'North', 0.009348869323730469)
+(112, 'stt')
+(-4, (21, 5), 11)
+('1ba',)
+('mf', ['West'], 4)
+('01', 'West', 0.005689144134521484)
+(112, 'stt')
+('11', 'North', 0.008085966110229492)
+(113, 'stt')
+(-4, (20, 5), 9)
+('1ba',)
+('mf', ['West'], 3)
+('01', 'West', 0.0038890838623046875)
+(113, 'stt')
+('11', 'East', 0.00598907470703125)
+(114, 'stt')
+(-4, (19, 5), 9)
+('1ba',)
+('mf', ['West'], 2)
+('01', 'West', 0.0025000572204589844)
+(114, 'stt')
+('11', 'East', 0.0053670406341552734)
+(115, 'stt')
+(-4, (18, 5), 7)
+('1ba',)
+('mf', ['West'], 1)
+('01', 'West', 0.0015978813171386719)
+(115, 'stt')
+('11', 'South', 0.0047380924224853516)
+(116, 'stt')
+(-4, (17, 5), 612)
+('1ba',)
+('mf', ['West'], 0)
+('01', 'West', 0.0012631416320800781)
+(116, 'stt')
+('11', 'North', 0.0069239139556884766)
+(117, 'stt')
+(-4, (16, 5), 5)
+('1ba',)
+('mf', ['North'], 4)
+('01', 'North', 0.010445833206176758)
+(117, 'stt')
+('11', 'North', 0.004641056060791016)
+(118, 'stt')
+(-4, (16, 6), 3)
+('1ba',)
+('mf', ['West'], 3)
+('01', 'West', 0.00494694709777832)
+(118, 'stt')
+('11', 'North', 0.0055730342864990234)
+(119, 'stt')
+(-4, (15, 6), 3)
+('1ba',)
+('mf', ['West'], 2)
+('01', 'West', 0.003098011016845703)
+(119, 'stt')
+('11', 'East', 0.005484104156494141)
+(120, 'stt')
+(-4, (14, 6), 3)
+('1ba',)
+('mf', ['South'], 1)
+('01', 'South', 0.0018310546875)
+(120, 'stt')
+('11', 'East', 0.0056819915771484375)
+(121, 'stt')
+(-4, (14, 5), 3)
+('1ba',)
+('mf', ['South'], 0)
+('01', 'South', 0.0013289451599121094)
+(121, 'stt')
+('11', 'South', 0.006826877593994141)
+(122, 'stt')
+(-4, (14, 4), 3)
+('1ba',)
+('mf', ['West'], 1)
+('01', 'West', 0.0015940666198730469)
+(122, 'stt')
+('11', 'East', 0.00783991813659668)
+(123, 'stt')
+(-4, (13, 4), 3)
+('1ba',)
+('mf', ['West'], 0)
+('01', 'West', 0.001341104507446289)
+(123, 'stt')
+('11', 'East', 0.00764918327331543)
+(124, 'stt')
+(-4, (12, 4), 3)
+('1ba',)
+('mf', ['South'], 2)
+('01', 'South', 0.001483917236328125)
+(124, 'stt')
+('11', 'East', 0.00957798957824707)
+(125, 'stt')
+(-4, (12, 3), 3)
+('1ba',)
+('mf', ['North'], 5)
+('01', 'North', 0.003818988800048828)
+(125, 'stt')
+('11', 'East', 0.007645130157470703)
+(126, 'stt')
+(-4, (12, 4), 1)
+('1ba',)
+('7ba',)
+('mf', ['North'], 3)
+('01', 'North', 0.0030570030212402344)
+(126, 'stt')
+('11', 'North', 0.008980989456176758)
+(127, 'stt')
+(-4, (12, 5), 1)
+('1ba',)
+('7ba',)
+('mf', ['North'], 2)
+('01', 'North', 0.002496957778930664)
+(127, 'stt')
+('11', 'North', 0.009220123291015625)
+(128, 'stt')
+(-4, (12, 6), 1)
+('1ba',)
+('7ba',)
+('mf', ['North'], 1)
+('01', 'North', 0.0029430389404296875)
+(128, 'stt')
+('11', 'North', 0.007884979248046875)
+(129, 'stt')
+(-4, (12, 7), 1)
+('1ba',)
+('7ba',)
+('mf', ['North'], 0)
+('01', 'North', 0.0013489723205566406)
+(129, 'stt')
+('11', 'North', 0.011278152465820312)
+(130, 'stt')
+(-4, (12, 8), 1)
+('1ba',)
+('7ba',)
+('mf', ['North'], 4)
+('01', 'North', 0.004291057586669922)
+(130, 'stt')
+('11', 'West', 0.008324861526489258)
+(131, 'stt')
+(-4, (12, 9), 1)
+('1ba',)
+('7ba',)
+('mf', ['North'], 3)
+('01', 'North', 0.0030450820922851562)
+(131, 'stt')
+('11', 'West', 0.007700920104980469)
+(132, 'stt')
+(-4, (12, 10), 1)
+('1ba',)
+('7ba',)
+('mf', ['North'], 2)
+('01', 'North', 0.0014917850494384766)
+(132, 'stt')
+('11', 'South', 0.007718086242675781)
+(133, 'stt')
+(-4, (12, 11), 1)
+('1ba',)
+('7ba',)
+('mf', ['North'], 1)
+('01', 'North', 0.0016300678253173828)
+(133, 'stt')
+('11', 'South', 0.009473085403442383)
+(134, 'stt')
+(-4, (12, 12), 1)
+('1ba',)
+('7ba',)
+('mf', ['East'], 0)
+('01', 'East', 0.0013530254364013672)
+(134, 'stt')
+('11', 'South', 0.009389162063598633)
+(135, 'stt')
+(-4, (13, 12), 1)
+('1ba',)
+('7ba',)
+('mf', ['East'], 4)
+('01', 'East', 0.007340908050537109)
+(135, 'stt')
+('11', 'South', 0.009287834167480469)
+(136, 'stt')
+(-4, (14, 12), 1)
+('1ba',)
+('7ba',)
+('mf', ['South'], 3)
+('01', 'South', 0.004179954528808594)
+(136, 'stt')
+('11', 'East', 0.007642030715942383)
+(137, 'stt')
+(-4, (14, 11), 1)
+('1ba',)
+('7ba',)
+('mf', ['South'], 2)
+('01', 'South', 0.001714944839477539)
+(137, 'stt')
+('11', 'East', 0.007678985595703125)
+(138, 'stt')
+(-4, (14, 10), 3)
+('1ba',)
+('7ba',)
+('mf', ['East'], 1)
+('01', 'East', 0.0018010139465332031)
+(138, 'stt')
+('11', 'North', 0.014696836471557617)
+(139, 'stt')
+(-4, (15, 10), 3)
+('1ba',)
+('7ba',)
+('mf', ['East'], 0)
+('01', 'East', 0.001481771469116211)
+(139, 'stt')
+('11', 'North', 0.009536981582641602)
+(140, 'stt')
+(-4, (16, 10), 1)
+('1ba',)
+('7ba',)
+('mf', ['West'], 14)
+('01', 'West', 0.07089114189147949)
+(140, 'stt')
+('11', 'North', 0.009022951126098633)
+(141, 'stt')
+(-4, (15, 10), 1)
+('1ba',)
+('7ba',)
+('mf', ['West'], 12)
+('01', 'West', 0.0464479923248291)
+(141, 'stt')
+('11', 'North', 0.009184122085571289)
+(142, 'stt')
+(-4, (14, 10), 1)
+('1ba',)
+('7ba',)
+('mf', ['South'], 10)
+('01', 'South', 0.036325931549072266)
+(142, 'stt')
+('11', 'West', 0.008144140243530273)
+(143, 'stt')
+(-4, (14, 9), 1)
+('1ba',)
+('7ba',)
+('mf', ['West'], 9)
+('01', 'West', 0.03118109703063965)
+(143, 'stt')
+('11', 'West', 0.008026838302612305)
+(144, 'stt')
+(-4, (13, 9), 1)
+('1ba',)
+('7ba',)
+('mf', ['West'], 8)
+('01', 'West', 0.01658010482788086)
+(144, 'stt')
+('11', 'West', 0.008980989456176758)
+(145, 'stt')
+(-4, (12, 9), 1)
+('1ba',)
+('7ba',)
+('mf', ['South'], 7)
+('01', 'South', 0.014158964157104492)
+(145, 'stt')
+('11', 'West', 0.00830698013305664)
+(146, 'stt')
+(-4, (12, 8), 1)
+('1ba',)
+('7ba',)
+('mf', ['South'], 6)
+('01', 'South', 0.006021022796630859)
+(146, 'stt')
+('11', 'West', 0.008013010025024414)
+(147, 'stt')
+(-4, (12, 7), 1)
+('1ba',)
+('7ba',)
+('mf', ['South'], 5)
+('01', 'South', 0.004511117935180664)
+(147, 'stt')
+('11', 'West', 0.006556987762451172)
+(148, 'stt')
+(-9, (12, 6), 1)
+('1ba',)
+('7ba',)
+('mf', ['South'], 4)
+('01', 'South', 0.004645109176635742)
+(148, 'stt')
+('11', 'West', 0.012455940246582031)
+(149, 'stt')
+(-9, (12, 5), 1)
+('1ba',)
+('7ba',)
+('mf', ['West'], 3)
+('01', 'West', 0.0041179656982421875)
+(149, 'stt')
+('11', 'West', 0.010267019271850586)
+(150, 'stt')
+(-9, (11, 5), 1)
+('1ba',)
+('7ba',)
+('mf', ['West'], 2)
+('01', 'West', 0.0025949478149414062)
+(150, 'stt')
+('11', 'South', 0.009981870651245117)
+(151, 'stt')
+(-9, (10, 5), 1)
+('1ba',)
+('7ba',)
+('mf', ['South'], 1)
+('01', 'South', 0.00213623046875)
+(151, 'stt')
+('11', 'South', 0.008191823959350586)
+(152, 'stt')
+(-9, (10, 4), 1)
+('1ba',)
+('7ba',)
+('mf', ['South'], 0)
+('01', 'South', 0.0013341903686523438)
+(152, 'stt')
+('11', 'South', 0.006262063980102539)
+(153, 'stt')
+(-9, (10, 3), 1)
+('1ba',)
+('7ba',)
+('mf', ['South'], 0)
+('01', 'South', 0.0014150142669677734)
+(153, 'stt')
+('11', 'South', 0.0057408809661865234)
+(154, 'stt')
+(-9, (10, 2), 1)
+('1ba',)
+('7ba',)
+('mf', ['South'], 1)
+('01', 'South', 0.0015819072723388672)
+(154, 'stt')
+('11', 'South', 0.004993915557861328)
+(155, 'stt')
+(-9, (10, 1), 1)
+('1ba',)
+('7ba',)
+('mf', ['West', 'East'], 0)
+('01', 'West', 0.0011591911315917969)
+(155, 'stt')
+('11', 'South', 0.005101919174194336)
+(156, 'stt')
+(-9, (9, 1), 1)
+('1ba',)
+('7ba',)
+('mf', ['West'], 34)
+('01', 'West', 0.3429861068725586)
+(156, 'stt')
+('11', 'South', 0.0035021305084228516)
+(157, 'stt')
+(-9, (8, 1), 1)
+('1ba',)
+('7ba',)
+('mf', ['North'], 12)
+('01', 'North', 0.041667938232421875)
+(157, 'stt')
+('11', 'South', 0.0025589466094970703)
+(158, 'stt')
+(-9, (8, 2), 1)
+('1ba',)
+('7ba',)
+('mf', ['North'], 12)
+('01', 'North', 0.037992000579833984)
+(158, 'stt')
+('11', 'North', 0.002351999282836914)
+(159, 'stt')
+(-9, (8, 3), 1)
+('1ba',)
+('7ba',)
+('mf', ['North'], 11)
+('01', 'North', 0.017921924591064453)
+(159, 'stt')
+('11', 'South', 0.0030279159545898438)
+(160, 'stt')
+(-9, (8, 4), 1)
+('1ba',)
+('7ba',)
+('mf', ['North'], 10)
+('01', 'North', 0.010744810104370117)
+(160, 'stt')
+('11', 'North', 0.002444028854370117)
+(161, 'stt')
+(-9, (8, 5), 1)
+('1ba',)
+('7ba',)
+('mf', ['East'], 8)
+('01', 'East', 0.009167194366455078)
+(161, 'stt')
+('11', 'South', 0.003072977066040039)
+(162, 'stt')
+(-9, (9, 5), 1)
+('1ba',)
+('7ba',)
+('mf', ['East'], 6)
+('01', 'East', 0.005553007125854492)
+(162, 'stt')
+('11', 'South', 0.002437114715576172)
+(163, 'stt')
+(-9, (10, 5), 1)
+('1ba',)
+('7ba',)
+('mf', ['South'], 4)
+('01', 'South', 0.003419160842895508)
+(163, 'stt')
+('11', 'North', 0.0034508705139160156)
+(164, 'stt')
+(-9, (10, 4), 1)
+('1ba',)
+('7ba',)
+('mf', ['South'], 3)
+('01', 'South', 0.0027871131896972656)
+(164, 'stt')
+('11', 'North', 0.002209901809692383)
+(165, 'stt')
+(-9, (10, 3), 1)
+('1ba',)
+('7ba',)
+('mf', ['South'], 2)
+('01', 'South', 0.002274036407470703)
+(165, 'stt')
+('11', 'South', 0.002624988555908203)
+(166, 'stt')
+(-9, (10, 2), 1)
+('1ba',)
+('7ba',)
+('mf', ['South'], 1)
+('01', 'South', 0.0016410350799560547)
+(166, 'stt')
+('11', 'South', 0.002073049545288086)
+(167, 'stt')
+(-9, (10, 1), 1)
+('1ba',)
+('7ba',)
+('mf', ['East'], 0)
+('01', 'East', 0.0012650489807128906)
+(167, 'stt')
+('11', 'North', 0.002643108367919922)
+(168, 'stt')
+(-9, (11, 1), 1)
+('1ba',)
+('7ba',)
+('mf', ['East'], 0)
+('01', 'East', 0.0010120868682861328)
+(168, 'stt')
+('11', 'South', 0.00203704833984375)
+(169, 'stt')
+(-9, (12, 1), 1)
+('1ba',)
+('3ba',)
+('mf', ['East'], 32)
+('01', 'East', 0.24924015998840332)
+(169, 'stt')
+('11', 'North', 0.003072977066040039)
+(170, 'stt')
+(-9, (13, 1), 1)
+('1ba',)
+('3ba',)
+('mf', ['East'], 30)
+('01', 'East', 0.23493218421936035)
+(170, 'stt')
+('11', 'South', 0.002065896987915039)
+(171, 'stt')
+(-9, (14, 1), 1)
+('1ba',)
+('3ba',)
+('mf', ['East'], 30)
+('01', 'East', 0.2252979278564453)
+(171, 'stt')
+('11', 'North', 0.0030570030212402344)
+(172, 'stt')
+(-9, (15, 1), 1)
+('1ba',)
+('3ba',)
+('mf', ['East'], 28)
+('01', 'East', 0.23575091361999512)
+(172, 'stt')
+('11', 'South', 0.002444028854370117)
+(173, 'stt')
+(-9, (16, 1), 1)
+('1ba',)
+('3ba',)
+('mf', ['East'], 28)
+('01', 'East', 0.21025705337524414)
+(173, 'stt')
+('11', 'North', 0.003108978271484375)
+(174, 'stt')
+(7, (17, 1), 1)
+('1ba',)
+('3ba',)
+('mf', ['East'], 24)
+('01', 'East', 0.19303393363952637)
+(174, 'stt')
+('11', 'North', 0.0023839473724365234)
+(175, 'stt')
+(7, (18, 1), 2)
+('1ba',)
+('3ba',)
+('mf', ['East'], 23)
+('01', 'East', 0.17598795890808105)
+(175, 'stt')
+('11', 'South', 0.0071489810943603516)
+(176, 'stt')
+(7, (19, 1), 612)
+('1ba',)
+('3ba',)
+('mf', ['North'], 22)
+('01', 'North', 0.0710899829864502)
+(176, 'stt')
+('11', 'South', 0.006587028503417969)
+(177, 'stt')
+(7, (19, 2), 612)
+('1ba',)
+('3ba',)
+('mf', ['North'], 21)
+('01', 'North', 0.06779313087463379)
+(177, 'stt')
+('11', 'South', 0.007250070571899414)
+(178, 'stt')
+(7, (19, 3), 612)
+('1ba',)
+('3ba',)
+('mf', ['East'], 20)
+('01', 'East', 0.06495094299316406)
+(178, 'stt')
+('11', 'South', 0.008057117462158203)
+(179, 'stt')
+(7, (20, 3), 612)
+('1ba',)
+('3ba',)
+('mf', ['North'], 19)
+('01', 'North', 0.06241011619567871)
+(179, 'stt')
+('11', 'South', 0.008955001831054688)
+(180, 'stt')
+(7, (20, 4), 612)
+('1ba',)
+('mf', ['North'], 14)
+('01', 'North', 0.030865907669067383)
+(180, 'stt')
+('11', 'South', 0.00830698013305664)
+(181, 'stt')
+(7, (20, 5), 612)
+('1ba',)
+('mf', ['West'], 13)
+('01', 'West', 0.022895097732543945)
+(181, 'stt')
+('11', 'North', 0.008418798446655273)
+(182, 'stt')
+(7, (19, 5), 612)
+('1ba',)
+('mf', ['North'], 12)
+('01', 'North', 0.0212399959564209)
+(182, 'stt')
+('11', 'North', 0.007180213928222656)
+(183, 'stt')
+(7, (19, 6), 612)
+('1ba',)
+('mf', ['North'], 11)
+('01', 'North', 0.026233911514282227)
+(183, 'stt')
+('11', 'East', 0.0050089359283447266)
+(184, 'stt')
+(7, (19, 7), 612)
+('1ba',)
+('mf', ['West'], 10)
+('01', 'West', 0.016956090927124023)
+(184, 'stt')
+('11', 'East', 0.005506992340087891)
+(185, 'stt')
+(7, (18, 7), 612)
+('1ba',)
+('mf', ['West'], 9)
+('01', 'West', 0.013183116912841797)
+(185, 'stt')
+('11', 'East', 0.005777120590209961)
+(186, 'stt')
+(7, (17, 7), 612)
+('1ba',)
+('mf', ['West'], 8)
+('01', 'West', 0.010843038558959961)
+(186, 'stt')
+('11', 'South', 0.0061800479888916016)
+(187, 'stt')
+(7, (16, 7), 612)
+('1ba',)
+('mf', ['South'], 7)
+('01', 'South', 0.01389002799987793)
+(187, 'stt')
+('11', 'South', 0.006573915481567383)
+(188, 'stt')
+(7, (16, 6), 612)
+('1ba',)
+('mf', ['West'], 6)
+('01', 'West', 0.0061359405517578125)
+(188, 'stt')
+('11', 'East', 0.007242918014526367)
+(189, 'stt')
+(7, (15, 6), 612)
+('1ba',)
+('mf', ['West'], 5)
+('01', 'West', 0.0043489933013916016)
+(189, 'stt')
+('11', 'East', 0.0075550079345703125)
+(190, 'stt')
+(7, (14, 6), 612)
+('1ba',)
+('mf', ['South'], 4)
+('01', 'South', 0.0030291080474853516)
+(190, 'stt')
+('11', 'East', 0.00654292106628418)
+(191, 'stt')
+(7, (14, 5), 612)
+('1ba',)
+('mf', ['South'], 3)
+('01', 'South', 0.001255035400390625)
+(191, 'stt')
+('11', 'East', 0.006279945373535156)
+(192, 'stt')
+(7, (14, 4), 612)
+('1ba',)
+('mf', ['South'], 2)
+('01', 'South', 0.0014171600341796875)
+(192, 'stt')
+('11', 'East', 0.00760197639465332)
+(193, 'stt')
+(7, (14, 3), 612)
+('1ba',)
+('mf', ['North'], 11)
+('01', 'North', 0.012249946594238281)
+(193, 'stt')
+('11', 'East', 0.007598876953125)
+(194, 'stt')
+(7, (14, 4), 612)
+('1ba',)
+('mf', ['West'], 9)
+('01', 'West', 0.009426116943359375)
+(194, 'stt')
+('11', 'East', 0.013224124908447266)
+(195, 'stt')
+(7, (13, 4), 612)
+('1ba',)
+('mf', ['West'], 8)
+('01', 'West', 0.0073969364166259766)
+(195, 'stt')
+('11', 'North', 0.00730586051940918)
+(196, 'stt')
+(7, (12, 4), 612)
+('1ba',)
+('mf', ['North'], 7)
+('01', 'North', 0.006524801254272461)
+(196, 'stt')
+('11', 'North', 0.012456893920898438)
+(197, 'stt')
+(7, (12, 5), 612)
+('1ba',)
+('mf', ['West'], 6)
+('01', 'West', 0.005917072296142578)
+(197, 'stt')
+('11', 'North', 0.01296687126159668)
+(198, 'stt')
+(7, (11, 5), 612)
+('1ba',)
+('mf', ['West'], 5)
+('01', 'West', 0.005057096481323242)
+(198, 'stt')
+('11', 'East', 0.009373903274536133)
+(199, 'stt')
+(7, (10, 5), 612)
+('1ba',)
+('mf', ['West'], 4)
+('01', 'West', 0.0040700435638427734)
+(199, 'stt')
+('11', 'East', 0.010322093963623047)
+(200, 'stt')
+(7, (9, 5), 612)
+('1ba',)
+('mf', ['West'], 3)
+('01', 'West', 0.0018620491027832031)
+(200, 'stt')
+('11', 'South', 0.010503053665161133)
+(201, 'stt')
+(7, (8, 5), 612)
+('1ba',)
+('mf', ['North'], 2)
+('01', 'North', 0.0013720989227294922)
+(201, 'stt')
+('11', 'North', 0.008591890335083008)
+(202, 'stt')
+(7, (8, 6), 612)
+('1ba',)
+('mf', ['South'], 5)
+('01', 'South', 0.0023200511932373047)
+(202, 'stt')
+('11', 'South', 0.012243032455444336)
+(203, 'stt')
+(7, (8, 5), 612)
+('1ba',)
+('mf', ['South'], 3)
+('01', 'South', 0.0016632080078125)
+(203, 'stt')
+('11', 'North', 0.008101940155029297)
+(204, 'stt')
+(7, (8, 4), 612)
+('1ba',)
+('mf', ['South'], 2)
+('01', 'South', 0.0012941360473632812)
+(204, 'stt')
+('11', 'South', 0.01182699203491211)
+(205, 'stt')
+(7, (8, 3), 612)
+('1ba',)
+('mf', ['South'], 1)
+('01', 'South', 0.001241922378540039)
+(205, 'stt')
+('11', 'North', 0.009712934494018555)
+(206, 'stt')
+(7, (8, 2), 612)
+('1ba',)
+('mf', ['West'], 0)
+('01', 'West', 0.0011429786682128906)
+(206, 'stt')
+('11', 'South', 0.009747028350830078)
+(207, 'stt')
+(7, (7, 2), 612)
+('1ba',)
+('mf', ['West'], 12)
+('01', 'West', 0.016717910766601562)
+(207, 'stt')
+('11', 'North', 0.009392976760864258)
+(208, 'stt')
+(7, (6, 2), 612)
+('1ba',)
+('mf', ['North'], 11)
+('01', 'North', 0.022243022918701172)
+(208, 'stt')
+('11', 'South', 0.011612892150878906)
+(209, 'stt')
+(7, (6, 3), 612)
+('1ba',)
+('mf', ['North'], 10)
+('01', 'North', 0.013202905654907227)
+(209, 'stt')
+('11', 'North', 0.009523153305053711)
+(210, 'stt')
+(7, (6, 4), 612)
+('1ba',)
+('mf', ['West'], 9)
+('01', 'West', 0.010403871536254883)
+(210, 'stt')
+('11', 'South', 0.011705160140991211)
+(211, 'stt')
+(7, (5, 4), 612)
+('1ba',)
+('mf', ['North'], 8)
+('01', 'North', 0.007589817047119141)
+(211, 'stt')
+('11', 'North', 0.008213043212890625)
+(212, 'stt')
+(7, (5, 5), 612)
+('1ba',)
+('mf', ['North'], 7)
+('01', 'North', 0.005896091461181641)
+(212, 'stt')
+('11', 'South', 0.011445999145507812)
+(213, 'stt')
+(7, (5, 6), 612)
+('1ba',)
+('mf', ['West'], 6)
+('01', 'West', 0.005921840667724609)
+(213, 'stt')
+('11', 'North', 0.009367942810058594)
+(214, 'stt')
+(7, (4, 6), 612)
+('1ba',)
+('mf', ['North'], 5)
+('01', 'North', 0.004748106002807617)
+(214, 'stt')
+('11', 'South', 0.011954069137573242)
+(215, 'stt')
+(7, (4, 7), 612)
+('1ba',)
+('mf', ['North'], 4)
+('01', 'North', 0.0029611587524414062)
+(215, 'stt')
+('11', 'North', 0.009934186935424805)
+(216, 'stt')
+(7, (4, 8), 612)
+('1ba',)
+('mf', ['North'], 3)
+('01', 'North', 0.002477884292602539)
+(216, 'stt')
+('11', 'South', 0.0119781494140625)
+(217, 'stt')
+(7, (4, 9), 612)
+('1ba',)
+('mf', ['East'], 2)
+('01', 'East', 0.0018150806427001953)
+(217, 'stt')
+('11', 'North', 0.00946497917175293)
+(218, 'stt')
+(7, (5, 9), 612)
+('1ba',)
+('mf', ['West'], 15)
+('01', 'West', 0.022851228713989258)
+(218, 'stt')
+('11', 'South', 0.011807918548583984)
+(219, 'stt')
+(2, (4, 9), 612)
+('1ba',)
+('mf', ['North'], 13)
+('01', 'North', 0.019730091094970703)
+(219, 'stt')
+('11', 'North', 0.009857892990112305)
+(220, 'stt')
+(2, (4, 10), 612)
+('1ba',)
+('mf', ['North'], 12)
+('01', 'North', 0.010671138763427734)
+(220, 'stt')
+('11', 'South', 0.011297941207885742)
+(221, 'stt')
+(2, (4, 11), 612)
+('1ba',)
+('mf', ['North'], 11)
+('01', 'North', 0.008311986923217773)
+(221, 'stt')
+('11', 'North', 0.007879018783569336)
+(222, 'stt')
+(2, (4, 12), 612)
+('1ba',)
+('mf', ['East'], 10)
+('01', 'East', 0.009420156478881836)
+(222, 'stt')
+('11', 'South', 0.013365030288696289)
+(223, 'stt')
+(2, (5, 12), 612)
+('1ba',)
+('mf', ['East'], 9)
+('01', 'East', 0.008081912994384766)
+(223, 'stt')
+('11', 'North', 0.007879972457885742)
+(224, 'stt')
+(2, (6, 12), 612)
+('1ba',)
+('mf', ['North'], 8)
+('01', 'North', 0.009946107864379883)
+(224, 'stt')
+('11', 'South', 0.009813070297241211)
+(225, 'stt')
+(2, (6, 13), 612)
+('1ba',)
+('mf', ['North'], 7)
+('01', 'North', 0.006088972091674805)
+(225, 'stt')
+('11', 'North', 0.009465217590332031)
+(226, 'stt')
+(2, (6, 14), 612)
+('1ba',)
+('mf', ['West'], 6)
+('01', 'West', 0.004183769226074219)
+(226, 'stt')
+('11', 'South', 0.009957075119018555)
+(227, 'stt')
+(2, (5, 14), 612)
+('1ba',)
+('mf', ['West'], 5)
+('01', 'West', 0.0032329559326171875)
+(227, 'stt')
+('11', 'North', 0.009684085845947266)
+(228, 'stt')
+(2, (4, 14), 612)
+('1ba',)
+('mf', ['West'], 4)
+('01', 'West', 0.0017991065979003906)
+(228, 'stt')
+('11', 'South', 0.010282039642333984)
+(229, 'stt')
+(2, (3, 14), 612)
+('1ba',)
+('mf', ['West'], 3)
+('01', 'West', 0.0014989376068115234)
+(229, 'stt')
+('11', 'North', 0.009502172470092773)
+(230, 'stt')
+(2, (2, 14), 612)
+('1ba',)
+('mf', ['West'], 4)
+('01', 'West', 0.001859903335571289)
+(230, 'stt')
+('11', 'South', 0.011481046676635742)
+(231, 'stt')
+(2, (1, 14), 612)
+('1ba',)
+('mf', ['East'], 12)
+('01', 'East', 0.004809856414794922)
+(231, 'stt')
+('11', 'North', 0.009126901626586914)
+(232, 'stt')
+(2, (2, 14), 612)
+('1ba',)
+('mf', ['East'], 10)
+('01', 'East', 0.004189968109130859)
+(232, 'stt')
+('11', 'South', 0.012062788009643555)
+(233, 'stt')
+(2, (3, 14), 612)
+('1ba',)
+('mf', ['East'], 8)
+('01', 'East', 0.004302978515625)
+(233, 'stt')
+('11', 'North', 0.011276006698608398)
+(234, 'stt')
+(2, (4, 14), 612)
+('1ba',)
+('mf', ['North'], 6)
+('01', 'North', 0.004153013229370117)
+(234, 'stt')
+('11', 'South', 0.01017904281616211)
+(235, 'stt')
+(2, (4, 15), 612)
+('1ba',)
+('mf', ['North'], 5)
+('01', 'North', 0.0022301673889160156)
+(235, 'stt')
+('11', 'North', 0.010699987411499023)
+(236, 'stt')
+(2, (4, 16), 612)
+('1ba',)
+('mf', ['West'], 4)
+('01', 'West', 0.0020329952239990234)
+(236, 'stt')
+('11', 'South', 0.016357898712158203)
+(237, 'stt')
+(2, (3, 16), 612)
+('1ba',)
+('mf', ['West'], 3)
+('01', 'West', 0.0019228458404541016)
+(237, 'stt')
+('11', 'North', 0.009118080139160156)
+(238, 'stt')
+(2, (2, 16), 612)
+('1ba',)
+('mf', ['West'], 4)
+('01', 'West', 0.0013151168823242188)
+(238, 'stt')
+('11', 'South', 0.009969949722290039)
+(239, 'stt')
+(2, (1, 16), 612)
+('1ba',)
+('mf', ['East'], 31)
+('01', 'East', 0.16443896293640137)
+(239, 'stt')
+('11', 'North', 0.010911941528320312)
+(240, 'stt')
+(2, (2, 16), 612)
+('1ba',)
+('mf', ['East'], 29)
+('01', 'East', 0.1557159423828125)
+(240, 'stt')
+('11', 'South', 0.009793996810913086)
+(241, 'stt')
+(2, (3, 16), 612)
+('1ba',)
+('mf', ['East'], 27)
+('01', 'East', 0.12483692169189453)
+(241, 'stt')
+('11', 'North', 0.009401082992553711)
+(242, 'stt')
+(2, (4, 16), 612)
+('1ba',)
+('mf', ['South'], 24)
+('01', 'South', 0.12951111793518066)
+(242, 'stt')
+('11', 'South', 0.009984970092773438)
+(243, 'stt')
+(1, (4, 15), 612)
+('1ba',)
+('mf', ['South'], 22)
+('01', 'South', 0.10881614685058594)
+(243, 'stt')
+('11', 'North', 0.009441137313842773)
+(244, 'stt')
+(1, (4, 14), 612)
+('1ba',)
+('mf', ['East'], 21)
+('01', 'East', 0.10523319244384766)
+(244, 'stt')
+('11', 'South', 0.01000213623046875)
+(245, 'stt')
+(1, (5, 14), 612)
+('1ba',)
+('mf', ['East'], 20)
+('01', 'East', 0.09995889663696289)
+(245, 'stt')
+('11', 'North', 0.010851860046386719)
+(246, 'stt')
+(1, (6, 14), 612)
+('1ba',)
+('mf', ['South'], 19)
+('01', 'South', 0.0914618968963623)
+(246, 'stt')
+('11', 'South', 0.017460107803344727)
+(247, 'stt')
+(1, (6, 13), 612)
+('1ba',)
+('mf', ['South'], 18)
+('01', 'South', 0.06563496589660645)
+(247, 'stt')
+('11', 'North', 0.010822772979736328)
+(248, 'stt')
+(1, (6, 12), 612)
+('1ba',)
+('mf', ['South'], 17)
+('01', 'South', 0.04215502738952637)
+(248, 'stt')
+('11', 'South', 0.008307218551635742)
+(249, 'stt')
+(1, (6, 11), 612)
+('1ba',)
+('mf', ['West'], 16)
+('01', 'West', 0.03651094436645508)
+(249, 'stt')
+('11', 'North', 0.015073060989379883)
+(250, 'stt')
+(1, (5, 11), 612)
+('1ba',)
+('mf', ['West'], 15)
+('01', 'West', 0.028902053833007812)
+(250, 'stt')
+('11', 'South', 0.009990930557250977)
+(251, 'stt')
+(1, (4, 11), 612)
+('1ba',)
+('mf', ['South'], 14)
+('01', 'South', 0.02573704719543457)
+(251, 'stt')
+('11', 'North', 0.009248018264770508)
+(252, 'stt')
+(1, (4, 10), 612)
+('1ba',)
+('mf', ['South'], 13)
+('01', 'South', 0.01979684829711914)
+(252, 'stt')
+('11', 'South', 0.011291027069091797)
+(253, 'stt')
+(1, (4, 9), 612)
+('1ba',)
+('mf', ['South'], 12)
+('01', 'South', 0.016978025436401367)
+(253, 'stt')
+('11', 'North', 0.009268999099731445)
+(254, 'stt')
+(1, (4, 8), 612)
+('1ba',)
+('mf', ['South'], 11)
+('01', 'South', 0.012718915939331055)
+(254, 'stt')
+('11', 'South', 0.011522054672241211)
+(255, 'stt')
+(1, (4, 7), 612)
+('1ba',)
+('mf', ['South'], 10)
+('01', 'South', 0.014770030975341797)
+(255, 'stt')
+('11', 'North', 0.009352922439575195)
+(256, 'stt')
+(1, (4, 6), 612)
+('1ba',)
+('mf', ['West'], 9)
+('01', 'West', 0.010281085968017578)
+(256, 'stt')
+('11', 'South', 0.01188516616821289)
+(257, 'stt')
+(1, (3, 6), 612)
+('1ba',)
+('mf', ['West'], 8)
+('01', 'West', 0.006400108337402344)
+(257, 'stt')
+('11', 'North', 0.007887125015258789)
+(258, 'stt')
+(1, (2, 6), 612)
+('1ba',)
+('mf', ['West'], 7)
+('01', 'West', 0.0036809444427490234)
+(258, 'stt')
+('11', 'South', 0.01014399528503418)
+(259, 'stt')
+(1, (1, 6), 612)
+('1ba',)
+('mf', ['North'], 6)
+('01', 'North', 0.002028942108154297)
+(259, 'stt')
+('11', 'North', 0.006793022155761719)
+(260, 'stt')
+(1, (1, 7), 612)
+('1ba',)
+('mf', ['North'], 5)
+('01', 'North', 0.0014629364013671875)
+(260, 'stt')
+('11', 'South', 0.04185986518859863)
+(261, 'stt')
+(1, (1, 8), 612)
+('1ba',)
+('4ba',)
+('mf', ['South'], 34)
+('01', 'South', 0.1315898895263672)
+(261, 'stt')
+('11', 'West', 0.03969717025756836)
+(262, 'stt')
+(1, (1, 7), 4)
+('1ba',)
+('4ba',)
+('mf', [], 612)
+('00', 'South', 0.0011181831359863281)
+(262, 'stt')
+('11', 'West', 0.035550832748413086)
+(263, 'stt')
+(1, (1, 6), 2)
+('1ba',)
+('3ba',)
+('mf', ['East'], 24)
+('01', 'East', 0.06936907768249512)
+(263, 'stt')
+('11', 'South', 0.05126595497131348)
+(264, 'stt')
+(1, (2, 6), 2)
+('1ba',)
+('3ba',)
+('mf', ['East'], 29)
+('01', 'East', 0.09928107261657715)
+(264, 'stt')
+('11', 'South', 0.027871131896972656)
+(265, 'stt')
+(1, (3, 6), 2)
+('1ba',)
+('3ba',)
+('mf', ['South'], 27)
+('01', 'South', 0.1096031665802002)
+(265, 'stt')
+('11', 'West', 0.025665998458862305)
+(266, 'stt')
+(1, (3, 5), 2)
+('1ba',)
+('3ba',)
+('mf', ['South'], 26)
+('01', 'South', 0.10459709167480469)
+(266, 'stt')
+('11', 'West', 0.026525020599365234)
+(267, 'stt')
+(1, (3, 4), 2)
+('1ba',)
+('3ba',)
+('mf', ['East'], 23)
+('01', 'East', 0.1125328540802002)
+(267, 'stt')
+('11', 'West', 0.021080970764160156)
+(268, 'stt')
+(1, (4, 4), 2)
+('1ba',)
+('3ba',)
+('mf', ['East'], 22)
+('01', 'East', 0.10373497009277344)
+(268, 'stt')
+('11', 'West', 0.023884057998657227)
+(269, 'stt')
+(1, (5, 4), 2)
+('1ba',)
+('3ba',)
+('mf', ['North'], 21)
+('01', 'North', 0.0872039794921875)
+(269, 'stt')
+('11', 'West', 0.020277976989746094)
+(270, 'stt')
+(1, (5, 5), 2)
+('1ba',)
+('3ba',)
+('mf', ['North'], 20)
+('01', 'North', 0.04489612579345703)
+(270, 'stt')
+('11', 'West', 0.017686843872070312)
+(271, 'stt')
+(1, (5, 6), 2)
+('1ba',)
+('3ba',)
+('mf', ['West'], 19)
+('01', 'West', 0.04117989540100098)
+(271, 'stt')
+('11', 'North', 0.014991998672485352)
+(272, 'stt')
+(1, (4, 6), 2)
+('1ba',)
+('3ba',)
+('mf', ['North'], 18)
+('01', 'North', 0.05050301551818848)
+(272, 'stt')
+('11', 'North', 0.012338876724243164)
+(273, 'stt')
+(1, (4, 7), 2)
+('1ba',)
+('3ba',)
+('mf', ['North'], 17)
+('01', 'North', 0.03587794303894043)
+(273, 'stt')
+('11', 'West', 0.01188206672668457)
+(274, 'stt')
+(1, (4, 8), 2)
+('1ba',)
+('3ba',)
+('mf', ['North'], 16)
+('01', 'North', 0.033057212829589844)
+(274, 'stt')
+('11', 'West', 0.010059118270874023)
+(275, 'stt')
+(1, (4, 9), 2)
+('1ba',)
+('3ba',)
+('mf', ['North'], 15)
+('01', 'North', 0.03406214714050293)
+(275, 'stt')
+('11', 'North', 0.008203983306884766)
+(276, 'stt')
+(1, (4, 10), 2)
+('1ba',)
+('3ba',)
+('mf', ['North'], 14)
+('01', 'North', 0.022426843643188477)
+(276, 'stt')
+('11', 'North', 0.0066988468170166016)
+(277, 'stt')
+(1, (4, 11), 2)
+('1ba',)
+('3ba',)
+('mf', ['North'], 13)
+('01', 'North', 0.020208120346069336)
+(277, 'stt')
+('11', 'West', 0.005743980407714844)
+(278, 'stt')
+(1, (4, 12), 2)
+('1ba',)
+('3ba',)
+('mf', ['East'], 12)
+('01', 'East', 0.01922607421875)
+(278, 'stt')
+('11', 'West', 0.004180908203125)
+(279, 'stt')
+(1, (5, 12), 2)
+('1ba',)
+('3ba',)
+('mf', ['East'], 11)
+('01', 'East', 0.01985788345336914)
+(279, 'stt')
+('11', 'North', 0.003323078155517578)
+(280, 'stt')
+(1, (6, 12), 2)
+('1ba',)
+('3ba',)
+('mf', ['North'], 10)
+('01', 'North', 0.017001867294311523)
+(280, 'stt')
+('11', 'North', 0.002683877944946289)
+(281, 'stt')
+(1, (6, 13), 2)
+('1ba',)
+('3ba',)
+('mf', ['North'], 9)
+('01', 'North', 0.012794017791748047)
+(281, 'stt')
+('11', 'North', 0.0022110939025878906)
+(282, 'stt')
+(1, (6, 14), 2)
+('1ba',)
+('3ba',)
+('mf', ['East'], 8)
+('01', 'East', 0.013435125350952148)
+(282, 'stt')
+('11', 'South', 0.0028891563415527344)
+(283, 'stt')
+(1, (7, 14), 2)
+('1ba',)
+('3ba',)
+('mf', ['East'], 7)
+('01', 'East', 0.011388063430786133)
+(283, 'stt')
+('11', 'South', 0.002165079116821289)
+(284, 'stt')
+(1, (8, 14), 2)
+('1ba',)
+('3ba',)
+('mf', ['East'], 6)
+('01', 'East', 0.006609916687011719)
+(284, 'stt')
+('11', 'North', 0.002074003219604492)
+(285, 'stt')
+(1, (9, 14), 2)
+('1ba',)
+('3ba',)
+('mf', ['East'], 5)
+('01', 'East', 0.005644083023071289)
+(285, 'stt')
+('11', 'South', 0.002176046371459961)
+(286, 'stt')
+(1, (10, 14), 2)
+('1ba',)
+('3ba',)
+('mf', ['East'], 4)
+('01', 'East', 0.004812955856323242)
+(286, 'stt')
+('11', 'North', 0.0030150413513183594)
+(287, 'stt')
+(1, (11, 14), 2)
+('1ba',)
+('3ba',)
+('mf', ['East'], 3)
+('01', 'East', 0.004073143005371094)
+(287, 'stt')
+('11', 'South', 0.002176046371459961)
+(288, 'stt')
+(1, (12, 14), 2)
+('1ba',)
+('3ba',)
+('mf', ['East'], 2)
+('01', 'East', 0.0034170150756835938)
+(288, 'stt')
+('11', 'North', 0.002716064453125)
+(289, 'stt')
+(1, (13, 14), 2)
+('1ba',)
+('3ba',)
+('mf', ['East'], 1)
+('01', 'East', 0.0018570423126220703)
+(289, 'stt')
+('11', 'North', 0.003091096878051758)
+(290, 'stt')
+(1, (14, 14), 2)
+('1ba',)
+('mf', ['North'], 36)
+('01', 'North', 0.5274569988250732)
+(290, 'stt')
+('11', 'South', 0.0029060840606689453)
+(291, 'stt')
+(1, (14, 15), 4)
+('1ba',)
+('mf', ['South'], 30)
+('01', 'South', 0.3490900993347168)
+(291, 'stt')
+('11', 'North', 0.0021610260009765625)
+(292, 'stt')
+(1, (14, 14), 2)
+('1ba',)
+('6ba',)
+('mf', ['North'], 6)
+('01', 'North', 0.006964921951293945)
+(292, 'stt')
+('11', 'South', 0.0023691654205322266)
+(293, 'stt')
+(1, (14, 15), 4)
+('1ba',)
+('6ba',)
+('mf', ['North'], 4)
+('01', 'North', 0.0028967857360839844)
+(293, 'stt')
+('11', 'North', 0.0019459724426269531)
+(294, 'stt')
+(1, (14, 16), 6)
+('1ba',)
+('6ba',)
+('mf', ['East'], 3)
+('01', 'East', 0.003030061721801758)
+(294, 'stt')
+('11', 'South', 0.002262115478515625)
+(295, 'stt')
+(1, (15, 16), 6)
+('1ba',)
+('6ba',)
+('mf', ['East'], 2)
+('01', 'East', 0.002463102340698242)
+(295, 'stt')
+('11', 'South', 0.0019919872283935547)
+(296, 'stt')
+(1, (16, 16), 4)
+('1ba',)
+('6ba',)
+('mf', ['East'], 1)
+('01', 'East', 0.0016400814056396484)
+(296, 'stt')
+('11', 'North', 0.002669095993041992)
+(297, 'stt')
+(10, (17, 16), 10)
+('1ba',)
+('6ba',)
+('mf', ['East'], 30)
+('01', 'East', 0.2185361385345459)
+(297, 'stt')
+('11', 'North', 0.0025789737701416016)
+(298, 'stt')
+(10, (18, 16), 10)
+('1ba',)
+('6ba',)
+('mf', ['West'], 2)
+('01', 'West', 0.0012698173522949219)
+(298, 'stt')
+('11', 'North', 0.0025751590728759766)
+(299, 'stt')
+(10, (17, 16), 8)
+('1ba',)
+('6ba',)
+('mf', ['East'], 31)
+('01', 'East', 0.24918794631958008)
+(299, 'stt')
+('11', 'South', 0.003422975540161133)
+(300, 'stt')
+(10, (18, 16), 8)
+('1ba',)
+('6ba',)
+('mf', ['East'], 18)
+('01', 'East', 0.03879499435424805)
+(300, 'stt')
+('11', 'South', 0.002819061279296875)
+Time is up.
+The Blue team wins by 10 points.
+recorded
+

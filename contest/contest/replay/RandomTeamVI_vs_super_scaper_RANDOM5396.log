@@ -1,0 +1,2363 @@
+Archive:  contest_and_teams.zip
+   creating: contest-tmp/bin/
+   creating: contest-tmp/layouts/
+   creating: contest-tmp/teams/
+  inflating: contest-tmp/game.py     
+  inflating: contest-tmp/contest.html  
+  inflating: contest-tmp/textDisplay.py  
+  inflating: contest-tmp/mazeGenerator.py  
+  inflating: contest-tmp/VERSION     
+  inflating: contest-tmp/myTeam.py   
+  inflating: contest-tmp/keyboardAgents.py  
+  inflating: contest-tmp/autograder.py  
+  inflating: contest-tmp/generateTournamentLayouts.py  
+  inflating: contest-tmp/baselineTeam.py  
+  inflating: contest-tmp/graphicsDisplay.py  
+  inflating: contest-tmp/graphicsUtils.py  
+  inflating: contest-tmp/pacman.py   
+  inflating: contest-tmp/capture_the_flag.png  
+  inflating: contest-tmp/contestLayout.png  
+  inflating: contest-tmp/unpack.py   
+  inflating: contest-tmp/testParser.py  
+  inflating: contest-tmp/capture.py  
+  inflating: contest-tmp/testClasses.py  
+  inflating: contest-tmp/projects.css  
+  inflating: contest-tmp/captureAgents.py  
+  inflating: contest-tmp/pacmanAgents.py  
+  inflating: contest-tmp/distanceCalculator.py  
+  inflating: contest-tmp/layout.py   
+  inflating: contest-tmp/captureGraphicsDisplay.py  
+  inflating: contest-tmp/bracket.png  
+  inflating: contest-tmp/ghostAgents.py  
+  inflating: contest-tmp/util.py     
+  inflating: contest-tmp/capture_the_flag2.png  
+   creating: contest-tmp/layouts/layouts/
+  inflating: contest-tmp/layouts/contest17Capture.lay  
+  inflating: contest-tmp/layouts/testCapture.lay  
+  inflating: contest-tmp/layouts/contest03Capture.lay  
+  inflating: contest-tmp/layouts/contest14Capture.lay  
+  inflating: contest-tmp/layouts/contest20Capture.lay  
+  inflating: contest-tmp/layouts/contest15cCapture.lay  
+  inflating: contest-tmp/layouts/contest13Capture.lay  
+  inflating: contest-tmp/layouts/contest04cCapture.lay  
+  inflating: contest-tmp/layouts/contest17cCapture.lay  
+  inflating: contest-tmp/layouts/contest18cCapture.lay  
+  inflating: contest-tmp/layouts/contest03cCapture.lay  
+  inflating: contest-tmp/layouts/contest11Capture.lay  
+  inflating: contest-tmp/layouts/contest19cCapture.lay  
+  inflating: contest-tmp/layouts/contest16Capture.lay  
+  inflating: contest-tmp/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/layouts/alleyCapture.lay  
+  inflating: contest-tmp/layouts/contest07Capture.lay  
+  inflating: contest-tmp/layouts/contest15Capture.lay  
+  inflating: contest-tmp/layouts/mediumCapture.lay  
+  inflating: contest-tmp/layouts/contest16cCapture.lay  
+  inflating: contest-tmp/layouts/contest04Capture.lay  
+  inflating: contest-tmp/layouts/bloxCapture.lay  
+  inflating: contest-tmp/layouts/contest01cCapture.lay  
+  inflating: contest-tmp/layouts/contest06Capture.lay  
+  inflating: contest-tmp/layouts/contest05Capture.lay  
+  inflating: contest-tmp/layouts/defaultCapture.lay  
+  inflating: contest-tmp/layouts/contest18Capture.lay  
+  inflating: contest-tmp/layouts/contest02cCapture.lay  
+  inflating: contest-tmp/layouts/strategicCapture.lay  
+  inflating: contest-tmp/layouts/contest20cCapture.lay  
+  inflating: contest-tmp/layouts/contest12Capture.lay  
+  inflating: contest-tmp/layouts/jumboCapture.lay  
+  inflating: contest-tmp/layouts/contest19Capture.lay  
+  inflating: contest-tmp/layouts/fastCapture.lay  
+  inflating: contest-tmp/layouts/contest07cCapture.lay  
+  inflating: contest-tmp/layouts/tinyCapture.lay  
+  inflating: contest-tmp/layouts/contest09Capture.lay  
+  inflating: contest-tmp/layouts/contest08Capture.lay  
+  inflating: contest-tmp/layouts/contest02Capture.lay  
+  inflating: contest-tmp/layouts/contest06cCapture.lay  
+  inflating: contest-tmp/layouts/contest10Capture.lay  
+  inflating: contest-tmp/layouts/distantCapture.lay  
+  inflating: contest-tmp/layouts/contest01Capture.lay  
+  inflating: contest-tmp/layouts/officeCapture.lay  
+  inflating: contest-tmp/layouts/contest05cCapture.lay  
+   creating: contest-tmp/teams/123/
+   creating: contest-tmp/teams/2Defence/
+   creating: contest-tmp/teams/404/
+   creating: contest-tmp/teams/404TeamNamenotfound/
+   creating: contest-tmp/teams/AIFighter/
+   creating: contest-tmp/teams/AI_Rookie/
+   creating: contest-tmp/teams/ARP/
+   creating: contest-tmp/teams/AliEn/
+   creating: contest-tmp/teams/Alive/
+   creating: contest-tmp/teams/Allogator/
+   creating: contest-tmp/teams/Artificialidiot/
+   creating: contest-tmp/teams/Avatar/
+   creating: contest-tmp/teams/BetaPacMc3/
+   creating: contest-tmp/teams/BetterThanBaselineTeam/
+   creating: contest-tmp/teams/Chicken-Dinner/
+   creating: contest-tmp/teams/Coder/
+   creating: contest-tmp/teams/DEVGRU/
+   creating: contest-tmp/teams/DSS/
+   creating: contest-tmp/teams/Dark-Flame-Master/
+   creating: contest-tmp/teams/Deox/
+   creating: contest-tmp/teams/ERC/
+   creating: contest-tmp/teams/ES/
+   creating: contest-tmp/teams/EvilGeniuses/
+   creating: contest-tmp/teams/EvilPacman/
+   creating: contest-tmp/teams/FGO/
+   creating: contest-tmp/teams/FatHeadFish/
+   creating: contest-tmp/teams/FatMan/
+   creating: contest-tmp/teams/GrantWard/
+   creating: contest-tmp/teams/H2O2/
+   creating: contest-tmp/teams/HelloKitty/
+   creating: contest-tmp/teams/HelloPacman/
+   creating: contest-tmp/teams/HelloTeam1213/
+   creating: contest-tmp/teams/HelloWorld/
+   creating: contest-tmp/teams/Higher_Brothers/
+   creating: contest-tmp/teams/HouseofPac/
+   creating: contest-tmp/teams/IHateCapsule/
+   creating: contest-tmp/teams/IPhoneX/
+   creating: contest-tmp/teams/ITCrowd/
+   creating: contest-tmp/teams/InfiniteLoop/
+   creating: contest-tmp/teams/Inky_Blinky_and_Clyde/
+   creating: contest-tmp/teams/InvictusGaming/
+   creating: contest-tmp/teams/InvincibleGhosts/
+   creating: contest-tmp/teams/MMM/
+   creating: contest-tmp/teams/MrTuring/
+   creating: contest-tmp/teams/New_continue/
+   creating: contest-tmp/teams/OffDef/
+   creating: contest-tmp/teams/PACMAN/
+   creating: contest-tmp/teams/PacKid/
+   creating: contest-tmp/teams/PacMan/
+   creating: contest-tmp/teams/PacMaster/
+   creating: contest-tmp/teams/PacMax/
+   creating: contest-tmp/teams/PaceMin/
+   creating: contest-tmp/teams/PacmanNotNull/
+   creating: contest-tmp/teams/Pacmon-Sun-and-Moon/
+   creating: contest-tmp/teams/Pacsain_Bolt/
+   creating: contest-tmp/teams/PandaTV/
+   creating: contest-tmp/teams/Patman/
+   creating: contest-tmp/teams/Pokeman/
+   creating: contest-tmp/teams/QCR/
+   creating: contest-tmp/teams/R2D2/
+   creating: contest-tmp/teams/RMY/
+   creating: contest-tmp/teams/RNG/
+   creating: contest-tmp/teams/RandomTeamVI/
+   creating: contest-tmp/teams/RealDaddy/
+   creating: contest-tmp/teams/Reaper/
+   creating: contest-tmp/teams/RoguePi/
+   creating: contest-tmp/teams/SBAI_PURE/
+   creating: contest-tmp/teams/ShallowMind/
+   creating: contest-tmp/teams/SunMicrosystemsInc/
+   creating: contest-tmp/teams/TLH/
+   creating: contest-tmp/teams/TeamLads_Q_H/
+   creating: contest-tmp/teams/WaterMelon/
+   creating: contest-tmp/teams/Werewolf/
+   creating: contest-tmp/teams/WindyDay/
+   creating: contest-tmp/teams/Y.Z.S/
+   creating: contest-tmp/teams/ZZZTeam/
+   creating: contest-tmp/teams/ai-pddl/
+   creating: contest-tmp/teams/betaGo/
+   creating: contest-tmp/teams/bias/
+   creating: contest-tmp/teams/chickendinner/
+   creating: contest-tmp/teams/coffee/
+   creating: contest-tmp/teams/contestrndmnm/
+   creating: contest-tmp/teams/deltaforce/
+   creating: contest-tmp/teams/disabledPacman4/
+   creating: contest-tmp/teams/farseer/
+   creating: contest-tmp/teams/friedOreo/
+   creating: contest-tmp/teams/go_home_safe/
+   creating: contest-tmp/teams/iceice/
+   creating: contest-tmp/teams/lexus/
+   creating: contest-tmp/teams/loserswishes/
+   creating: contest-tmp/teams/marshmallow/
+   creating: contest-tmp/teams/montecarlo2/
+   creating: contest-tmp/teams/myADmilk/
+   creating: contest-tmp/teams/oEtFKY/
+   creating: contest-tmp/teams/omega-go/
+   creating: contest-tmp/teams/pacsain_bolt/
+   creating: contest-tmp/teams/pass/
+   creating: contest-tmp/teams/press_any_key/
+   creating: contest-tmp/teams/song2/
+   creating: contest-tmp/teams/staff_team_basic/
+   creating: contest-tmp/teams/staff_team_medium/
+   creating: contest-tmp/teams/staff_team_top/
+   creating: contest-tmp/teams/super_scaper/
+   creating: contest-tmp/teams/superpacman/
+   creating: contest-tmp/teams/testrunning/
+   creating: contest-tmp/teams/tryingAIMen/
+   creating: contest-tmp/teams/trytrytrytry/
+   creating: contest-tmp/teams/umr1/
+   creating: contest-tmp/teams/victoriasSecret/
+   creating: contest-tmp/teams/wings/
+   creating: contest-tmp/teams/worstPacman/
+   creating: contest-tmp/teams/PacMan/__MACOSX/
+  inflating: contest-tmp/teams/PacMan/myTeam.py  
+  inflating: contest-tmp/teams/PacMan/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/HelloKitty/__MACOSX/
+  inflating: contest-tmp/teams/HelloKitty/myTeam.py  
+  inflating: contest-tmp/teams/HelloKitty/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/chickendinner/layouts/
+  inflating: contest-tmp/teams/chickendinner/game.py  
+  inflating: contest-tmp/teams/chickendinner/contest.html  
+  inflating: contest-tmp/teams/chickendinner/textDisplay.py  
+  inflating: contest-tmp/teams/chickendinner/score  
+  inflating: contest-tmp/teams/chickendinner/mazeGenerator.py  
+  inflating: contest-tmp/teams/chickendinner/group.txt  
+  inflating: contest-tmp/teams/chickendinner/ffTeam.py  
+  inflating: contest-tmp/teams/chickendinner/myTeam.py  
+  inflating: contest-tmp/teams/chickendinner/mazeGenerator.pyc  
+  inflating: contest-tmp/teams/chickendinner/keyboardAgents.py  
+  inflating: contest-tmp/teams/chickendinner/autograder.py  
+  inflating: contest-tmp/teams/chickendinner/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/chickendinner/dummyAgents.py  
+  inflating: contest-tmp/teams/chickendinner/baselineTeam.py  
+  inflating: contest-tmp/teams/chickendinner/pacman-domain.pddl~  
+  inflating: contest-tmp/teams/chickendinner/graphicsDisplay.py  
+  inflating: contest-tmp/teams/chickendinner/graphicsUtils.py  
+  inflating: contest-tmp/teams/chickendinner/pacman.py  
+  inflating: contest-tmp/teams/chickendinner/capture_the_flag.png  
+  inflating: contest-tmp/teams/chickendinner/contestLayout.png  
+  inflating: contest-tmp/teams/chickendinner/unpack.py  
+  inflating: contest-tmp/teams/chickendinner/problem2.pddl  
+  inflating: contest-tmp/teams/chickendinner/dummyTeam.py  
+  inflating: contest-tmp/teams/chickendinner/testParser.py  
+  inflating: contest-tmp/teams/chickendinner/problem3.pddl  
+  inflating: contest-tmp/teams/chickendinner/capture.py  
+  inflating: contest-tmp/teams/chickendinner/testClasses.py  
+  inflating: contest-tmp/teams/chickendinner/projects.css  
+  inflating: contest-tmp/teams/chickendinner/captureAgents.py  
+  inflating: contest-tmp/teams/chickendinner/pacmanAgents.py  
+  inflating: contest-tmp/teams/chickendinner/distanceCalculator.py  
+  inflating: contest-tmp/teams/chickendinner/.gitignore  
+  inflating: contest-tmp/teams/chickendinner/problem1.pddl  
+  inflating: contest-tmp/teams/chickendinner/ghost-domain.pddl  
+  inflating: contest-tmp/teams/chickendinner/layout.py  
+  inflating: contest-tmp/teams/chickendinner/runFromPacmanProblem.pddl  
+  inflating: contest-tmp/teams/chickendinner/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/chickendinner/bracket.png  
+  inflating: contest-tmp/teams/chickendinner/pacman-domain.pddl  
+  inflating: contest-tmp/teams/chickendinner/ghostAgents.py  
+  inflating: contest-tmp/teams/chickendinner/util.py  
+  inflating: contest-tmp/teams/chickendinner/results.txt  
+  inflating: contest-tmp/teams/chickendinner/capture_the_flag2.png  
+  inflating: contest-tmp/teams/chickendinner/README.txt  
+  inflating: contest-tmp/teams/chickendinner/problem4.pddl  
+  inflating: contest-tmp/teams/chickendinner/killGhostProblem.pddl  
+  inflating: contest-tmp/teams/chickendinner/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/simpleCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/simpleCapture.lay~  
+  inflating: contest-tmp/teams/chickendinner/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/chickendinner/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/404TeamNamenotfound/404TeamNamenotfound/
+   creating: contest-tmp/teams/404TeamNamenotfound/__MACOSX/
+  inflating: contest-tmp/teams/404TeamNamenotfound/404TeamNamenotfound/myTeam.py  
+   creating: contest-tmp/teams/404TeamNamenotfound/__MACOSX/404TeamNamenotfound/
+  inflating: contest-tmp/teams/404TeamNamenotfound/__MACOSX/404TeamNamenotfound/._myTeam.py  
+  inflating: contest-tmp/teams/pacsain_bolt/myTeam.py  
+  inflating: contest-tmp/teams/2Defence/myTeam.py  
+   creating: contest-tmp/teams/123/__MACOSX/
+  inflating: contest-tmp/teams/123/myTeam.py  
+  inflating: contest-tmp/teams/123/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/superpacman/myTeam.py  
+  inflating: contest-tmp/teams/TeamLads_Q_H/myTeam.py  
+  inflating: contest-tmp/teams/TeamLads_Q_H/weights.p  
+   creating: contest-tmp/teams/PACMAN/PDDL/
+  inflating: contest-tmp/teams/PACMAN/qLearning.py  
+  inflating: contest-tmp/teams/PACMAN/group.txt  
+  inflating: contest-tmp/teams/PACMAN/myTeam.py  
+  inflating: contest-tmp/teams/PACMAN/README.txt  
+  inflating: contest-tmp/teams/MrTuring/myTeam.py  
+  inflating: contest-tmp/teams/MrTuring/README.txt  
+   creating: contest-tmp/teams/coffee/Project1/
+   creating: contest-tmp/teams/coffee/__MACOSX/
+   creating: contest-tmp/teams/coffee/contest/
+   creating: contest-tmp/teams/coffee/search/
+   creating: contest-tmp/teams/coffee/__MACOSX/contest/
+  inflating: contest-tmp/teams/coffee/__MACOSX/._contest  
+   creating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._capture_the_flag2.png  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._contestLayout.png  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._game.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._capture_the_flag.png  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._textDisplay.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._contest.html  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._projects.css  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._pacmanAgents.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._keyboardAgents.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._VERSION  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._mazeGenerator.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._unpack.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._capture.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._autograder.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._captureAgents.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._graphicsUtils.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._testClasses.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._pacman.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._graphicsDisplay.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._util.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._layout.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._.DS_Store  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._baselineTeam.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._bracket.png  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._testParser.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._layouts  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._ghostAgents.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/._distanceCalculator.py  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._strategicCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._alleyCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._officeCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._mediumCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._defaultCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._fastCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._distantCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._tinyCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._jumboCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._testCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._crowdedCapture.lay  
+  inflating: contest-tmp/teams/coffee/__MACOSX/contest/layouts/._bloxCapture.lay  
+  inflating: contest-tmp/teams/coffee/Project1/project1.zip  
+   creating: contest-tmp/teams/coffee/contest/.idea/
+   creating: contest-tmp/teams/coffee/contest/layouts/
+  inflating: contest-tmp/teams/coffee/contest/game.py  
+  inflating: contest-tmp/teams/coffee/contest/contest.html  
+  inflating: contest-tmp/teams/coffee/contest/textDisplay.py  
+  inflating: contest-tmp/teams/coffee/contest/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/coffee/contest/score  
+  inflating: contest-tmp/teams/coffee/contest/mazeGenerator.py  
+  inflating: contest-tmp/teams/coffee/contest/VERSION  
+  inflating: contest-tmp/teams/coffee/contest/myTeam.py  
+  inflating: contest-tmp/teams/coffee/contest/anotherTeam.pyc  
+  inflating: contest-tmp/teams/coffee/contest/keyboardAgents.py  
+  inflating: contest-tmp/teams/coffee/contest/autograder.py  
+  inflating: contest-tmp/teams/coffee/contest/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/coffee/contest/baselineTeam.py  
+  inflating: contest-tmp/teams/coffee/contest/myTeam.pyc  
+  inflating: contest-tmp/teams/coffee/contest/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/coffee/contest/graphicsDisplay.py  
+  inflating: contest-tmp/teams/coffee/contest/graphicsUtils.py  
+  inflating: contest-tmp/teams/coffee/contest/layout.pyc  
+  inflating: contest-tmp/teams/coffee/contest/pacman.py  
+  inflating: contest-tmp/teams/coffee/contest/capture_the_flag.png  
+  inflating: contest-tmp/teams/coffee/contest/contestLayout.png  
+  inflating: contest-tmp/teams/coffee/contest/unpack.py  
+  inflating: contest-tmp/teams/coffee/contest/testParser.py  
+  inflating: contest-tmp/teams/coffee/contest/anotherTeam.py  
+  inflating: contest-tmp/teams/coffee/contest/capture.py  
+  inflating: contest-tmp/teams/coffee/contest/.DS_Store  
+  inflating: contest-tmp/teams/coffee/contest/baselineTeam.pyc  
+  inflating: contest-tmp/teams/coffee/contest/captureAgents.pyc  
+  inflating: contest-tmp/teams/coffee/contest/testClasses.py  
+  inflating: contest-tmp/teams/coffee/contest/projects.css  
+  inflating: contest-tmp/teams/coffee/contest/captureAgents.py  
+  inflating: contest-tmp/teams/coffee/contest/pacmanAgents.py  
+  inflating: contest-tmp/teams/coffee/contest/distanceCalculator.py  
+  inflating: contest-tmp/teams/coffee/contest/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/coffee/contest/util.pyc  
+  inflating: contest-tmp/teams/coffee/contest/layout.py  
+  inflating: contest-tmp/teams/coffee/contest/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/coffee/contest/bracket.png  
+  inflating: contest-tmp/teams/coffee/contest/ghostAgents.py  
+  inflating: contest-tmp/teams/coffee/contest/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/coffee/contest/util.py  
+  inflating: contest-tmp/teams/coffee/contest/capture_the_flag2.png  
+  inflating: contest-tmp/teams/coffee/contest/game.pyc  
+  inflating: contest-tmp/teams/coffee/contest/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/coffee/contest/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/coffee/contest/.idea/inspectionProfiles/
+  inflating: contest-tmp/teams/coffee/contest/.idea/workspace.xml  
+  inflating: contest-tmp/teams/coffee/contest/.idea/misc.xml  
+  inflating: contest-tmp/teams/coffee/contest/.idea/modules.xml  
+  inflating: contest-tmp/teams/coffee/contest/.idea/contest.iml  
+  inflating: contest-tmp/teams/coffee/contest/.idea/inspectionProfiles/Project_Default.xml  
+   creating: contest-tmp/teams/coffee/search/layouts/
+   creating: contest-tmp/teams/coffee/search/test_cases/
+  inflating: contest-tmp/teams/coffee/search/game.py  
+  inflating: contest-tmp/teams/coffee/search/textDisplay.py  
+  inflating: contest-tmp/teams/coffee/search/textDisplay.pyc  
+  inflating: contest-tmp/teams/coffee/search/grading.py  
+  inflating: contest-tmp/teams/coffee/search/VERSION  
+  inflating: contest-tmp/teams/coffee/search/keyboardAgents.py  
+  inflating: contest-tmp/teams/coffee/search/autograder.py  
+  inflating: contest-tmp/teams/coffee/search/searchTestClasses.py  
+  inflating: contest-tmp/teams/coffee/search/ghostAgents.pyc  
+  inflating: contest-tmp/teams/coffee/search/searchAgents.py  
+  inflating: contest-tmp/teams/coffee/search/testParser.pyc  
+  inflating: contest-tmp/teams/coffee/search/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/coffee/search/pacmanAgents.pyc  
+  inflating: contest-tmp/teams/coffee/search/graphicsDisplay.py  
+  inflating: contest-tmp/teams/coffee/search/searchAgents.pyc  
+  inflating: contest-tmp/teams/coffee/search/graphicsUtils.py  
+  inflating: contest-tmp/teams/coffee/search/layout.pyc  
+  inflating: contest-tmp/teams/coffee/search/pacman.py  
+  inflating: contest-tmp/teams/coffee/search/commands.txt  
+  inflating: contest-tmp/teams/coffee/search/pacman.pyc  
+  inflating: contest-tmp/teams/coffee/search/testParser.py  
+  inflating: contest-tmp/teams/coffee/search/submission_autograder.py  
+  inflating: contest-tmp/teams/coffee/search/grading.pyc  
+  inflating: contest-tmp/teams/coffee/search/testClasses.py  
+  inflating: contest-tmp/teams/coffee/search/pacmanAgents.py  
+  inflating: contest-tmp/teams/coffee/search/graphicsDisplay.pyc  
+  inflating: contest-tmp/teams/coffee/search/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/coffee/search/util.pyc  
+  inflating: contest-tmp/teams/coffee/search/search.py  
+  inflating: contest-tmp/teams/coffee/search/projectParams.pyc  
+  inflating: contest-tmp/teams/coffee/search/searchTestClasses.pyc  
+  inflating: contest-tmp/teams/coffee/search/layout.py  
+  inflating: contest-tmp/teams/coffee/search/eightpuzzle.py  
+  inflating: contest-tmp/teams/coffee/search/ghostAgents.py  
+  inflating: contest-tmp/teams/coffee/search/util.py  
+  inflating: contest-tmp/teams/coffee/search/testClasses.pyc  
+  inflating: contest-tmp/teams/coffee/search/search.pyc  
+  inflating: contest-tmp/teams/coffee/search/game.pyc  
+  inflating: contest-tmp/teams/coffee/search/projectParams.py  
+  inflating: contest-tmp/teams/coffee/search/layouts/testMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/openClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/smallMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/tinySafeSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/smallClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/mediumScaryMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/smallSafeSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/tinyMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/tinyCorners.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/openMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/mediumCorners.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/contoursMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/originalClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/openSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/mediumMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/mediumSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/minimaxClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/bigMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/mediumDottedMaze.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/trappedClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/oddSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/testSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/trickySearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/smallSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/mediumClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/testClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/mediumSafeSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/greedySearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/powerClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/contestClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/tinySearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/bigSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/trickyClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/bigSafeSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/capsuleClassic.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/boxSearch.lay  
+  inflating: contest-tmp/teams/coffee/search/layouts/bigCorners.lay  
+   creating: contest-tmp/teams/coffee/search/test_cases/q1/
+   creating: contest-tmp/teams/coffee/search/test_cases/q2/
+   creating: contest-tmp/teams/coffee/search/test_cases/q3/
+   creating: contest-tmp/teams/coffee/search/test_cases/q4/
+   creating: contest-tmp/teams/coffee/search/test_cases/q5/
+   creating: contest-tmp/teams/coffee/search/test_cases/q6/
+   creating: contest-tmp/teams/coffee/search/test_cases/q7/
+   creating: contest-tmp/teams/coffee/search/test_cases/q8/
+  inflating: contest-tmp/teams/coffee/search/test_cases/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q5/corner_tiny_corner.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q5/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q5/corner_tiny_corner.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_infinite.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/pacman_1.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_bfs_vs_dfs.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_infinite.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_backtrack.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_backtrack.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_manypaths.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_manypaths.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/graph_bfs_vs_dfs.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q1/pacman_1.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_1_graph_heuristic.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_0.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_1_graph_heuristic.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/graph_backtrack.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/graph_backtrack.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/graph_manypaths.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/graph_manypaths.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_2_manhattan.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_3_goalAtDequeue.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_0.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_2_manhattan.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q4/astar_3_goalAtDequeue.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_1_problemC.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_infinite.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_3_problemW.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_bfs_vs_dfs.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_2_problemE.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_2_problemE.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_4_testSearch.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_infinite.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_4_testSearch.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_0_graph.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_backtrack.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_5_goalAtDequeue.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_5_goalAtDequeue.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_3_problemW.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_backtrack.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_manypaths.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_0_graph.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_manypaths.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/ucs_1_problemC.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q3/graph_bfs_vs_dfs.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_5.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_4.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_grade_tricky.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_5.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_1.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_grade_tricky.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_13.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_2.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_11.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_12.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_8.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_1.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_14.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_12.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_10.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_11.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_17.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_14.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_15.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_7.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_16.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_3.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_9.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_16.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_2.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_6.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_9.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_13.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_6.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_15.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_3.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_17.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_4.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_10.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_8.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q7/food_heuristic_7.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_1.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_8.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_7.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_10.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_1.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_13.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_4.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_5.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_3.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_11.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_5.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_9.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_10.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_3.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_12.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_2.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_12.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_2.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_4.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_7.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_13.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_9.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_6.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_11.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_8.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q8/closest_dot_6.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_infinite.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/pacman_1.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_bfs_vs_dfs.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_infinite.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_backtrack.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_backtrack.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_manypaths.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_manypaths.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/graph_bfs_vs_dfs.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q2/pacman_1.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/corner_sanity_2.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/medium_corners.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/corner_sanity_2.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/corner_sanity_3.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/CONFIG  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/medium_corners.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/corner_sanity_3.solution  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/corner_sanity_1.test  
+  inflating: contest-tmp/teams/coffee/search/test_cases/q6/corner_sanity_1.solution  
+   creating: contest-tmp/teams/FGO/__MACOSX/
+   creating: contest-tmp/teams/FGO/bin/
+   creating: contest-tmp/teams/FGO/layouts/
+  inflating: contest-tmp/teams/FGO/game.py  
+  inflating: contest-tmp/teams/FGO/contest.html  
+  inflating: contest-tmp/teams/FGO/textDisplay.py  
+  inflating: contest-tmp/teams/FGO/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/FGO/score  
+  inflating: contest-tmp/teams/FGO/mazeGenerator.py  
+  inflating: contest-tmp/teams/FGO/VERSION  
+  inflating: contest-tmp/teams/FGO/myTeam.py  
+  inflating: contest-tmp/teams/FGO/keyboardAgents.py  
+  inflating: contest-tmp/teams/FGO/autograder.py  
+  inflating: contest-tmp/teams/FGO/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/FGO/qlearning.py  
+  inflating: contest-tmp/teams/FGO/myTeamtest.pyc  
+  inflating: contest-tmp/teams/FGO/baselineTeam.py  
+  inflating: contest-tmp/teams/FGO/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/FGO/graphicsDisplay.py  
+  inflating: contest-tmp/teams/FGO/graphicsUtils.py  
+  inflating: contest-tmp/teams/FGO/layout.pyc  
+  inflating: contest-tmp/teams/FGO/pacman.py  
+  inflating: contest-tmp/teams/FGO/capture.pyc  
+  inflating: contest-tmp/teams/FGO/capture_the_flag.png  
+  inflating: contest-tmp/teams/FGO/contestLayout.png  
+  inflating: contest-tmp/teams/FGO/unpack.py  
+  inflating: contest-tmp/teams/FGO/testParser.py  
+  inflating: contest-tmp/teams/FGO/capture.py  
+  inflating: contest-tmp/teams/FGO/captureAgents.pyc  
+  inflating: contest-tmp/teams/FGO/testClasses.py  
+  inflating: contest-tmp/teams/FGO/projects.css  
+  inflating: contest-tmp/teams/FGO/captureAgents.py  
+  inflating: contest-tmp/teams/FGO/pacmanAgents.py  
+  inflating: contest-tmp/teams/FGO/distanceCalculator.py  
+  inflating: contest-tmp/teams/FGO/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/FGO/qlearning.pyc  
+  inflating: contest-tmp/teams/FGO/util.pyc  
+  inflating: contest-tmp/teams/FGO/layout.py  
+  inflating: contest-tmp/teams/FGO/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/FGO/bracket.png  
+  inflating: contest-tmp/teams/FGO/ghostAgents.py  
+  inflating: contest-tmp/teams/FGO/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/FGO/util.py  
+  inflating: contest-tmp/teams/FGO/capture_the_flag2.png  
+  inflating: contest-tmp/teams/FGO/game.pyc  
+   creating: contest-tmp/teams/FGO/layouts/layouts/
+  inflating: contest-tmp/teams/FGO/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/FGO/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/FGO/bin/bin/
+  inflating: contest-tmp/teams/FGO/bin/ff  
+   creating: contest-tmp/teams/FGO/__MACOSX/bin/
+   creating: contest-tmp/teams/FGO/__MACOSX/layouts/
+  inflating: contest-tmp/teams/FGO/__MACOSX/._capture_the_flag2.png  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._contestLayout.png  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._game.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._capture_the_flag.png  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._textDisplay.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._contest.html  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._projects.css  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._pacmanAgents.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._keyboardAgents.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._VERSION  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._mazeGenerator.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._unpack.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._capture.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._autograder.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._bin  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._captureAgents.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._graphicsUtils.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._testClasses.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._pacman.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._graphicsDisplay.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._util.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._qlearning.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._layout.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._baselineTeam.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._bracket.png  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._testParser.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._layouts  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._ghostAgents.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/._distanceCalculator.py  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._strategicCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._alleyCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._officeCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._mediumCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._defaultCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._fastCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._distantCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._tinyCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._jumboCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._testCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._layouts  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._crowdedCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/layouts/._bloxCapture.lay  
+  inflating: contest-tmp/teams/FGO/__MACOSX/bin/._bin  
+  inflating: contest-tmp/teams/FGO/__MACOSX/bin/._ff  
+  inflating: contest-tmp/teams/Coder/group.txt  
+  inflating: contest-tmp/teams/Coder/myTeam.py  
+  inflating: contest-tmp/teams/Coder/ghost_problem.pddl  
+  inflating: contest-tmp/teams/Coder/ghost v2.pddl  
+  inflating: contest-tmp/teams/Coder/pacman_problem.pddl  
+  inflating: contest-tmp/teams/Coder/readme.txt  
+  inflating: contest-tmp/teams/Coder/pacman v2.pddl  
+  inflating: contest-tmp/teams/PacmanNotNull/group.txt  
+  inflating: contest-tmp/teams/PacmanNotNull/myTeam.py  
+  inflating: contest-tmp/teams/PacmanNotNull/ghost_problem.pddl  
+  inflating: contest-tmp/teams/PacmanNotNull/ghost_domain.pddl  
+  inflating: contest-tmp/teams/PacmanNotNull/pacman_problem.pddl  
+  inflating: contest-tmp/teams/PacmanNotNull/pacman_domain.pddl  
+  inflating: contest-tmp/teams/PacmanNotNull/README.txt  
+   creating: contest-tmp/teams/Dark-Flame-Master/layouts/
+  inflating: contest-tmp/teams/Dark-Flame-Master/game.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/contest.html  
+  inflating: contest-tmp/teams/Dark-Flame-Master/textDisplay.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/mazeGenerator.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/VERSION  
+  inflating: contest-tmp/teams/Dark-Flame-Master/myTeam.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/keyboardAgents.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/autograder.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/baselineTeam.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/graphicsDisplay.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/graphicsUtils.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/pacman.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/capture_the_flag.png  
+  inflating: contest-tmp/teams/Dark-Flame-Master/contestLayout.png  
+  inflating: contest-tmp/teams/Dark-Flame-Master/unpack.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/testParser.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/capture.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/testClasses.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/projects.css  
+  inflating: contest-tmp/teams/Dark-Flame-Master/captureAgents.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/pacmanAgents.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/distanceCalculator.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layout.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/bracket.png  
+  inflating: contest-tmp/teams/Dark-Flame-Master/ghostAgents.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/util.py  
+  inflating: contest-tmp/teams/Dark-Flame-Master/capture_the_flag2.png  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/Dark-Flame-Master/layouts/officeCapture.lay  
+  inflating: contest-tmp/teams/H2O2/myTeam.py  
+  inflating: contest-tmp/teams/H2O2/README.txt  
+  inflating: contest-tmp/teams/HelloTeam1213/myTeam.py  
+  inflating: contest-tmp/teams/testrunning/myTeam.py  
+  inflating: contest-tmp/teams/GrantWard/myTeam.py  
+  inflating: contest-tmp/teams/Deox/myTeam.py  
+  inflating: contest-tmp/teams/pass/myTeam.py  
+   creating: contest-tmp/teams/deltaforce/layouts/
+  inflating: contest-tmp/teams/deltaforce/game.py  
+  inflating: contest-tmp/teams/deltaforce/contest.html  
+  inflating: contest-tmp/teams/deltaforce/textDisplay.py  
+  inflating: contest-tmp/teams/deltaforce/mazeGenerator.py  
+  inflating: contest-tmp/teams/deltaforce/VERSION  
+  inflating: contest-tmp/teams/deltaforce/myTeam.py  
+  inflating: contest-tmp/teams/deltaforce/keyboardAgents.py  
+  inflating: contest-tmp/teams/deltaforce/autograder.py  
+  inflating: contest-tmp/teams/deltaforce/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/deltaforce/baselineTeam.py  
+  inflating: contest-tmp/teams/deltaforce/graphicsDisplay.py  
+  inflating: contest-tmp/teams/deltaforce/graphicsUtils.py  
+  inflating: contest-tmp/teams/deltaforce/pacman.py  
+  inflating: contest-tmp/teams/deltaforce/capture_the_flag.png  
+  inflating: contest-tmp/teams/deltaforce/contestLayout.png  
+  inflating: contest-tmp/teams/deltaforce/unpack.py  
+  inflating: contest-tmp/teams/deltaforce/testParser.py  
+  inflating: contest-tmp/teams/deltaforce/capture.py  
+  inflating: contest-tmp/teams/deltaforce/testClasses.py  
+  inflating: contest-tmp/teams/deltaforce/projects.css  
+  inflating: contest-tmp/teams/deltaforce/captureAgents.py  
+  inflating: contest-tmp/teams/deltaforce/pacmanAgents.py  
+  inflating: contest-tmp/teams/deltaforce/distanceCalculator.py  
+  inflating: contest-tmp/teams/deltaforce/layout.py  
+  inflating: contest-tmp/teams/deltaforce/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/deltaforce/bracket.png  
+  inflating: contest-tmp/teams/deltaforce/ghostAgents.py  
+  inflating: contest-tmp/teams/deltaforce/util.py  
+  inflating: contest-tmp/teams/deltaforce/capture_the_flag2.png  
+  inflating: contest-tmp/teams/deltaforce/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/deltaforce/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/marshmallow/__MACOSX/
+  inflating: contest-tmp/teams/marshmallow/myTeam.py  
+  inflating: contest-tmp/teams/marshmallow/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/SunMicrosystemsInc/__MACOSX/
+   creating: contest-tmp/teams/SunMicrosystemsInc/pddl/
+  inflating: contest-tmp/teams/SunMicrosystemsInc/myTeam.py  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/README.txt  
+   creating: contest-tmp/teams/SunMicrosystemsInc/__MACOSX/pddl/
+  inflating: contest-tmp/teams/SunMicrosystemsInc/__MACOSX/._README.txt  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/__MACOSX/pddl/._README.txt  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/__MACOSX/pddl/._.DS_Store  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/pddl/pacman-problem.pddl  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/pddl/pacman-layout.txt  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/pddl/.DS_Store  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/pddl/pacman-domain.pddl  
+  inflating: contest-tmp/teams/SunMicrosystemsInc/pddl/README.txt  
+   creating: contest-tmp/teams/DSS/__MACOSX/
+  inflating: contest-tmp/teams/DSS/myTeam.py  
+  inflating: contest-tmp/teams/DSS/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/New_continue/myteam.py  
+   creating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/
+   creating: contest-tmp/teams/Inky_Blinky_and_Clyde/pddl/
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/group.txt  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/myTeam.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/readme.txt  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/q_learning.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/state_repackage.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/__init__.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/classical_search.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/value_iteration.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/generic_implementation.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/approximate_q_learning.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/deep_q_learning.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/monte_carlo_tree_search.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/implementation/recognition.py  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/pddl/pacman-problem2.pddl  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/pddl/ghost-domain-decomposed.pddl  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/pddl/ghost-problem1.pddl  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/pddl/pacman-domain-decomposed.pddl  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/pddl/pacman-problem3.pddl  
+  inflating: contest-tmp/teams/Inky_Blinky_and_Clyde/pddl/pacman-problem1.pddl  
+   creating: contest-tmp/teams/farseer/__MACOSX/
+   creating: contest-tmp/teams/farseer/farseer/
+   creating: contest-tmp/teams/farseer/__MACOSX/farseer/
+  inflating: contest-tmp/teams/farseer/__MACOSX/farseer/._qfile_0  
+  inflating: contest-tmp/teams/farseer/__MACOSX/farseer/._qfile_red  
+  inflating: contest-tmp/teams/farseer/__MACOSX/farseer/._qfile_3  
+  inflating: contest-tmp/teams/farseer/__MACOSX/farseer/._qfile_1  
+  inflating: contest-tmp/teams/farseer/__MACOSX/farseer/._myTeam.py  
+  inflating: contest-tmp/teams/farseer/__MACOSX/farseer/._qfile_blue  
+  inflating: contest-tmp/teams/farseer/__MACOSX/farseer/._qfile_2  
+  inflating: contest-tmp/teams/farseer/farseer/qfile_0  
+  inflating: contest-tmp/teams/farseer/farseer/myTeam.py  
+  inflating: contest-tmp/teams/farseer/farseer/qfile_blue  
+  inflating: contest-tmp/teams/farseer/farseer/qfile_3  
+  inflating: contest-tmp/teams/farseer/farseer/qfile_1  
+  inflating: contest-tmp/teams/farseer/farseer/qfile_2  
+  inflating: contest-tmp/teams/farseer/farseer/qfile_red  
+   creating: contest-tmp/teams/montecarlo2/.idea/
+   creating: contest-tmp/teams/montecarlo2/bin/
+   creating: contest-tmp/teams/montecarlo2/layouts/
+  inflating: contest-tmp/teams/montecarlo2/game.py  
+  inflating: contest-tmp/teams/montecarlo2/contest.html  
+  inflating: contest-tmp/teams/montecarlo2/textDisplay.py  
+  inflating: contest-tmp/teams/montecarlo2/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/montecarlo2/score  
+  inflating: contest-tmp/teams/montecarlo2/mazeGenerator.py  
+  inflating: contest-tmp/teams/montecarlo2/VERSION  
+  inflating: contest-tmp/teams/montecarlo2/myTeam.py  
+  inflating: contest-tmp/teams/montecarlo2/BetaPac_ModeSelHard_vs_montecarlo_contest18Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/mazeGenerator.pyc  
+  inflating: contest-tmp/teams/montecarlo2/randteamname_vs_staff_team_top_RANDOM577.replay  
+  inflating: contest-tmp/teams/montecarlo2/keyboardAgents.py  
+  inflating: contest-tmp/teams/montecarlo2/autograder.py  
+  inflating: contest-tmp/teams/montecarlo2/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/montecarlo2/baselineTeam.py  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo_vs_staff_team_basic_contest17Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/montecarlo2/myteam.pyc  
+  inflating: contest-tmp/teams/montecarlo2/montecarloTeam.py  
+  inflating: contest-tmp/teams/montecarlo2/graphicsDisplay.py  
+  inflating: contest-tmp/teams/montecarlo2/ERC_vs_staff_team_top_contest20Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/betaGo.py  
+  inflating: contest-tmp/teams/montecarlo2/graphicsUtils.py  
+  inflating: contest-tmp/teams/montecarlo2/layout.pyc  
+  inflating: contest-tmp/teams/montecarlo2/ERC_vs_staff_team_top_RANDOM577.replay  
+  inflating: contest-tmp/teams/montecarlo2/pacman.py  
+  inflating: contest-tmp/teams/montecarlo2/capture.pyc  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo3.py  
+  inflating: contest-tmp/teams/montecarlo2/betaGo_vs_RoguePi_contest20Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/COMPAI.pyc  
+  inflating: contest-tmp/teams/montecarlo2/capture_the_flag.png  
+  inflating: contest-tmp/teams/montecarlo2/contestLayout.png  
+  inflating: contest-tmp/teams/montecarlo2/betaGo_vs_staff_team_top_RANDOM577.replay  
+  inflating: contest-tmp/teams/montecarlo2/unpack.py  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo.py  
+  inflating: contest-tmp/teams/montecarlo2/hahaTeam.py  
+  inflating: contest-tmp/teams/montecarlo2/testParser.py  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo_vs_betaGo_contest17Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/RoguePi_vs_staff_team_top_contest20Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/capture.py  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo_vs_staff_team_top_contest03cCapture.replay  
+  inflating: contest-tmp/teams/montecarlo2/randteamname_vs_staff_team_basic_RANDOM577.replay  
+  inflating: contest-tmp/teams/montecarlo2/baselineTeam.pyc  
+  inflating: contest-tmp/teams/montecarlo2/randteamname_vs_staff_team_basic_contest20Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/captureAgents.pyc  
+  inflating: contest-tmp/teams/montecarlo2/testClasses.py  
+  inflating: contest-tmp/teams/montecarlo2/randteamname_vs_staff_team_top_contest20Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/betago.pyc  
+  inflating: contest-tmp/teams/montecarlo2/projects.css  
+  inflating: contest-tmp/teams/montecarlo2/captureAgents.py  
+  inflating: contest-tmp/teams/montecarlo2/pacmanAgents.py  
+  inflating: contest-tmp/teams/montecarlo2/distanceCalculator.py  
+  inflating: contest-tmp/teams/montecarlo2/RoguePi_vs_staff_team_top_RANDOM577.replay  
+  inflating: contest-tmp/teams/montecarlo2/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/montecarlo2/util.pyc  
+  inflating: contest-tmp/teams/montecarlo2/montecarloTeam.pyc  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo_vs_staff_team_top_RANDOM921.replay  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo.pyc  
+  inflating: contest-tmp/teams/montecarlo2/layout.py  
+  inflating: contest-tmp/teams/montecarlo2/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/montecarlo2/bracket.png  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo3.pyc  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo2.py  
+  inflating: contest-tmp/teams/montecarlo2/COMPAI.py  
+  inflating: contest-tmp/teams/montecarlo2/ghostAgents.py  
+  inflating: contest-tmp/teams/montecarlo2/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/montecarlo2/util.py  
+  inflating: contest-tmp/teams/montecarlo2/WaterMelon_vs_staff_team_top_RANDOM577.replay  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo_vs_staff_team_top_contest17Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/python  
+  inflating: contest-tmp/teams/montecarlo2/capture_the_flag2.png  
+  inflating: contest-tmp/teams/montecarlo2/montecarlo2.pyc  
+  inflating: contest-tmp/teams/montecarlo2/game.pyc  
+  inflating: contest-tmp/teams/montecarlo2/beTaGo_vs_staff_team_top_contest20Capture.replay  
+  inflating: contest-tmp/teams/montecarlo2/montercarlo4.py  
+   creating: contest-tmp/teams/montecarlo2/layouts/layouts/
+  inflating: contest-tmp/teams/montecarlo2/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/montecarlo2/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/montecarlo2/bin/bin/
+  inflating: contest-tmp/teams/montecarlo2/bin/ff  
+  inflating: contest-tmp/teams/montecarlo2/.idea/workspace.xml  
+  inflating: contest-tmp/teams/montecarlo2/.idea/misc.xml  
+  inflating: contest-tmp/teams/montecarlo2/.idea/modules.xml  
+  inflating: contest-tmp/teams/montecarlo2/.idea/contest.iml  
+  inflating: contest-tmp/teams/ES/myTeam.py  
+  inflating: contest-tmp/teams/super_scaper/myTeam.py  
+   creating: contest-tmp/teams/R2D2/R2D2/
+   creating: contest-tmp/teams/R2D2/__MACOSX/
+   creating: contest-tmp/teams/R2D2/__MACOSX/R2D2/
+  inflating: contest-tmp/teams/R2D2/__MACOSX/R2D2/._myTeam.py  
+  inflating: contest-tmp/teams/R2D2/R2D2/myTeam.py  
+  inflating: contest-tmp/teams/RoguePi/myTeam.py  
+  inflating: contest-tmp/teams/OffDef/myTeam.py  
+  inflating: contest-tmp/teams/wings/myTeam.py  
+  inflating: contest-tmp/teams/HouseofPac/myTeam.py  
+  inflating: contest-tmp/teams/myADmilk/myADmilk.py  
+   creating: contest-tmp/teams/PaceMin/PaceMin/
+  inflating: contest-tmp/teams/PaceMin/PaceMin/myTeam.py  
+  inflating: contest-tmp/teams/PacMaster/myTeam.py  
+   creating: contest-tmp/teams/betaGo/__MACOSX/
+  inflating: contest-tmp/teams/betaGo/myTeam.py  
+  inflating: contest-tmp/teams/betaGo/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/song2/myTeam.py  
+  inflating: contest-tmp/teams/omega-go/myTeam.py  
+  inflating: contest-tmp/teams/omega-go/name.txt  
+  inflating: contest-tmp/teams/omega-go/omega.py  
+  inflating: contest-tmp/teams/omega-go/omegaDefensive.py  
+  inflating: contest-tmp/teams/omega-go/omegaOffensive.py  
+  inflating: contest-tmp/teams/HelloPacman/myTeam.py  
+  inflating: contest-tmp/teams/RealDaddy/myTeam.py  
+  inflating: contest-tmp/teams/Y.Z.S/myTeam.py  
+   creating: contest-tmp/teams/oEtFKY/__MACOSX/
+  inflating: contest-tmp/teams/oEtFKY/myTeam.py  
+  inflating: contest-tmp/teams/oEtFKY/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/Pokeman/__MACOSX/
+  inflating: contest-tmp/teams/Pokeman/myTeam.py  
+  inflating: contest-tmp/teams/Pokeman/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/lexus/myTeam.py  
+   creating: contest-tmp/teams/ai-pddl/__MACOSX/
+   creating: contest-tmp/teams/ai-pddl/ai-pddl/
+   creating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/
+  inflating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/._ai-README.txt  
+  inflating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/._ghost_problem.pddl  
+  inflating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/._test.txt  
+  inflating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/._problem_pacman_01.pddl  
+  inflating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/._.DS_Store  
+  inflating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/._pacman.pddl  
+  inflating: contest-tmp/teams/ai-pddl/__MACOSX/ai-pddl/._ghost.pddl  
+  inflating: contest-tmp/teams/ai-pddl/ai-pddl/test.txt  
+  inflating: contest-tmp/teams/ai-pddl/ai-pddl/ghost_problem.pddl  
+  inflating: contest-tmp/teams/ai-pddl/ai-pddl/ghost.pddl  
+  inflating: contest-tmp/teams/ai-pddl/ai-pddl/pacman.pddl  
+  inflating: contest-tmp/teams/ai-pddl/ai-pddl/ai-README.txt  
+  inflating: contest-tmp/teams/ai-pddl/ai-pddl/.DS_Store  
+  inflating: contest-tmp/teams/ai-pddl/ai-pddl/problem_pacman_01.pddl  
+  inflating: contest-tmp/teams/WaterMelon/myTeam.py  
+  inflating: contest-tmp/teams/PacMax/myTeam.py  
+  inflating: contest-tmp/teams/PacMax/offensiveWeightsDefault.json  
+  inflating: contest-tmp/teams/PacMax/defensiveWeightsDefault.json  
+  inflating: contest-tmp/teams/go_home_safe/myTeam.py  
+   creating: contest-tmp/teams/404/__MACOSX/
+  inflating: contest-tmp/teams/404/myTeam.py  
+  inflating: contest-tmp/teams/404/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/FatHeadFish/__MACOSX/
+  inflating: contest-tmp/teams/FatHeadFish/myTeam.py  
+  inflating: contest-tmp/teams/FatHeadFish/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/DEVGRU/__MACOSX/
+   creating: contest-tmp/teams/DEVGRU/layouts/
+  inflating: contest-tmp/teams/DEVGRU/game.py  
+  inflating: contest-tmp/teams/DEVGRU/DQN.pyc  
+  inflating: contest-tmp/teams/DEVGRU/contest.html  
+  inflating: contest-tmp/teams/DEVGRU/textDisplay.py  
+  inflating: contest-tmp/teams/DEVGRU/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/DEVGRU/score  
+  inflating: contest-tmp/teams/DEVGRU/mazeGenerator.py  
+  inflating: contest-tmp/teams/DEVGRU/VERSION  
+  inflating: contest-tmp/teams/DEVGRU/myTeam.py  
+  inflating: contest-tmp/teams/DEVGRU/keyboardAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/autograder.py  
+  inflating: contest-tmp/teams/DEVGRU/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/DEVGRU/baselineTeam.py  
+  inflating: contest-tmp/teams/DEVGRU/myTeam.pyc  
+  inflating: contest-tmp/teams/DEVGRU/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/DEVGRU/graphicsDisplay.py  
+  inflating: contest-tmp/teams/DEVGRU/graphicsUtils.py  
+  inflating: contest-tmp/teams/DEVGRU/layout.pyc  
+  inflating: contest-tmp/teams/DEVGRU/pacman.py  
+  inflating: contest-tmp/teams/DEVGRU/capture.pyc  
+  inflating: contest-tmp/teams/DEVGRU/capture_the_flag.png  
+  inflating: contest-tmp/teams/DEVGRU/contestLayout.png  
+  inflating: contest-tmp/teams/DEVGRU/unpack.py  
+  inflating: contest-tmp/teams/DEVGRU/pacman.pyc  
+  inflating: contest-tmp/teams/DEVGRU/testParser.py  
+  inflating: contest-tmp/teams/DEVGRU/capture.py  
+  inflating: contest-tmp/teams/DEVGRU/baselineTeam.pyc  
+  inflating: contest-tmp/teams/DEVGRU/captureAgents.pyc  
+  inflating: contest-tmp/teams/DEVGRU/testClasses.py  
+  inflating: contest-tmp/teams/DEVGRU/projects.css  
+  inflating: contest-tmp/teams/DEVGRU/captureAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/pacmanAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/distanceCalculator.py  
+  inflating: contest-tmp/teams/DEVGRU/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/DEVGRU/util.pyc  
+  inflating: contest-tmp/teams/DEVGRU/layout.py  
+  inflating: contest-tmp/teams/DEVGRU/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/DEVGRU/bracket.png  
+  inflating: contest-tmp/teams/DEVGRU/ghostAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/DEVGRU/util.py  
+  inflating: contest-tmp/teams/DEVGRU/capture_the_flag2.png  
+  inflating: contest-tmp/teams/DEVGRU/game.pyc  
+  inflating: contest-tmp/teams/DEVGRU/PacmanDQNTeam.pyc  
+  inflating: contest-tmp/teams/DEVGRU/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._capture_the_flag2.png  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._contestLayout.png  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._game.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._capture_the_flag.png  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._textDisplay.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._contest.html  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._projects.css  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._pacmanAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._keyboardAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._VERSION  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._mazeGenerator.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._unpack.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._autograder.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._captureAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._graphicsUtils.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._testClasses.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._pacman.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._graphicsDisplay.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._util.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._layout.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._baselineTeam.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._bracket.png  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._testParser.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._layouts  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._ghostAgents.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/._distanceCalculator.py  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._strategicCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._alleyCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._officeCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._mediumCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._defaultCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._fastCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._distantCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._tinyCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._jumboCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._testCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._crowdedCapture.lay  
+  inflating: contest-tmp/teams/DEVGRU/__MACOSX/layouts/._bloxCapture.lay  
+  inflating: contest-tmp/teams/worstPacman/tournament.py  
+  inflating: contest-tmp/teams/InvincibleGhosts/group.txt  
+  inflating: contest-tmp/teams/InvincibleGhosts/myTeam.py  
+  inflating: contest-tmp/teams/InvincibleGhosts/ghost-domain.pddl  
+  inflating: contest-tmp/teams/InvincibleGhosts/pacman-domain.pddl  
+  inflating: contest-tmp/teams/InvincibleGhosts/readme.txt  
+  inflating: contest-tmp/teams/SBAI_PURE/myTeam.py  
+  inflating: contest-tmp/teams/SBAI_PURE/ghost-domain.pddl  
+  inflating: contest-tmp/teams/SBAI_PURE/pacman-domain.pddl  
+  inflating: contest-tmp/teams/tryingAIMen/myTeam.py  
+  inflating: contest-tmp/teams/Pacsain_Bolt/myTeam.py  
+  inflating: contest-tmp/teams/umr1/myTeam.py  
+  inflating: contest-tmp/teams/WindyDay/myTeam.py  
+  inflating: contest-tmp/teams/BetaPacMc3/myTeam.py  
+  inflating: contest-tmp/teams/BetaPacMc3/MCT.py  
+  inflating: contest-tmp/teams/BetaPacMc3/featuresTool.py  
+  inflating: contest-tmp/teams/FatMan/myTeam.py  
+  inflating: contest-tmp/teams/press_any_key/myTeam.py  
+  inflating: contest-tmp/teams/press_any_key/offensive.train  
+  inflating: contest-tmp/teams/press_any_key/deffensive.train  
+   creating: contest-tmp/teams/Avatar/__MACOSX/
+   creating: contest-tmp/teams/Avatar/layouts/
+  inflating: contest-tmp/teams/Avatar/game.py  
+  inflating: contest-tmp/teams/Avatar/contest.html  
+  inflating: contest-tmp/teams/Avatar/textDisplay.py  
+  inflating: contest-tmp/teams/Avatar/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/Avatar/score  
+  inflating: contest-tmp/teams/Avatar/mazeGenerator.py  
+  inflating: contest-tmp/teams/Avatar/VERSION  
+  inflating: contest-tmp/teams/Avatar/myTeam.py  
+  inflating: contest-tmp/teams/Avatar/keyboardAgents.py  
+  inflating: contest-tmp/teams/Avatar/autograder.py  
+  inflating: contest-tmp/teams/Avatar/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/Avatar/baselineTeam.py  
+  inflating: contest-tmp/teams/Avatar/myTeam.pyc  
+  inflating: contest-tmp/teams/Avatar/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/Avatar/graphicsDisplay.py  
+  inflating: contest-tmp/teams/Avatar/graphicsUtils.py  
+  inflating: contest-tmp/teams/Avatar/layout.pyc  
+  inflating: contest-tmp/teams/Avatar/pacman.py  
+  inflating: contest-tmp/teams/Avatar/capture.pyc  
+  inflating: contest-tmp/teams/Avatar/learningAgents  
+  inflating: contest-tmp/teams/Avatar/capture_the_flag.png  
+  inflating: contest-tmp/teams/Avatar/contestLayout.png  
+  inflating: contest-tmp/teams/Avatar/unpack.py  
+  inflating: contest-tmp/teams/Avatar/testParser.py  
+  inflating: contest-tmp/teams/Avatar/capture.py  
+  inflating: contest-tmp/teams/Avatar/baselineTeam.pyc  
+  inflating: contest-tmp/teams/Avatar/captureAgents.pyc  
+  inflating: contest-tmp/teams/Avatar/testClasses.py  
+  inflating: contest-tmp/teams/Avatar/projects.css  
+  inflating: contest-tmp/teams/Avatar/captureAgents.py  
+  inflating: contest-tmp/teams/Avatar/pacmanAgents.py  
+  inflating: contest-tmp/teams/Avatar/distanceCalculator.py  
+  inflating: contest-tmp/teams/Avatar/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/Avatar/util.pyc  
+  inflating: contest-tmp/teams/Avatar/agents.pyc  
+  inflating: contest-tmp/teams/Avatar/layout.py  
+  inflating: contest-tmp/teams/Avatar/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/Avatar/bracket.png  
+  inflating: contest-tmp/teams/Avatar/ghostAgents.py  
+  inflating: contest-tmp/teams/Avatar/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/Avatar/util.py  
+  inflating: contest-tmp/teams/Avatar/agents.py  
+  inflating: contest-tmp/teams/Avatar/capture_the_flag2.png  
+  inflating: contest-tmp/teams/Avatar/game.pyc  
+  inflating: contest-tmp/teams/Avatar/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/Avatar/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/Avatar/__MACOSX/layouts/
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._capture_the_flag2.png  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._contestLayout.png  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._game.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._capture_the_flag.png  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._textDisplay.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._contest.html  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._projects.css  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._pacmanAgents.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._keyboardAgents.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._VERSION  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._mazeGenerator.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._unpack.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._capture.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._autograder.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._captureAgents.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._graphicsUtils.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._testClasses.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._pacman.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._graphicsDisplay.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._util.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._layout.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._baselineTeam.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._bracket.png  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._testParser.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._layouts  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._ghostAgents.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/._distanceCalculator.py  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._strategicCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._alleyCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._officeCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._mediumCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._defaultCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._fastCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._distantCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._tinyCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._jumboCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._testCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._crowdedCapture.lay  
+  inflating: contest-tmp/teams/Avatar/__MACOSX/layouts/._bloxCapture.lay  
+   creating: contest-tmp/teams/HelloWorld/__MACOSX/
+   creating: contest-tmp/teams/HelloWorld/layouts/
+  inflating: contest-tmp/teams/HelloWorld/game.py  
+  inflating: contest-tmp/teams/HelloWorld/contest.html  
+  inflating: contest-tmp/teams/HelloWorld/textDisplay.py  
+  inflating: contest-tmp/teams/HelloWorld/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/HelloWorld/score  
+  inflating: contest-tmp/teams/HelloWorld/mazeGenerator.py  
+  inflating: contest-tmp/teams/HelloWorld/VERSION  
+  inflating: contest-tmp/teams/HelloWorld/myTeam.py  
+  inflating: contest-tmp/teams/HelloWorld/test_MonteCarlo.py  
+  inflating: contest-tmp/teams/HelloWorld/keyboardAgents.py  
+  inflating: contest-tmp/teams/HelloWorld/autograder.py  
+  inflating: contest-tmp/teams/HelloWorld/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/HelloWorld/baselineTeam.py  
+  inflating: contest-tmp/teams/HelloWorld/myTeam.pyc  
+  inflating: contest-tmp/teams/HelloWorld/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/HelloWorld/graphicsDisplay.py  
+  inflating: contest-tmp/teams/HelloWorld/graphicsUtils.py  
+  inflating: contest-tmp/teams/HelloWorld/layout.pyc  
+  inflating: contest-tmp/teams/HelloWorld/pacman.py  
+  inflating: contest-tmp/teams/HelloWorld/randomTeam.pyc  
+  inflating: contest-tmp/teams/HelloWorld/mergeTeam.pyc  
+  inflating: contest-tmp/teams/HelloWorld/capture_the_flag.png  
+  inflating: contest-tmp/teams/HelloWorld/randomTeam.py  
+  inflating: contest-tmp/teams/HelloWorld/contestLayout.png  
+  inflating: contest-tmp/teams/HelloWorld/unpack.py  
+  inflating: contest-tmp/teams/HelloWorld/testParser.py  
+  inflating: contest-tmp/teams/HelloWorld/planner_team.py  
+  inflating: contest-tmp/teams/HelloWorld/capture.py  
+  inflating: contest-tmp/teams/HelloWorld/baselineTeam.pyc  
+  inflating: contest-tmp/teams/HelloWorld/captureAgents.pyc  
+  inflating: contest-tmp/teams/HelloWorld/testClasses.py  
+  inflating: contest-tmp/teams/HelloWorld/projects.css  
+  inflating: contest-tmp/teams/HelloWorld/captureAgents.py  
+  inflating: contest-tmp/teams/HelloWorld/pacmanAgents.py  
+  inflating: contest-tmp/teams/HelloWorld/distanceCalculator.py  
+  inflating: contest-tmp/teams/HelloWorld/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/HelloWorld/util.pyc  
+  inflating: contest-tmp/teams/HelloWorld/layout.py  
+  inflating: contest-tmp/teams/HelloWorld/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/HelloWorld/bracket.png  
+  inflating: contest-tmp/teams/HelloWorld/ghostAgents.py  
+  inflating: contest-tmp/teams/HelloWorld/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/HelloWorld/util.py  
+  inflating: contest-tmp/teams/HelloWorld/uctTeam.py  
+  inflating: contest-tmp/teams/HelloWorld/testOffensive.py  
+  inflating: contest-tmp/teams/HelloWorld/capture_the_flag2.png  
+  inflating: contest-tmp/teams/HelloWorld/tempTeam.py  
+  inflating: contest-tmp/teams/HelloWorld/game.pyc  
+  inflating: contest-tmp/teams/HelloWorld/testOriginal.py  
+  inflating: contest-tmp/teams/HelloWorld/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._capture_the_flag2.png  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._contestLayout.png  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._game.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._capture_the_flag.png  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._textDisplay.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._contest.html  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._projects.css  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._pacmanAgents.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._keyboardAgents.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._VERSION  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._mazeGenerator.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._unpack.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._capture.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._autograder.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._graphicsUtils.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._testClasses.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._pacman.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._graphicsDisplay.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._util.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._planner_team.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._layout.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._bracket.png  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._testParser.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._layouts  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._ghostAgents.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/._distanceCalculator.py  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._strategicCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._alleyCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._officeCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._mediumCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._defaultCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._fastCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._distantCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._tinyCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._jumboCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._testCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._crowdedCapture.lay  
+  inflating: contest-tmp/teams/HelloWorld/__MACOSX/layouts/._bloxCapture.lay  
+  inflating: contest-tmp/teams/bias/myTeam.py  
+  inflating: contest-tmp/teams/ZZZTeam/myTeam.py  
+  inflating: contest-tmp/teams/TLH/myTeam.py  
+  inflating: contest-tmp/teams/TLH/weights.p  
+   creating: contest-tmp/teams/PacKid/teams/
+  inflating: contest-tmp/teams/PacKid/group.txt  
+  inflating: contest-tmp/teams/PacKid/myTeam.py  
+  inflating: contest-tmp/teams/PacKid/plan_for_pacman  
+  inflating: contest-tmp/teams/PacKid/ghost_domain.pddl  
+  inflating: contest-tmp/teams/PacKid/Problem_image.PNG  
+  inflating: contest-tmp/teams/PacKid/pacman_domain.pddl  
+  inflating: contest-tmp/teams/PacKid/readme.txt  
+  inflating: contest-tmp/teams/PacKid/probelm.pddl  
+   creating: contest-tmp/teams/PacKid/teams/Terminators/
+  inflating: contest-tmp/teams/PacKid/teams/Terminators/team.py  
+  inflating: contest-tmp/teams/EvilGeniuses/myTeam.py  
+  inflating: contest-tmp/teams/iceice/myTeam.py  
+   creating: contest-tmp/teams/loserswishes/__MACOSX/
+  inflating: contest-tmp/teams/loserswishes/group.txt  
+  inflating: contest-tmp/teams/loserswishes/myTeam.py  
+  inflating: contest-tmp/teams/loserswishes/README.txt  
+  inflating: contest-tmp/teams/loserswishes/__MACOSX/._README.txt  
+  inflating: contest-tmp/teams/loserswishes/__MACOSX/._group.txt  
+   creating: contest-tmp/teams/contestrndmnm/contestrndmnm/
+   creating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/game.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/contest.html  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/textDisplay.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/score  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/mazeGenerator.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/VERSION  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/myTeam.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/mazeGenerator.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/keyboardAgents.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/autograder.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/baselineTeam.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/myTeam.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/graphicsDisplay.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/graphicsUtils.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layout.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/pacman.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/capture_the_flag.png  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/contestLayout.png  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/unpack.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/testParser.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/capture.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/baselineTeam.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/captureAgents.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/testClasses.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/projects.css  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/captureAgents.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/pacmanAgents.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/distanceCalculator.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/util.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layout.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/bracket.png  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/ghostAgents.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/util.py  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/capture_the_flag2.png  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/game.pyc  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/contestrndmnm/contestrndmnm/layouts/officeCapture.lay  
+  inflating: contest-tmp/teams/InfiniteLoop/myTeam.py  
+  inflating: contest-tmp/teams/friedOreo/myTeam.py  
+  inflating: contest-tmp/teams/Reaper/group.txt  
+  inflating: contest-tmp/teams/Reaper/myTeam.py  
+  inflating: contest-tmp/teams/Reaper/README.TXT  
+  inflating: contest-tmp/teams/AliEn/myTeam.py  
+   creating: contest-tmp/teams/IPhoneX/__MACOSX/
+  inflating: contest-tmp/teams/IPhoneX/myTeam.py  
+  inflating: contest-tmp/teams/IPhoneX/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/victoriasSecret/myTeam.py  
+  inflating: contest-tmp/teams/Allogator/myTeam.py  
+   creating: contest-tmp/teams/MMM/layouts/
+  inflating: contest-tmp/teams/MMM/game.py  
+  inflating: contest-tmp/teams/MMM/contest.html  
+  inflating: contest-tmp/teams/MMM/textDisplay.py  
+  inflating: contest-tmp/teams/MMM/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/MMM/score  
+  inflating: contest-tmp/teams/MMM/mazeGenerator.py  
+  inflating: contest-tmp/teams/MMM/VERSION  
+  inflating: contest-tmp/teams/MMM/myTeam.py  
+  inflating: contest-tmp/teams/MMM/anotherTeam.pyc  
+  inflating: contest-tmp/teams/MMM/keyboardAgents.py  
+  inflating: contest-tmp/teams/MMM/autograder.py  
+  inflating: contest-tmp/teams/MMM/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/MMM/baselineTeam.py  
+  inflating: contest-tmp/teams/MMM/myTeam_2.py  
+  inflating: contest-tmp/teams/MMM/myTeam.pyc  
+  inflating: contest-tmp/teams/MMM/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/MMM/graphicsDisplay.py  
+  inflating: contest-tmp/teams/MMM/myTeam_top.py  
+  inflating: contest-tmp/teams/MMM/graphicsUtils.py  
+  inflating: contest-tmp/teams/MMM/layout.pyc  
+  inflating: contest-tmp/teams/MMM/pacman.py  
+  inflating: contest-tmp/teams/MMM/ERC.zip  
+  inflating: contest-tmp/teams/MMM/capture_the_flag.png  
+  inflating: contest-tmp/teams/MMM/contestLayout.png  
+  inflating: contest-tmp/teams/MMM/unpack.py  
+  inflating: contest-tmp/teams/MMM/testParser.py  
+  inflating: contest-tmp/teams/MMM/anotherTeam.py  
+  inflating: contest-tmp/teams/MMM/capture.py  
+  inflating: contest-tmp/teams/MMM/c3Team.py  
+  inflating: contest-tmp/teams/MMM/baselineTeam.pyc  
+  inflating: contest-tmp/teams/MMM/captureAgents.pyc  
+  inflating: contest-tmp/teams/MMM/testClasses.py  
+  inflating: contest-tmp/teams/MMM/projects.css  
+  inflating: contest-tmp/teams/MMM/cTeam.pyc  
+  inflating: contest-tmp/teams/MMM/captureAgents.py  
+  inflating: contest-tmp/teams/MMM/pacmanAgents.py  
+  inflating: contest-tmp/teams/MMM/distanceCalculator.py  
+  inflating: contest-tmp/teams/MMM/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/MMM/myTeam_1.py  
+  inflating: contest-tmp/teams/MMM/util.pyc  
+  inflating: contest-tmp/teams/MMM/layout.py  
+  inflating: contest-tmp/teams/MMM/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/MMM/bracket.png  
+  inflating: contest-tmp/teams/MMM/ghostAgents.py  
+  inflating: contest-tmp/teams/MMM/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/MMM/util.py  
+  inflating: contest-tmp/teams/MMM/capture_the_flag2.png  
+  inflating: contest-tmp/teams/MMM/game.pyc  
+  inflating: contest-tmp/teams/MMM/cTeam.py  
+  inflating: contest-tmp/teams/MMM/monteCarloTeam.py  
+  inflating: contest-tmp/teams/QCR/myTeam.py  
+  inflating: contest-tmp/teams/PandaTV/myTeam.py  
+   creating: contest-tmp/teams/AIFighter/__MACOSX/
+  inflating: contest-tmp/teams/AIFighter/myTeam.py  
+  inflating: contest-tmp/teams/AIFighter/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/staff_team_medium/myTeam.py  
+  inflating: contest-tmp/teams/staff_team_medium/ghost-domain-kilpacman-problem.pddl  
+  inflating: contest-tmp/teams/staff_team_medium/pacman-domain-eatfood-problem.pddl  
+  inflating: contest-tmp/teams/staff_team_medium/pacman-domain-killghostproblem.pddl  
+  inflating: contest-tmp/teams/staff_team_medium/ghost-domain.pddl  
+  inflating: contest-tmp/teams/staff_team_medium/pacman-domain.pddl  
+  inflating: contest-tmp/teams/staff_team_medium/README.txt  
+  inflating: contest-tmp/teams/staff_team_medium/ff  
+   creating: contest-tmp/teams/RandomTeamVI/__MACOSX/
+  inflating: contest-tmp/teams/RandomTeamVI/myTeam.py  
+  inflating: contest-tmp/teams/RandomTeamVI/ghost_problem.pddl  
+  inflating: contest-tmp/teams/RandomTeamVI/ghost.pddl  
+  inflating: contest-tmp/teams/RandomTeamVI/pacman.pddl  
+  inflating: contest-tmp/teams/RandomTeamVI/problem_pacman_01.pddl  
+  inflating: contest-tmp/teams/RandomTeamVI/__MACOSX/._ghost_problem.pddl  
+  inflating: contest-tmp/teams/RandomTeamVI/__MACOSX/._problem_pacman_01.pddl  
+  inflating: contest-tmp/teams/RandomTeamVI/__MACOSX/._pacman.pddl  
+  inflating: contest-tmp/teams/RandomTeamVI/__MACOSX/._ghost.pddl  
+  inflating: contest-tmp/teams/staff_team_basic/myTeam.py  
+  inflating: contest-tmp/teams/staff_team_basic/problem.pddl  
+  inflating: contest-tmp/teams/staff_team_basic/__init__.py  
+  inflating: contest-tmp/teams/staff_team_basic/domain.pddl  
+  inflating: contest-tmp/teams/staff_team_basic/gmon.out  
+  inflating: contest-tmp/teams/disabledPacman4/disabledPacman3.py  
+  inflating: contest-tmp/teams/Patman/myTeam.py  
+  inflating: contest-tmp/teams/RNG/PacMax.zip  
+  inflating: contest-tmp/teams/RNG/myTeam.py  
+  inflating: contest-tmp/teams/RNG/offensiveWeightsDefault.json  
+  inflating: contest-tmp/teams/RNG/myTeam.pyc  
+  inflating: contest-tmp/teams/RNG/defensiveWeightsDefault.json  
+  inflating: contest-tmp/teams/RNG/defensiveWeights.json  
+  inflating: contest-tmp/teams/RNG/logger.log  
+  inflating: contest-tmp/teams/RNG/agents.py  
+  inflating: contest-tmp/teams/RNG/offensiveWeights.json  
+   creating: contest-tmp/teams/Alive/__MACOSX/
+  inflating: contest-tmp/teams/Alive/myTeam.py  
+  inflating: contest-tmp/teams/Alive/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/Artificialidiot/__MACOSX/
+  inflating: contest-tmp/teams/Artificialidiot/myTeam.py  
+  inflating: contest-tmp/teams/Artificialidiot/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/staff_team_top/group.txt  
+  inflating: contest-tmp/teams/staff_team_top/myTeam.py  
+  inflating: contest-tmp/teams/staff_team_top/domain_pacman_contestpacman.pddl  
+  inflating: contest-tmp/teams/staff_team_top/problem_ghost_eatpacman.pddl  
+  inflating: contest-tmp/teams/staff_team_top/problem_pacman_eatdot.pddl  
+  inflating: contest-tmp/teams/staff_team_top/domain_ghost_contestghost.pddl  
+  inflating: contest-tmp/teams/staff_team_top/problem_pacman_eatghost.pddl  
+  inflating: contest-tmp/teams/staff_team_top/readme.txt  
+  inflating: contest-tmp/teams/staff_team_top/ff  
+  inflating: contest-tmp/teams/ShallowMind/myTeam.py  
+  inflating: contest-tmp/teams/ShallowMind/offense.json  
+  inflating: contest-tmp/teams/AI_Rookie/myTeam.py  
+   creating: contest-tmp/teams/InvictusGaming/__MACOSX/
+  inflating: contest-tmp/teams/InvictusGaming/myTeam.py  
+  inflating: contest-tmp/teams/InvictusGaming/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/Higher_Brothers/__MACOSX/
+  inflating: contest-tmp/teams/Higher_Brothers/myTeam.py  
+  inflating: contest-tmp/teams/Higher_Brothers/ghost_domain.pddl  
+  inflating: contest-tmp/teams/Higher_Brothers/pacman_domain.pddl  
+  inflating: contest-tmp/teams/Higher_Brothers/ff  
+  inflating: contest-tmp/teams/Higher_Brothers/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/Pacmon-Sun-and-Moon/myTeam.py  
+   creating: contest-tmp/teams/ERC/layouts/
+  inflating: contest-tmp/teams/ERC/game.py  
+  inflating: contest-tmp/teams/ERC/contest.html  
+  inflating: contest-tmp/teams/ERC/textDisplay.py  
+  inflating: contest-tmp/teams/ERC/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/ERC/score  
+  inflating: contest-tmp/teams/ERC/mazeGenerator.py  
+  inflating: contest-tmp/teams/ERC/VERSION  
+  inflating: contest-tmp/teams/ERC/myTeam.py  
+  inflating: contest-tmp/teams/ERC/anotherTeam.pyc  
+  inflating: contest-tmp/teams/ERC/keyboardAgents.py  
+  inflating: contest-tmp/teams/ERC/autograder.py  
+  inflating: contest-tmp/teams/ERC/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/ERC/baselineTeam.py  
+  inflating: contest-tmp/teams/ERC/myTeam_2.py  
+  inflating: contest-tmp/teams/ERC/myTeam.pyc  
+  inflating: contest-tmp/teams/ERC/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/ERC/graphicsDisplay.py  
+  inflating: contest-tmp/teams/ERC/myTeam_top.py  
+  inflating: contest-tmp/teams/ERC/graphicsUtils.py  
+  inflating: contest-tmp/teams/ERC/layout.pyc  
+  inflating: contest-tmp/teams/ERC/pacman.py  
+  inflating: contest-tmp/teams/ERC/capture_the_flag.png  
+  inflating: contest-tmp/teams/ERC/contestLayout.png  
+  inflating: contest-tmp/teams/ERC/unpack.py  
+  inflating: contest-tmp/teams/ERC/testParser.py  
+  inflating: contest-tmp/teams/ERC/anotherTeam.py  
+  inflating: contest-tmp/teams/ERC/capture.py  
+  inflating: contest-tmp/teams/ERC/c3Team.py  
+  inflating: contest-tmp/teams/ERC/baselineTeam.pyc  
+  inflating: contest-tmp/teams/ERC/captureAgents.pyc  
+  inflating: contest-tmp/teams/ERC/mmmD.py  
+  inflating: contest-tmp/teams/ERC/testClasses.py  
+  inflating: contest-tmp/teams/ERC/projects.css  
+  inflating: contest-tmp/teams/ERC/cTeam.pyc  
+  inflating: contest-tmp/teams/ERC/captureAgents.py  
+  inflating: contest-tmp/teams/ERC/pacmanAgents.py  
+  inflating: contest-tmp/teams/ERC/distanceCalculator.py  
+  inflating: contest-tmp/teams/ERC/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/ERC/myTeam_1.py  
+  inflating: contest-tmp/teams/ERC/util.pyc  
+  inflating: contest-tmp/teams/ERC/layout.py  
+  inflating: contest-tmp/teams/ERC/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/ERC/bracket.png  
+  inflating: contest-tmp/teams/ERC/ghostAgents.py  
+  inflating: contest-tmp/teams/ERC/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/ERC/util.py  
+  inflating: contest-tmp/teams/ERC/capture_the_flag2.png  
+  inflating: contest-tmp/teams/ERC/game.pyc  
+  inflating: contest-tmp/teams/ERC/cTeam.py  
+  inflating: contest-tmp/teams/ERC/monteCarloTeam.py  
+   creating: contest-tmp/teams/RMY/RMY/
+   creating: contest-tmp/teams/RMY/__MACOSX/
+   creating: contest-tmp/teams/RMY/__MACOSX/RMY/
+  inflating: contest-tmp/teams/RMY/__MACOSX/RMY/._.DS_Store  
+  inflating: contest-tmp/teams/RMY/RMY/myTeam.py  
+  inflating: contest-tmp/teams/RMY/RMY/.DS_Store  
+  inflating: contest-tmp/teams/RMY/RMY/README.txt  
+  inflating: contest-tmp/teams/Chicken-Dinner/myTeam.py  
+  inflating: contest-tmp/teams/ARP/myTeam.py  
+   creating: contest-tmp/teams/ITCrowd/__MACOSX/
+   creating: contest-tmp/teams/ITCrowd/layouts/
+  inflating: contest-tmp/teams/ITCrowd/game.py  
+  inflating: contest-tmp/teams/ITCrowd/contest.html  
+  inflating: contest-tmp/teams/ITCrowd/textDisplay.py  
+  inflating: contest-tmp/teams/ITCrowd/captureGraphicsDisplay.pyc  
+  inflating: contest-tmp/teams/ITCrowd/score  
+  inflating: contest-tmp/teams/ITCrowd/mazeGenerator.py  
+  inflating: contest-tmp/teams/ITCrowd/VERSION  
+  inflating: contest-tmp/teams/ITCrowd/myTeam.py  
+  inflating: contest-tmp/teams/ITCrowd/keyboardAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/autograder.py  
+  inflating: contest-tmp/teams/ITCrowd/generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/ITCrowd/baselineTeam.py  
+  inflating: contest-tmp/teams/ITCrowd/myTeam.pyc  
+  inflating: contest-tmp/teams/ITCrowd/keyboardAgents.pyc  
+  inflating: contest-tmp/teams/ITCrowd/graphicsDisplay.py  
+  inflating: contest-tmp/teams/ITCrowd/graphicsUtils.py  
+  inflating: contest-tmp/teams/ITCrowd/layout.pyc  
+  inflating: contest-tmp/teams/ITCrowd/pacman.py  
+  inflating: contest-tmp/teams/ITCrowd/capture_the_flag.png  
+  inflating: contest-tmp/teams/ITCrowd/contestLayout.png  
+  inflating: contest-tmp/teams/ITCrowd/unpack.py  
+  inflating: contest-tmp/teams/ITCrowd/testParser.py  
+  inflating: contest-tmp/teams/ITCrowd/capture.py  
+  inflating: contest-tmp/teams/ITCrowd/baselineTeam.pyc  
+  inflating: contest-tmp/teams/ITCrowd/captureAgents.pyc  
+  inflating: contest-tmp/teams/ITCrowd/testClasses.py  
+  inflating: contest-tmp/teams/ITCrowd/projects.css  
+  inflating: contest-tmp/teams/ITCrowd/captureAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/pacmanAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/distanceCalculator.py  
+  inflating: contest-tmp/teams/ITCrowd/graphicsUtils.pyc  
+  inflating: contest-tmp/teams/ITCrowd/util.pyc  
+  inflating: contest-tmp/teams/ITCrowd/layout.py  
+  inflating: contest-tmp/teams/ITCrowd/captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/ITCrowd/bracket.png  
+  inflating: contest-tmp/teams/ITCrowd/ghostAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/distanceCalculator.pyc  
+  inflating: contest-tmp/teams/ITCrowd/util.py  
+  inflating: contest-tmp/teams/ITCrowd/capture_the_flag2.png  
+  inflating: contest-tmp/teams/ITCrowd/game.pyc  
+  inflating: contest-tmp/teams/ITCrowd/layouts/testCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/crowdedCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/alleyCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/mediumCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/bloxCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/defaultCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/strategicCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/jumboCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/fastCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/tinyCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/distantCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/layouts/officeCapture.lay  
+   creating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._capture_the_flag2.png  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._contestLayout.png  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._game.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._capture_the_flag.png  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._textDisplay.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._generateTournamentLayouts.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._contest.html  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._projects.css  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._pacmanAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._keyboardAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._VERSION  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._mazeGenerator.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._unpack.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._myTeam.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._capture.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._autograder.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._captureAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._graphicsUtils.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._testClasses.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._pacman.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._graphicsDisplay.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._util.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._captureGraphicsDisplay.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._layout.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._baselineTeam.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._score  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._bracket.png  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._testParser.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._layouts  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._ghostAgents.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/._distanceCalculator.py  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._strategicCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._alleyCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._officeCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._mediumCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._defaultCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._fastCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._distantCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._tinyCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._jumboCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._testCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._crowdedCapture.lay  
+  inflating: contest-tmp/teams/ITCrowd/__MACOSX/layouts/._bloxCapture.lay  
+  inflating: contest-tmp/teams/BetterThanBaselineTeam/myTeam.py  
+  inflating: contest-tmp/teams/BetterThanBaselineTeam/README.txt  
+   creating: contest-tmp/teams/EvilPacman/__MACOSX/
+  inflating: contest-tmp/teams/EvilPacman/myTeam.py  
+  inflating: contest-tmp/teams/EvilPacman/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/Werewolf/__MACOSX/
+  inflating: contest-tmp/teams/Werewolf/myTeam.py  
+  inflating: contest-tmp/teams/Werewolf/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/trytrytrytry/__MACOSX/
+  inflating: contest-tmp/teams/trytrytrytry/myTeam.py  
+  inflating: contest-tmp/teams/trytrytrytry/__MACOSX/._myTeam.py  
+   creating: contest-tmp/teams/IHateCapsule/__MACOSX/
+  inflating: contest-tmp/teams/IHateCapsule/myTeam.py  
+  inflating: contest-tmp/teams/IHateCapsule/__MACOSX/._myTeam.py  
+   creating: contest-tmp/bin/bin/
+  inflating: contest-tmp/bin/metric-ff  
+  inflating: contest-tmp/bin/ff      
+
+Red team teams/RandomTeamVI/myTeam.py with {}:
+teams/RandomTeamVI/myTeam.py
+Loading Team: teams/RandomTeamVI/myTeam.py
+Arguments: {}
+
+Blue team teams/super_scaper/myTeam.py with {}:
+teams/super_scaper/myTeam.py
+Loading Team: teams/super_scaper/myTeam.py
+Arguments: {}
+0
+Blue team starts
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+3
+3
+3
+3
+3
+3
+4
+4
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+5
+Time is up.
+The Red team wins by 9 points.
+recorded
+
