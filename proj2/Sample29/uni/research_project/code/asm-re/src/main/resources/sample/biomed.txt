@@ -1,3 +1,0 @@
-Experiments with NF.Kappa-B
-
-We present results of applying analytic techniques to a biological sample containing NF.Kappa-B. We find that various enzymes affect its expression. This has implications for skydiving.

@@ -1,6 +1,0 @@
-*.xml
-.idea/Pacman-Agent.iml
-*.pyc
-test.txt
-solution.zip
-*.rec

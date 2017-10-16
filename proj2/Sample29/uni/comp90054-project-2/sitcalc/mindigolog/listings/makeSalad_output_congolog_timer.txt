@@ -1,4 +1,0 @@
-?- ol_do(control,do([set_timer(richard,timer1,5)],0,s0)).
-FAILED!
-yes
-?-

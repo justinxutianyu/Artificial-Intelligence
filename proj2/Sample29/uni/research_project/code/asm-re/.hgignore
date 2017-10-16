@@ -1,6 +1,0 @@
-^target/
-^model/
-syntax: glob
-src/main/resources/sample/biomed.txt.parsed
-src/main/resources/sample/biomed.txt.parsed.pap
-experiments
